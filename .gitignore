@@ -252,3 +252,24 @@ param.sfo
 
 # Clazy
 *.clazy.yaml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Compiled files
+*.exe
+*.dll
+*.obj
+*.o
+*.so
+*.dylib
