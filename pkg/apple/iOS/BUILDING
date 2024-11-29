@@ -1,8 +1,8 @@
 The following instructions will only work if building from OS X, using latest Xcode with fake signing enabled.
 
-To build RetroArch:
-    Open $(root)/ios/RetroArch.xcodeproj, change build type to iOSDevice then choose Product->Build For->Archiving.
-    After compilation finishes goto Window->Organizer->Projects->RetroArch then click the small arrow beside
+To build Fruitendo:
+    Open $(root)/ios/Fruitendo.xcodeproj, change build type to iOSDevice then choose Product->Build For->Archiving.
+    After compilation finishes goto Window->Organizer->Projects->Fruitendo then click the small arrow beside
     the Derived Data field, this will open a finder window with the projects build files directory highlighted.
     The app bundle can be found at Build/Products/* in that folder. Use scp to copy the .app bundle to the appropriate place
     on your device.
@@ -35,16 +35,16 @@ To build libretro cores:
 
     Finally issue the make command for the module adding 'platform=ios' at the of the command.
     (e.g. 'make -f Makefile.libretro platform=ios'). Then copy the resulting .dylib file into a sub-directory of the app
-    bundle named modules. (e.g. RetroArch.app/modules/vba_next_libretro.dylib).
+    bundle named modules. (e.g. Fruitendo.app/modules/vba_next_libretro.dylib).
 
 Paths:
-    /var/mobile/Library/RetroArch: Will be created to store both saved games and the retroarch.cfg.
-    /var/mobile/RetroArchGames:    If this exists and is a directory it will be used as the root for game browsing.
-    /var/mobile:                   If RetroArchGames does not exist this will be used as the root for game browsing,
-                                   if another browser root is desired make RetroArchGames a symlink to the preferred path.
-    RetroArch.app/shaders:         Contains .shader format shaders, sub-directories are supported.
-    RetroArch.app/overlays:        Contains input overlay definitions, sub-directories are supported.
-    RetroArch.app/modules:         Contains .dylib files for the libretro modules. The only constraint on the file name
+    /var/mobile/Library/Fruitendo: Will be created to store both saved games and the Fruitendo.cfg.
+    /var/mobile/FruitendoGames:    If this exists and is a directory it will be used as the root for game browsing.
+    /var/mobile:                   If FruitendoGames does not exist this will be used as the root for game browsing,
+                                   if another browser root is desired make FruitendoGames a symlink to the preferred path.
+    Fruitendo.app/shaders:         Contains .shader format shaders, sub-directories are supported.
+    Fruitendo.app/overlays:        Contains input overlay definitions, sub-directories are supported.
+    Fruitendo.app/modules:         Contains .dylib files for the libretro modules. The only constraint on the file name
                                    is that it must end in .dylib, sub-directories are not supported.
 
 Simulator:

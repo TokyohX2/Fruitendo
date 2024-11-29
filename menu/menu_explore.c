@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2020 - Daniel De Matteis
  *  Copyright (C) 2020      - Psyraven
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -26,7 +26,7 @@
 
 #include "menu_driver.h"
 #include "menu_cbs.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 #include "../configuration.h"
 #include "../file_path_special.h"
 #include "../playlist.h"

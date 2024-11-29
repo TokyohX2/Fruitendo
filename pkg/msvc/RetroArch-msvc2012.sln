@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "msvc-2012", "msvc-2012\RetroArch-msvc2012.vcxproj", "{E1D4BAA1-50DB-428E-9462-4F1B31E38119}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "msvc-2012", "msvc-2012\Fruitendo-msvc2012.vcxproj", "{E1D4BAA1-50DB-428E-9462-4F1B31E38119}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

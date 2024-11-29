@@ -1,6 +1,6 @@
 # libretrodb
 A small read only database
-Mainly to be used by retroarch
+Mainly to be used by Fruitendo
 
 # Usage
 Files specified later in the chain **will override** earlier ones if the same key exists multiple times.
@@ -13,8 +13,8 @@ Files specified later in the chain **will override** earlier ones if the same ke
 ```
 git clone https://github.com/libretro/libretro-super.git
 cd libretro-super
-./libretro-fetch.sh retroarch
-cd retroarch
+./libretro-fetch.sh Fruitendo
+cd Fruitendo
 ./configure
 cd libretro-db
 c_converter "NAME_OF_RDB_FILE.rdb" "NAME_OF_SOURCE_DAT.dat"
@@ -25,8 +25,8 @@ Specify `rom.crc` as the second parameter to use CRC as the unique fingerprint.
 ```
 git clone https://github.com/libretro/libretro-super.git
 cd libretro-super
-./libretro-fetch.sh retroarch
-cd retroarch
+./libretro-fetch.sh Fruitendo
+cd Fruitendo
 ./configure
 cd libretro-db
 c_converter "NAME_OF_RDB_FILE.rdb" "rom.crc" "NAME_OF_SOURCE_DAT_1.dat" "NAME_OF_SOURCE_DAT_2.dat" "NAME_OF_SOURCE_DAT_3.dat"
@@ -38,7 +38,7 @@ c_converter "NAME_OF_RDB_FILE.rdb" "rom.crc" "NAME_OF_SOURCE_DAT_1.dat" "NAME_OF
 ```
 git clone https://github.com/libretro/libretro-super.git
 cd libretro-super
-./libretro-fetch.sh retroarch
+./libretro-fetch.sh Fruitendo
 ./libretro-build-database.sh
 ```
 

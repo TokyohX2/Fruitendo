@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -23,7 +23,7 @@
 #include "../menu_cbs.h"
 #include "../../input/input_remapping.h"
 
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../core_option_manager.h"
 
 #ifdef HAVE_CHEEVOS
@@ -41,7 +41,7 @@
 #include "../../network/netplay/netplay.h"
 #endif
 
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../content.h"
 #include "../../dynamic.h"
 #include "../../configuration.h"
@@ -1721,7 +1721,7 @@ static int action_bind_sublabel_cheat_desc(
       if (cheat_manager_state.cheats[offset].handler == CHEAT_HANDLER_TYPE_EMU)
          strlcpy(s, "Emulator-Handled", len);
       else
-         strlcpy(s, "RetroArch-Handled", len);
+         strlcpy(s, "Fruitendo-Handled", len);
    }
 
    return 0;

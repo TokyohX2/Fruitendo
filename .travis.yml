@@ -175,8 +175,8 @@ addons:
       - llvm-toolchain-xenial
   coverity_scan:
     project:
-      name: "RetroArch"
-      description: "RetroArch is the official reference frontend for the libretro API."
+      name: "Fruitendo"
+      description: "Fruitendo is the official reference frontend for the libretro API."
     notification_email: libretro@gmail.com
     build_command_prepend: "./configure; make clean"
     build_command:   "make"

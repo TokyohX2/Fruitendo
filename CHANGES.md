@@ -145,7 +145,7 @@
 - WAYLAND: Use frontend signal handler to quit (fix quit by window close)
 - WAYLAND: Commit viewport resizes (window resize is more responsive)
 - UWP: Align MESA to alpha-2-resfix - Remove wrong resolution special handling for OPENGL
-- UWP: 4K fix: align MESA reading of ClientRect to retroarch procedure, this fixes max resolution being set to 1080p. As reading must be done inside an UI thread and is in fact an async operation which might delay frame generation, the reading itself is doen once and cached, give that changing resolution while the app is running is an unlikely corner-case use
+- UWP: 4K fix: align MESA reading of ClientRect to Fruitendo procedure, this fixes max resolution being set to 1080p. As reading must be done inside an UI thread and is in fact an async operation which might delay frame generation, the reading itself is doen once and cached, give that changing resolution while the app is running is an unlikely corner-case use
 - WINDOWS: Windows mouse ungrab must release the mouse instead of confine it to the current desktop (#16488)
 - WINDOWS: Fix numlock/pause key release events
 
@@ -309,7 +309,7 @@ Log and notify a separate message when there is a content crc mismatch while usi
 - AUDIO/WASAPI: WASAPI Frame Delay fix + cleanups
 - AUDIO/WASAPI/MIDI: Frame Delay correction
 - ARCHIVE/ZIP: Improve ZIP decompression
-This reduces the amount of memory Retroarch needs to extract a ROM file.
+This reduces the amount of memory Fruitendo needs to extract a ROM file.
 It will only need the size of the ROM plus 128KiB to extract the file
 from the ZIP. Previously it needed as much as twice that amount if the
 compression ratio was not great. This is useful on memory constrained
@@ -344,7 +344,7 @@ require fullpath or not, small and big ZIP files).
 - EMSCRIPTEN: Fix Emscripten sleep function/macro
 - EMSCRIPTEN/RWEBAUDIO: Fix RWebAudioInit race condition
 - EMSCRIPTEN/OPENAL: Make openal default audio driver
-- FFMPEG: Fix RetroArch fails to restart streaming when video re-inits and instead starts recording
+- FFMPEG: Fix Fruitendo fails to restart streaming when video re-inits and instead starts recording
 - FRAMESKIP: Use refresh rate instead of core fps for frameskip timing
 - INPUT: Combo hold + 'enable_hotkey' correction. Fixed issue with having menu toggle hold combo in different button than 'enable_hotkey', which caused 'enable_hotkey' to also act as menu toggle if held long enough, and simplified and unified duplicate code in start+select holds to a single function.
 - INPUT: input_keyboard_event: Don't check hotkey binds when device is RETRO_DEVICE_POINTER
@@ -388,7 +388,7 @@ Loading a cached overlay is done as a swap, intended for osk_toggle.
 - IOS/TVOS: Preliminary MetricKit support on iOS/tvOS
 - TVOS: Fix analog stick handling after adding Siri remote tap support
 - TVOS: Also handle tap events on tvOS
-- TVOS: Back up retroarch.cfg to NSUserDefaults on tvOS.
+- TVOS: Back up Fruitendo.cfg to NSUserDefaults on tvOS.
 - TVOS: tvOS has its own beautiful screensavers and I would like them
 - TVOS: tvOS Siri remote handling
 - TVOS: Fix accidental left/right keypresses on tvOS
@@ -402,7 +402,7 @@ being able to do the expected tvOS behavior of "backing out" of the app.
 - LANGEXTRA: Enable language autodetect for all builds with LANGEXTRA
 - LIBRETRO: Add new context hardware render enums - enables autodetection of DX12 for PS2 core
 - LIBRETRO: Add API to check JIT availability on iOS
-- LIBRETRO: Allow RETRO_ENVIRONMENT_SET_MEMORY_MAPS also after core startup. Change the comment in libretro.h about the removed limit and handle the environment call during core runtime in RetroArch.
+- LIBRETRO: Allow RETRO_ENVIRONMENT_SET_MEMORY_MAPS also after core startup. Change the comment in libretro.h about the removed limit and handle the environment call during core runtime in Fruitendo.
 - LIBRETRO/MICROPHONE: Add new API for microphone support.
 - LIBRETRO: Add new API for querying the device's power state.
 - LIBRETRO/VFS: Rewrite retro_vfs_file_remove_impl
@@ -500,7 +500,7 @@ being able to do the expected tvOS behavior of "backing out" of the app.
 
 # 1.15.0
 - AI SERVICE: Fix NVDA switching to Powershell on speak
-- ANDROID: In Android builds, add input_android_physical_keyboard configuration option and its corresponding menu entry to force a device to act as a physical keyboard. When running on Android, RetroArch considers most devices that emit dpad events as gamepads, even if they also emit other keyboard events; this is usually the right thing to do, but it has the side effect of not letting some actual keyboards (e.g.: Logitech K480) act as such inside RetroArch. This configuration option allows users to manually select a specific input device to act as a physical keyboard instead of a gamepad, which is handy when emulating computers as opposed to consoles.
+- ANDROID: In Android builds, add input_android_physical_keyboard configuration option and its corresponding menu entry to force a device to act as a physical keyboard. When running on Android, Fruitendo considers most devices that emit dpad events as gamepads, even if they also emit other keyboard events; this is usually the right thing to do, but it has the side effect of not letting some actual keyboards (e.g.: Logitech K480) act as such inside Fruitendo. This configuration option allows users to manually select a specific input device to act as a physical keyboard instead of a gamepad, which is handy when emulating computers as opposed to consoles.
 - APPLE: Add App Category to a few places it should have been
 - APPLE/MFI: Prevent crash when controller player index is unset (-1)
 - AUTOMATIC FRAME DELAY: Helped delay to decrease easier when it should and helped delay to stay put when it should when triggering pause & menu with or without pause & fast-forward & slow-motion & geometry change
@@ -567,7 +567,7 @@ query what frontend would do when faces with newer interface versions. This env-
 - INPUT/BSV/REPLAY: Add keyboard recording support to BSV
 - INPUT/BSV/REPLAY: Fix BSV playback from a starting state for DOSbox
 - INPUT/BSV/REPLAY: Associate states with replays. Now states can be saved and loaded during replay recording and playback in a way that keeps the integrity of the recording. Recordings also have a (moderately) unique identifier associated with them.
-- INPUT/BSV/REPLAY: Add checkpointing feature for replay recordings. If cores are not deterministic, or if they only have bounded determinism, we can obtain less drift if replay files also contain periodic checkpoint states.  These are configured by the new retroarch setting replay_checkpoint_interval (measured in seconds).  States are inserted into the replay file in between frames. This also fixes the settings display for the replay autoincrement max keep setting.
+- INPUT/BSV/REPLAY: Add checkpointing feature for replay recordings. If cores are not deterministic, or if they only have bounded determinism, we can obtain less drift if replay files also contain periodic checkpoint states.  These are configured by the new Fruitendo setting replay_checkpoint_interval (measured in seconds).  States are inserted into the replay file in between frames. This also fixes the settings display for the replay autoincrement max keep setting.
 - INPUT/FRAMEADVANCE: Use non-rendering pause mode when frameadvance is triggered
 - INPUT/HOTKEYS/OVERLAYS: Do not block input overlay hotkeys
 - INPUT/HOTKEYS: Hotkey blocking correction. Turned out the previous hotkey blocking changes worked properly only with winraw driver and not the rest (at least with Windows), because input_keyboard_event() could be called at the wrong moment, and thus storing keyboard menu press there broke the separation of controller Guide menu button and keyboard menu key. Also allowed the blocking to work in both directions so that controller hotkeys won't get blocked if only keyboard has "enable_hotkey" bind.
@@ -677,7 +677,7 @@ after the current event handler, which then did exactly the same. Fixes issue #1
 - SAVESTATES: Change the widget type to the same type as shader toggle for better back and forth action. Closes [Widgets] Save state slot switcher
 - SHADERS: Append Preset feature
 - SHADERS: Prepend Preset feature
-- SHADERS: Shader Preset - Wildcard Replacement in Paths on Load. When a simple preset loads, text wildcards which are found in paths inside the presets will be replaced with values coming from the current RetroArch context. The replacement will be executed on both texture paths and reference paths.
+- SHADERS: Shader Preset - Wildcard Replacement in Paths on Load. When a simple preset loads, text wildcards which are found in paths inside the presets will be replaced with values coming from the current Fruitendo context. The replacement will be executed on both texture paths and reference paths.
 - SHADERS/SLANG/SPIRVCROSS: Update to latest SPIRV-Cross, fixing Metal shader compilation issues along the way
 - STATICALLY LINKED/SALAMANDER: Fix salamander config save on fork for static platforms
 - TVOS/VULKAN/MOLTENVK: Vulkan on tvOS
@@ -698,7 +698,7 @@ So this removes the artificial clamping that was being done to desired_swapchain
 - VULKAN/MACOS/OSX: avoid using _PACK16 pixel formats on platforms without them
 - WAYLAND: On scaled desktops the wayland backend deciding to resize based on values multiplied by the scale factor twice. Resulting in continuous attempts to rebuild the swapchain when in fullscreen.
 - WAYLAND: Wait for splash screen configuration. Before, configuration (resize) events for the initial wayland window could happen before or after set_video_mode which could result in a small or corrupted window. Now we make sure that the initial window has processed it's resize events before window size is set by set_video_mode.
-- WAYLAND: Changes the initial window to show a RetroArch logo copied from the icon of the X11 backend.
+- WAYLAND: Changes the initial window to show a Fruitendo logo copied from the icon of the X11 backend.
 - WAYLAND: Build pointer-constraints and relative-pointer protocols.
 - WAYLAND/GL: GL is sometimes not rescaling property (Super + Left).
 - WIN32: Ignore window limiting with fixed position. The other resizing part already took this into account, but WM_GETMINMAXINFO did not.
@@ -1094,7 +1094,7 @@ SUBOPTIMAL_KHR can happen there when rotation (pre-rotate) is wrong.
 - WII/GX: Fix potential datarace
 - WIIU: Implement sysconf and __clear_cache
 - WIIU: Add OS memory mapping imports
-- UWP: Added launch protocol arg 'forceExit' so a frontend can tell an already-running RetroArch UWP instance to quit.
+- UWP: Added launch protocol arg 'forceExit' so a frontend can tell an already-running Fruitendo UWP instance to quit.
 - UWP: Enable core downloader/updater
 - UWP: Remove copy permissions as its inefficient as we can just directly assign the new ACL and that works
 - Xbox/UWP: Remove expandedResources
@@ -1166,7 +1166,7 @@ SUBOPTIMAL_KHR can happen there when rotation (pre-rotate) is wrong.
 - PS3/PSL1GHT: Add libco support
 - PS3/PSL1GHT: Add experimental PSMove support
 - RS90: Optimise layout of sdl_rs90_video
-- STEAM: Use native OSK (Onscreen Keyboard) instead of built-in RetroArch version
+- STEAM: Use native OSK (Onscreen Keyboard) instead of built-in Fruitendo version
 - STEAM: New built-in core DLC downloader
 - STEAM: Swap OK/Cancel buttons by default
 - VIDEO/HDR: Removed redundant copy of buffer in HDR mode if the shader has already a HDR format i.e. R10G10B10A2 (updated Vulkan/D3D11/D3D12 drivers)
@@ -1222,7 +1222,7 @@ Otherwise the USB gamepad cannot be found, if VID/PID has leading zero. This iss
 - OSX: Enable compilation on PPC
 - OZONE/XMB: Improve efficiency/accuracy of History/Favorites icon rendering
 - RECORDING/FFMPEG: Fix building against FFmpeg 5.0
-- RETROARCH INFORMATION: No longer report on enabled Python support, which was removed in RetroArch 1.7.8
+- Fruitendo INFORMATION: No longer report on enabled Python support, which was removed in Fruitendo 1.7.8
 - SAVESTATES: Disable save states based on save state support level defined in core info files
 - UNIX/WINDOWS: Allow setting the default libretro_directory via environment variable
 - WAYLAND/VULKAN: Fix Wayland Vulkan not reacting to initial resize
@@ -1267,7 +1267,7 @@ Otherwise the USB gamepad cannot be found, if VID/PID has leading zero. This iss
 - NETWORK: Filter out non-connectable rooms. Add an option for filtering out non-connectable netplay rooms.
 - NETWORK: Netplay spectator notification fix. Fix double notification when the host switches to spectator.
 - NETWORK: Prevents long-term pausing from clients dishonoring allow pausing
-- NETWORK/LOBBY: Lobby Viewer: Filter out rooms that are not running RetroArch
+- NETWORK/LOBBY: Lobby Viewer: Filter out rooms that are not running Fruitendo
 - NETWORK/LOBBY: Lobby Viewer: Display a non-connectable tag to non-connectable rooms
 - NETWORK/LOBBY: Host: Display warning if we are announcing to the internet but our room isn't connectable from there
 - NETWORK/RELAY: Custom relay server support - Add support for custom user-ran relay servers
@@ -1277,7 +1277,7 @@ Otherwise the USB gamepad cannot be found, if VID/PID has leading zero. This iss
 - NETWORK/UPNP: Accept IGD v2 service types
 - NETWORK/UPNP: Delay lobby server announcing - delay the announcing in order to give UPnP's port forwarding more time. Fix the remaining truncation warnings.
 - NETWORK/UPNP: Smart interface selection - Find the most suitable address for UPnP by scoring interfaces on how close their address is to the device's address
-- OPENGL1: Fix buffer overflow - RetroArch would sometimes crashes at startup when loading asset textures with GL1 driver
+- OPENGL1: Fix buffer overflow - Fruitendo would sometimes crashes at startup when loading asset textures with GL1 driver
 - PS3: PSL1GHT port added to Gitlab CI
 - VULKAN: Double combined image sampler descriptor pool size - fix segfaults with AMD GPUs using RADV
 - VULKAN: Emulate mailbox only with Vsync enabled - otherwise have it disabled - useful for VRR/G-Sync/FreeSync
@@ -1285,7 +1285,7 @@ Otherwise the USB gamepad cannot be found, if VID/PID has leading zero. This iss
 - VULKAN/HDR: HDR support - tested on Windows
 - WAYLAND: Add libdecor for client side decoration
 - WAYLAND: Use any display for initial metrics
-- WAYLAND: Fix the window closing, if RetroArch is build without libdecor
+- WAYLAND: Fix the window closing, if Fruitendo is build without libdecor
 - WAYLAND: Use checked sizes in EGL resize
 - WAYLAND: Fix window title update
 - WEBOS: Fix webOS build and run
@@ -1321,7 +1321,7 @@ Otherwise the USB gamepad cannot be found, if VID/PID has leading zero. This iss
 - CONFIG: Honor config_save_on_exit when Reboot/Shutdown is called
 - DISK CONTROL: Focus on current content entry in Disk Control append/insert
 - FRAMEDELAY: Auto Frame Delay Improvements - swap interval handling, D3DX handling, and delay target resets also on core restart. It should now work with high refresh rates and also with Direct3D 10/11/12 drivers
-- INPUT/GYRO/ACCELEROMETER/ANDROID: Re-enable Gyroscope & Accelerometer when RetroArch resumes or regains focus
+- INPUT/GYRO/ACCELEROMETER/ANDROID: Re-enable Gyroscope & Accelerometer when Fruitendo resumes or regains focus
 - INPUT/HID: Fix gamepad disconnect on unrecognized HID device
 - LAKKA: Patch to fix keyboard typing
 - LAKKA: CD-ROM eject menu item
@@ -1438,7 +1438,7 @@ ignore, like most network implementations do
 - CHEATS: Add enhanced search functionality to the 'Cheats' menu
 - CHEATS/RUNAHEAD: Fix cheats when using second instance runahead
 - CONFIG: Add option to (force-)write current core options to disk (Quick Menu)
-- CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move RetroArch to a separate dir and they would still work).
+- CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move Fruitendo to a separate dir and they would still work).
 - D3D11: Use Shader Model 5.0 for frontend shaders if D3D11 Feature level is at least 11.0 or higher. Should fix some new shaders that require SM 5.0 (like AMD FSR)
 - D3D11: Add HDR support (disabled for UWP for now)
 - D3D12: Add HDR support (disabled for UWP for now)
@@ -1562,7 +1562,7 @@ Not that SR works on them but to fix RA compile issues
 - RS90: Fix offset of OSD text
 - RS90: Disable menu clock by default
 - RS90: Hide 'Bilinear Filtering' video option
-- RS90: Move appdata (retroarch) base directory to external microsd card
+- RS90: Move appdata (Fruitendo) base directory to external microsd card
 - RS90: Add optional approximate 'semi-linear' scaling filter
 - SHADERS: Max Shader Parameters increased to 1024
 - VIDEO: Add 'Integer Scale Overlay' - Force integer scaling to round up to the next larger integer instead of rounding down
@@ -1616,7 +1616,7 @@ Not that SR works on them but to fix RA compile issues
 - UWP/XBOX: Add expanded resources Rescap to increase performance of UWP version in app mode on Xbox
 - WINDOWS/INSTALLER: Add smarter isEmptyDir reference implementation that looks for subdirectories from NSIS documentation
 - WINDOWS/INSTALLER: Register new function DirectorySet that is called when pressing the "Next" button on the MUI_PAGE_DIRECTORY, aka the install folder selection GUI. DirectorySet contains the criteria for an acceptable folder, which are:
-  - `IfFileExists "$INSTDIR\retroarch.exe"` returns 1
+  - `IfFileExists "$INSTDIR\Fruitendo.exe"` returns 1
   - `IfFileExists "$INSTDIR\*.*` returns 0, there is no existing folder
   - `IfFileExists "$INSTDIR\*.*"` returns 1, there is a folder, and `isEmptyDir` returns 1, therefore the folder is empty, including of subdirectories
 - X11: Fix threaded video segfault
@@ -1801,7 +1801,7 @@ Having remaps for many different cores makes finding the active core files cumbe
 - INPUT/GAME FOCUS: Add option to automatically enable 'game focus' mode when running/resuming content
 - INPUT/HOTKEYS: Hotkey for Close Content / Unload Core
 - INPUT/LIBCEC: Map libcec-daemon keys to RETROK
-- INPUT/X11: Enable keyboard input when mouse cursor is not inside the RetroArch window but window still has focus
+- INPUT/X11: Enable keyboard input when mouse cursor is not inside the Fruitendo window but window still has focus
 - INPUT/X11: Fix mouse input when mouse is grabbed
 - INPUT/UDEV/RUMBLE: Fix rumble.
 - INPUT/WINDOWS/DINPUT: Simultaneous shift sticky fix
@@ -1860,7 +1860,7 @@ Having remaps for many different cores makes finding the active core files cumbe
 - MENU: Customizable menu scroll hold delay.
 - MENU/DESKTOP: Fix mouse cursor limited by window range on F5 press
 - MENU/DESKTOP: Add simple shader option
-- MENU/DESKTOP/WINDOWS: Remove broken 'Update RetroArch' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface
+- MENU/DESKTOP/WINDOWS: Remove broken 'Update Fruitendo' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface
 - MENU/OZONE: New Theme - Twilight Zone
 - MENU/RGUI: Add 3:2, 5:3 and 3:2/5:3 (centered) aspects
 - MENU/RGUI/TEXT RENDERING: Add Russian language text support
@@ -1875,7 +1875,7 @@ Having remaps for many different cores makes finding the active core files cumbe
 function skips the driver if the screen is non rotated to fall back to
 the regular DRM driver.
 - OGA: Fix messages from not disappearing
-- OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in RetroArch have to explicitly implement this for this codepath to work at runtime.
+- OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in Fruitendo have to explicitly implement this for this codepath to work at runtime.
 - OPENDINGUX: Add/Optimise rumble interface
 - OPENDINGUX: Fix frozen video when enabling fast forward
 - OPENDINGUX/SDL: OSD font clean-up
@@ -1913,7 +1913,7 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - SHADERS: Shaders fix for duplicate parameters loading bug
 - SHADERS: Fix Crash change num shader passes in UI
 - SHADERS/SLANG: Fix slang shaders with rotation
-- STREAMING/FFMPEG: Add Facebook Game Stream option (for embedded ffmpeg core-enabled RetroArch builds)
+- STREAMING/FFMPEG: Add Facebook Game Stream option (for embedded ffmpeg core-enabled Fruitendo builds)
 - SWITCH: Fix input bind icons being off by one line
 - SWITCH: Fix audio issues
 - TLS/SSL: Add BearSSL support, as alternative to mbedTLS
@@ -1954,10 +1954,10 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - CHEEVOS: Upgrade to rcheevos 9.1
 - CHEEVOS: Restore display of unlocked achievements across hardcore modes
 - CHEEVOS: Hash buffered data when available
-- CHEEVOS: Fix 'Auto Save State freezes RetroArch while Cheevos is enabled'
+- CHEEVOS: Fix 'Auto Save State freezes Fruitendo while Cheevos is enabled'
 - CORE OPTIONS: Pressing OK (or clicking/tapping) on a 'boolean toggle' core option no longer opens a drop-down list. The value now toggles directly, just like boolean options everywhere else in the menu
 - CORE OPTIONS: Toggling an option that changes the number of core options being displayed (i.e. things like `Show Advanced Audio/Video Settings) no longer resets the navigation pointer to the start of the list
-- CORE OPTIONS: Before, RetroArch would identify core option values as being 'boolean' if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings.
+- CORE OPTIONS: Before, Fruitendo would identify core option values as being 'boolean' if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings.
 - CLI: A new command line option --load-menu-on-error has been added
 - CRT: On the fly CRT porch adjuments - these changes allow a user to adjust how the porch algorithm generates the 15khz/31khz output. Giving the ability to change over/under scan.
 - CONFIG FILE: Optimise parsing of configuration files
@@ -1969,7 +1969,7 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - INPUT MAPPING/REMAPPING: Add input remap drop-down lists
 - IOS: Fixed iOS 6 version
 - IOS: Hide the home indicator as it obscures the content too frequently
-- IOS/METAL: Metal video driver now works on RetroArch iOS
+- IOS/METAL: Metal video driver now works on Fruitendo iOS
 - IOS/METAL: Support getting video metrics to support proper touchscreen interactions
 - LOCALIZATION: Updates for several languages (synchronized from Crowdin)
 - MEMORY/LINUX/ANDROID: Fix reporting of free memory
@@ -1995,7 +1995,7 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - X11: Add lightgun support
 
 # 1.8.9
-- AUTO SAVESTATES: Ensure save states are correctly flushed to disk when quitting RetroArch (fixes broken save states when exiting RetroArch - without first closing content - with 'Auto Save State' enabled)
+- AUTO SAVESTATES: Ensure save states are correctly flushed to disk when quitting Fruitendo (fixes broken save states when exiting Fruitendo - without first closing content - with 'Auto Save State' enabled)
 - BUILTIN CORES: Builtin cores like ffmpeg and imageviewer would previously try  to erroneously load a dynamic core named 'builtin' - this would fail and would just be a wasteful operation - this now skips dylib loading in libretro_get_system_info for builtin cores
 - CHEEVOS: Report API errors when unlocking achievements or submitting leaderboards
 - CHEEVOS: Support less common file extensions
@@ -2092,7 +2092,7 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 # 1.8.7
 - 3DS: Add IDs for Frodo
 - 3DS: Enable basic networking / cheevos
-- CHEEVOS/BUGFIX: Opening achievements list would crash RetroArch with badges enabled (on new games)
+- CHEEVOS/BUGFIX: Opening achievements list would crash Fruitendo with badges enabled (on new games)
 - CHEEVOS: Option to start a session with all achievements active
 - CHEEVOS: Don't perform unnecessary cheevos initialisation when cheevos are disabled. Should reduce startup times when loading content.
 - CORE OPTIONS: Disable 'Use Global Core Options File' by default
@@ -2130,8 +2130,8 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - CHEEVOS/BUGFIX: Report non-memorymap GBA cores as unsupported
 - COMMANDLINE: Advise against using -s and -S variables on the command line. …
 - CONFIG FILE: Only write config files to disk when parameters change
-- CONFIG FILE/BUGFIX: RetroArch no longer crashes when attempting to save a config file after 'unsetting' a parameter (currently, this can be triggered quite easily by manipulating input remaps)
-- CONFIG FILE/BUGFIX: When using Material UI, RetroArch no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu > Controls input remapping submenu
+- CONFIG FILE/BUGFIX: Fruitendo no longer crashes when attempting to save a config file after 'unsetting' a parameter (currently, this can be triggered quite easily by manipulating input remaps)
+- CONFIG FILE/BUGFIX: When using Material UI, Fruitendo no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu > Controls input remapping submenu
 - CONFIG FILE/BUGFIX: Quite a few real and potential memory leaks have been fixed.
 - CHD: Fixes a crash caused by ignoring the return value from one of the CHD library functions
 - FASTFORWARDING: A new Mute When Fast-Forwarding option has been added under Settings > Audio. When enabled, users can fast forward without having to listen to distorted audio.
@@ -2140,7 +2140,7 @@ save state limit (global). Instead of wrapping around the slot counter it will s
 - LOCALIZATION: Update Spanish translation
 - LOCALIZATION: Update Portuguese Brazilian translation
 - IOS: Set audio session category to ambient so sound does not get cut off on interruption (phone call/playing back audio)
-- MAC/IOHIDMANAGER/BUGFIX: Fix for Mayflash N64 adapter. In case last hatswitch does not match cookie. For the mayflash N64 adapter, I was getting a BAD EXC ADDRESS (in mac OS 10.13) for this line (tmp was NULL). Retroarch would crash in the gui if I pressed a button from the DPAD on controller 2. With this change, it no longer crashes in the gui and still registers the button push.
+- MAC/IOHIDMANAGER/BUGFIX: Fix for Mayflash N64 adapter. In case last hatswitch does not match cookie. For the mayflash N64 adapter, I was getting a BAD EXC ADDRESS (in mac OS 10.13) for this line (tmp was NULL). Fruitendo would crash in the gui if I pressed a button from the DPAD on controller 2. With this change, it no longer crashes in the gui and still registers the button push.
 - MAC/COCOA: Fix mouse input - this brings back two lines of code that have been removed over time but
 appear to be required in order for mouse input to work on macOS
 - METAL/BUGFIX: GPU capture on Metal/OSX/NVidia could crash
@@ -2159,15 +2159,15 @@ appear to be required in order for mouse input to work on macOS
 - MENU/OZONE: Refactor footer display
 - MENU/OZONE: Hide thumbnail button hints when viewing file browser lists
 - MENU/OZONE/INPUT/BUGFIX: Fix undefined behaviour when using touch screen to change input remaps
-- MENU/OZONE/INPUT/BUGFIX: It turns out that Windows reports negative pointer coordinates when the mouse cursor goes beyond the left hand edge of the RetroArch window (this doesn't happen on Linux, so I never encountered this issue before!). As a result, if Ozone is currently not showing the sidebar (menu depth > 1), moving the cursor off the left edge of the window generates a false positive 'cursor in sidebar' event - which breaks menu navigation, as described in #10419. With this PR, we now handle 'cursor in sidebar' status correctly in all cases
+- MENU/OZONE/INPUT/BUGFIX: It turns out that Windows reports negative pointer coordinates when the mouse cursor goes beyond the left hand edge of the Fruitendo window (this doesn't happen on Linux, so I never encountered this issue before!). As a result, if Ozone is currently not showing the sidebar (menu depth > 1), moving the cursor off the left edge of the window generates a false positive 'cursor in sidebar' event - which breaks menu navigation, as described in #10419. With this PR, we now handle 'cursor in sidebar' status correctly in all cases
 - MENU/OZONE/INPUT/BUGFIX: Pointer input is now correctly disabled when message boxes are displayed
 - MENU/XMB: Fix thumbnail switching via 'scan' button functionality
 - ODROID GO ADVANCE: Add DRM HW context driver
 - PSL1GHT: Initial port
 - PSL1GHT/KEYBOARD: Implement PSL1GHT keyboard
-- PLAYLIST/BUGFIX: Improve handling of 'broken' playlists - RetroArch will no longer segfault when attempting to run content via a playlist entry with missing path or core path fields.
+- PLAYLIST/BUGFIX: Improve handling of 'broken' playlists - Fruitendo will no longer segfault when attempting to run content via a playlist entry with missing path or core path fields.
 - PLAYLIST/BUGFIX: Improve handling of 'broken' playlists - when a playlist entry has either core path and/or core name set to NULL, DETECT or an empty string, attempting to load content will fallback to the normal 'core selection' code (currently this happens only if both core path and core name are DETECT - this is wholly inadequate!)
-- PLAYLIST/BUGFIX: RetroArch will no longer segfault when attempting to fetch content runtime information when core path is NULL
+- PLAYLIST/BUGFIX: Fruitendo will no longer segfault when attempting to fetch content runtime information when core path is NULL
 - PLAYLIST/BUGFIX: Core name + runtime info will only be displayed on playlists and in the Information submenu if both the core path and core name fields are 'valid' (i.e. not NULL or DETECT)
 - PLAYLIST/BUGFIX: When handling entries with missing path fields, the menu sorting order now matches that of the playlist sorting order (at present, everything goes out of sync when paths are empty). Moreover, entries with missing path fields can now be 'selected', so users can remove them (currently, hitting A on such an entry immediately tries - and fails - to load the content, so the only way to remove the broken entry is via the Playlist Management > Clean Playlist feature)
 - PLAYLIST: Add optional per-playlist alphabetical sorting
@@ -2196,8 +2196,8 @@ appear to be required in order for mouse input to work on macOS
 - BUGFIX: Prevent double input when using 'return' key (hardware) to close on-screen keyboard
 - BUGFIX: Fix mouse capture hotkey not working
 - BUGFIX: Avoid overflow when calculating multiplying performance counter
-- BUGFIX: Retroarch overlay displaying "Game remap file loaded." on the overlay instead of "Core remap file loaded." when only a core remap file is present
-- CHEEVOS/BUGFIX: Achievement triggers could cause Retroarch to Crash
+- BUGFIX: Fruitendo overlay displaying "Game remap file loaded." on the overlay instead of "Core remap file loaded." when only a core remap file is present
+- CHEEVOS/BUGFIX: Achievement triggers could cause Fruitendo to Crash
 - CHEEVOS: Don't block Sameboy core because it only exposes some memory
 - CHEEVOS: Support for extended Sega CD memory
 - CHEEVOS: Show RetroAchievements Hash in content information list
@@ -2213,7 +2213,7 @@ appear to be required in order for mouse input to work on macOS
 - EMSCRIPTEN: Recreate input event listeners properly
 - FFMPEG CORE: Fix crash on seeking when using HW decoding in some cases
 - LIBRETRO: Add disk control interface API extension
-- LINUX: Avoid possible crash when running retroarch at startup
+- LINUX: Avoid possible crash when running Fruitendo at startup
 - LINUX/GLX: Fix threaded video crashes/instability because of GLX OML sync callbacks
 - LOCALIZATION: Update French translation
 - LOCALIZATION: Update Korean translation
@@ -2319,7 +2319,7 @@ appear to be required in order for mouse input to work on macOS
 - BUG/CRASH/GLSLANG: Fix glslang crashing error - managed to reproduce an issue which has been plaguing
 users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal
 - CHEEVOS: Display Unofficial and Unsupported achievement states
-- CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header
+- CHEEVOS: Pass Fruitendo and core versions through User-Agent HTTP header
 - CHEEVOS: Use PSX.EXE if SYSTEM.CNF cannot be found
 - CHEEVOS: Prevent loading state while achievements are still being fetched from server
 - CHEEVOS: Pause hardcore if core doesn't support achievements
@@ -2408,7 +2408,7 @@ users for a while, where glslang throws an assert after closing a game (and star
 - OPENBSD/POWERPC: Should build now on OpenBSD PowerPC
 - PLAYLISTS: Pressing 'Start' or long touching a playlist will bring you to a Playlist submenu where you can set a default core, setup thumbnail view, delete the playlist, etc
 - OSX: Forcibly disable Threaded Video until NSWindow concurrency issues are fixed
-- PSP: Solving issue exiting RetroArch by HOME button
+- PSP: Solving issue exiting Fruitendo by HOME button
 - SCANNER: Manual scanner, not dependent on database files
 - SCANNER/MANUAL: Add option to scan inside archives
 - SCANNER/MANUAL: Enable automatic naming of arcade content via DAT files. This is compatible with DAT files in either Logiqx XML or MAME List XML format.
@@ -2490,7 +2490,7 @@ Vulkan, so use the old onContentRectChanged callback to get notified when size c
 # (1.7.9)
 - AI SERVICE: Image mode is now much faster, it now saves the image in-memory in PNG format then passes it along to the translation service
 - BUGFIX: Touch input - When using an overlay to toggle the quick menu on touchscreen devices, we no longer get 'phantom' menu input - i.e. the old bug of hitting the toggle and instantly resuming content (or performing a save state) is fixed
-- BUGFIX: Networking - RetroArch crashed when pressing left while Relay Server Location entry was selected
+- BUGFIX: Networking - Fruitendo crashed when pressing left while Relay Server Location entry was selected
 - BUGFIX: Networking - fix memory leak that could happen at exit after a network
 operation had run
 - CHEEVOS: Improve handling of line endings when calculating CD hashes for retroachievements
@@ -2600,7 +2600,7 @@ operation had run
 - CPU FILTERS: Add Scanline2x filter
 - DINPUT: Cleanup magic numbers mess surrounding hat code
 - GAMECUBE: Add default video/audio filter directories
-- GL/MALI400: Fix menu issues on Mali 400 series GPUs, should also fix 'RetroArch flickers black on ARM Mali GPUs (Android/ARM Linux)
+- GL/MALI400: Fix menu issues on Mali 400 series GPUs, should also fix 'Fruitendo flickers black on ARM Mali GPUs (Android/ARM Linux)
 - GL/GLCORE: Use highest supported OpenGL Core version on Windows and X11
 - GL1: Ignore alpha in core video, fixes XRGB8888 rendering in some cores
 - GLCORE: Don't hardcode shader cross compilation target version but poll it. glcore would always only use the minimum target shader version, i.e. GLSL ES 3.00 for OpenGL ES 3.0+ or GLSL 1.50 for OpenGL 3.2+
@@ -2661,7 +2661,7 @@ operation had run
 - MIDI: Fix SysEx handling. We need to clear the event status after each message. Otherwise, after a SysEx message the first byte of the next event will incorrectly inherit its delta_time. This causes a delay of several seconds in nearly every MT-32 games which uses a lot of long SysEx.
 - METAL/SLANG: Added "FrameDirection" slang semantic
 - NETBSD: Audioio is now the default audio driver
-- NETBSD: Fix a segfault when starting RetroArch with an empty configuration file and LANG unset in the environment
+- NETBSD: Fix a segfault when starting Fruitendo with an empty configuration file and LANG unset in the environment
 - OSD: OSD is now drawn above the overlay with Vulkan
 - OSX: Fix regression with Cocoa GL - shader / preset loading was getting stuck in an infinite loop
 - OSX: Add improved menu resizing for window resizing
@@ -2736,7 +2736,7 @@ operation had run
 - COMMON: Fix buffer overflows in system information
 - COMMON: Add option to change screen orientation via the windowing system (Android, Windows, X11)
 - COMMON: Show CPU model name in log
-- COMMON: Add "Help -> Send Debug Info" option (and F10 hotkey) to send diagnostic info to the RetroArch team for help with problems
+- COMMON: Add "Help -> Send Debug Info" option (and F10 hotkey) to send diagnostic info to the Fruitendo team for help with problems
 - COMMON: Show GPU device name/version in log
 - COMMON: Add menu option to write log info to a file
 - COMMON: Add subsystem support for playlists. Subsystem info is automatically saved to the history playlist for easy relaunching
@@ -2774,7 +2774,7 @@ operation had run
 - MENU: Fix core video rendering when using ozone with GL cores that implement the scissor test
 - MENU: Add optional playlist sublabels (associated core + play time, where available)
 - MENU: Dropdown list settings now apply immediately
-- MENU: Add setting to require pressing the "Exit RetroArch" hotkey twice to confirm
+- MENU: Add setting to require pressing the "Exit Fruitendo" hotkey twice to confirm
 - MENU: Now able to run at higher refresh rates than 60Hz
 - MENU: Enable "Add to Favorites" without loading a core
 - MENU: Allow core name to be hidden on history/favorites playlists
@@ -2790,7 +2790,7 @@ operation had run
 - MENU/OZONE: Add wifi icon for network entries
 - MENU/QT/WIMP: Add git version and build date to Help->About window
 - MENU/QT/WIMP: Fix content loading via the file browser
-- MENU/QT/WIMP: Add new settings window to control all RetroArch settings
+- MENU/QT/WIMP: Add new settings window to control all Fruitendo settings
 - MENU/RGUI: Improve playlist titles
 - MENU/RGUI: Add option to hide associated cores in playlists
 - MENU/RGUI: Add internal upscaling option
@@ -2818,7 +2818,7 @@ operation had run
 - NETPLAY: Add hotkey option to toggle hosting on/off
 - NETWORKING: Encode URLs to allow for spaces in directory names
 - OSX: Prevent crash on exit
-- OSX: Metal is now the default video driver for the RetroArch Metal build
+- OSX: Metal is now the default video driver for the Fruitendo Metal build
 - OSX: Enable CoreAudio v3 driver for Metal
 - OSX/MACOS/IOS: Now uses the STB Unicode font driver
 - PS2: CDFS support
@@ -2980,7 +2980,7 @@ it will add all content it finds to a playlist. This way, you can install the co
 - MENU/QT/WIMP: Remove button ghostly inside highlighting
 - MENU/QT/WIMP: Initial grid view
 - MENU/QT/WIMP: Drag&drop to add new playlist items, add option to add/edit/delete playlists
-- MENU/QT/WIMP: Add menu option to update RetroArch (Windows only for now)
+- MENU/QT/WIMP: Add menu option to update Fruitendo (Windows only for now)
 - MENU/QT/WIMP: Add menu option to manage shaders
 - MENU/QT/WIMP: Add menu option to manage core options
 - MENU/XMB: Add new icons for the settings
@@ -3144,7 +3144,7 @@ that support it (so far this includes - D3D8/D3D9, OpenGL, Vulkan)
 - SHADERS: SPIRV-Cross/slang shader support for D3D11
 - SHIELD ATV: Allow the remote / gamepad takeover hack to work with the 2017 gamepad
 - SUBSYSTEM: Subsystem saves now respect the save directory
-- SUBSYSTEM: You can now load subsystem games from the menu (see https://github.com/libretro/RetroArch/pull/6282 for caveats)
+- SUBSYSTEM: You can now load subsystem games from the menu (see https://github.com/libretro/Fruitendo/pull/6282 for caveats)
 - VULKAN: Fix swapchain recreation bug on Nvidia GPUs with Windows 10 (resolved in Windows Nvidia driver version 390.77)
 - WINDOWS: Improved Unicode support (for cores/directory creation and 7zip archives)
 - WINDOWS: Show progress meter on taskbar for downloads (Windows 7 and up)
@@ -3178,7 +3178,7 @@ that support it (so far this includes - D3D8/D3D9, OpenGL, Vulkan)
 - FREEBSD: Support libusb HID input driver
 - HAIKU: Buildfix
 - INPUT: Map clear button to DEL key
-- LINUX/X11: Add RetroArch logo to window title bar
+- LINUX/X11: Add Fruitendo logo to window title bar
 - LINUX/X11: Input driver now supports new lightgun code
 - LINUX/X11: Support window transparency (requires a compositing window manager)
 - LOBBIES: Fix for crash on join netplay rooms via touch / glui
@@ -3246,7 +3246,7 @@ that support it (so far this includes - D3D8/D3D9, OpenGL, Vulkan)
 - LOCALIZATION: Update Russian translation
 - LINUX/ARMHF: Set buildbot updater URL to armhf location instead of blank string
 - LINUX/PI: Broadcom VC4: Add Videocore config option
-- LINUX/UDEV: Fix - RetroArch reads keyboard input when not focused with the udev input driver
+- LINUX/UDEV: Fix - Fruitendo reads keyboard input when not focused with the udev input driver
 - NETPLAY: Fix disconnection not fully deinitializing Netplay
 - NETPLAY: Fix lan rooms when there is more than one room
 - NETPLAY: Fix lan rooms on systems where all addresses are treated as IPv6
@@ -3321,7 +3321,7 @@ Skipped this one
 - WINDOWS: Provide default save / system / state / screenshot locations
 - LOBBIES: Show what country the host is in
 - MENU: Enable OSD text rendering for gdi and libcaca drivers
-- WINDOWS 98/ME/2K: Set default directory for MSVC 2005 RetroArch version
+- WINDOWS 98/ME/2K: Set default directory for MSVC 2005 Fruitendo version
 - WII: Better V-Sync handling, backported from SuperrSonic
 - WIIU: Exception handler rewritten
 
@@ -3334,7 +3334,7 @@ Skipped this one
 - INPUT: Add mouse index selection; ability now to select between different mice
 - INPUT: Fix 'All Users Control Menu' setting
 - LINUX: Add a tinyalsa audio driver. Doesn't require asoundlib, should be self-contained and lower-level
-- LOBBIES: Announce the RetroArch version too
+- LOBBIES: Announce the Fruitendo version too
 - LOCALIZATION: Add Traditional Chinese translation
 - LOCALIZATION: Update French translation
 - LOCALIZATION: Update Italian translation
@@ -3358,7 +3358,7 @@ Skipped this one
 - ANDROID: Improve shield portable/gamepad device grouping workaround
 - ANDROID: Runtime permission checking
 - AUDIO: Audio mixer support. Mix up to 8 streams with the game's audio
-- AUTOSAVE/SRAM - Fix bug #3829 / #4820 (https://github.com/libretro/RetroArch/issues/3829)
+- AUTOSAVE/SRAM - Fix bug #3829 / #4820 (https://github.com/libretro/Fruitendo/issues/3829)
 - ENDIANNESS: Fixed database scanning. Should fix scanning on PS3/WiiU/Wii, etc
 - LOBBIES: Fallback to filename based matching if no CRC matches are found (for people making playlists by hand)
 - LOBBIES: GUI refinement, show stop hosting when a host has been started, show disconnect when playing as client
@@ -3371,7 +3371,7 @@ Skipped this one
 - LOCALIZATION: Update/finish French translation
 - MENU: Improved rendering for XMB ribbon; using additive blending (Vulkan/GL)
 - MISC: Various frontend optimizations
-- NET: Fix bug #4703 (https://github.com/libretro/RetroArch/issues/4703)
+- NET: Fix bug #4703 (https://github.com/libretro/Fruitendo/issues/4703)
 - OSX/MACOS: Fixes serious memory leak
 - THUMBNAILS: Thumbnails show up now in Load Content -> Collection, Information -> Database
 - VIDEO: Fix threaded video regression; tickering of menu entries would no longer work

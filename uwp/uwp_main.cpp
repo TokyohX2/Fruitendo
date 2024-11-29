@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2018 - Krzysztof Haładyn
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -29,14 +29,14 @@
 #include "paths.h"
 
 #include "uwp_main.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 #include "../frontend/frontend.h"
 #include "../input/input_keymaps.h"
 #include "../verbosity.h"
 #include "uwp_func.h"
 #include "uwp_async.h"
 
-using namespace RetroArchUWP;
+using namespace FruitendoUWP;
 
 using namespace concurrency;
 using namespace Windows::ApplicationModel;
@@ -386,14 +386,14 @@ void App::Uninitialize()
 {
    main_exit(NULL);
 
-   /* If this instance of RetroArch was started from another app/frontend
+   /* If this instance of Fruitendo was started from another app/frontend
     * and the frontend passed "launchOnExit" parameter:
     * 1. launch the app specified in "launchOnExit", most likely the
-    *    same app that started RetroArch
-    * 2. RetroArch goes to background and RunAsyncAndCatchErrors doesn't
+    *    same app that started Fruitendo
+    * 2. Fruitendo goes to background and RunAsyncAndCatchErrors doesn't
     *    return, because the target app is immediately started.
     * 3. Explicitly exit in App::OnEnteredBackground if
-    *    m_launchOnExitShutdown is set. Otherwise, RetroArch doesn't
+    *    m_launchOnExitShutdown is set. Otherwise, Fruitendo doesn't
     *    properly shutdown.
     */
    if (m_launchOnExit != nullptr && !m_launchOnExit->IsEmpty())
@@ -485,7 +485,7 @@ void App::OnSuspending(Platform::Object^ sender, SuspendingEventArgs^ args)
    /* This function will ensure that configs are saved in case the app
     * is sent to background or terminated for saving configs on quit
     * for saving configs on quit now configs will be saved in
-    * `retroarch_main_quit` at `retroarch.c`
+    * `retroarch_main_quit` at `Fruitendo.c`
     * If this function is called because of app closed by quit,
     * the below code must be ignored
 
@@ -543,7 +543,7 @@ void App::OnResuming(Platform::Object^ sender, Platform::Object^ args)
 
 void App::OnEnteredBackground(Platform::Object^ sender, EnteredBackgroundEventArgs^ args)
 {
-   /* RetroArch entered background because another app/frontend
+   /* Fruitendo entered background because another app/frontend
     * was launched on exit, so properly quit */
    if (m_launchOnExitShutdown)
       CoreApplication::Exit();
@@ -757,9 +757,9 @@ void App::ParseProtocolArgs(Windows::ApplicationModel::Activation::IActivatedEve
 
    /* If the app is activated using protocol,
     * it is expected to be in this format:
-    * "retroarch:?cmd=<RetroArch CLI arguments>&launchOnExit=<app to launch on exit>"
+    * "Fruitendo:?cmd=<Fruitendo CLI arguments>&launchOnExit=<app to launch on exit>"
     * For example:
-    * retroarch:?cmd=retroarch -L cores\core_libretro.dll "c:\mypath\path with spaces\game.rom"&launchOnExit=LaunchApp:
+    * Fruitendo:?cmd=Fruitendo -L cores\core_libretro.dll "c:\mypath\path with spaces\game.rom"&launchOnExit=LaunchApp:
     * "cmd" and "launchOnExit" are optional. If none specified,
     * it will normally launch into menu
     */
@@ -773,8 +773,8 @@ void App::ParseProtocolArgs(Windows::ApplicationModel::Activation::IActivatedEve
       {
          IWwwFormUrlDecoderEntry^ arg = query->GetAt(i);
 
-         /* Parse RetroArch command line string */
-         /* This allows a frotend to quit RetroArch, which in turn allows it
+         /* Parse Fruitendo command line string */
+         /* This allows a frotend to quit Fruitendo, which in turn allows it
           * to launch a different game. */
          if (arg->Name == "forceExit")
             CoreApplication::Exit();
@@ -790,7 +790,7 @@ void App::ParseProtocolArgs(Windows::ApplicationModel::Activation::IActivatedEve
             while (iss >> std::quoted(s, '"', (char)0))
                argvTmp->push_back(s);
          }
-         /* If RetroArch UWP app is started using protocol
+         /* If Fruitendo UWP app is started using protocol
           * with argument "launchOnExit", this gives an option
           * to launch another app on RA exit,
           * making it easy to integrate RA with other UWP frontends */
@@ -852,7 +852,7 @@ extern "C" {
 
       /* Setting the window size may sometimes fail "because UWP"
        * (i.e. we are on device with no windows, or Windows sandbox decides the window can't be that small)
-       * so in case resizing fails we just send a resized event back to RetroArch with old size
+       * so in case resizing fails we just send a resized event back to Fruitendo with old size
        * (and report success because otherwise it bails out hard about failing
        * to set video mode) */
       App::GetInstance()->SetWindowResized();
@@ -950,7 +950,7 @@ extern "C" {
 
       /* This function must be performed within UI thread,
        * otherwise it will cause a crash in specific cases
-       * https://github.com/libretro/RetroArch/issues/13491 */
+       * https://github.com/libretro/Fruitendo/issues/13491 */
       float surface_scale    = 0;
       int ret                = -1;
       volatile bool finished = false;
@@ -994,7 +994,7 @@ extern "C" {
 
       /* This function must be performed within UI thread,
        * otherwise it will cause a crash in specific cases
-       * https://github.com/libretro/RetroArch/issues/13491 */
+       * https://github.com/libretro/Fruitendo/issues/13491 */
       float surface_scale    = 0;
       int returnValue        = -1;
       volatile bool finished = false;

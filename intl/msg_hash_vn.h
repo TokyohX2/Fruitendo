@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Tải/cập nhật tiện ích và thành phần của RetroArch."
+   "Tải/cập nhật tiện ích và thành phần của Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Khởi động lại RetroArch."
+   "Khởi động lại Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,11 +207,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Thoát RetroArch. Lưu thiết lập khi thoát được bật."
+   "Thoát Fruitendo. Lưu thiết lập khi thoát được bật."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Thoát RetroArch. Lưu thiết lập khi thoát bị tắt."
+   "Thoát Fruitendo. Lưu thiết lập khi thoát bị tắt."
    )
 
 /* Main Menu > Load Core */
@@ -592,7 +592,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Phiên bản RetroArch"
+   "Phiên bản Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -2667,7 +2667,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Khởi động lại RetroArch"
+   "Khởi động lại Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_TOUCH_ENABLE,

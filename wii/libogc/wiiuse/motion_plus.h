@@ -4,7 +4,7 @@
  */
 
 /* This source as presented is a modified version of original wiiuse for use
- * with RetroArch, and must not be confused with the original software. */
+ * with Fruitendo, and must not be confused with the original software. */
 
 #ifndef MOTION_PLUS_H_INCLUDED
 #define MOTION_PLUS_H_INCLUDED

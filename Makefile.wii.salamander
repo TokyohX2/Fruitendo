@@ -1,6 +1,6 @@
 ###
 ##
-# Makefile for RetroArch Wii.
+# Makefile for Fruitendo Wii.
 ##
 
 DEBUG              = 0
@@ -34,8 +34,8 @@ ifeq ("$(wildcard $(ELF2DOL))","")
    ELF2DOL = $(DEVKITPRO)/tools/bin/elf2dol$(EXE_EXT)
 endif
 
-DOL_TARGET := retroarch-salamander_wii.dol
-ELF_TARGET := retroarch-salamander_wii.elf
+DOL_TARGET := Fruitendo-salamander_wii.dol
+ELF_TARGET := Fruitendo-salamander_wii.elf
 
 INCLUDE := -I. -Ilibretro-common/include -Ilibretro-common/include/compat/zlib
 ifeq ($(EXTERNAL_LIBOGC), 1)

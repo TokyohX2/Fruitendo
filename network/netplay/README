@@ -1,6 +1,6 @@
-This is RetroArch's Netplay code. RetroArch Netplay allows a second player to
+This is Fruitendo's Netplay code. Fruitendo Netplay allows a second player to
 be connected via the Internet/LAN, rather than local at the same computer. Netplay
-in RetroArch is guaranteed* to work with perfect synchronization given a few
+in Fruitendo is guaranteed* to work with perfect synchronization given a few
 minor constraints:
 
 (1) The core is deterministic,
@@ -11,7 +11,7 @@ Furthermore, if the core supports serialization (save states), Netplay allows
 for latency and clock drift, providing both host and client with a smooth
 experience, as well as the option of more than two players.
 
-Netplay in RetroArch works by expecting input to come delayed from the network,
+Netplay in Fruitendo works by expecting input to come delayed from the network,
 then rewinding and re-playing with the delayed input to get a consistent state.
 So long as both sides agree on which frame is which, it should be impossible
 for them to become de-synced, since each input event always happens at the

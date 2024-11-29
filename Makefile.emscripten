@@ -1,7 +1,7 @@
 HAVE_STATIC_DUMMY ?= 0
 ifeq ($(TARGET),)
 ifeq ($(LIBRETRO),)
-TARGET := retroarch.js
+TARGET := Fruitendo.js
 LIBRETRO = dummy
 else
 TARGET := $(LIBRETRO)_libretro.js

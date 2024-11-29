@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  *  Copyright (C) 2014-2017 - Ali Bouhlel
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -44,7 +44,7 @@
 #include "../../file_path_special.h"
 #include "../../defaults.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 
 #include "ctr/ctr_debug.h"
@@ -62,14 +62,14 @@
 #endif
 
 static enum frontend_fork ctr_fork_mode = FRONTEND_FORK_NONE;
-static const char* elf_path_cst         = "sdmc:/retroarch/retroarch.3dsx";
+static const char* elf_path_cst         = "sdmc:/Fruitendo/Fruitendo.3dsx";
 
 #ifdef IS_SALAMANDER
 static void get_first_valid_core(char* path_return, size_t len)
 {
    struct dirent* ent;
    const char* extension = envIsHomebrew() ? ".3dsx" : ".cia";
-   DIR              *dir = opendir("sdmc:/retroarch/cores");
+   DIR              *dir = opendir("sdmc:/Fruitendo/cores");
 
    path_return[0]        = '\0';
 
@@ -82,7 +82,7 @@ static void get_first_valid_core(char* path_return, size_t len)
          if (strlen(ent->d_name) > strlen(extension)
                && !strcmp(ent->d_name + strlen(ent->d_name) - strlen(extension), extension))
          {
-            size_t _len = strlcpy(path_return, "sdmc:/retroarch/cores/", len);
+            size_t _len = strlcpy(path_return, "sdmc:/Fruitendo/cores/", len);
             strlcpy(path_return + _len, ent->d_name, len - _len);
             break;
          }

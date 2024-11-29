@@ -32,7 +32,7 @@
  */
 
 /* This source as presented is a modified version of original wiiuse for use
- * with RetroArch, and must not be confused with the original software. */
+ * with Fruitendo, and must not be confused with the original software. */
 
 #ifndef CLASSIC_H_INCLUDED
 #define CLASSIC_H_INCLUDED

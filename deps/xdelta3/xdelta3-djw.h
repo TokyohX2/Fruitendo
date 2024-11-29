@@ -17,7 +17,7 @@
 #ifndef _XDELTA3_DJW_H_
 #define _XDELTA3_DJW_H_
 
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 
 /* The following people deserve much credit for the algorithms and

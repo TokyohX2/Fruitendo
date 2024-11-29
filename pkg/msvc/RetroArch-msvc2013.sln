@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetroArch-msvc2013", "msvc-2013/RetroArch-msvc2013.vcxproj", "{C95DA947-1EAF-4D60-A06A-61EF1E8B8A95}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fruitendo-msvc2013", "msvc-2013/Fruitendo-msvc2013.vcxproj", "{C95DA947-1EAF-4D60-A06A-61EF1E8B8A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

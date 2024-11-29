@@ -35,7 +35,7 @@ GCW0_LIB_DIR         ?= $(TOOLCHAIN_DIR)/usr/mipsel-rs90-linux-musl/sysroot/usr/
 #########################
 #########################
 
-PACKAGE_NAME = retroarch
+PACKAGE_NAME = Fruitendo
 
 DEBUG ?= 0
 
@@ -116,7 +116,7 @@ HAVE_NEAREST_RESAMPLER = 1
 HAVE_CORE_INFO_CACHE = 1
 
 OS = Linux
-TARGET = retroarch
+TARGET = Fruitendo
 OPK_NAME = retroarch_rs90_odbeta.opk
 
 OBJ :=
@@ -172,13 +172,13 @@ RARCH_OBJ := $(addprefix $(OBJDIR)/,$(OBJ))
 
 define DESKTOP_ENTRY
 [Desktop Entry]
-Name=RetroArch
+Name=Fruitendo
 Comment=Frontend for emulators, game engines
-Exec=retroarch
+Exec=Fruitendo
 Terminal=false
 Type=Application
 StartupNotify=true
-Icon=retroarch
+Icon=Fruitendo
 Categories=emulators;
 X-OD-NeedsDownscaling=true
 endef
@@ -223,12 +223,12 @@ clean:
 opk: $(TARGET)
 	echo "$$DESKTOP_ENTRY" > default.rs90.desktop
 	rm -f $(OPK_NAME)
-	cp media/ico_src/icon32.png retroarch.png
+	cp media/ico_src/icon32.png Fruitendo.png
 ifeq ($STRIP_BIN, 1)
-	$(STRIP) --strip-unneeded retroarch
+	$(STRIP) --strip-unneeded Fruitendo
 endif
-	$(GCW0_MK_SQUASH_FS) retroarch default.rs90.desktop retroarch.png $(OPK_NAME) -all-root -no-xattrs -noappend -no-exports
-	rm -f default.rs90.desktop retroarch.png
+	$(GCW0_MK_SQUASH_FS) Fruitendo default.rs90.desktop Fruitendo.png $(OPK_NAME) -all-root -no-xattrs -noappend -no-exports
+	rm -f default.rs90.desktop Fruitendo.png
 
 .PHONY: all clean opk
 

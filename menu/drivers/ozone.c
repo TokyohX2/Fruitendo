@@ -1,4 +1,4 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2014-2017 - Jean-André Santoni
  *  Copyright (C) 2016-2019 - Brad Parker
@@ -6,15 +6,15 @@
  *  Copyright (C) 2018-2020 - natinusala
  *  Copyright (C) 2019      - Patrick Scheurenbrand
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -1022,25 +1022,25 @@ static float ozone_border_0_purple_rain[16]        = COLOR_HEX_TO_FLOAT(0xC3A0E0
 static float ozone_border_1_purple_rain[16]        = COLOR_HEX_TO_FLOAT(0x8C3DCC, 1.0f);
 
 static ozone_theme_t ozone_theme_light = {
-   COLOR_HEX_TO_FLOAT(0xEBEBEB, 1.00f),                  /* background */
+   COLOR_HEX_TO_FLOAT(0x8B668B, 1.00f),                  /* background (lilac) */
    ozone_background_libretro_running_light,              /* background_libretro_running */
 
-   COLOR_HEX_TO_FLOAT(0x2B2B2B, 1.00f),                  /* header_footer_separator */
-   COLOR_HEX_TO_FLOAT(0x333333, 1.00f),                  /* text */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.00f),                  /* selection */
-   COLOR_HEX_TO_FLOAT(0x10BEC5, 1.00f),                  /* selection_border */
-   COLOR_HEX_TO_FLOAT(0xCDCDCD, 1.00f),                  /* entries_border */
-   COLOR_HEX_TO_FLOAT(0x333333, 1.00f),                  /* entries_icon */
-   COLOR_HEX_TO_FLOAT(0x374CFF, 1.00f),                  /* text_selected */
-   COLOR_HEX_TO_FLOAT(0xF0F0F0, 1.00f),                  /* message_background */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.00f),                  /* header_footer_separator (mint green) */
+   COLOR_HEX_TO_FLOAT(0x4B0082, 1.00f),                  /* text (dark purple) */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.00f),                  /* selection (mint green) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.00f),                  /* selection_border (dark green) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.00f),                  /* entries_border (dark green) */
+   COLOR_HEX_TO_FLOAT(0x4B0082, 1.00f),                  /* entries_icon (dark purple) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.00f),                  /* text_selected (dark green) */
+   COLOR_HEX_TO_FLOAT(0xC8A2C8, 1.00f),                  /* message_background (lilac) */
 
-   0x333333FF,                                           /* text_rgba */
-   0x333333FF,                                           /* text_sidebar_rgba */
-   0x374CFFFF,                                           /* text_selected_rgba */
-   0x878787FF,                                           /* text_sublabel_rgba */
+   0x4B0082FF,                                           /* text_rgba (dark purple) */
+   0x4B0082FF,                                           /* text_sidebar_rgba */
+   0x006400FF,                                           /* text_selected_rgba (dark green) */
+   0x4B0082FF,                                           /* text_sublabel_rgba */
 
    /* Screensaver 'tint' (RGB24) */
-   0xEBEBEB,                                             /* screensaver_tint */
+   0xC8A2C8,                                             /* screensaver_tint (lilac) */
 
    ozone_sidebar_background_light,                       /* sidebar_background */
    ozone_sidebar_gradient_top_light,                     /* sidebar_top_gradient */
@@ -1051,29 +1051,29 @@ static ozone_theme_t ozone_theme_light = {
 
    {0},                                                  /* textures */
 
-   "light"                                               /* name */
+   "Tokyoh's Default"                                    /* name */
 };
 
 static ozone_theme_t ozone_theme_dark = {
-   COLOR_HEX_TO_FLOAT(0x2D2D2D, 1.00f),                  /* background */
+   COLOR_HEX_TO_FLOAT(0x4B0082, 1.00f),                  /* background (violet) */
    ozone_background_libretro_running_dark,               /* background_libretro_running */
 
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.00f),                  /* header_footer_separator */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.00f),                  /* text */
-   COLOR_HEX_TO_FLOAT(0x212227, 1.00f),                  /* selection */
-   COLOR_HEX_TO_FLOAT(0x2DA3CB, 1.00f),                  /* selection_border */
-   COLOR_HEX_TO_FLOAT(0x51514F, 1.00f),                  /* entries_border */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.00f),                  /* entries_icon */
-   COLOR_HEX_TO_FLOAT(0x00D9AE, 1.00f),                  /* text_selected */
-   COLOR_HEX_TO_FLOAT(0x464646, 1.00f),                  /* message_background */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.00f),                  /* header_footer_separator (dark green) */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.00f),                  /* text (mint green) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.00f),                  /* selection (dark green) */
+   COLOR_HEX_TO_FLOAT(0xC8A2C8, 1.00f),                  /* selection_border (lilac) */
+   COLOR_HEX_TO_FLOAT(0xC8A2C8, 1.00f),                  /* entries_border (lilac) */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.00f),                  /* entries_icon (mint green) */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.00f),                  /* text_selected (mint green) */
+   COLOR_HEX_TO_FLOAT(0x9400D3, 1.00f),                  /* message_background (violet) */
 
-   0xFFFFFFFF,                                           /* text_rgba */
-   0xFFFFFFFF,                                           /* text_sidebar_rgba */
-   0x00FFC5FF,                                           /* text_selected_rgba */
-   0x9F9FA1FF,                                           /* text_sublabel_rgba */
+   0x98FF98FF,                                           /* text_rgba (mint green) */
+   0x98FF98FF,                                           /* text_sidebar_rgba */
+   0x98FF98FF,                                           /* text_selected_rgba (mint green) */
+   0xC8A2C8FF,                                           /* text_sublabel_rgba (lilac) */
 
    /* Screensaver 'tint' (RGB24) */
-   0xFFFFFF,                                             /* screensaver_tint */
+   0x9400D3,                                             /* screensaver_tint (violet) */
 
    ozone_sidebar_background_dark,                        /* sidebar_background */
    ozone_sidebar_gradient_top_dark,                      /* sidebar_top_gradient */
@@ -1084,7 +1084,7 @@ static ozone_theme_t ozone_theme_dark = {
 
    {0},                                                  /* textures */
 
-   "dark"                                                /* name */
+   "Tokyoh's Dark"                                       /* name */
 };
 
 static ozone_theme_t ozone_theme_nord = {
@@ -1747,7 +1747,7 @@ static unsigned ozone_get_system_theme(void)
    }
    return 0;
 #else
-   return DEFAULT_OZONE_COLOR_THEME;
+   return OZONE_COLOR_THEME_BASIC_BLACK;
 #endif
 }
 
@@ -1767,7 +1767,7 @@ static void ozone_set_background_running_opacity(
    /* When content is running, background is a
     * gradient that from top to bottom transitions
     * from maximum to minimum opacity
-    * > RetroArch default 'framebuffer_opacity'
+    * > Fruitendo default 'framebuffer_opacity'
     *   is 0.900. At this setting:
     *   - Background top has an alpha of 1.0
     *   - Background bottom has an alpha of 0.75 */
@@ -2557,7 +2557,7 @@ static const char *ozone_entries_icon_texture_path(unsigned id)
 #if defined(HAVE_LAKKA)
          return "lakka.png";
 #else
-         return "retroarch.png";
+         return "Fruitendo.png";
 #endif
       case OZONE_ENTRIES_ICONS_TEXTURE_SETTINGS:
          return "settings.png";
@@ -9333,7 +9333,7 @@ static void ozone_set_layout(
 static void ozone_context_reset(void *data, bool is_threaded)
 {
    static const char *OZONE_TAB_TEXTURES_FILES[OZONE_TAB_TEXTURE_LAST] = {
-      "retroarch.png", /* MAIN_MENU */
+      "Fruitendo.png", /* MAIN_MENU */
       "settings.png",  /* SETTINGS_TAB */
       "history.png",   /* HISTORY_TAB */
       "favorites.png", /* FAVORITES_TAB */
@@ -9346,7 +9346,7 @@ static void ozone_context_reset(void *data, bool is_threaded)
       "database.png"   /* EXPLORE_TAB */
    };
    static const char *OZONE_TEXTURES_FILES[OZONE_TEXTURE_LAST]         = {
-      "retroarch.png",
+      "Fruitendo.png",
       "cursor_border.png"
    };
    unsigned i;
@@ -11826,7 +11826,7 @@ static void ozone_frame(void *data, video_frame_info_t *video_info)
       if (draw_osk)
       {
          struct menu_state *menu_st  = menu_state_get_ptr();
-         const char *label           = menu_st->input_dialog_kb_label;
+         const char *label           = menu_input_dialog_get_label_buffer();
          const char *str             = menu_input_dialog_get_buffer();
 
          ozone_draw_osk(ozone,

@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Κατεβάστε πρόσθετα, στοιχεία και περιεχόμενο για το RetroArch."
+   "Κατεβάστε πρόσθετα, στοιχεία και περιεχόμενο για το Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Επανεκκινήστε την εφαρμογή RetroArch."
+   "Επανεκκινήστε την εφαρμογή Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,15 +207,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Τερματισμός της εφαρμογής RetroArch. Η αποθήκευση ρυθμίσεων κατά την έξοδο είναι ενεργοποιημένη."
+   "Τερματισμός της εφαρμογής Fruitendo. Η αποθήκευση ρυθμίσεων κατά την έξοδο είναι ενεργοποιημένη."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Τερματισμός της εφαρμογής RetroArch. Η αποθήκευση ρυθμίσεων κατά την έξοδο είναι απενεργοποιημένη."
+   "Τερματισμός της εφαρμογής Fruitendo. Η αποθήκευση ρυθμίσεων κατά την έξοδο είναι απενεργοποιημένη."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Τερματισμός του RetroArch. Τερματίζοντας το πρόγραμμα απρόοπτα (SIGKILL κτλ) θα τερματίσει το RetroArch χωρίς αποθήκευση των ρυθμίσεων. Στα συστήματα βασισμένα στο Unix, το SIGINT/SIGTERM επιτρέπει την ομαλή απαρχικοποίηση που περιλαμβάνει την αποθήκευση ρυθμίσεων."
+   "Τερματισμός του Fruitendo. Τερματίζοντας το πρόγραμμα απρόοπτα (SIGKILL κτλ) θα τερματίσει το Fruitendo χωρίς αποθήκευση των ρυθμίσεων. Στα συστήματα βασισμένα στο Unix, το SIGINT/SIGTERM επιτρέπει την ομαλή απαρχικοποίηση που περιλαμβάνει την αποθήκευση ρυθμίσεων."
    )
 
 /* Main Menu > Load Core */
@@ -608,7 +608,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Έκδοση RetroArch"
+   "Έκδοση Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1386,7 +1386,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Πυρήνας Libretro. Επιλέξτε αυτό το αρχείο για να φορτώσετε αυτόν τον πυρήνα στο RetroArch."
+   "Πυρήνας Libretro. Επιλέξτε αυτό το αρχείο για να φορτώσετε αυτόν τον πυρήνα στο Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -2187,7 +2187,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Μέγιστος αριθμός χρηστών που υποστηρίζεται από το RetroArch."
+   "Μέγιστος αριθμός χρηστών που υποστηρίζεται από το Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_SORT_BY_CONTROLLER_ENABLE,
@@ -2422,7 +2422,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Στέλνει διαγνωστικές πληροφορίες σχετικά με τη συσκευή σας και τις ρυθμίσεις του RetroArch στους διακομιστές μας για ανάλυση."
+   "Στέλνει διαγνωστικές πληροφορίες σχετικά με τη συσκευή σας και τις ρυθμίσεις του Fruitendo στους διακομιστές μας για ανάλυση."
    )
 
 /* Settings > Input > Port # Controls */
@@ -4717,7 +4717,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "Σχετικά με το RetroArch"
+   "Σχετικά με το Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -4861,7 +4861,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Ενημέρωση RetroArch (Ασταθής Έκδοση)"
+   "Ενημέρωση Fruitendo (Ασταθής Έκδοση)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -5111,7 +5111,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HELP_SEND_DEBUG_INFO,
-   "Στέλνει διαγνωστικές πληροφορίες σχετικά με τη συσκευή σας και τις ρυθμίσεις του RetroArch στους διακομιστές μας για ανάλυση."
+   "Στέλνει διαγνωστικές πληροφορίες σχετικά με τη συσκευή σας και τις ρυθμίσεις του Fruitendo στους διακομιστές μας για ανάλυση."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGEMENT,
@@ -5332,11 +5332,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_NOT_RETROARCH,
-   "Η προσπάθεια σύνδεσης netplay απέτυχε επειδή ο συμπέκτης δεν χρησιμοποιεί το RetroArch ή χρησιμοποιεί πιο παλιά έκδοση."
+   "Η προσπάθεια σύνδεσης netplay απέτυχε επειδή ο συμπέκτης δεν χρησιμοποιεί το Fruitendo ή χρησιμοποιεί πιο παλιά έκδοση."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_VERSIONS,
-   "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο συμπαίκτης netplay χρησιμοποιεί διαφορετική έκδοση του RetroArch. Εάν προκύψουν προβλήματα χρησιμοποιήστε την ίδια έκδοση."
+   "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ο συμπαίκτης netplay χρησιμοποιεί διαφορετική έκδοση του Fruitendo. Εάν προκύψουν προβλήματα χρησιμοποιήστε την ίδια έκδοση."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_CORES,
@@ -5871,7 +5871,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Επανεκκίνηση RetroArch"
+   "Επανεκκίνηση Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,

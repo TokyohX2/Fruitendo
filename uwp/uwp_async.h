@@ -1,4 +1,4 @@
-/* Copyright  (C) 2018-2019 The RetroArch team
+/* Copyright  (C) 2018-2019 The Fruitendo team
 *
 * ---------------------------------------------------------------------------------------
 * The following license statement only applies to this file (uwp_async.h).
@@ -33,7 +33,7 @@ namespace
       * I really appreciate all the effort you took to not provide any
       * synchronous file APIs and block all attempts to synchronously
       * wait for the results of async tasks for "smooth user experience",
-      * but I'm not going to run and rewrite all RetroArch cores for
+      * but I'm not going to run and rewrite all Fruitendo cores for
       * async I/O. I hope you like this hack I made instead.
       */
    template<typename T>

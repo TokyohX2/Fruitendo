@@ -286,7 +286,7 @@ RETRO_API void VIDEOPROC_CORE_PREFIX(retro_set_environment)(retro_environment_t 
 
    cb(RETRO_ENVIRONMENT_SET_SUPPORT_NO_GAME, &no_content);
 
-   /* Allows retroarch to seed the previous values */
+   /* Allows Fruitendo to seed the previous values */
    VIDEOPROC_CORE_PREFIX(environment_cb)(RETRO_ENVIRONMENT_SET_VARIABLES, envvars);
 
    /* Enumerate all real devices */

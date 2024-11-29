@@ -16,7 +16,7 @@
 #ifndef _XDELTA3_HASH_H_
 #define _XDELTA3_HASH_H_
 
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 #include "xdelta3-internal.h"
 

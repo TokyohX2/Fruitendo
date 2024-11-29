@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 Daniel De Matteis
  *  Copyright (C) 2023 Jesse Talavera-Greenberg
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -183,11 +183,11 @@ static void wasapi_set_format(WAVEFORMATEXTENSIBLE *wf,
 
 /**
  * @param[in] format The format to check.
- * @return \c true if \c format is suitable for RetroArch.
+ * @return \c true if \c format is suitable for Fruitendo.
  */
 static bool wasapi_is_format_suitable(const WAVEFORMATEXTENSIBLE *format)
 {
-   /* RetroArch only supports mono mic input and stereo speaker output */
+   /* Fruitendo only supports mono mic input and stereo speaker output */
    if (!format || format->Format.nChannels == 0 || format->Format.nChannels > 2)
       return false;
 
@@ -200,7 +200,7 @@ static bool wasapi_is_format_suitable(const WAVEFORMATEXTENSIBLE *format)
          break;
       case WAVE_FORMAT_EXTENSIBLE:
          if (!(!memcmp(&format->SubFormat, &KSDATAFORMAT_SUBTYPE_IEEE_FLOAT, sizeof(GUID))))
-            /* RetroArch doesn't support any other subformat */
+            /* Fruitendo doesn't support any other subformat */
             return false;
 
          if (format->Format.wBitsPerSample != 32)
@@ -257,7 +257,7 @@ static bool wasapi_select_device_format(WAVEFORMATEXTENSIBLE *format, IAudioClie
          }
          else
          {
-            RARCH_ERR("[WASAPI]: Windows suggested a format, but RetroArch can't use it.\n");
+            RARCH_ERR("[WASAPI]: Windows suggested a format, but Fruitendo can't use it.\n");
          }
          break;
       case AUDCLNT_E_UNSUPPORTED_FORMAT:
@@ -265,12 +265,12 @@ static bool wasapi_select_device_format(WAVEFORMATEXTENSIBLE *format, IAudioClie
          /* The requested format is unsupported
           * and Windows was unable to suggest another.
           * Usually happens with exclusive mode.
-          * RetroArch will try selecting a format. */
+          * Fruitendo will try selecting a format. */
          size_t i, j;
          bool preferred_formats[2];
          preferred_formats[0] = (format->Format.wFormatTag == WAVE_FORMAT_EXTENSIBLE);
          preferred_formats[1] = (format->Format.wFormatTag != WAVE_FORMAT_EXTENSIBLE);
-         RARCH_WARN("[WASAPI]: Requested format not supported, and Windows could not suggest one. RetroArch will do so.\n");
+         RARCH_WARN("[WASAPI]: Requested format not supported, and Windows could not suggest one. Fruitendo will do so.\n");
          for (i = 0; i < ARRAY_SIZE(preferred_formats); ++i)
          {
             static const unsigned preferred_rates[] = { 48000, 44100, 96000, 192000, 32000 };
@@ -284,7 +284,7 @@ static bool wasapi_select_device_format(WAVEFORMATEXTENSIBLE *format, IAudioClie
                {
                   *format = possible_format;
                   result  = true;
-                  RARCH_DBG("[WASAPI]: RetroArch suggests a format of (%s, %u-channel, %uHz).\n",
+                  RARCH_DBG("[WASAPI]: Fruitendo suggests a format of (%s, %u-channel, %uHz).\n",
                         wave_format_name(format),
                         format->Format.nChannels,
                         format->Format.nSamplesPerSec);

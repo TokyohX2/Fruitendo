@@ -1,10 +1,10 @@
-.\" retroarch.6:
+.\" Fruitendo.6:
 
-.TH  "RETROARCH" "6" "November 1, 2011" "RETROARCH" "System Manager's Manual: retroarch"
+.TH  "Fruitendo" "6" "November 1, 2011" "Fruitendo" "System Manager's Manual: Fruitendo"
 
 .SH NAME
 
-retroarch \- The reference frontend for the libretro API.
+Fruitendo \- The reference frontend for the libretro API.
 
 .SH SYNOPSIS
 
@@ -22,18 +22,18 @@ It also features a simple built-in UI.
 
 .TP
 \fBLoad content, using a specific libretro core and config file.\fR
-retroarch --config ~/.config/retroarch/retroarch.cfg --libretro /path/to/libretro/core.so /path/to/rom.rom --verbose
+Fruitendo --config ~/.config/Fruitendo/Fruitendo.cfg --libretro /path/to/libretro/core.so /path/to/rom.rom --verbose
 
 .TP
-\fBNo command line options will start RetroArch in menu mode.\fR
-retroarch
+\fBNo command line options will start Fruitendo in menu mode.\fR
+Fruitendo
 
 .TP
-\fBStart RetroArch in menu mode, with verbose logging.\fR
-retroarch --menu --verbose
+\fBStart Fruitendo in menu mode, with verbose logging.\fR
+Fruitendo --menu --verbose
 
 .SH "Menu"
-Refers to the built-in GUI system for RetroArch. It is aimed at being controlled with a gamepad only.
+Refers to the built-in GUI system for Fruitendo. It is aimed at being controlled with a gamepad only.
 
 .SH "DEFAULT CONTROLS"
 By default, only keyboard input is accepted.
@@ -55,55 +55,55 @@ Prints help text.
 Starts directly in in-game menu if enabled.
 Does not require content or libretro implementation to be set.
 These can be loaded afterwards in the menu.
-If no arguments are passed to retroarch, it is equivalent to calling retroarch with this as only argument.
+If no arguments are passed to Fruitendo, it is equivalent to calling Fruitendo with this as only argument.
 
 .TP
 \fB--features\fR
-Prints available features compiled into RetroArch, then exits.
+Prints available features compiled into Fruitendo, then exits.
 
 .TP
 \fB-L PATH, --libretro PATH\fR
 Path to a libretro implementation which is to be used.
 This option will override any setting in a config file.
-This option is only available if RetroArch is compiled with dynamic libretro loading.
+This option is only available if Fruitendo is compiled with dynamic libretro loading.
 
 .TP
 \fB--save PATH, -s PATH\fR
 Overrides the path used for save ram (*.srm) (deprecated).
 Without this flag, the save ram path will be inferred from the rom path name, and put in the same directory as the rom file with the extension replaced with '.srm'.
-If PATH is a directory, RetroArch will treat this as the save file directory, where the save file name will be inferred from the rom name.
+If PATH is a directory, Fruitendo will treat this as the save file directory, where the save file name will be inferred from the rom name.
 
 .TP
 \fB--savestate PATH, -S PATH\fR
 Overrides the path used for save states (deprecated).
 Without this flag, the save state path will be inferred from the rom path name, and put in the same directory as the rom file with the extension replace with '.state'.
-If PATH is a directory, RetroArch will treat this as the save state directory, where the state file name will be inferred from the rom name.
+If PATH is a directory, Fruitendo will treat this as the save state directory, where the state file name will be inferred from the rom name.
 Do note that save states are bound to the libretro implementation being used. Using a different libretro could invalidate the save state file.
 
 .TP
 \fB--fullscreen, -f\fR
-Always starts RetroArch in fullscreen. Disregards settings in configuration file.
+Always starts Fruitendo in fullscreen. Disregards settings in configuration file.
 
 .TP
 \fB--config PATH, -c PATH\fR
 Sets the configuration file path. \fBretroarch\fR will use this path to load the configuration file.
 Should this not be defined, \fBretroarch\fR will look in platform specific paths to attempt finding the config file.
-/etc/retroarch.cfg (when installed), or retroarch.cfg in the source tarball serves as a skeleton configuration file.
-/etc/retroarch.cfg should serve as a skeleton config only.
+/etc/Fruitendo.cfg (when installed), or Fruitendo.cfg in the source tarball serves as a skeleton configuration file.
+/etc/Fruitendo.cfg should serve as a skeleton config only.
 
 .IP
-Unix-like systems will look in $XDG_CONFIG_HOME/retroarch/retroarch.cfg first. If $XDG_CONFIG_HOME is not defined, it is assumed to be $HOME/.config as per specification. Then it will try $HOME/.retroarch.cfg. If both paths fail, RetroArch will try to create a new, default config file in $XDG_CONFIG_HOME/retroarch/retroarch.cfg (or the $HOME/.config default for $XDG_CONFIG_HOME).
+Unix-like systems will look in $XDG_CONFIG_HOME/Fruitendo/Fruitendo.cfg first. If $XDG_CONFIG_HOME is not defined, it is assumed to be $HOME/.config as per specification. Then it will try $HOME/.Fruitendo.cfg. If both paths fail, Fruitendo will try to create a new, default config file in $XDG_CONFIG_HOME/Fruitendo/Fruitendo.cfg (or the $HOME/.config default for $XDG_CONFIG_HOME).
 If all fails, default settings will be assumed.
-If RetroArch creates a new default config file, it will attempt to load the skeleton config file /etc/retroarch.cfg and use that as a basis.
+If Fruitendo creates a new default config file, it will attempt to load the skeleton config file /etc/Fruitendo.cfg and use that as a basis.
 This allows distributions to set up default paths for libretro cores, and similar things.
 A configuration file does not need to define every possible option, only those which should be overridden.
 
-If config_save_on_exit = true is set in the config file, RetroArch will overwrite the config file on exit. Settings can be changed from within the menu.
-If RetroArch overwrites a config file, formatting, comments, etc will be lost.
-If RetroArch creates a default config file, it will have config_save_on_exit set automatically.
+If config_save_on_exit = true is set in the config file, Fruitendo will overwrite the config file on exit. Settings can be changed from within the menu.
+If Fruitendo overwrites a config file, formatting, comments, etc will be lost.
+If Fruitendo creates a default config file, it will have config_save_on_exit set automatically.
 
 .IP
-Windows will look in retroarch.cfg in same folder where retroarch.exe resides.
+Windows will look in Fruitendo.cfg in same folder where Fruitendo.exe resides.
 A default config file will also be created in the same manner as Unix.
 
 .TP
@@ -197,7 +197,7 @@ For spectating mode to work, both host and clients will need to use this flag.
 
 .TP
 \fB--command CMD\fR
-Sends a command over UDP to an already running RetroArch application, and exit.
+Sends a command over UDP to an already running Fruitendo application, and exit.
 The command is formatted as "COMMAND;HOST;PORT".
 HOST and PORT are both optional. "COMMAND;HOST" will set PORT to
 "network_cmd_port" default setting.
@@ -213,24 +213,24 @@ This is purely cosmetic, and only serves to help users identify each other.
 .TP
 \fB--ups PATCH, -U PATCH\fR
 Attempts to apply an UPS patch to the current content image. No files are altered.
-If this flag is not specified, RetroArch will look for a .ups file with same basename as content specified.
+If this flag is not specified, Fruitendo will look for a .ups file with same basename as content specified.
 
 .TP
 \fB--bps PATCH\fR
 Attempts to apply a BPS patch to the current content image. No files are altered.
-If this flag is not specified, RetroArch will look for a .bps file with same basename as content specified.
+If this flag is not specified, Fruitendo will look for a .bps file with same basename as content specified.
 
 .TP
 \fB--ips PATCH\fR
 Attempts to apply a IPS patch to the current content image. No files are altered.
-If this flag is not specified, RetroArch will look for a .ips file with same basename as content specified.
-Note that RetroArch cannot perform any error checking if patching was successful due to how IPS works.
+If this flag is not specified, Fruitendo will look for a .ips file with same basename as content specified.
+Note that Fruitendo cannot perform any error checking if patching was successful due to how IPS works.
 
 .TP
 \fB--xdelta PATCH\fR
 Attempts to apply an Xdelta patch to the current content image. No files are altered.
-If this flag is not specified, RetroArch will look for a .xdelta file with same basename as content specified.
-Only available if RetroArch was built with Xdelta support.
+If this flag is not specified, Fruitendo will look for a .xdelta file with same basename as content specified.
+Only available if Fruitendo was built with Xdelta support.
 
 .TP
 \fB--no-patch\fR

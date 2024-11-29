@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -65,18 +65,18 @@
 #include "../../defaults.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 
 #define CONTENT_PATH_ARG_INDEX 1
 #define EBOOT_PATH "/app0/"
-#define USER_PATH "/data/retroarch/"
+#define USER_PATH "/data/Fruitendo/"
 #define CORE_DIR "cores"
 #define CORE_INFO_PATH USER_PATH
 #if defined(BUNDLE_CORES)
 #define CORE_PATH EBOOT_PATH
 #else
-#define CORE_PATH "/data/self/retroarch/"
+#define CORE_PATH "/data/self/Fruitendo/"
 #endif
 #define MODULE_PATH "/data/self/system/common/lib/"
 #define MODULE_PATH_EXT "/app0/sce_module/"

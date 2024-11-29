@@ -1,18 +1,18 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2014-2017 - Jean-André Santoni
  *  Copyright (C) 2015-2018 - Andre Leiradella
  *  Copyright (C) 2018-2020 - natinusala
  *  Copyright (C) 2019-2020 - James Leaver
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -307,7 +307,7 @@ bool gfx_widget_start_load_content_animation(void)
     *   well, but allowing no content would mean we
     *   trigger a false positive every time the dummy
     *   core is started (this higher level behaviour is
-    *   deeply ingrained in RetroArch, and too difficult
+    *   deeply ingrained in Fruitendo, and too difficult
     *   to change...) */
    if (   string_is_empty(content_path)
        || string_is_empty(core_path)
@@ -436,9 +436,9 @@ bool gfx_widget_start_load_content_animation(void)
       if (!string_is_empty(core_info->display_name))
          strlcpy(state->system_name, core_info->display_name,
                sizeof(state->system_name));
-      /* Otherwise, just use 'RetroArch' as a fallback */
+      /* Otherwise, just use 'Fruitendo' as a fallback */
       else
-         strlcpy(state->system_name, "RetroArch",
+         strlcpy(state->system_name, "Fruitendo",
                sizeof(state->system_name));
    }
 
@@ -497,10 +497,10 @@ bool gfx_widget_start_load_content_animation(void)
    }
 
    /* > If no system-specific icon is available,
-    *   use default 'retroarch' icon as a fallback */
+    *   use default 'Fruitendo' icon as a fallback */
    if (!state->has_icon)
    {
-      strlcpy(state->icon_file, "retroarch.png", sizeof(state->icon_file));
+      strlcpy(state->icon_file, "Fruitendo.png", sizeof(state->icon_file));
       fill_pathname_join_special(icon_path,
             state->icon_directory, state->icon_file,
             sizeof(icon_path));

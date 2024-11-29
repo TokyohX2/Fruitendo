@@ -1,6 +1,6 @@
 #!/bin/sh
 ###############
-# Build script which builds and packages RetroArch for MinGW 32/64-bit.
+# Build script which builds and packages Fruitendo for MinGW 32/64-bit.
 # Preferably build on Linux with a cross chain ... :D
 ##########
 
@@ -73,7 +73,7 @@ do_phoenix_build()
    message "Build Phoenix GUI"
    ### Build Phoenix GUI
    if [ ! -d "Phoenix" ]; then
-      git clone git://github.com/Themaister/RetroArch-Phoenix.git Phoenix
+      git clone git://github.com/Themaister/Fruitendo-Phoenix.git Phoenix
       cd Phoenix
    else
       cd Phoenix
@@ -82,23 +82,23 @@ do_phoenix_build()
 
    "${MAKE}" -f Makefile.win clean || die "Failed to clean ..."
    "${MAKE}" -f Makefile.win CC="$C_COMPILER" CXX="$CXX_COMPILER" WINDRES="$WINDRES" -j4 all || die "Failed to build ..."
-   touch retroarch-phoenix.cfg
-   cp retroarch-phoenix.cfg retroarch-phoenix.exe ../ || die "Failed to copy ..."
+   touch Fruitendo-phoenix.cfg
+   cp Fruitendo-phoenix.cfg Fruitendo-phoenix.exe ../ || die "Failed to copy ..."
 
    cd ..
 }
 
 do_build()
 {
-   RetroArch_DIR="$1"
+   Fruitendo_DIR="$1"
    LIBZIPNAME="$2"
    BUILDTYPE="$3"
 
-   if [ ! -d "$RetroArch_DIR" ]; then
-      git clone git://github.com/libretro/RetroArch.git "$RetroArch_DIR"
-      cd "$RetroArch_DIR"
+   if [ ! -d "$Fruitendo_DIR" ]; then
+      git clone git://github.com/libretro/Fruitendo.git "$Fruitendo_DIR"
+      cd "$Fruitendo_DIR"
    else
-      cd "$RetroArch_DIR"
+      cd "$Fruitendo_DIR"
       git pull origin master
    fi
 
@@ -109,7 +109,7 @@ do_build()
    "${MAKE}" -f Makefile.win clean || die "Failed to clean ..."
    "${MAKE}" -f Makefile.win CC="$C_COMPILER" CXX="$CXX_COMPILER" WINDRES="$WINDRES" -j4 all SLIM=1 || die "Failed to build ..."
    "${MAKE}" -f Makefile.win CC="$C_COMPILER" CXX="$CXX_COMPILER" WINDRES="$WINDRES" dist_${BUILDTYPE} SLIM=1 || die "Failed to dist ..."
-   if [ -z "`find . | grep "retroarch-win"`" ]; then
+   if [ -z "`find . | grep "Fruitendo-win"`" ]; then
       die "Did not find build ..."
    fi
 
@@ -117,12 +117,12 @@ do_build()
       do_phoenix_build
    fi
 
-   ZIP_BASE="`find . | grep "retroarch-win" | head -n1`"
+   ZIP_BASE="`find . | grep "Fruitendo-win" | head -n1`"
    ZIP_SLIM="`echo $ZIP_BASE | sed -e 's|\.zip|-slim.zip|'`"
    ZIP_FULL="`echo $ZIP_BASE | sed -e 's|\.zip|-full.zip|'`"
 
    if [ "$BUILD_PHOENIX_GUI" = "yes" ]; then
-      zip "$ZIP_BASE" retroarch-phoenix.exe retroarch-phoenix.cfg
+      zip "$ZIP_BASE" Fruitendo-phoenix.exe Fruitendo-phoenix.cfg
    fi
    mv -v "$ZIP_BASE" "../$ZIP_SLIM" || die "Failed to move final build ..."
 
@@ -131,12 +131,12 @@ do_build()
    "${MAKE}" -f Makefile.win CC="$C_COMPILER" CXX="$CXX_COMPILER" WINDRES="$WINDRES" HAVE_D3D9=1 dist_${BUILDTYPE} || die "Failed to dist ..."
 
    if [ "$BUILD_PHOENIX_GUI" = "yes" ]; then
-      zip "$ZIP_BASE" retroarch-phoenix.exe retroarch-phoenix.cfg
+      zip "$ZIP_BASE" Fruitendo-phoenix.exe Fruitendo-phoenix.cfg
    fi
 
    cp -v "$ZIP_BASE" "../$ZIP_FULL" || die "Failed to move final build ..."
    mv -v "$ZIP_BASE" ..
-   zip "../$ZIP_BASE" *.dll retroarch-redist-version || die "Failed to build full/redist ..."
+   zip "../$ZIP_BASE" *.dll Fruitendo-redist-version || die "Failed to build full/redist ..."
 
    cd ..
 }
@@ -146,7 +146,7 @@ if [ "$BUILD_32BIT" = yes ]; then
    C_COMPILER="${MINGW32_BASE}-gcc"
    CXX_COMPILER="${MINGW32_BASE}-g++"
    WINDRES=${MINGW32_BASE}-windres
-   do_build "RetroArch-w32" "RetroArch-win32-libs.zip" "x86"
+   do_build "Fruitendo-w32" "Fruitendo-win32-libs.zip" "x86"
 fi
 
 if [ "$BUILD_64BIT" = yes ]; then
@@ -154,7 +154,7 @@ if [ "$BUILD_64BIT" = yes ]; then
    C_COMPILER=${MINGW64_BASE}-gcc
    CXX_COMPILER=${MINGW64_BASE}-g++
    WINDRES=${MINGW64_BASE}-windres
-   do_build "RetroArch-w64" "RetroArch-win64-libs.zip" "x86_64"
+   do_build "Fruitendo-w64" "Fruitendo-win64-libs.zip" "x86_64"
 fi
 
 message "Built successfully! :)"

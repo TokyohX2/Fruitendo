@@ -1,15 +1,15 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2016 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -33,7 +33,7 @@
 #include "../../frontend/frontend.h"
 #include "../../input/drivers/cocoa_input.h"
 #include "../../input/drivers_keyboard/keyboard_event_apple.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../tasks/task_content.h"
 #include "../../verbosity.h"
 
@@ -535,11 +535,11 @@ enum
 #endif
 
 #if TARGET_OS_IOS
-@interface RetroArch_iOS () <MXMetricManagerSubscriber, UIPointerInteractionDelegate>
+@interface Fruitendo_iOS () <MXMetricManagerSubscriber, UIPointerInteractionDelegate>
 @end
 #endif
 
-@implementation RetroArch_iOS
+@implementation Fruitendo_iOS
 
 #pragma mark - ApplePlatform
 -(id)renderView { return _renderView; }
@@ -631,7 +631,7 @@ enum
    return NO;
 #endif
 }
-+ (RetroArch_iOS*)get { return (RetroArch_iOS*)[[UIApplication sharedApplication] delegate]; }
++ (Fruitendo_iOS*)get { return (Fruitendo_iOS*)[[UIApplication sharedApplication] delegate]; }
 
 -(NSString*)documentsDirectory
 {
@@ -667,7 +667,7 @@ enum
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
-   char arguments[]   = "retroarch";
+   char arguments[]   = "Fruitendo";
    char       *argv[] = {arguments,   NULL};
    int argc           = 1;
    apple_platform     = self;
@@ -682,11 +682,11 @@ enum
       NSString *cachesDirectory = [paths firstObject];
 
       // Define the original and new file paths
-      NSString *originalPath = [cachesDirectory stringByAppendingPathComponent:@"RetroArch/config/retroarch.cfg"];
+      NSString *originalPath = [cachesDirectory stringByAppendingPathComponent:@"Fruitendo/config/Fruitendo.cfg"];
       NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
       [dateFormatter setDateFormat:@"HHmm-yyMMdd"];
       NSString *timestamp = [dateFormatter stringFromDate:[NSDate date]];
-      NSString *newPath = [cachesDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"RetroArch/config/RetroArch-%@.cfg", timestamp]];
+      NSString *newPath = [cachesDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Fruitendo/config/Fruitendo-%@.cfg", timestamp]];
 
       // File manager instance
       NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -831,7 +831,7 @@ enum
 #endif
 }
 
--(BOOL)openRetroArchURL:(NSURL *)url
+-(BOOL)openFruitendoURL:(NSURL *)url
 {
    if ([url.host isEqualToString:@"topshelf"])
    {
@@ -860,8 +860,8 @@ enum
 }
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
-    if ([[url scheme] isEqualToString:@"retroarch"])
-        return [self openRetroArchURL:url];
+    if ([[url scheme] isEqualToString:@"Fruitendo"])
+        return [self openFruitendoURL:url];
 
    NSFileManager *manager = [NSFileManager defaultManager];
    NSString     *filename = (NSString*)url.path.lastPathComponent;
@@ -1011,6 +1011,6 @@ int main(int argc, char *argv[])
     SDL_SetMainReady();
 #endif
    @autoreleasepool {
-      return UIApplicationMain(argc, argv, NSStringFromClass([RApplication class]), NSStringFromClass([RetroArch_iOS class]));
+      return UIApplicationMain(argc, argv, NSStringFromClass([RApplication class]), NSStringFromClass([Fruitendo_iOS class]));
    }
 }

@@ -1,4 +1,4 @@
-package com.retroarch.browser.debug;
+package com.Fruitendo.browser.debug;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.provider.Settings;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.retroarch.browser.mainmenu.MainMenuActivity;
-import com.retroarch.browser.preferences.util.UserPreferences;
-import com.retroarch.browser.retroactivity.RetroActivityFuture;
+import com.Fruitendo.browser.mainmenu.MainMenuActivity;
+import com.Fruitendo.browser.preferences.util.UserPreferences;
+import com.Fruitendo.browser.retroactivity.RetroActivityFuture;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -158,7 +158,7 @@ public class CoreSideloadActivity extends Activity
 
                 retro.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-                Log.d("sideload", "Running RetroArch with core " + destination.getAbsolutePath());
+                Log.d("sideload", "Running Fruitendo with core " + destination.getAbsolutePath());
 
                 MainMenuActivity.startRetroActivity(
                     retro,

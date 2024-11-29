@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Baixa complements, components i contingut per al RetroArch."
+   "Baixa complements, components i contingut per al Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Reinicia el RetroArch."
+   "Reinicia el Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,15 +207,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Tanca el RetroArch. La configuració es desarà en sortir."
+   "Tanca el Fruitendo. La configuració es desarà en sortir."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Tanca el RetroArch. La configuració no es desarà en sortir."
+   "Tanca el Fruitendo. La configuració no es desarà en sortir."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Tanca el RetroArch. Matar el programa de manera forçada (amb SIGKILL, etc.) finalitzarà el RetroArch sense desar la configuració. En sistemes Unix, SIGINT/SIGTERM permet un tancament net, el que inclou que es desi la configuració si està activat."
+   "Tanca el Fruitendo. Matar el programa de manera forçada (amb SIGKILL, etc.) finalitzarà el Fruitendo sense desar la configuració. En sistemes Unix, SIGINT/SIGTERM permet un tancament net, el que inclou que es desi la configuració si està activat."
    )
 
 /* Main Menu > Load Core */
@@ -608,7 +608,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Versió del RetroArch"
+   "Versió del Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1374,7 +1374,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Nucli Libretro. Selecciona el fitxer perquè el RetroArch carregui aquest nucli."
+   "Nucli Libretro. Selecciona el fitxer perquè el Fruitendo carregui aquest nucli."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -1805,19 +1805,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_XMB,
-   "L'XMB és una interfície gràfica per al RetroArch que s'assembla al menú d'una consola de 7a generació. És compatible amb les mateixes funcions que l'Ozone."
+   "L'XMB és una interfície gràfica per al Fruitendo que s'assembla al menú d'una consola de 7a generació. És compatible amb les mateixes funcions que l'Ozone."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_OZONE,
-   "L'Ozone és la interfície gràfica predefinida del RetroArch a la majoria dels dispositius. És optimitzada per a navegar-hi amb un comandament."
+   "L'Ozone és la interfície gràfica predefinida del Fruitendo a la majoria dels dispositius. És optimitzada per a navegar-hi amb un comandament."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_RGUI,
-   "L'RGUI és una interfície gràfica simple integrada al RetroArch. És el controlador de menú que menys requisits de rendiment demana, i es pot utilitzar en pantalles de resolució baixa."
+   "L'RGUI és una interfície gràfica simple integrada al Fruitendo. És el controlador de menú que menys requisits de rendiment demana, i es pot utilitzar en pantalles de resolució baixa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_MATERIALUI,
-   "En dispositius mòbils, el RetroArch utilitza de manera predefinida la interfície mòbil, MaterialUI. Aquesta s'ha dissenyat per a les pantalles tàctils i els dispositius senyaladors, com ara ratolins o trackballs."
+   "En dispositius mòbils, el Fruitendo utilitza de manera predefinida la interfície mòbil, MaterialUI. Aquesta s'ha dissenyat per a les pantalles tàctils i els dispositius senyaladors, com ara ratolins o trackballs."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RECORD_DRIVER,
@@ -2234,7 +2234,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_MONITOR_INDEX,
-   "Monitor preferit. 0 (predefinit) significa que no es prefereix cap monitor en particular, 1 i següents (sent 1 el primer monitor) suggereix al RetroArch utilitzar eixe monitor en particular."
+   "Monitor preferit. 0 (predefinit) significa que no es prefereix cap monitor en particular, 1 i següents (sent 1 el primer monitor) suggereix al Fruitendo utilitzar eixe monitor en particular."
    )
 #if defined (WIIU)
 MSG_HASH(
@@ -2424,7 +2424,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Mostra tot el contingut dins una finestra de mida fixa amb les dimensions especificades per 'Amplada de la finestra' i 'Alçada de la finestra', i desa la mida i posició actual de la finestra en tancar RetroArch. Si es deshabilita la mida de la finestra s'establirà dinàmicament en funció de l'\"Escalat de la finestra\"."
+   "Mostra tot el contingut dins una finestra de mida fixa amb les dimensions especificades per 'Amplada de la finestra' i 'Alçada de la finestra', i desa la mida i posició actual de la finestra en tancar Fruitendo. Si es deshabilita la mida de la finestra s'establirà dinàmicament en funció de l'\"Escalat de la finestra\"."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -3059,7 +3059,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "El número màxim d'usuaris suportat per RetroArch."
+   "El número màxim d'usuaris suportat per Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3259,7 +3259,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_PRESS_TWICE,
-   "Requereix prémer dues vegades la tecla de Surt per a sortir de RetroArch."
+   "Requereix prémer dues vegades la tecla de Surt per a sortir de Fruitendo."
    )
 
 /* Settings > Input > Haptic Feedback/Vibration */
@@ -3356,7 +3356,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "Combinació de botons del controlador per sortir de RetroArch."
+   "Combinació de botons del controlador per sortir de Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -3364,7 +3364,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_QUIT_KEY,
-   "Tanca el RetroArch, assegurant-se que totes les dades desades i els fitxers de configuració es passen a disc."
+   "Tanca el Fruitendo, assegurant-se que totes les dades desades i els fitxers de configuració es passen a disc."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_CLOSE_CONTENT_KEY,
@@ -3562,7 +3562,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_GRAB_MOUSE_TOGGLE,
-   "Agafa o allibera el ratolí. En agafar-lo, s'amaga i confina el cursor del sistema a la finestra de visualització del Retroarch, millorant l'entrada de ratolí relativa."
+   "Agafa o allibera el ratolí. En agafar-lo, s'amaga i confina el cursor del sistema a la finestra de visualització del Fruitendo, millorant l'entrada de ratolí relativa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_GAME_FOCUS_TOGGLE,
@@ -3670,7 +3670,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Envia informació de diagnòstic sobre el vostre dispositiu i la configuració de RetroArch als nostres servidors per a ser analitzada."
+   "Envia informació de diagnòstic sobre el vostre dispositiu i la configuració de Fruitendo als nostres servidors per a ser analitzada."
    )
 
 /* Settings > Input > Port # Controls */
@@ -3913,7 +3913,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Existeixen nuclis amb opció de tancat. Activant aquesta opció, RetroArch carregarà un nucli buit evitant que es tanqui soles."
+   "Existeixen nuclis amb opció de tancat. Activant aquesta opció, Fruitendo carregarà un nucli buit evitant que es tanqui soles."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -3985,7 +3985,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_AUTO_SAVE,
-   "Crea un desat ràpid automàticament quan es tanca el contingut. El RetroArch carregarà automàticament aquest desat ràpid si l’opció «Carrega el desat ràpid automàticament» està activada."
+   "Crea un desat ràpid automàticament quan es tanca el contingut. El Fruitendo carregarà automàticament aquest desat ràpid si l’opció «Carrega el desat ràpid automàticament» està activada."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_AUTO_LOAD,
@@ -4108,7 +4108,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LOG_TO_FILE_TIMESTAMP,
-   "Quan es desi el registre en un fitxer, redirigeix la sortida de cada sessió de RetroArch a un fitxer nou amb marca de temps. Si es desactiva, se sobreescriu el registre cada cop que es reinicia el RetroArch."
+   "Quan es desi el registre en un fitxer, redirigeix la sortida de cada sessió de Fruitendo a un fitxer nou amb marca de temps. Si es desactiva, se sobreescriu el registre cada cop que es reinicia el Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PERFCNT_ENABLE,
@@ -4116,7 +4116,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PERFCNT_ENABLE,
-   "Comptadors de rendiment pel RetroArch i els nuclis. Les dades dels comptadors poden ajudar a determinar colls d’ampolla del sistema i afinar el rendiment."
+   "Comptadors de rendiment pel Fruitendo i els nuclis. Les dades dels comptadors poden ajudar a determinar colls d’ampolla del sistema i afinar el rendiment."
    )
 
 /* Settings > File Browser */
@@ -4558,7 +4558,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Commuta la visibilitat dels elements del menú al RetroArch."
+   "Commuta la visibilitat dels elements del menú al Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -4644,7 +4644,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PAUSE_NONACTIVE,
-   "Posa en pausa el contingut quan el RetroArch no sigui la finestra activa."
+   "Posa en pausa el contingut quan el Fruitendo no sigui la finestra activa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_DISABLE_COMPOSITION,
@@ -4785,19 +4785,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "Mostra «Surt del RetroArch»"
+   "Mostra «Surt del Fruitendo»"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_QUIT_RETROARCH,
-   "Mostra l’opció «Surt del RetroArch» al menú principal."
+   "Mostra l’opció «Surt del Fruitendo» al menú principal."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "Mostra «Reinicia el RetroArch»"
+   "Mostra «Reinicia el Fruitendo»"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_RESTART_RETROARCH,
-   "Mostra l’opció «Reinicia el RetroArch» al menú principal."
+   "Mostra l’opció «Reinicia el Fruitendo» al menú principal."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -5720,7 +5720,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "Els recursos de menú usats pel RetroArch es desen en aquest directori."
+   "Els recursos de menú usats pel Fruitendo es desen en aquest directori."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -8189,11 +8189,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Actualitza el RetroArch (nightly)"
+   "Actualitza el Fruitendo (nightly)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "El RetroArch s’ha actualitzat correctament. Reinicieu l’aplicació per aplicar els canvis."
+   "El Fruitendo s’ha actualitzat correctament. Reinicieu l’aplicació per aplicar els canvis."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -8471,7 +8471,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HELP_SEND_DEBUG_INFO,
-   "Envia informació de diagnòstic sobre el vostre dispositiu i la configuració de RetroArch als nostres servidors per a ser analitzada."
+   "Envia informació de diagnòstic sobre el vostre dispositiu i la configuració de Fruitendo als nostres servidors per a ser analitzada."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGEMENT,
@@ -8650,7 +8650,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Generalment definit pels desenvolupadors que empaqueten les aplicacions de libretro/RetroArch per apuntar als actius."
+   "Generalment definit pels desenvolupadors que empaqueten les aplicacions de libretro/Fruitendo per apuntar als actius."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -8724,7 +8724,7 @@ MSG_HASH( /* FIXME Should be MSG_ */
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_VIDEO_DRIVER_FALLBACK,
-   "El vostre controlador de gràfics no és compatible amb el controlador de vídeo actual del RetroArch, s’usarà el controlador %s com a alternativa. Reinicieu el RetroArch per aplicar els canvis."
+   "El vostre controlador de gràfics no és compatible amb el controlador de vídeo actual del Fruitendo, s’usarà el controlador %s com a alternativa. Reinicieu el Fruitendo per aplicar els canvis."
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_SIDELOAD_CORE_SUCCESS,
@@ -8756,11 +8756,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_TWO_MORE_TIMES_TO_SEND_DEBUG_INFO,
-   "Premeu dues vegades més per enviar informació de diagnòstic a l’equip del RetroArch."
+   "Premeu dues vegades més per enviar informació de diagnòstic a l’equip del Fruitendo."
    )
 MSG_HASH(
    MSG_PRESS_ONE_MORE_TIME_TO_SEND_DEBUG_INFO,
-   "Premeu una vegada més per enviar informació de diagnòstic a l’equip del RetroArch."
+   "Premeu una vegada més per enviar informació de diagnòstic a l’equip del Fruitendo."
    )
 MSG_HASH(
    MSG_AUDIO_MIXER_VOLUME,
@@ -9437,7 +9437,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_BLUETOOTH_PAIRING_REMOVED,
-   "S’ha eliminat l’emparellament. Reinicieu el RetroArch per tornar a connectar o emparellar un dispositiu."
+   "S’ha eliminat l’emparellament. Reinicieu el Fruitendo per tornar a connectar o emparellar un dispositiu."
    )
 MSG_HASH(
    MSG_WIFI_SCAN_COMPLETE,
@@ -9763,7 +9763,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reiniciar RetroArch"
+   "Reiniciar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,

@@ -3,7 +3,7 @@ Phoenix Gradle Build
 
 Implements a Gradle build based on the existing phoenix sources.
 
-It is currently only useful for running and debugging the RetroArch frontend in Android Studio.
+It is currently only useful for running and debugging the Fruitendo frontend in Android Studio.
 This is caused by the fact that this build can't support the same older API level that the old Ant 
 based build does. The minimum supported API level for this build is 16. Also this will not build the 
 mips variant cause support for this architecture has long been removed from the Android NDK.
@@ -22,19 +22,19 @@ Sideloading a core
 
 The `CoreSideloadActivity` activity allows you to sideload and run a core (with content) from your computer through ADB.
 
-**Keep in mind that forcefully stopping the process will not save any configuration you did in RetroArch. If you want your config to be saved, use "Quit RetroArch" in the main menu.**
+**Keep in mind that forcefully stopping the process will not save any configuration you did in Fruitendo. If you want your config to be saved, use "Quit Fruitendo" in the main menu.**
 
 Usage :
 
 ```
 adb shell am force-stop <package>
 adb push <core> /data/local/tmp
-adb shell am start -n <package>/com.retroarch.browser.debug.CoreSideloadActivity --es "LIBRETRO" "/data/local/tmp/<core>" --es "ROM" "<content>"
+adb shell am start -n <package>/com.Fruitendo.browser.debug.CoreSideloadActivity --es "LIBRETRO" "/data/local/tmp/<core>" --es "ROM" "<content>"
 ```
 
-Where `<package>` is the target RetroArch app package name :
-  - `com.retroarch` (RetroArch)
-  - `com.retroarch.aarch64` (RetroArch64)
+Where `<package>` is the target Fruitendo app package name :
+  - `com.Fruitendo` (Fruitendo)
+  - `com.Fruitendo.aarch64` (Fruitendo64)
 `<content>` is the path to the content to load (on your device) (optional)
 and `<core>` is the path to the core to sideload (on your computer).
 
@@ -56,7 +56,7 @@ Following is an example of what it takes to debug the dosbox-svn core in Android
 
 **Note**: Make sure the filename of the core does not get changed. Set up your Run/Debug configuration accordingly (Launch flags and ADB arguments)! Otherwise debugging will not work.
 
-* Clone dosbox-svn next to your RetroArch repo
+* Clone dosbox-svn next to your Fruitendo repo
 * Run `ndk-build NDK_DEBUG=1` in dosbox-svn/libretro/jni
 * In Android Studio create a new Gradle module of type Android Library. You can delete everything but AndroidManifest.xml and build.gradle from the new directory.
 * In the newly created build.gradle file add the following in the `defaultConfig {}` block:

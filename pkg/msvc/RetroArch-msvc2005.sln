@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual C++ Express 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetroArch-msvc2005", "msvc-2005\RetroArch-msvc2005.vcproj", "{1FEFA874-F6A6-4CE6-9DB4-3B291A364CE5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fruitendo-msvc2005", "msvc-2005\Fruitendo-msvc2005.vcproj", "{1FEFA874-F6A6-4CE6-9DB4-3B291A364CE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

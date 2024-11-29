@@ -30,7 +30,7 @@ extern "C" {
 
 #undef TEMP_EXTENSION
 #undef USER_AGENT
-#define USER_AGENT "RetroArch-WIMP/" PACKAGE_VERSION
+#define USER_AGENT "Fruitendo-WIMP/" PACKAGE_VERSION
 #define PARTIAL_EXTENSION ".partial"
 #define TEMP_EXTENSION ".tmp"
 #define THUMBNAILPACK_URL_HEADER "http://thumbnailpacks.libretro.com/"

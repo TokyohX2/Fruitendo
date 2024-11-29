@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <qnx xmlns="http://www.qnx.com/schemas/application/1.0">
 
-    <id>com.RetroArch</id>
+    <id>com.Fruitendo</id>
     <versionNumber>1.19.1</versionNumber>
     <buildId>3</buildId>
     <description>Cross-platform entertainment system</description>
@@ -10,35 +10,35 @@
         <autoOrients>true</autoOrients>
         <systemChrome>none</systemChrome>
     </initialWindow>
-    <name>RetroArch</name>
+    <name>Fruitendo</name>
     <icon>
-       <image>retroarch-96x96.png</image>
+       <image>Fruitendo-96x96.png</image>
     </icon>
     <splashScreens>
        <image>canvas.png</image>
     </splashScreens>
     <category>core.games</category>
-    <asset path="${workspace_loc:/RetroArch_/media/assets}">assets/assets</asset>
-    <asset path="${workspace_loc:/RetroArch_/media/overlays}">assets/overlays</asset>
+    <asset path="${workspace_loc:/Fruitendo_/media/assets}">assets/assets</asset>
+    <asset path="${workspace_loc:/Fruitendo_/media/overlays}">assets/overlays</asset>
     <asset path="../../../dist/info">assets/info</asset>
     <asset path="cores">assets/cores</asset>
-    <asset path="${workspace_loc:/RetroArch_/media/retroarch-96x96.png}">retroarch-96x96.png</asset>
-    <asset path="${workspace_loc:/RetroArch_/media/canvas.png}">canvas.png</asset>
+    <asset path="${workspace_loc:/Fruitendo_/media/Fruitendo-96x96.png}">Fruitendo-96x96.png</asset>
+    <asset path="${workspace_loc:/Fruitendo_/media/canvas.png}">canvas.png</asset>
     <configuration name="ES2-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="ES2-Debug/RetroArch" entry="true" type="Qnx/Elf">RetroArch</asset>
+       <asset path="ES2-Debug/Fruitendo" entry="true" type="Qnx/Elf">Fruitendo</asset>
     </configuration>
     <configuration name="ES3-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="ES3-Debug/RetroArch" entry="true" type="Qnx/Elf">RetroArch</asset>
+       <asset path="ES3-Debug/Fruitendo" entry="true" type="Qnx/Elf">Fruitendo</asset>
     </configuration>
     <configuration name="ES2-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="ES2-Release/RetroArch" entry="true" type="Qnx/Elf">RetroArch</asset>
+       <asset path="ES2-Release/Fruitendo" entry="true" type="Qnx/Elf">Fruitendo</asset>
     </configuration>
     <configuration name="ES3-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="ES3-Release/RetroArch" entry="true" type="Qnx/Elf">RetroArch</asset>
+       <asset path="ES3-Release/Fruitendo" entry="true" type="Qnx/Elf">Fruitendo</asset>
     </configuration>
 
 

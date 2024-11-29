@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -79,7 +79,7 @@ static void find_first_libretro_core(char *first_file,
       {
          if (list->size == (i + 1))
          {
-            RARCH_WARN("Entry is RetroArch Salamander itself, "
+            RARCH_WARN("Entry is Fruitendo Salamander itself, "
                   "but is last entry. No choice but to set it.\n");
             strlcpy(first_file, fname, size_of_first_file);
          }
@@ -96,7 +96,7 @@ static void find_first_libretro_core(char *first_file,
 }
 
 /* Last fallback - we'll need to start the first executable file
- * we can find in the RetroArch cores directory.
+ * we can find in the Fruitendo cores directory.
  */
 static void find_and_set_first_file(char *s, size_t len,
       const char *ext)
@@ -108,7 +108,7 @@ static void find_and_set_first_file(char *s, size_t len,
 
    if (string_is_empty(first_file))
    {
-      RARCH_ERR("Failed last fallback - RetroArch Salamander will exit.\n");
+      RARCH_ERR("Failed last fallback - Fruitendo Salamander will exit.\n");
       return;
    }
 

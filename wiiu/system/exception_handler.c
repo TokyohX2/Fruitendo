@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2017 Ash Logan (QuarkTheAwesome)
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -186,9 +186,9 @@ void __attribute__((__noreturn__)) exception_cb(OSContext* ctx, OSExceptionType 
       buf_add("Stack pointer invalid. Could not trace further.\n");
 
 #ifdef HAVE_GIT_VERSION
-   buf_add("RetroArch " PACKAGE_VERSION " (%s) built " __DATE__, retroarch_git_version);
+   buf_add("Fruitendo " PACKAGE_VERSION " (%s) built " __DATE__, retroarch_git_version);
 #else
-   buf_add("RetroArch " PACKAGE_VERSION " built " __DATE__);
+   buf_add("Fruitendo " PACKAGE_VERSION " built " __DATE__);
 #endif
    OSFatal(exception_msgbuf);
    for (;;) {}

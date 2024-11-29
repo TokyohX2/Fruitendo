@@ -1,7 +1,7 @@
-package com.retroarch.browser.mainmenu;
+package com.Fruitendo.browser.mainmenu;
 
-import com.retroarch.browser.preferences.util.UserPreferences;
-import com.retroarch.browser.retroactivity.RetroActivityFuture;
+import com.Fruitendo.browser.preferences.util.UserPreferences;
+import com.Fruitendo.browser.retroactivity.RetroActivityFuture;
 
 import android.content.Intent;
 import android.content.SharedPreferences;

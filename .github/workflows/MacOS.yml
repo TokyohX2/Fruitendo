@@ -20,7 +20,7 @@ jobs:
     - name: Compile RA
       run: |
         set -o pipefail
-        xcodebuild -workspace pkg/apple/RetroArch.xcworkspace -scheme RetroArch -config Release -xcconfig pkg/apple/GitHubCI.xcconfig -derivedDataPath build | xcpretty --color
+        xcodebuild -workspace pkg/apple/Fruitendo.xcworkspace -scheme Fruitendo -config Release -xcconfig pkg/apple/GitHubCI.xcconfig -derivedDataPath build | xcpretty --color
 
     - name: Get short SHA
       id: slug
@@ -28,6 +28,6 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: RetroArch-${{ steps.slug.outputs.sha8 }}
+        name: Fruitendo-${{ steps.slug.outputs.sha8 }}
         path: |
           build/Build/Products/Release

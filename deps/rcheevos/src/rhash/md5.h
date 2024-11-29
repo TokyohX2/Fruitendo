@@ -2,7 +2,7 @@
 #define RC_MD5_H
 
 /* NOTE: this is NOT the md5.h included in the rcheevos repository. It provides the same
- *       functionality using code already present in RetroArch */
+ *       functionality using code already present in Fruitendo */
 
 /* android build has libretro-common/include in path, but not the base directory.
  * other builds prioritize rcheevos/include over libretro-common/include.

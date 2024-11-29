@@ -35,4 +35,4 @@ jobs:
       with:
         name: retroarch_miyoo_arm32${{ steps.slug.outputs.sha8 }}
         path: |
-          retroarch
+          Fruitendo

@@ -20,9 +20,9 @@
 
    2. In Eclipse, do: File->Import->Existing Android Code Into Workspace.
 
-   3. Browse to the location of the folder named "phoenix" in the RetroArch repository and select it as the root dir. (as of writing, it is /android/phoenix).
+   3. Browse to the location of the folder named "phoenix" in the Fruitendo repository and select it as the root dir. (as of writing, it is /android/phoenix).
 
-   4. You should see two projects have been found, "RetroArch" and "android-support-v7-appcompat". Import both of these.
+   4. You should see two projects have been found, "Fruitendo" and "android-support-v7-appcompat". Import both of these.
 
    5. Let Eclipse finish building the workspace, or whatever.
 
@@ -42,4 +42,4 @@ Core info files go in [phoenix root]/assets/info, GLSL shaders go in [phoenix ro
 ## Notes
 
 1. If you’re running into an issue where adding an existing Android project results in “Invalid project description”, please select a workspace location that doesn’t contain the Android projects.
-2. If Eclipse still complains about missing appcompat, right-click on RetroArch->Properties->Android->Library->Add “android-support-v7-appcompat”, and then remove the old appcompat reference.
+2. If Eclipse still complains about missing appcompat, right-click on Fruitendo->Properties->Android->Library->Add “android-support-v7-appcompat”, and then remove the old appcompat reference.

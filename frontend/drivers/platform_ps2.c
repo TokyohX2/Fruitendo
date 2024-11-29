@@ -1,14 +1,14 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2018 - Francisco Javier Trujillo Mata - fjtrujy
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
- * * You should have received a copy of the GNU General Public License along with RetroArch.
+ * * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -30,7 +30,7 @@
 #endif
 
 #ifndef IS_SALAMANDER
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #ifdef HAVE_MENU
 #include "../../menu/menu_driver.h"
 #endif
@@ -61,7 +61,7 @@ static void create_path_names(void)
 {
    char user_path[FILENAME_MAX];
    size_t _len = strlcpy(user_path, cwd, sizeof(user_path));
-   strlcpy(user_path + _len, "/retroarch", sizeof(user_path) - _len);
+   strlcpy(user_path + _len, "/Fruitendo", sizeof(user_path) - _len);
    fill_pathname_basedir(g_defaults.dirs[DEFAULT_DIR_PORT], cwd, sizeof(g_defaults.dirs[DEFAULT_DIR_PORT]));
 
    /* Content in the same folder */
@@ -129,10 +129,10 @@ static void reset_IOP()
 /* This method returns true if it can extract needed info from path, otherwise false.
  * In case of true, it also updates mountString, mountPoint and newCWD parameters
  * It splits path by ":", and requires a minimum of 3 elements
- * Example: if path = hdd0:__common:pfs:/retroarch/ then
+ * Example: if path = hdd0:__common:pfs:/Fruitendo/ then
  * mountString = "pfs:"
  * mountPoint = "hdd0:__common"
- * newCWD = pfs:/retroarch/
+ * newCWD = pfs:/Fruitendo/
  * return true
 */
 bool getMountInfo(char *path, char *mountString, char *mountPoint, char *newCWD)
@@ -318,7 +318,7 @@ static void frontend_ps2_init(void *data)
    reset_IOP();
 #if defined(SCREEN_DEBUG)
    init_scr();
-   scr_printf("\n\nStarting RetroArch...\n");
+   scr_printf("\n\nStarting Fruitendo...\n");
 #endif
    common_init_drivers(true);
 }

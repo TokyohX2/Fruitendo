@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (features_cpu.c).
@@ -271,7 +271,7 @@ retro_time_t cpu_features_get_time_usec(void)
 #if defined(CPU_X86) && !defined(__MACH__)
 void x86_cpuid(int func, int flags[4])
 {
-   /* On Android, we compile RetroArch with PIC, and we
+   /* On Android, we compile Fruitendo with PIC, and we
     * are not allowed to clobber the ebx register. */
 #ifdef __x86_64__
 #define REG_b "rbx"

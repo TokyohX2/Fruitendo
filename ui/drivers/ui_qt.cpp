@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -79,7 +79,7 @@ extern "C" {
 #include "../../frontend/frontend_driver.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 #include "../../version.h"
 #include "../../msg_hash.h"
@@ -1743,7 +1743,7 @@ void MainWindow::showWelcomeScreen()
    bool dont_ask             = false;
    bool answer               = false;
    const QString welcome_txt = QStringLiteral(""
-      "Welcome to the RetroArch Desktop Menu!<br>\n"
+      "Welcome to the Fruitendo Desktop Menu!<br>\n"
       "<br>\n"
       "Many settings and actions are currently only available in the familiar Big Picture menu, "
       "but this Desktop Menu should be functional for launching content and managing playlists.<br>\n"
@@ -1753,13 +1753,13 @@ void MainWindow::showWelcomeScreen()
       "<li>F1  - Bring up the Big Picture menu</li>\n"
       "<li>F5  - Bring the Desktop Menu back if closed</li>\n"
       "<li>F   - Switch between fullscreen and windowed modes</li>\n"
-      "<li>Esc - Exit RetroArch</li>\n"
+      "<li>Esc - Exit Fruitendo</li>\n"
       "</ul>\n"
       "\n"
       "For more hotkeys and their assignments, see:<br>\n"
       "Settings -> Input -> Hotkeys<br>\n"
       "<br>\n"
-      "Documentation for RetroArch, libretro and cores:<br>\n"
+      "Documentation for Fruitendo, libretro and cores:<br>\n"
       "<a href=\"https://docs.libretro.com/\">https://docs.libretro.com/</a>");
 
    if (!m_settings->value("show_welcome_screen", true).toBool())
@@ -3963,9 +3963,9 @@ void MainWindow::showAbout()
 {
    QScopedPointer<QDialog> dialog(new QDialog());
    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok);
-   QString text = QString("RetroArch ") + PACKAGE_VERSION +
+   QString text = QString("Fruitendo ") + PACKAGE_VERSION +
          "<br><br>" + "<a href=\"https://www.libretro.com/\">www.libretro.com</a>"
-         "<br><br>" + "<a href=\"https://www.retroarch.com/\">www.retroarch.com</a>"
+         "<br><br>" + "<a href=\"https://www.Fruitendo.com/\">www.Fruitendo.com</a>"
 #ifdef HAVE_GIT_VERSION
          "<br><br>" + msg_hash_to_str(MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION) + ": " + retroarch_git_version +
 #endif
@@ -4259,7 +4259,7 @@ static void* ui_application_qt_initialize(void)
 {
    /* These must last for the lifetime of the QApplication */
    static int app_argc     = 1;
-   static char app_name[]  = "retroarch";
+   static char app_name[]  = "Fruitendo";
    static char *app_argv[] = { app_name, NULL };
 
    app_handler             = new AppHandler();
@@ -4274,7 +4274,7 @@ static void* ui_application_qt_initialize(void)
    ui_application.app = new QApplication(app_argc, app_argv);
    QApplication::setStyle("fusion");
    ui_application.app->setOrganizationName("libretro");
-   ui_application.app->setApplicationName("RetroArch");
+   ui_application.app->setApplicationName("Fruitendo");
    ui_application.app->setApplicationVersion(PACKAGE_VERSION);
    ui_application.app->connect(ui_application.app, SIGNAL(lastWindowClosed()),
          app_handler, SLOT(onLastWindowClosed()));
@@ -4605,7 +4605,7 @@ static void* ui_companion_qt_init(void)
    mainwindow->resize(qMin(desktopRect.width(), INITIAL_WIDTH), qMin(desktopRect.height(), INITIAL_HEIGHT));
    mainwindow->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, mainwindow->size(), desktopRect));
 
-   mainwindow->setWindowTitle("RetroArch");
+   mainwindow->setWindowTitle("Fruitendo");
    mainwindow->setDockOptions(QMainWindow::AnimatedDocks | QMainWindow::AllowNestedDocks | QMainWindow::AllowTabbedDocks | GROUPED_DRAGGING);
 
    listWidget      = mainwindow->playlistListWidget();

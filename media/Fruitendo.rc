@@ -96,7 +96,7 @@ FONT 8, "Ms Shell Dlg"
 // Icon resources
 //
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
-1                  ICON           "retroarch.ico"
+1                  ICON           "Fruitendo.ico"
 
 //
 // Manifest resources

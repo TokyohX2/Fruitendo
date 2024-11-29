@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2016-2017 - Hans-Kristian Arntzen
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -667,7 +667,7 @@ static bool vulkan_context_init_device(gfx_ctx_vulkan_data_t *vk)
       if (ret)
       {
          if (vk->context.gpu != VK_NULL_HANDLE && context.gpu != vk->context.gpu)
-            RARCH_ERR("[Vulkan]: Got unexpected VkPhysicalDevice, despite RetroArch using explicit physical device.\n");
+            RARCH_ERR("[Vulkan]: Got unexpected VkPhysicalDevice, despite Fruitendo using explicit physical device.\n");
 
          vk->context.destroy_device       = iface->destroy_device;
 
@@ -1401,19 +1401,19 @@ bool vulkan_buffer_chain_alloc(const struct vulkan_context *context,
 void vulkan_debug_mark_buffer(VkDevice device, VkBuffer buffer)
 {
    static unsigned object_count;
-   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_BUFFER, (uint64_t)buffer, "RetroArch buffer", ++object_count);
+   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_BUFFER, (uint64_t)buffer, "Fruitendo buffer", ++object_count);
 }
 
 void vulkan_debug_mark_image(VkDevice device, VkImage image)
 {
    static unsigned object_count;
-   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_IMAGE, (uint64_t)image, "RetroArch image", ++object_count);
+   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_IMAGE, (uint64_t)image, "Fruitendo image", ++object_count);
 }
 
 void vulkan_debug_mark_memory(VkDevice device, VkDeviceMemory memory)
 {
    static unsigned object_count;
-   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_DEVICE_MEMORY, (uint64_t)memory, "RetroArch memory", ++object_count);
+   vulkan_debug_mark_object(device, VK_OBJECT_TYPE_DEVICE_MEMORY, (uint64_t)memory, "Fruitendo memory", ++object_count);
 }
 
 struct vk_buffer vulkan_create_buffer(

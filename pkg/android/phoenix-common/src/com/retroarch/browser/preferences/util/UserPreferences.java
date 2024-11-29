@@ -1,4 +1,4 @@
-package com.retroarch.browser.preferences.util;
+package com.Fruitendo.browser.preferences.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -66,7 +66,7 @@ public final class UserPreferences
 		}
 		else // Using global config.
 		{
-			append_path = File.separator + "retroarch.cfg";
+			append_path = File.separator + "Fruitendo.cfg";
 		}
 
 		if (external != null)

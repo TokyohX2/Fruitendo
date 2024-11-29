@@ -88,7 +88,7 @@ LANG_CODE_TO_R_LANG = {'_ar': 'RETRO_LANGUAGE_ARABIC',
                        '_us': 'RETRO_LANGUAGE_ENGLISH',
                        '_vn': 'RETRO_LANGUAGE_VIETNAMESE'}
 
-# these are handled by RetroArch directly - no need to include them in core translations
+# these are handled by Fruitendo directly - no need to include them in core translations
 ON_OFFS = {'"enabled"', '"disabled"', '"true"', '"false"', '"on"', '"off"'}
 
 

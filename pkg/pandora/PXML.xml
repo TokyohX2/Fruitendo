@@ -4,18 +4,18 @@
 
 
 
-  <package id="retroarch.lifning.001">
+  <package id="Fruitendo.lifning.001">
 
     <author name="libretro" website="https://www.libretro.com/"/>
 
     <version major="0" minor="9" release="7" build="2" type="beta"/>
 
     <titles>
-      <title lang="en_US">RetroArch</title>
+      <title lang="en_US">Fruitendo</title>
     </titles>
 
     <descriptions>
-      <description lang="en_US">RetroArch is a modular multi-system emulator system that is designed to be fast, lightweight, and portable.</description>
+      <description lang="en_US">Fruitendo is a modular multi-system emulator system that is designed to be fast, lightweight, and portable.</description>
     </descriptions>
 
     <icon src="icon.png"/>
@@ -24,20 +24,20 @@
 
 
 
-  <application id="retroarch.lifning.001" appdata="retroarch">
+  <application id="Fruitendo.lifning.001" appdata="Fruitendo">
 
-    <exec command="scripts/retroarch.sh"/>
+    <exec command="scripts/Fruitendo.sh"/>
 
-    <author name="Libretro" website="https://www.retroarch.com"/>
+    <author name="Libretro" website="https://www.Fruitendo.com"/>
 
     <version major="0" minor="9" release="7" build="1"/>
     <osversion major="1" minor="0" release="0" build="0"/>
 
     <titles>
-      <title lang="en_US">RetroArch</title>
+      <title lang="en_US">Fruitendo</title>
     </titles>
     <!-- pre HF6 compatibility: -->
-    <title lang="en_US">RetroArch</title>
+    <title lang="en_US">Fruitendo</title>
 
     <descriptions>
       <description lang="en_US">Frontend to libretro</description>
@@ -48,10 +48,10 @@
     <icon src="icon.png"/>
 
     <previewpics>
-      <pic src="previews/retroarch.png"/>
+      <pic src="previews/Fruitendo.png"/>
     </previewpics>
 
-    <info name="RetroArch documentation" type="text/html" src="/mnt/utmp/retroarch/readme.html"/>
+    <info name="Fruitendo documentation" type="text/html" src="/mnt/utmp/Fruitendo/readme.html"/>
 
     <categories>
       <!-- http://standards.freedesktop.org/menu-spec/latest/apa.html -->
@@ -63,20 +63,20 @@
 
 
 
-  <application id="retroarch.lifning.002" appdata="retroarch">
+  <application id="Fruitendo.lifning.002" appdata="Fruitendo">
 
-    <exec command="scripts/retroarch-phoenix.sh"/>
+    <exec command="scripts/Fruitendo-phoenix.sh"/>
   
-    <author name="Libretro" website="https://www.retroarch.com"/>
+    <author name="Libretro" website="https://www.Fruitendo.com"/>
 
     <version major="0" minor="9" release="7" build="1"/>
     <osversion major="1" minor="0" release="0" build="0"/>
 
     <titles>
-      <title lang="en_US">RetroArch-Phoenix</title>
+      <title lang="en_US">Fruitendo-Phoenix</title>
     </titles>
     <!-- pre HF6 compatibility: -->
-    <title lang="en_US">RetroArch-Phoenix</title>
+    <title lang="en_US">Fruitendo-Phoenix</title>
 
     <descriptions>
       <description lang="en_US">Frontend to frontend to libretro</description>
@@ -87,7 +87,7 @@
     <icon src="icon.png"/>
 
     <previewpics>
-      <pic src="previews/retroarch-phoenix.png"/>
+      <pic src="previews/Fruitendo-phoenix.png"/>
     </previewpics>
 
     <categories>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Python 3 script which converts simple RetroArch Cg shaders to modern GLSL (ES) format.
+Python 3 script which converts simple Fruitendo Cg shaders to modern GLSL (ES) format.
 Author: Hans-Kristian Arntzen (Themaister)
 License: Public domain
 """

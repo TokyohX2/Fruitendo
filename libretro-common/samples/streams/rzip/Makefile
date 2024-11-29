@@ -45,7 +45,7 @@ SOURCES := \
 	$(LIBRETRO_COMM_DIR)/time/rtime.c
 
 ifneq ($(wildcard $(LIBRETRO_DEPS_DIR)/*),)
-	# If we are building from inside the RetroArch
+	# If we are building from inside the Fruitendo
 	# directory (i.e. if an 'external' deps directory
 	# is available), bake in zlib support
 	SOURCES += \

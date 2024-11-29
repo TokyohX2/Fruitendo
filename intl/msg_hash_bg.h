@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Сваляне на добавки, компоненти и съдържание за RetroArch."
+   "Сваляне на добавки, компоненти и съдържание за Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -195,7 +195,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Рестартиране на RetroArch."
+   "Рестартиране на Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,7 +207,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Изход от RetroArch. Опцията за записване при изход е деактивирана."
+   "Изход от Fruitendo. Опцията за записване при изход е деактивирана."
    )
 
 /* Main Menu > Load Core */

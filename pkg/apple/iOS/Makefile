@@ -9,7 +9,7 @@ include $(THEOS)/makefiles/common.mk
 
 SRC_DIR := ../..
 
-APPLICATION_NAME = RetroArch
+APPLICATION_NAME = Fruitendo
 ${APPLICATION_NAME}_FRAMEWORKS = Foundation UIKit CoreGraphics AudioToolbox GLKit OpenGLES CoreText CoreLocation CoreAudio AVFoundation CoreMedia CoreVideo GameController
 ${APPLICATION_NAME}_FILES = $(SRC_DIR)/griffin/griffin.c \
 		  $(SRC_DIR)/griffin/griffin_objc.m

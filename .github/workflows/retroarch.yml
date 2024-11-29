@@ -1,6 +1,6 @@
-# Validates compilation of RetroArch binary
+# Validates compilation of Fruitendo binary
 
-name: RetroArch CI
+name: Fruitendo CI
 
 on:
   push:

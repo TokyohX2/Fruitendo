@@ -3,7 +3,7 @@
 #include "../led_defines.h"
 
 #include "../../configuration.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 
 #include <windows.h>
 

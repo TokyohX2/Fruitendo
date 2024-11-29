@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetroArch-msvc2008", "msvc-2008\RetroArch-msvc2008.vcproj", "{C50A37E2-041D-480E-B62A-2B7113DF054F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fruitendo-msvc2008", "msvc-2008\Fruitendo-msvc2008.vcproj", "{C50A37E2-041D-480E-B62A-2B7113DF054F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

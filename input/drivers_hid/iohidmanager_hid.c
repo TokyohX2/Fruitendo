@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2013-2014 - Jason Fetters
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Courtesy Contributor - Olivier Parra
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -1018,9 +1018,9 @@ static int iohidmanager_hid_manager_free(iohidmanager_hid_t *hid)
 static int iohidmanager_hid_manager_set_device_matching(
       iohidmanager_hid_t *hid)
 {
-   /* register call back to dynamically add device plugged when retroarch is
+   /* register call back to dynamically add device plugged when Fruitendo is
     * running
-    * those will be added after the one plugged when retroarch was launched,
+    * those will be added after the one plugged when Fruitendo was launched,
     * and by order they are plugged in (so not deterministic) */
    CFMutableArrayRef matcher = CFArrayCreateMutable(kCFAllocatorDefault, 0,
       &kCFTypeArrayCallBacks);

@@ -139,7 +139,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Stiahnite si doplnky, súčasti a obsah pre RetroArch."
+   "Stiahnite si doplnky, súčasti a obsah pre Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -568,7 +568,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Verzia RetroArch"
+   "Verzia Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1238,7 +1238,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Jadro Libretro. Ak tento súbor vyberiete, RetroArch toto jadro načíta."
+   "Jadro Libretro. Ak tento súbor vyberiete, Fruitendo toto jadro načíta."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -2319,7 +2319,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Maximálny počet užívateľov podporovaný v RetroArch."
+   "Maximálny počet užívateľov podporovaný v Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -2540,7 +2540,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_QUIT_KEY,
-   "Ukončí RetroArch, zaistí zapísanie všetky úložných dát a nastavení na disk."
+   "Ukončí Fruitendo, zaistí zapísanie všetky úložných dát a nastavení na disk."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_CLOSE_CONTENT_KEY,
@@ -2686,7 +2686,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Odoslať diagnostické informácie o zariadení a nastaveniach RetroArch na naše serveri na analýzu."
+   "Odoslať diagnostické informácie o zariadení a nastaveniach Fruitendo na naše serveri na analýzu."
    )
 
 /* Settings > Input > Port # Controls */
@@ -3337,19 +3337,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "Zobraziť 'Ukončiť RetroArch'"
+   "Zobraziť 'Ukončiť Fruitendo'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_QUIT_RETROARCH,
-   "Zobraziť voľbu 'Ukončiť RetroArch' v hlavnej ponuke."
+   "Zobraziť voľbu 'Ukončiť Fruitendo' v hlavnej ponuke."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "Zobraziť 'Reštartovať RetroArch'"
+   "Zobraziť 'Reštartovať Fruitendo'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_RESTART_RETROARCH,
-   "Zobraziť voľbu 'Reštartovať RetroArch' v hlavnej ponuke."
+   "Zobraziť voľbu 'Reštartovať Fruitendo' v hlavnej ponuke."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -5801,7 +5801,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "O programe RetroArch"
+   "O programe Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -6029,7 +6029,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Aktualizovať RetroArch (nightly)"
+   "Aktualizovať Fruitendo (nightly)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -6227,7 +6227,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HELP_SEND_DEBUG_INFO,
-   "Odoslať diagnostické informácie o zariadení a nastaveniach RetroArch na naše serveri na analýzu."
+   "Odoslať diagnostické informácie o zariadení a nastaveniach Fruitendo na naše serveri na analýzu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGEMENT,
@@ -6811,7 +6811,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reštartovať RetroArch"
+   "Reštartovať Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,
@@ -6915,7 +6915,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_DEFAULT,
-   "Dotknite sa dotykovej obrazovky, \naby ste prešli do ponuky Retroarch"
+   "Dotknite sa dotykovej obrazovky, \naby ste prešli do ponuky Fruitendo"
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_NO_STATE_DATA,
@@ -6945,6 +6945,6 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "Skenovanie je dokončené.<br><br>\nAk chcete, aby bol obsah správne naskenovaný, musíte:\n<ul><li>mať už stiahnuté kompatibilné jadro</li>\n<li>mať aktualizované „Informačné súbory o jadre“ cez Online Updater</li>\n<li>aktualizovať \"Databázy\" cez Online Updater</li>\n<li>reštartovať RetroArch, ak ste práve vykonali čokoľvek z vyššie uvedeného</li></ul>\nNakoniec, obsah sa musí zhodovať s existujúcimi databázami z <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">nachádyajúcimi sa tu</a>. Ak to stále nefunguje, <a href=\"https://www.github.com/libretro/RetroArch/issues\">odošlite hlásenie o chybe</a>."
+   "Skenovanie je dokončené.<br><br>\nAk chcete, aby bol obsah správne naskenovaný, musíte:\n<ul><li>mať už stiahnuté kompatibilné jadro</li>\n<li>mať aktualizované „Informačné súbory o jadre“ cez Online Updater</li>\n<li>aktualizovať \"Databázy\" cez Online Updater</li>\n<li>reštartovať Fruitendo, ak ste práve vykonali čokoľvek z vyššie uvedeného</li></ul>\nNakoniec, obsah sa musí zhodovať s existujúcimi databázami z <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">nachádyajúcimi sa tu</a>. Ak to stále nefunguje, <a href=\"https://www.github.com/libretro/Fruitendo/issues\">odošlite hlásenie o chybe</a>."
    )
 #endif

@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2013-2014 - Jason Fetters
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -26,11 +26,11 @@
 #import "../../../pkg/apple/WebServer/GCDWebUploader/GCDWebUploader.h"
 #import "WebServer.h"
 #ifdef HAVE_IOS_SWIFT
-#import "RetroArch-Swift.h"
+#import "Fruitendo-Swift.h"
 #endif
 #if TARGET_OS_TV
 #import <TVServices/TVServices.h>
-#import "../../pkg/apple/RetroArchTopShelfExtension/ContentProvider.h"
+#import "../../pkg/apple/FruitendoTopShelfExtension/ContentProvider.h"
 #endif
 #if TARGET_OS_IOS
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -46,7 +46,7 @@
 #include "../../../file_path_special.h"
 #include "../../../menu/menu_cbs.h"
 #include "../../../paths.h"
-#include "../../../retroarch.h"
+#include "../../../Fruitendo.h"
 #include "../../../tasks/task_content.h"
 #include "../../../verbosity.h"
 
@@ -769,7 +769,7 @@ void cocoa_file_load_with_detect_core(const char *filename);
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome to RetroArch" message:[NSString stringWithFormat:@"To transfer files from your computer, go to one of these addresses on your web browser:\n\n%@",servers] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome to Fruitendo" message:[NSString stringWithFormat:@"To transfer files from your computer, go to one of these addresses on your web browser:\n\n%@",servers] preferredStyle:UIAlertControllerStyleAlert];
 #if TARGET_OS_TV
         [alert addAction:[UIAlertAction actionWithTitle:@"OK"
             style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -1066,7 +1066,7 @@ static NSDictionary *topshelfDictForEntry(const struct playlist_entry *entry, gf
          dict[@"img"] = [NSString stringWithFormat:@"https://thumbnails.libretro.com/%s/Named_Boxarts/%s",
                          path_data->content_db_name, img_name];
    }
-   NSURLComponents *play = [[NSURLComponents alloc] initWithString:@"retroarch://topshelf"];
+   NSURLComponents *play = [[NSURLComponents alloc] initWithString:@"Fruitendo://topshelf"];
    [play setQueryItems:@[
       [[NSURLQueryItem alloc] initWithName:@"path" value:[NSString stringWithUTF8String:entry->path]],
       [[NSURLQueryItem alloc] initWithName:@"core_path" value:[NSString stringWithUTF8String:entry->core_path]],
@@ -1079,7 +1079,7 @@ void update_topshelf(void)
 {
    if (@available(tvOS 13.0, *))
    {
-      NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:kRetroArchAppGroup];
+      NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:kFruitendoAppGroup];
       if (!ud)
          return;
 

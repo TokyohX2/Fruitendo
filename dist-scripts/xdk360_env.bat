@@ -120,8 +120,8 @@
 :end
 
 cd ../pkg/msvc/
-msbuild RetroArch-360.sln /p:Configuration=Release_LTCG
-copy RetroArch-360\Release_LTCG\CORE.xex RetroArch-360\%1.xex
-del RetroArch-360\Release_LTCG\CORE.xex
-del RetroArch-360\Release_LTCG\libretro_xdk360.lib
+msbuild Fruitendo-360.sln /p:Configuration=Release_LTCG
+copy Fruitendo-360\Release_LTCG\CORE.xex Fruitendo-360\%1.xex
+del Fruitendo-360\Release_LTCG\CORE.xex
+del Fruitendo-360\Release_LTCG\libretro_xdk360.lib
 exit

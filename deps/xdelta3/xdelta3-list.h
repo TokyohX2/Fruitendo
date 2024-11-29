@@ -16,7 +16,7 @@
 #ifndef __XDELTA3_LIST__
 #define __XDELTA3_LIST__
 
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 
 #define XD3_MAKELIST(LTYPE,ETYPE,LNAME)                                 \

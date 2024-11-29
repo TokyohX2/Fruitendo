@@ -25,7 +25,7 @@
 #ifndef _POSIX_SOURCE
 #define _POSIX_SOURCE 200112L
 #endif
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 
 #if HAVE_CONFIG_H

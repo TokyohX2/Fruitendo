@@ -4,12 +4,12 @@
  * @file libretro.h
  * @version 1
  * @author libretro
- * @copyright Copyright (C) 2010-2023 The RetroArch team
+ * @copyright Copyright (C) 2010-2023 The Fruitendo team
  *
  * @paragraph LICENSE
  * The following license statement only applies to this libretro API header (libretro.h).
  *
- * Copyright (C) 2010-2023 The RetroArch team
+ * Copyright (C) 2010-2023 The Fruitendo team
  *
  * Permission is hereby granted, free of charge,
  * to any person obtaining a copy of this software and associated documentation files (the "Software"),
@@ -5880,7 +5880,7 @@ struct retro_message_ext
     * be hidden without being delayed,
     * or even be discarded entirely.
     *
-    * @note In the reference frontend (RetroArch),
+    * @note In the reference frontend (Fruitendo),
     * the same priority values are used for frontend-generated notifications,
     * which are typically between 0 and 3 depending upon importance.
     *
@@ -6176,7 +6176,7 @@ struct retro_game_info_ext
     *   OR
     *   2) the basename of the content file inside the
     *      compressed file, without extension
-    *   RetroArch sets the 'name' value according to (1).
+    *   Fruitendo sets the 'name' value according to (1).
     *   A frontend that supports routine loading of
     *   content from archives containing multiple unrelated
     *   content files may set the 'name' value according

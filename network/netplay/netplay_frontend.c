@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2021 - Daniel De Matteis
  *  Copyright (C) 2016-2017 - Gregor Richards
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -51,7 +51,7 @@
 #include "../../driver.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../version.h"
 #include "../../verbosity.h"
 
@@ -650,7 +650,7 @@ static bool netplay_lan_ad_server(netplay_t *netplay)
 /**
  * netplay_impl_magic:
  *
- * A pseudo-hash of the RetroArch and Netplay version, so only compatible
+ * A pseudo-hash of the Fruitendo and Netplay version, so only compatible
  * versions play together.
  */
 static uint32_t netplay_impl_magic(void)

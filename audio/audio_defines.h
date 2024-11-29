@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -124,7 +124,7 @@ enum audio_driver_state_flags
     * Indicates that the audio driver is not currently rendering samples,
     * although it's valid and can be resumed.
     *
-    * Usually set when RetroArch needs to simulate audio output
+    * Usually set when Fruitendo needs to simulate audio output
     * without actually rendering samples (e.g. runahead),
     * or when reinitializing the driver.
     *
@@ -136,7 +136,7 @@ enum audio_driver_state_flags
     * Indicates that the audio mixer is available
     * and can mix one or more audio streams.
     *
-    * Will not be set if RetroArch was built without \c HAVE_AUDIOMIXER.
+    * Will not be set if Fruitendo was built without \c HAVE_AUDIOMIXER.
     */
    AUDIO_FLAG_MIXER_ACTIVE = (1 << 3),
 
@@ -146,7 +146,7 @@ enum audio_driver_state_flags
     *
     * When set, any audio received by the core will not be processed.
     *
-    * Will not be set if RetroArch was built without \c HAVE_RUNAHEAD.
+    * Will not be set if Fruitendo was built without \c HAVE_RUNAHEAD.
     *
     * @see RETRO_ENVIRONMENT_GET_AUDIO_VIDEO_ENABLE
     */

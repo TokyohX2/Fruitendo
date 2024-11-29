@@ -1,5 +1,5 @@
 # First and foremost consider this:
-- Only RetroArch bugs should be filed here. Not core bugs or game bugs
+- Only Fruitendo bugs should be filed here. Not core bugs or game bugs
 - This is not a forum or a help section, this is strictly developer oriented
 
 ## Description
@@ -27,7 +27,7 @@
 ### Version/Commit
 You can find this information under Information/System Information
 
-- RetroArch: [version/commit]
+- Fruitendo: [version/commit]
 
 ### Environment information
 

@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2014-2015 - Mike Robinson
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 #include <stdint.h>
@@ -52,7 +52,7 @@ static struct parport_joypad parport_pads[MAX_USERS];
 
 static void parport_poll_pad(struct parport_joypad *pad)
 {
-   /* RetroArch uses an extended version of the Linux
+   /* Fruitendo uses an extended version of the Linux
    * Multisystem 2-button joystick protocol for parallel port
    * joypads:
    *
@@ -72,13 +72,13 @@ static void parport_poll_pad(struct parport_joypad *pad)
    * | L1          | 13  | Status   | 4   | Low    |
    * | R1          | 15  | Status   | 3   | Low    |
    *
-   * (*) Pin is hardware inverted, but RetroArch inverts it
+   * (*) Pin is hardware inverted, but Fruitendo inverts it
    *     back again so the same pullup scheme may be used for
    *     all pins.
    *
    * Pin 1 is set high so it can be used for pullups.
    *
-   * RetroArch does not perform debouncing, and so long as
+   * Fruitendo does not perform debouncing, and so long as
    * the button settling time is less than the frame time
    * no bouncing will be observed. This replicates the latching
    * behavior common in old games consoles. For optimum latency

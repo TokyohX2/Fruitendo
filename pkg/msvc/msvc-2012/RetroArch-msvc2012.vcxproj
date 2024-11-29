@@ -14,7 +14,7 @@
     <ProjectGuid>{E1D4BAA1-50DB-428E-9462-4F1B31E38119}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>msvc2012</RootNamespace>
-    <ProjectName>RetroArch-msvc2012</ProjectName>
+    <ProjectName>Fruitendo-msvc2012</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -135,7 +135,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Mengunduh pengaya, komponen, dan konten untuk RetroArch."
+   "Mengunduh pengaya, komponen, dan konten untuk Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -179,7 +179,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Memulai ulang aplikasi RetroArch."
+   "Memulai ulang aplikasi Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -187,11 +187,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Keluar dari aplikasi RetroArch. Simpan konfigurasi saat keluar dinyalakan."
+   "Keluar dari aplikasi Fruitendo. Simpan konfigurasi saat keluar dinyalakan."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Keluar dari aplikasi RetroArch. Simpan konfigurasi saat keluar dimatikan."
+   "Keluar dari aplikasi Fruitendo. Simpan konfigurasi saat keluar dimatikan."
    )
 
 /* Main Menu > Load Core */
@@ -564,7 +564,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Versi RetroArch"
+   "Versi Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1832,7 +1832,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Menampilkan semua konten di ukuran jendela tetap yang ditentukan 'Lebar Jendela' dan 'Tinggi Jendela', dan menyimpan ukuran dan posisi jendela sekarang saat menutup RetroArch. Jika dinonaktifkan, ukuran jendela akan berubah berdasarkan 'Skala Berjendela'."
+   "Menampilkan semua konten di ukuran jendela tetap yang ditentukan 'Lebar Jendela' dan 'Tinggi Jendela', dan menyimpan ukuran dan posisi jendela sekarang saat menutup Fruitendo. Jika dinonaktifkan, ukuran jendela akan berubah berdasarkan 'Skala Berjendela'."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -2351,7 +2351,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Jumlah maksimal pemain yang diperbolehkan di RetroArch."
+   "Jumlah maksimal pemain yang diperbolehkan di Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -2515,7 +2515,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_PRESS_TWICE,
-   "Untuk keluar dari RetroArch, kombinasi tombol Keluar harus ditekan dua kali."
+   "Untuk keluar dari Fruitendo, kombinasi tombol Keluar harus ditekan dua kali."
    )
 
 /* Settings > Input > Haptic Feedback/Vibration */
@@ -2588,7 +2588,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "Kombinasi tombol stik kendali untuk keluar RetroArch."
+   "Kombinasi tombol stik kendali untuk keluar Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -4025,7 +4025,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "RetroArch berhasil diperbarui. Mohon mulai ulang aplikasi untuk menerapkan perubahan."
+   "Fruitendo berhasil diperbarui. Mohon mulai ulang aplikasi untuk menerapkan perubahan."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_REMOVE,
@@ -4204,7 +4204,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_OUT_OF_DATE,
-   "Kawan (peer) Netplay bermain di versi lama RetroArch. Tidak dapat sambung."
+   "Kawan (peer) Netplay bermain di versi lama Fruitendo. Tidak dapat sambung."
    )
 MSG_HASH(
    MSG_NETPLAY_ENDIAN_DEPENDENT,
@@ -4387,7 +4387,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Mulai Ulang RetroArch"
+   "Mulai Ulang Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_ICADE_ENABLE,

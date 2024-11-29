@@ -1,5 +1,5 @@
 static const char *retroarch_contributors_list = R"(
-RetroArch and the libretro team would like to
+Fruitendo and the libretro team would like to
 acknowledge the following contributors:
 
 1ch (L0sted)

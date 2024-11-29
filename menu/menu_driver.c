@@ -1,18 +1,18 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2021 - Daniel De Matteis
  *  Copyright (C) 2014-2017 - Jean-André Santoni
  *  Copyright (C) 2016-2019 - Andrés Suárez
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -2965,7 +2965,7 @@ static bool menu_shader_manager_save_preset_internal(
    if (!string_is_empty(basename))
       _len = strlcpy(fullname, basename, sizeof(fullname));
    else
-      _len = strlcpy(fullname, "retroarch", sizeof(fullname));
+      _len = strlcpy(fullname, "Fruitendo", sizeof(fullname));
    strlcpy(fullname + _len, preset_ext, sizeof(fullname) - _len);
 
    if (path_is_absolute(fullname))
@@ -5143,7 +5143,7 @@ bool menu_input_dialog_get_display_kb(void)
    SwkbdConfig kbd;
    Result rc;
    /* Indicates that we are "typing" from the swkbd
-    * result to RetroArch with repeated calls to input_keyboard_event
+    * result to Fruitendo with repeated calls to input_keyboard_event
     * This prevents input_keyboard_event from calling back
     * menu_input_dialog_get_display_kb, looping indefinintely */
    static bool typing             = false;
@@ -5174,7 +5174,7 @@ bool menu_input_dialog_get_display_kb(void)
 
       swkbdClose(&kbd);
 
-      /* RetroArch uses key-by-key input
+      /* Fruitendo uses key-by-key input
          so we need to simulate it */
       typing = true;
       for (i = 0; i < LIBNX_SWKBD_LIMIT; i++)
@@ -7016,7 +7016,7 @@ clear:
  * @trigger_input            : difference' input sample - difference
  *                             between 'input' and 'old_input'
  *
- * Runs RetroArch menu for one frame.
+ * Runs Fruitendo menu for one frame.
  *
  * Returns: 0 on success, -1 if we need to quit out of the loop.
  **/

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2017 The RetroArch team
+/* Copyright  (C) 2010-2017 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (libretrodb.c).

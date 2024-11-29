@@ -1,8 +1,8 @@
-package com.retroarch.browser.retroactivity;
+package com.Fruitendo.browser.retroactivity;
 
-import com.retroarch.BuildConfig;
-import com.retroarch.browser.preferences.util.UserPreferences;
-import com.retroarch.playcore.PlayCoreManager;
+import com.Fruitendo.BuildConfig;
+import com.Fruitendo.browser.preferences.util.UserPreferences;
+import com.Fruitendo.playcore.PlayCoreManager;
 
 import android.annotation.TargetApi;
 import android.app.NativeActivity;
@@ -44,7 +44,7 @@ import java.util.Locale;
 public class RetroActivityCommon extends NativeActivity
 {
   static {
-    System.loadLibrary("retroarch-activity");
+    System.loadLibrary("Fruitendo-activity");
   }
 
   public static int FRONTEND_POWERSTATE_NONE = 0;
@@ -128,7 +128,7 @@ public class RetroActivityCommon extends NativeActivity
   // Exiting cleanly from NDK seems to be nearly impossible.
   // Have to use exit(0) to avoid weird things happening, even with runOnUiThread() approaches.
   // Use a separate JNI function to explicitly trigger the readback.
-  public void onRetroArchExit()
+  public void onFruitendoExit()
   {
       finish();
   }
@@ -378,7 +378,7 @@ public class RetroActivityCommon extends NativeActivity
   }
 
   /**
-   * Checks if this version of RetroArch is a Play Store build.
+   * Checks if this version of Fruitendo is a Play Store build.
    *
    * @return true if this is a Play Store build, false otherwise
    */
@@ -518,9 +518,9 @@ public class RetroActivityCommon extends NativeActivity
   }
 
   /**
-   * Gets the path to the RetroArch cores directory.
+   * Gets the path to the Fruitendo cores directory.
    *
-   * @return The path to the RetroArch cores directory
+   * @return The path to the Fruitendo cores directory
    */
   private String getCorePath() {
     String path = getApplicationInfo().dataDir + "/cores/";
@@ -559,7 +559,7 @@ public class RetroActivityCommon extends NativeActivity
 
   /**
    * Traverse the filesystem, looking for native libraries.
-   * Symlinks any libraries it finds to the main RetroArch "cores" folder,
+   * Symlinks any libraries it finds to the main Fruitendo "cores" folder,
    * updating any existing symlinks with the correct path to the native libraries.
    *
    * This is necessary because Dynamic Feature Modules are first downloaded
@@ -585,7 +585,7 @@ public class RetroActivityCommon extends NativeActivity
       File child = list[i];
       String name = child.getName();
 
-      if(name.startsWith("lib") && name.endsWith(".so") && !name.contains("retroarch-activity")) {
+      if(name.startsWith("lib") && name.endsWith(".so") && !name.contains("Fruitendo-activity")) {
         // Found a native library!
         String core = name.subSequence(3, name.length() - 3).toString();
         String filename = child.getAbsolutePath();

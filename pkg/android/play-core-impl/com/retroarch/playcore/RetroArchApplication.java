@@ -1,5 +1,5 @@
-package com.retroarch.playcore;
+package com.Fruitendo.playcore;
 
 import com.google.android.play.core.splitcompat.SplitCompatApplication;
 
-public class RetroArchApplication extends SplitCompatApplication {}
+public class FruitendoApplication extends SplitCompatApplication {}

@@ -33,7 +33,7 @@ while :; do
             ;;
         -h)
             echo "$(basename $0) -- Rebuild assets.zip"
-            echo "Meant to be used when building RetroArch yourself. The buildbot does not use this."
+            echo "Meant to be used when building Fruitendo yourself. The buildbot does not use this."
             echo
             echo " -a    Include all assets, cheats, databases, input autoconfig, overlays, and shaders"
             echo " -c    Include cheats"
@@ -84,9 +84,9 @@ function fetch_zip()
 pushd "$WD" &>/dev/null
 
 rm -rf .media
-fetch_zip retroarch-assets
+fetch_zip Fruitendo-assets
 if [ -n "$include_autoconfig" ] ; then
-    fetch_zip retroarch-joypad-autoconfig
+    fetch_zip Fruitendo-joypad-autoconfig
 fi
 if [ -n "$include_cheats" -o -n "$include_databases" ] ; then
     fetch_zip libretro-database
@@ -103,16 +103,16 @@ fi
 pushd .media &>/dev/null
 
 echo "Packaging assets"
-mkdir assets ; mv retroarch-assets/{COPYING,glui,menu_widgets,ozone,pkg,rgui,sounds} assets
+mkdir assets ; mv Fruitendo-assets/{COPYING,glui,menu_widgets,ozone,pkg,rgui,sounds} assets
 if [ -n "$include_xmb" ] ; then
-    mv retroarch-assets/xmb assets
+    mv Fruitendo-assets/xmb assets
 fi
-rm -rf retroarch-assets
+rm -rf Fruitendo-assets
 rm -rf assets/pkg/wiiu
 
 if [ -n "$include_autoconfig" ] ; then
     echo "Packaging autoconfig"
-    mv retroarch-joypad-autoconfig autoconfig
+    mv Fruitendo-joypad-autoconfig autoconfig
     rm -rf autoconfig/{android,dinput,linuxraw,parport,qnx,sdl2,udev,x,xinput}
 fi
 

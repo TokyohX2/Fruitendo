@@ -1,4 +1,4 @@
-/* Copyright  (C) 2021 The RetroArch team
+/* Copyright  (C) 2021 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (test_stdstring.c).
@@ -59,7 +59,7 @@ END_TEST
 
 START_TEST (test_crc32)
 {
-   char buf1[] = "retroarch";
+   char buf1[] = "Fruitendo";
    char buf2[] = "12345678";
    char buf3[] = "The quick brown fox jumps over the lazy dog";
    uint32_t test1 = encoding_crc32(0, (uint8_t*)buf1, strlen(buf1));

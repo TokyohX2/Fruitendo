@@ -1,14 +1,14 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -255,7 +255,7 @@ static void task_cloud_sync_read_local_manifest(task_cloud_sync_state_t *sync_st
    sync_state->phase = CLOUD_SYNC_PHASE_BUILD_CURRENT_MANIFEST;
 }
 
-/* takes the filename in manifest format, e.g. "config/retroarch.cfg" */
+/* takes the filename in manifest format, e.g. "config/Fruitendo.cfg" */
 static bool task_cloud_sync_should_ignore_file(const char *filename)
 {
    if (string_starts_with(filename, "config/"))
@@ -318,7 +318,7 @@ static void task_cloud_sync_manifest_append_dir(file_list_t *manifest,
       if (task_cloud_sync_should_ignore_file(alt))
          continue;
 
-      /* The "alt" refers to the relative path of whatever we're syncing relative to the retroarch folder
+      /* The "alt" refers to the relative path of whatever we're syncing relative to the Fruitendo folder
        * whereas the full_path is the absolute disk path of the file. When building the manifest, adhere
        * to a portable standard, but use that as the portable representation of paths. While the actual
        * "manifest" is comprised of full, local-style paths associated with "alt"s which are portable. */

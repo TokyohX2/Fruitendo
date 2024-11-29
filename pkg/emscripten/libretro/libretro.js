@@ -1,7 +1,7 @@
 /**
- * RetroArch Web Player
+ * Fruitendo Web Player
  *
- * This provides the basic JavaScript for the RetroArch web player.
+ * This provides the basic JavaScript for the Fruitendo web player.
  */
 var BrowserFS = BrowserFS;
 var afs;
@@ -95,7 +95,7 @@ function cleanupStorage()
    localStorage.clear();
    if (BrowserFS.FileSystem.IndexedDB.isAvailable())
    {
-      var req = indexedDB.deleteDatabase("RetroArch");
+      var req = indexedDB.deleteDatabase("Fruitendo");
       req.onsuccess = function () {
          console.log("Deleted database successfully");
       };
@@ -145,7 +145,7 @@ function idbfsInit()
             });
          }
       },
-      "RetroArch"));
+      "Fruitendo"));
    }
 }
 
@@ -172,9 +172,9 @@ function appInitialized()
 
 function preLoadingComplete()
 {
-   /* Make the Preview image clickable to start RetroArch. */
+   /* Make the Preview image clickable to start Fruitendo. */
    $('.webplayer-preview').addClass('loaded').click(function () {
-      startRetroArch();
+      startFruitendo();
       return false;
   });
   document.getElementById("btnRun").disabled = false;
@@ -222,10 +222,10 @@ function setupFileSystem(backend)
       (".index-xhr", "assets/cores/");
 
    console.log("WEBPLAYER: initializing filesystem: " + backend);
-   mfs.mount('/home/web_user/retroarch/userdata', afs);
+   mfs.mount('/home/web_user/Fruitendo/userdata', afs);
 
-   mfs.mount('/home/web_user/retroarch/', xfs1);
-   mfs.mount('/home/web_user/retroarch/userdata/content/downloads', xfs2);
+   mfs.mount('/home/web_user/Fruitendo/', xfs1);
+   mfs.mount('/home/web_user/Fruitendo/userdata/content/downloads', xfs2);
    BrowserFS.initialize(mfs);
    var BFS = new BrowserFS.EmscriptenFS(Module.FS, Module.PATH, Module.ERRNO_CODES);
    Module.FS.mount(BFS, {root: '/home'}, '/home');
@@ -242,7 +242,7 @@ function getParam(name) {
   }
 }
 
-function startRetroArch()
+function startFruitendo()
 {
    $('.webplayer').show();
    $('.webplayer-preview').hide();
@@ -296,7 +296,7 @@ function uploadData(data,name)
    Module.FS.createDataFile('/', name, dataView, true, false);
 
    var data = Module.FS.readFile(name,{ encoding: 'binary' });
-   Module.FS.writeFile('/home/web_user/retroarch/userdata/content/' + name, data ,{ encoding: 'binary' });
+   Module.FS.writeFile('/home/web_user/Fruitendo/userdata/content/' + name, data ,{ encoding: 'binary' });
    Module.FS.unlink(name);
 }
 

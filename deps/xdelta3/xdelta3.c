@@ -220,7 +220,7 @@
 
      xdelta3-main.h     The command-line interface, external compression
                         support, POSIX-specific, info & VCDIFF-debug tools.
-                        (Excluded from RetroArch fork.)
+                        (Excluded from Fruitendo fork.)
      xdelta3-second.h   The common secondary compression routines.
      xdelta3-decoder.h  All decoding routines.
      xdelta3-djw.h      The semi-adaptive huffman secondary encoder.
@@ -231,7 +231,7 @@
                         boundary tests.  There are command-line tests.
                         There are compression tests.  There are external
                         compression tests.  There are string-matching tests.
-                        (Excluded from RetroArch fork.)
+                        (Excluded from Fruitendo fork.)
 			There should be more tests...
 
    Additional headers include:

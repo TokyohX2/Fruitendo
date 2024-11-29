@@ -207,7 +207,7 @@ int exec_cia(const char* path, const char** args)
       {
          /* titleid with version not installed. */
          consoleSelect(&debugConsoleTop);
-         printf(PRINTFPOS(2,0)"Do not close RetroArch or turn off your console.");
+         printf(PRINTFPOS(2,0)"Do not close Fruitendo or turn off your console.");
          printf(PRINTFPOS(5,0)"Installing core:\n%s\n", path);
 
          /*  Delete existing content of the pending titleid. */

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (rxml.h).
@@ -26,11 +26,11 @@
 
 RETRO_BEGIN_DECLS
 
-/* Total NIH. Very trivial "XML" implementation for use in RetroArch.
+/* Total NIH. Very trivial "XML" implementation for use in Fruitendo.
  * Error checking is minimal. Invalid documents may lead to very
  * buggy behavior, but memory corruption should never happen.
  *
- * Only parts of standard that RetroArch cares about is supported.
+ * Only parts of standard that Fruitendo cares about is supported.
  * Nothing more, nothing less. "Clever" XML documents will
  * probably break the implementation.
  *

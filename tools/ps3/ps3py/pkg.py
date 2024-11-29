@@ -513,7 +513,7 @@ try:
 except:
 	print ""
 	print "---------------------"
-	print "RETROARCH BUILD ERROR"
+	print "Fruitendo BUILD ERROR"
 	print "---------------------"
 	print "Couldn't make PKG file. Go into the ps3py directory, and type the following:"
 	print ""

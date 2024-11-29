@@ -6,7 +6,7 @@ stages:
   - prepare-for-static-cores
   - trigger-static-cores
 
-build-retroarch-windows-x64:
+build-Fruitendo-windows-x64:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-mxe-win64-cross:gcc10
   stage: build
   variables:
@@ -16,14 +16,14 @@ build-retroarch-windows-x64:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch.exe
+    - Fruitendo.exe
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - "MOC=/usr/lib/mxe/usr/x86_64-w64-mingw32.shared/qt5/bin/moc ./configure --host=x86_64-w64-mingw32.shared"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch.exe; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo.exe; fi
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
@@ -34,10 +34,10 @@ build-retroarch-windows-x64:
     - "cd gfx/video_filters && make -j$NUMPROC platform=win compiler=x86_64-w64-mingw32.static-gcc build=release && make -j$NUMPROC platform=win compiler=x86_64-w64-mingw32.static-gcc build=release strip && cd -"
     - "cp -f gfx/video_filters/*.dll ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
-    - "cp -f retroarch.cfg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/retroarch.default.cfg"
+    - "cp -f Fruitendo.cfg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/Fruitendo.default.cfg"
     - "echo -e '[Paths]\nPlugins = ./' > ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/qt.conf"
     - "/bin/bash /usr/lib/mxe/tools/copydlldeps.sh
-        --infile retroarch.exe
+        --infile Fruitendo.exe
         --destdir ${MEDIA_PATH}/${CI_PROJECT_NAME}/redist/
         --recursivesrcdir /usr/lib/mxe/usr/x86_64-w64-mingw32.shared/
         --enforcedir /usr/lib/mxe/usr/x86_64-w64-mingw32.shared/qt5/plugins/bearer/
@@ -50,7 +50,7 @@ build-retroarch-windows-x64:
     - "cp -f nvdaControllerClient64.dll ${MEDIA_PATH}/${CI_PROJECT_NAME}/redist/nvdaControllerClient64.dll"
     - "rm -f ${MEDIA_PATH}/${CI_PROJECT_NAME}/redist/opengl32.dll"
 
-build-retroarch-windows-i686:
+build-Fruitendo-windows-i686:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-mxe-win32-cross:gcc10
   stage: build
   variables:
@@ -60,14 +60,14 @@ build-retroarch-windows-i686:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch.exe
+    - Fruitendo.exe
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - "MOC=/usr/lib/mxe/usr/i686-w64-mingw32.shared/qt5/bin/moc ./configure --host=i686-w64-mingw32.shared"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch.exe; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo.exe; fi
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
@@ -78,10 +78,10 @@ build-retroarch-windows-i686:
     - "cd gfx/video_filters && make -j$NUMPROC platform=win compiler=i686-w64-mingw32.static-gcc build=release && make -j$NUMPROC platform=win compiler=i686-w64-mingw32.static-gcc build=release strip && cd -"
     - "cp -f gfx/video_filters/*.dll ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
-    - "cp -f retroarch.cfg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/retroarch.default.cfg"
+    - "cp -f Fruitendo.cfg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/Fruitendo.default.cfg"
     - "echo -e '[Paths]\nPlugins = ./' > ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/qt.conf"
     - "/bin/bash /usr/lib/mxe/tools/copydlldeps.sh
-        --infile retroarch.exe
+        --infile Fruitendo.exe
         --destdir ${MEDIA_PATH}/${CI_PROJECT_NAME}/redist/
         --recursivesrcdir /usr/lib/mxe/usr/i686-w64-mingw32.shared/
         --enforcedir /usr/lib/mxe/usr/i686-w64-mingw32.shared/qt5/plugins/bearer/
@@ -93,7 +93,7 @@ build-retroarch-windows-i686:
         --objdump i686-w64-mingw32.shared-objdump"
     - "rm -f ${MEDIA_PATH}/${CI_PROJECT_NAME}/redist/opengl32.dll"
 
-build-retroarch-windows-msvc10-x64:
+build-Fruitendo-windows-msvc10-x64:
   tags:
     - msvc2010
   stage: build
@@ -111,20 +111,20 @@ build-retroarch-windows-msvc10-x64:
     - $Env:Path += -join(";", "$Env:MSYS_BIN_DIR", ";", "$Env:SDK_BIN_DIR", ";", "$Env:RCEDIT_BIN_DIR", ";", "$Env:PEDEPS_BIN_DIR")
   artifacts:
     paths:
-    - retroarch.exe
+    - Fruitendo.exe
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - |
       $ErrorActionPreference = 'Stop'
-      # Build RetroArch
+      # Build Fruitendo
       bash.exe -l -c "make -f Makefile.griffin platform=$Env:MSVC_PLATFORM"
-      if ($LastExitCode -ne 0){throw "Failed to build RetroArch"}
-      mt.exe -nologo -manifest "retroarch.exe.manifest" -outputresource:"retroarch.exe;#1"
-      if ($LastExitCode -ne 0){throw "Failed to add manifest to RetroArch binary"}
-      rcedit-x64.exe "retroarch.exe" --set-icon "media\retroarch.ico"
-      if ($LastExitCode -ne 0){throw "Failed to set icon of RetroArch binary"}
+      if ($LastExitCode -ne 0){throw "Failed to build Fruitendo"}
+      mt.exe -nologo -manifest "Fruitendo.exe.manifest" -outputresource:"Fruitendo.exe;#1"
+      if ($LastExitCode -ne 0){throw "Failed to add manifest to Fruitendo binary"}
+      rcedit-x64.exe "Fruitendo.exe" --set-icon "media\Fruitendo.ico"
+      if ($LastExitCode -ne 0){throw "Failed to set icon of Fruitendo binary"}
       # Create .media subdirectories
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio" -ItemType Directory
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video" -ItemType Directory
@@ -134,15 +134,15 @@ build-retroarch-windows-msvc10-x64:
       Get-ChildItem -Path "libretro-common/audio/dsp_filters/*" -Include *.dsp | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio"
       Get-ChildItem -Path "gfx/video_filters/*" -Include *.filt | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video"
       # Copy default config file
-      Copy-Item -Path "retroarch.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/retroarch.default.cfg"
+      Copy-Item -Path "Fruitendo.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/Fruitendo.default.cfg"
       # Copy dll dependencies
       # (note that msvc builds should not have any, but this
       # may change in the future)
-      copypedeps.exe -r retroarch.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
-      if ($LastExitCode -ne 0){throw "Failed to copy RetroArch dependencies"}
-      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/retroarch.exe" -ErrorAction Ignore
+      copypedeps.exe -r Fruitendo.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
+      if ($LastExitCode -ne 0){throw "Failed to copy Fruitendo dependencies"}
+      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/Fruitendo.exe" -ErrorAction Ignore
 
-build-retroarch-windows-msvc10-i686:
+build-Fruitendo-windows-msvc10-i686:
   tags:
     - msvc2010
   stage: build
@@ -160,20 +160,20 @@ build-retroarch-windows-msvc10-i686:
     - $Env:Path += -join(";", "$Env:MSYS_BIN_DIR", ";", "$Env:SDK_BIN_DIR", ";", "$Env:RCEDIT_BIN_DIR", ";", "$Env:PEDEPS_BIN_DIR")
   artifacts:
     paths:
-    - retroarch.exe
+    - Fruitendo.exe
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - |
       $ErrorActionPreference = 'Stop'
-      # Build RetroArch
+      # Build Fruitendo
       bash.exe -l -c "make -f Makefile.griffin platform=$Env:MSVC_PLATFORM"
-      if ($LastExitCode -ne 0){throw "Failed to build RetroArch"}
-      mt.exe -nologo -manifest "retroarch.exe.manifest" -outputresource:"retroarch.exe;#1"
-      if ($LastExitCode -ne 0){throw "Failed to add manifest to RetroArch binary"}
-      rcedit-x64.exe "retroarch.exe" --set-icon "media\retroarch.ico"
-      if ($LastExitCode -ne 0){throw "Failed to set icon of RetroArch binary"}
+      if ($LastExitCode -ne 0){throw "Failed to build Fruitendo"}
+      mt.exe -nologo -manifest "Fruitendo.exe.manifest" -outputresource:"Fruitendo.exe;#1"
+      if ($LastExitCode -ne 0){throw "Failed to add manifest to Fruitendo binary"}
+      rcedit-x64.exe "Fruitendo.exe" --set-icon "media\Fruitendo.ico"
+      if ($LastExitCode -ne 0){throw "Failed to set icon of Fruitendo binary"}
       # Create .media subdirectories
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio" -ItemType Directory
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video" -ItemType Directory
@@ -183,15 +183,15 @@ build-retroarch-windows-msvc10-i686:
       Get-ChildItem -Path "libretro-common/audio/dsp_filters/*" -Include *.dsp | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio"
       Get-ChildItem -Path "gfx/video_filters/*" -Include *.filt | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video"
       # Copy default config file
-      Copy-Item -Path "retroarch.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/retroarch.default.cfg"
+      Copy-Item -Path "Fruitendo.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/Fruitendo.default.cfg"
       # Copy dll dependencies
       # (note that msvc builds should not have any, but this
       # may change in the future)
-      copypedeps.exe -r retroarch.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
-      if ($LastExitCode -ne 0){throw "Failed to copy RetroArch dependencies"}
-      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/retroarch.exe" -ErrorAction Ignore
+      copypedeps.exe -r Fruitendo.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
+      if ($LastExitCode -ne 0){throw "Failed to copy Fruitendo dependencies"}
+      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/Fruitendo.exe" -ErrorAction Ignore
 
-build-retroarch-windows-msvc05-i686:
+build-Fruitendo-windows-msvc05-i686:
   tags:
     - win10
   stage: build
@@ -210,20 +210,20 @@ build-retroarch-windows-msvc05-i686:
     - $Env:Path += -join(";", "$Env:MSYS_BIN_DIR", ";", "$Env:SDK_BIN_DIR", ";", "$Env:RCEDIT_BIN_DIR", ";", "$Env:PEDEPS_BIN_DIR")
   artifacts:
     paths:
-    - retroarch.exe
+    - Fruitendo.exe
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - |
       $ErrorActionPreference = 'Stop'
-      # Build RetroArch
+      # Build Fruitendo
       bash.exe -l -c "make -f Makefile.griffin platform=$Env:MSVC_PLATFORM"
-      if ($LastExitCode -ne 0){throw "Failed to build RetroArch"}
-      mt.exe -nologo -manifest "retroarch.exe.manifest" -outputresource:"retroarch.exe;#1"
-      if ($LastExitCode -ne 0){throw "Failed to add manifest to RetroArch binary"}
-      rcedit-x64.exe "retroarch.exe" --set-icon "media\retroarch.ico"
-      if ($LastExitCode -ne 0){throw "Failed to set icon of RetroArch binary"}
+      if ($LastExitCode -ne 0){throw "Failed to build Fruitendo"}
+      mt.exe -nologo -manifest "Fruitendo.exe.manifest" -outputresource:"Fruitendo.exe;#1"
+      if ($LastExitCode -ne 0){throw "Failed to add manifest to Fruitendo binary"}
+      rcedit-x64.exe "Fruitendo.exe" --set-icon "media\Fruitendo.ico"
+      if ($LastExitCode -ne 0){throw "Failed to set icon of Fruitendo binary"}
       # Create .media subdirectories
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio" -ItemType Directory
       New-Item -Path "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video" -ItemType Directory
@@ -233,15 +233,15 @@ build-retroarch-windows-msvc05-i686:
       Get-ChildItem -Path "libretro-common/audio/dsp_filters/*" -Include *.dsp | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/audio"
       Get-ChildItem -Path "gfx/video_filters/*" -Include *.filt | Copy-Item -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/filters/video"
       # Copy default config file
-      Copy-Item -Path "retroarch.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/retroarch.default.cfg"
+      Copy-Item -Path "Fruitendo.cfg" -Destination "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/pkg/Fruitendo.default.cfg"
       # Copy dll dependencies
       # (note that msvc builds should not have any, but this
       # may change in the future)
-      copypedeps.exe -r retroarch.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
-      if ($LastExitCode -ne 0){throw "Failed to copy RetroArch dependencies"}
-      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/retroarch.exe" -ErrorAction Ignore
+      copypedeps.exe -r Fruitendo.exe "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist"
+      if ($LastExitCode -ne 0){throw "Failed to copy Fruitendo dependencies"}
+      Remove-Item "$Env:MEDIA_PATH/$Env:CI_PROJECT_NAME/redist/Fruitendo.exe" -ErrorAction Ignore
 
-build-retroarch-linux-x64:
+build-Fruitendo-linux-x64:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-amd64-ubuntu:xenial-gcc9
   stage: build
   variables:
@@ -251,7 +251,7 @@ build-retroarch-linux-x64:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - retroarch_qt
     - ${MEDIA_PATH}
     expire_in: 10 min
@@ -261,17 +261,17 @@ build-retroarch-linux-x64:
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt"
     - "./configure --prefix=/usr"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo; fi
     - "make install DESTDIR=${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt prefix=/usr"
     - "rm -rf ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt/etc"
     - "cd ${MEDIA_PATH}/${CI_PROJECT_NAME}/ && tar -czf AppDirQt.tar.gz AppDirQt && rm -rf AppDirQt && cd -"
-    - "mv -f retroarch retroarch_qt"
+    - "mv -f Fruitendo retroarch_qt"
     # Non-Qt build
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir"
     - "make clean"
     - "./configure --disable-qt --prefix=/usr"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo; fi
     - "make install DESTDIR=${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir prefix=/usr"
     - "rm -rf ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir/etc"
     - "cd ${MEDIA_PATH}/${CI_PROJECT_NAME}/ && tar -czf AppDir.tar.gz AppDir && rm -rf AppDir && cd -"
@@ -285,7 +285,7 @@ build-retroarch-linux-x64:
     - "cp -f gfx/video_filters/*.so ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-retroarch-linux-i686:
+build-Fruitendo-linux-i686:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-i386-ubuntu:xenial-gcc9
   stage: build
   variables:
@@ -295,7 +295,7 @@ build-retroarch-linux-i686:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
@@ -304,17 +304,17 @@ build-retroarch-linux-i686:
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt"
     - "./configure --prefix=/usr"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo; fi
     - "make install DESTDIR=${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt prefix=/usr"
     - "rm -rf ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDirQt/etc"
     - "cd ${MEDIA_PATH}/${CI_PROJECT_NAME}/ && tar -czf AppDirQt.tar.gz AppDirQt && rm -rf AppDirQt && cd -"
-    - "mv -f retroarch retroarch_qt"
+    - "mv -f Fruitendo retroarch_qt"
     # Non-Qt build
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir"
     - "make clean"
     - "./configure --disable-qt --prefix=/usr"
     - "make -j$NUMPROC"
-    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded retroarch; fi
+    - if [ $STRIP_BIN -eq 1 ]; then strip --strip-unneeded Fruitendo; fi
     - "make install DESTDIR=${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir prefix=/usr"
     - "rm -rf ${MEDIA_PATH}/${CI_PROJECT_NAME}/AppDir/etc"
     - "cd ${MEDIA_PATH}/${CI_PROJECT_NAME}/ && tar -czf AppDir.tar.gz AppDir && rm -rf AppDir && cd -"
@@ -328,108 +328,108 @@ build-retroarch-linux-i686:
     - "cp -f gfx/video_filters/*.so ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
   
-.build-retroarch-macos-xcode:
+.build-Fruitendo-macos-xcode:
   # Metal/Universal x86_64 arm64 is default
   tags:
     - macosx-packaging
   stage: build
   variables:
-    XCARCHIVE_PATH: pkg/apple/build/RetroArchUniversal
-    XCPROJECT_NAME: RetroArch_Metal
+    XCARCHIVE_PATH: pkg/apple/build/FruitendoUniversal
+    XCPROJECT_NAME: Fruitendo_Metal
     XCCONFIG: GitLabCI.xcconfig
   artifacts:
     paths:
     - ${XCPROJECT_NAME}.zip
-    - retroarch-repo/
+    - Fruitendo-repo/
     expire_in: 10 min
   dependencies: []
   script:
-    - xcodebuild -project pkg/apple/${XCPROJECT_NAME}.xcodeproj -config Release -scheme RetroArch -archivePath ${XCARCHIVE_PATH} -xcconfig pkg/apple/${XCCONFIG} archive
+    - xcodebuild -project pkg/apple/${XCPROJECT_NAME}.xcodeproj -config Release -scheme Fruitendo -archivePath ${XCARCHIVE_PATH} -xcconfig pkg/apple/${XCCONFIG} archive
     - xcodebuild -exportArchive -archivePath ${XCARCHIVE_PATH}.xcarchive -exportPath . -exportOptionsPlist pkg/apple/OSX/ExportOptions.plist
-    - ditto -c -k --sequesterRsrc --keepParent RetroArch.app ${XCPROJECT_NAME}.zip
-    - mkdir .retroarch-repo
-    - "cp -R ./* .retroarch-repo"
-    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .retroarch-repo/.git_version.h
-    - "mv .retroarch-repo/ retroarch-repo/"
+    - ditto -c -k --sequesterRsrc --keepParent Fruitendo.app ${XCPROJECT_NAME}.zip
+    - mkdir .Fruitendo-repo
+    - "cp -R ./* .Fruitendo-repo"
+    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .Fruitendo-repo/.git_version.h
+    - "mv .Fruitendo-repo/ Fruitendo-repo/"
 
 # Mac OS Universal, Metal
-build-retroarch-osx-universal-metal:
-  extends: .build-retroarch-macos-xcode
+build-Fruitendo-osx-universal-metal:
+  extends: .build-Fruitendo-macos-xcode
 
-build-retroarch-osx-opengl-x64:
-  extends: .build-retroarch-macos-xcode
+build-Fruitendo-osx-opengl-x64:
+  extends: .build-Fruitendo-macos-xcode
   variables:
-    XCARCHIVE_PATH: pkg/apple/build/RetroArchOpenGL
-    XCPROJECT_NAME: RetroArch
+    XCARCHIVE_PATH: pkg/apple/build/FruitendoOpenGL
+    XCPROJECT_NAME: Fruitendo
     XCCONFIG: OpenGL_GitLabCI.xcconfig
 
-#build-retroarch-osx-ppc:
+#build-Fruitendo-osx-ppc:
 #  stage: build
 #  artifacts:
 #    paths:
 #    - ${XCPROJECT_NAME}.zip
-#    - retroarch-repo/
+#    - Fruitendo-repo/
 #    expire_in: 10 min
 #  dependencies: []
 #  variables:
-#    XCPROJECT_NAME: RetroArch
+#    XCPROJECT_NAME: Fruitendo
 #    XCCONFIG: OpenGL_GitLabCI.xcconfig
 #  tags:
 #   - macosx-legacy
 #  script:
-#    - xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch_PPC.xcodeproj ONLY_ACTIVE_ARCH=NO
+#    - xcodebuild -target Fruitendo -configuration Release -project pkg/apple/Fruitendo_PPC.xcodeproj ONLY_ACTIVE_ARCH=NO
 #    - pushd pkg/apple/build/Release/
-#    - ditto -c -k --sequesterRsrc --keepParent RetroArch.app ${XCPROJECT_NAME}.zip
+#    - ditto -c -k --sequesterRsrc --keepParent Fruitendo.app ${XCPROJECT_NAME}.zip
 #    - popd
-#    - mv pkg/apple/build/Release/RetroArch.zip ${XCPROJECT_NAME}.zip
-#    - mkdir .retroarch-repo
-#    - "cp -r ./* .retroarch-repo"
-#    - "mv .retroarch-repo/ retroarch-repo/"
+#    - mv pkg/apple/build/Release/Fruitendo.zip ${XCPROJECT_NAME}.zip
+#    - mkdir .Fruitendo-repo
+#    - "cp -r ./* .Fruitendo-repo"
+#    - "mv .Fruitendo-repo/ Fruitendo-repo/"
 
-build-retroarch-ios-arm64:
-  extends: .build-retroarch-macos-xcode
+build-Fruitendo-ios-arm64:
+  extends: .build-Fruitendo-macos-xcode
   tags:
     - mac-apple-silicon
   variables:
-    XCPROJECT_NAME: RetroArch_iOS13
+    XCPROJECT_NAME: Fruitendo_iOS13
     XCCONFIG: GitLabCI.xcconfig
-    XCSCHEME: "RetroArch iOS Release"
+    XCSCHEME: "Fruitendo iOS Release"
     XCDESTINATION: "generic/platform=iOS"
   artifacts:
     paths:
-    - retroarch-repo/
+    - Fruitendo-repo/
     expire_in: 10 min
   script:
     - xcodebuild -project pkg/apple/${XCPROJECT_NAME}.xcodeproj -destination ${XCDESTINATION} -config Release -scheme "${XCSCHEME}" -xcconfig pkg/apple/iOS/${XCCONFIG} build
-    - mkdir .retroarch-repo
-    - "cp -r ./* .retroarch-repo"
-    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .retroarch-repo/.git_version.h
-    - "mv .retroarch-repo/ retroarch-repo/"
+    - mkdir .Fruitendo-repo
+    - "cp -r ./* .Fruitendo-repo"
+    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .Fruitendo-repo/.git_version.h
+    - "mv .Fruitendo-repo/ Fruitendo-repo/"
 
-build-retroarch-ios9:
-  extends: .build-retroarch-macos-xcode
+build-Fruitendo-ios9:
+  extends: .build-Fruitendo-macos-xcode
   variables:
-    XCPROJECT_NAME: RetroArch_iOS9
+    XCPROJECT_NAME: Fruitendo_iOS9
     XCCONFIG: GitLabCI.xcconfig
-    XCSCHEME: "RetroArchiOS9"
+    XCSCHEME: "FruitendoiOS9"
   artifacts:
     paths:
-    - retroarch-repo/
+    - Fruitendo-repo/
     expire_in: 10 min
   script:
     - xcodebuild -project pkg/apple/${XCPROJECT_NAME}.xcodeproj -config Release -scheme "${XCSCHEME}" -xcconfig pkg/apple/iOS/GitLabCI.xcconfig build
-    - mkdir .retroarch-repo
-    - "cp -r ./* .retroarch-repo"
-    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .retroarch-repo/.git_version.h
-    - "mv .retroarch-repo/ retroarch-repo/"
+    - mkdir .Fruitendo-repo
+    - "cp -r ./* .Fruitendo-repo"
+    - echo '#define GIT_VERSION ' $(git rev-parse --short HEAD) > .Fruitendo-repo/.git_version.h
+    - "mv .Fruitendo-repo/ Fruitendo-repo/"
 
-build-retroarch-tvos-arm64:
-  extends: build-retroarch-ios-arm64
+build-Fruitendo-tvos-arm64:
+  extends: build-Fruitendo-ios-arm64
   variables:
-    XCSCHEME: "RetroArch tvOS Release"
+    XCSCHEME: "Fruitendo tvOS Release"
     XCDESTINATION: "generic/platform=tvOS"
 
-build-retroarch-dingux-mips32:
+build-Fruitendo-dingux-mips32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-dingux:latest
   stage: build
   variables:
@@ -439,7 +439,7 @@ build-retroarch-dingux-mips32:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - retroarch_rg350.opk
     - ${MEDIA_PATH}
     expire_in: 10 min
@@ -451,7 +451,7 @@ build-retroarch-dingux-mips32:
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-retroarch-dingux-odbeta-mips32:
+build-Fruitendo-dingux-odbeta-mips32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-dingux:odbeta
   stage: build
   variables:
@@ -461,7 +461,7 @@ build-retroarch-dingux-odbeta-mips32:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - retroarch_rg350_odbeta.opk
     - ${MEDIA_PATH}
     expire_in: 10 min
@@ -473,7 +473,7 @@ build-retroarch-dingux-odbeta-mips32:
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-retroarch-rs90-odbeta-mips32:
+build-Fruitendo-rs90-odbeta-mips32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-dingux:odbeta
   stage: build
   variables:
@@ -483,7 +483,7 @@ build-retroarch-rs90-odbeta-mips32:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - retroarch_rs90_odbeta.opk
     - ${MEDIA_PATH}
     expire_in: 10 min
@@ -495,7 +495,7 @@ build-retroarch-rs90-odbeta-mips32:
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-retroarch-retrofw-mips32:
+build-Fruitendo-retrofw-mips32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-dingux:odbeta
   stage: build
   variables:
@@ -505,7 +505,7 @@ build-retroarch-retrofw-mips32:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - retroarch_retrofw.opk
     - ${MEDIA_PATH}
     expire_in: 10 min
@@ -517,7 +517,7 @@ build-retroarch-retrofw-mips32:
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-retroarch-miyoo-arm32:
+build-Fruitendo-miyoo-arm32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-dingux:latest
   stage: build
   variables:
@@ -527,7 +527,7 @@ build-retroarch-miyoo-arm32:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch
+    - Fruitendo
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
@@ -538,14 +538,14 @@ build-retroarch-miyoo-arm32:
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
-    - "cp -f pkg/miyoo/20a-retroarch ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
+    - "cp -f pkg/miyoo/20a-Fruitendo ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-retroarch-android-normal:
+build-Fruitendo-android-normal:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-android:latest
   stage: build
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   script:
   script:
@@ -554,16 +554,16 @@ build-retroarch-android-normal:
       cd pkg/android/phoenix
       ./gradlew assembleNormalRelease
       cd -
-      mkdir .retroarch-precompiled
-      cp -r ./* .retroarch-precompiled/
-      mv .retroarch-precompiled/ retroarch-precompiled/
+      mkdir .Fruitendo-precompiled
+      cp -r ./* .Fruitendo-precompiled/
+      mv .Fruitendo-precompiled/ Fruitendo-precompiled/
 
-build-retroarch-android-aarch64:
+build-Fruitendo-android-aarch64:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-android:latest
   stage: build
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   script:
     - |
@@ -571,16 +571,16 @@ build-retroarch-android-aarch64:
       cd pkg/android/phoenix
       ./gradlew assembleAarch64Release
       cd -
-      mkdir .retroarch-precompiled
-      cp -r ./* .retroarch-precompiled/
-      mv .retroarch-precompiled/ retroarch-precompiled/
+      mkdir .Fruitendo-precompiled
+      cp -r ./* .Fruitendo-precompiled/
+      mv .Fruitendo-precompiled/ Fruitendo-precompiled/
 
-build-retroarch-android-ra32:
+build-Fruitendo-android-ra32:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-android:latest
   stage: build
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   script:
     - |
@@ -588,16 +588,16 @@ build-retroarch-android-ra32:
       cd pkg/android/phoenix
       ./gradlew assembleRa32Release
       cd -
-      mkdir .retroarch-precompiled
-      cp -r ./* .retroarch-precompiled/
-      mv .retroarch-precompiled/ retroarch-precompiled/
+      mkdir .Fruitendo-precompiled
+      cp -r ./* .Fruitendo-precompiled/
+      mv .Fruitendo-precompiled/ Fruitendo-precompiled/
 
-build-retroarch-android-playstore-normal:
+build-Fruitendo-android-playstore-normal:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-android:latest
   stage: build
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   script:
     - |
@@ -605,16 +605,16 @@ build-retroarch-android-playstore-normal:
       cd pkg/android/phoenix
       ./gradlew bundlePlayStoreNormalRelease
       cd -
-      mkdir .retroarch-precompiled
-      cp -r ./* .retroarch-precompiled/
-      mv .retroarch-precompiled/ retroarch-precompiled/
+      mkdir .Fruitendo-precompiled
+      cp -r ./* .Fruitendo-precompiled/
+      mv .Fruitendo-precompiled/ Fruitendo-precompiled/
 
-build-retroarch-android-playstore-plus:
+build-Fruitendo-android-playstore-plus:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-android:latest
   stage: build
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   script:
     - |
@@ -622,31 +622,31 @@ build-retroarch-android-playstore-plus:
       cd pkg/android/phoenix
       ./gradlew bundlePlayStorePlusRelease
       cd -
-      mkdir .retroarch-precompiled
-      cp -r ./* .retroarch-precompiled/
-      mv .retroarch-precompiled/ retroarch-precompiled/
+      mkdir .Fruitendo-precompiled
+      cp -r ./* .Fruitendo-precompiled/
+      mv .Fruitendo-precompiled/ Fruitendo-precompiled/
 
-build-static-retroarch-libnx-aarch64:
+build-static-Fruitendo-libnx-aarch64:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-libnx-devkitpro:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Static dummy builds without a core so its a good check if it properly builds
-    - build-static-retroarch-dummy-libnx-aarch64
+    - build-static-Fruitendo-dummy-libnx-aarch64
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.libnx -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-libnx-aarch64:
+build-static-Fruitendo-dummy-libnx-aarch64:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-libnx-devkitpro:latest
   stage: build
   variables:
@@ -665,31 +665,31 @@ build-static-retroarch-dummy-libnx-aarch64:
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
-    - "cp -f pkg/libnx/retroarch.jpg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
+    - "cp -f pkg/libnx/Fruitendo.jpg ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-static-retroarch-psp:
+build-static-Fruitendo-psp:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-psp:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-psp
+    - build-static-Fruitendo-dummy-psp
   script:
     # We need to boostrap before compile
     - "(cd bootstrap/psp1/kernel_functions_prx/ && make && cd -)"
     # Allow failure since we don't have a core
     - "make -f Makefile.psp1 -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-psp:
+build-static-Fruitendo-dummy-psp:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-psp:latest
   stage: build
   variables:
@@ -711,33 +711,33 @@ build-static-retroarch-dummy-psp:
     - "cp -f pkg/psp1/ICON0.PNG ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f pkg/psp1/PIC1.PNG ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-static-retroarch-vita:
+build-static-Fruitendo-vita:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-vita:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
-    -  retroarch-precompiled-gl/
+    -  Fruitendo-precompiled/
+    -  Fruitendo-precompiled-gl/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-vita
+    - build-static-Fruitendo-dummy-vita
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.vita -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
     - "make -f Makefile.vita clean"
     - "HAVE_VITAGLES=1 make -f Makefile.vita -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled-gl"
-    - "cp -r ./* .retroarch-precompiled-gl/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
-    - "mv .retroarch-precompiled-gl/ retroarch-precompiled-gl/"
+    - "mkdir .Fruitendo-precompiled-gl"
+    - "cp -r ./* .Fruitendo-precompiled-gl/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled-gl/ Fruitendo-precompiled-gl/"
 
-build-static-retroarch-dummy-vita:
+build-static-Fruitendo-dummy-vita:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-vita:latest
   stage: build
   variables:
@@ -758,27 +758,27 @@ build-static-retroarch-dummy-vita:
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -fr pkg/vita/* ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-static-retroarch-ps2:
+build-static-Fruitendo-ps2:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-ps2:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-ps2
+    - build-static-Fruitendo-dummy-ps2
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.ps2 -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-ps2:
+build-static-Fruitendo-dummy-ps2:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-ps2:latest
   stage: build
   before_script:
@@ -791,27 +791,27 @@ build-static-retroarch-dummy-ps2:
   script:
     - "make -f Makefile.ps2.salamander -j$NUMPROC release"
 
-build-static-retroarch-psl1ght:
+build-static-Fruitendo-psl1ght:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-psl1ght:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-psl1ght
+    - build-static-Fruitendo-dummy-psl1ght
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.psl1ght -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-psl1ght:
+build-static-Fruitendo-dummy-psl1ght:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-psl1ght:latest
   stage: build
   before_script:
@@ -824,27 +824,27 @@ build-static-retroarch-dummy-psl1ght:
   script:
     - "make -f Makefile.psl1ght.salamander -j$NUMPROC create-salamander"
 
-build-static-retroarch-orbis:
+build-static-Fruitendo-orbis:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-orbis:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-orbis
+    - build-static-Fruitendo-dummy-orbis
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.orbis -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-orbis:
+build-static-Fruitendo-dummy-orbis:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-orbis:latest
   stage: build
   before_script:
@@ -857,63 +857,63 @@ build-static-retroarch-dummy-orbis:
   script:
     - "make -f Makefile.orbis -j$NUMPROC HAVE_STATIC_DUMMY=1"
 
-build-static-retroarch-djgpp:
+build-static-Fruitendo-djgpp:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-djgpp-build-container:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs: []
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.dos -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-ctr:
+build-static-Fruitendo-ctr:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-ctr
+    - build-static-Fruitendo-dummy-ctr
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.ctr -j$NUMPROC USE_CTRULIB_2=1 ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-ctr-legacy:
+build-static-Fruitendo-ctr-legacy:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:ctr-legacy
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs: []
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.ctr -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-ctr:
+build-static-Fruitendo-dummy-ctr:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: build
   variables:
@@ -923,42 +923,42 @@ build-static-retroarch-dummy-ctr:
   artifacts:
     paths:
     - retroarch_3ds.cia
-    - RetroArch.3dsx
-    - RetroArch.smdh
+    - Fruitendo.3dsx
+    - Fruitendo.smdh
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - "make -f Makefile.ctr.salamander -j$NUMPROC USE_CTRULIB_2=1"
     - "mv -f retroarch_3ds_salamander.cia retroarch_3ds.cia"
-    - "mv -f retroarch_3ds_salamander.3dsx RetroArch.3dsx"
-    - "mv -f retroarch_3ds_salamander.smdh RetroArch.smdh"
+    - "mv -f retroarch_3ds_salamander.3dsx Fruitendo.3dsx"
+    - "mv -f retroarch_3ds_salamander.smdh Fruitendo.smdh"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-static-retroarch-wiiu:
+build-static-Fruitendo-wiiu:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-wiiu:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-wiiu
+    - build-static-Fruitendo-dummy-wiiu
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.wiiu -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-wiiu:
+build-static-Fruitendo-dummy-wiiu:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-wiiu:latest
   stage: build
   variables:
@@ -967,40 +967,40 @@ build-static-retroarch-dummy-wiiu:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch.rpx
+    - Fruitendo.rpx
     - ${MEDIA_PATH}
     expire_in: 10 min
   dependencies: []
   script:
     - "make -f Makefile.wiiu -j$NUMPROC SALAMANDER_BUILD=1"
-    - "mv -f retroarch_wiiu_salamander.rpx retroarch.rpx"
+    - "mv -f retroarch_wiiu_salamander.rpx Fruitendo.rpx"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "cp -f pkg/wiiu/icon.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f pkg/wiiu/meta.xml ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-static-retroarch-wii:
+build-static-Fruitendo-wii:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-wii
+    - build-static-Fruitendo-dummy-wii
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.wii -j$NUMPROC EXTERNAL_LIBOGC=1 GX_PTHREAD_LEGACY=0 ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-wii:
+build-static-Fruitendo-dummy-wii:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: build
   variables:
@@ -1015,7 +1015,7 @@ build-static-retroarch-dummy-wii:
   dependencies: []
   script:
     - "make -f Makefile.wii.salamander -j$NUMPROC EXTERNAL_LIBOGC=1 GX_PTHREAD_LEGACY=0"
-    - "mv -f retroarch-salamander_wii.dol boot.dol"
+    - "mv -f Fruitendo-salamander_wii.dol boot.dol"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
     - "mkdir -p ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
@@ -1024,27 +1024,27 @@ build-static-retroarch-dummy-wii:
     - "cp -f pkg/wii/icon.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
     - "cp -f pkg/wii/meta.xml ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg"
 
-build-static-retroarch-ngc:
+build-static-Fruitendo-ngc:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    -  retroarch-precompiled/
+    -  Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-ngc
+    - build-static-Fruitendo-dummy-ngc
   script:
     # Allow failure since we don't have a core
     - "make -f Makefile.ngc -j$NUMPROC EXTERNAL_LIBOGC=1 GX_PTHREAD_LEGACY=0 ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-ngc:
+build-static-Fruitendo-dummy-ngc:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-devkitpro:latest
   stage: build
   variables:
@@ -1062,27 +1062,27 @@ build-static-retroarch-dummy-ngc:
     - "cp -f libretro-common/audio/dsp_filters/*.dsp ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/audio"
     - "cp -f gfx/video_filters/*.filt ${MEDIA_PATH}/${CI_PROJECT_NAME}/filters/video"
 
-build-static-retroarch-emscripten:
+build-static-Fruitendo-emscripten:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-emscripten:latest
   stage: prepare-for-static-cores
   before_script:
     - export NUMPROC=$(($(nproc)/3))
   artifacts:
     paths:
-    - retroarch-precompiled/
+    - Fruitendo-precompiled/
     expire_in: 10 min
   dependencies: []
   needs:
     # Dummy build requires no core
-    - build-static-retroarch-dummy-emscripten
+    - build-static-Fruitendo-dummy-emscripten
   script:
     # Allow failure since we don't have a core
     - "emmake make -f Makefile.emscripten -j$NUMPROC ||:"
-    - "mkdir .retroarch-precompiled"
-    - "cp -r ./* .retroarch-precompiled/"
-    - "mv .retroarch-precompiled/ retroarch-precompiled/"
+    - "mkdir .Fruitendo-precompiled"
+    - "cp -r ./* .Fruitendo-precompiled/"
+    - "mv .Fruitendo-precompiled/ Fruitendo-precompiled/"
 
-build-static-retroarch-dummy-emscripten:
+build-static-Fruitendo-dummy-emscripten:
   image: $CI_SERVER_HOST:5050/libretro-infrastructure/libretro-build-amd64-ubuntu:latest
   stage: build
   variables:
@@ -1107,26 +1107,26 @@ build-static-retroarch-dummy-emscripten:
     - "cp -f media/invader_dark.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
     - "cp -f media/invader_light.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
     - "cp -f media/libretro-logo.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
-    - "cp -f media/retroarch-16x16.ico ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
-    - "cp -f media/retroarch-16x16.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
-    - "cp -f media/retroarch-96x96.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
-    - "cp -f media/retroarch.ico ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
+    - "cp -f media/Fruitendo-16x16.ico ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
+    - "cp -f media/Fruitendo-16x16.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
+    - "cp -f media/Fruitendo-96x96.png ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
+    - "cp -f media/Fruitendo.ico ${MEDIA_PATH}/${CI_PROJECT_NAME}/pkg/media"
 
 trigger_static-cores:
   stage: trigger-static-cores
   needs:
-  - build-static-retroarch-libnx-aarch64
-  - build-static-retroarch-psp
-  - build-static-retroarch-vita
-  - build-static-retroarch-ps2
-  - build-static-retroarch-psl1ght
-  - build-static-retroarch-orbis
-  - build-static-retroarch-ctr
-  - build-static-retroarch-ctr-legacy
-  - build-static-retroarch-wiiu
-  - build-static-retroarch-wii
-  - build-static-retroarch-ngc
-  - build-static-retroarch-emscripten
+  - build-static-Fruitendo-libnx-aarch64
+  - build-static-Fruitendo-psp
+  - build-static-Fruitendo-vita
+  - build-static-Fruitendo-ps2
+  - build-static-Fruitendo-psl1ght
+  - build-static-Fruitendo-orbis
+  - build-static-Fruitendo-ctr
+  - build-static-Fruitendo-ctr-legacy
+  - build-static-Fruitendo-wiiu
+  - build-static-Fruitendo-wii
+  - build-static-Fruitendo-ngc
+  - build-static-Fruitendo-emscripten
   dependencies: []
   script:
     # Dummy for now

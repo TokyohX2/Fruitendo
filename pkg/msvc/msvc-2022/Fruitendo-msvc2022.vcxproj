@@ -134,7 +134,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <ProjectGuid>{27FF7CE1-4059-4AA1-8062-FD529560FA54}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>RetroArchmsvc2019</RootNamespace>
+    <RootNamespace>Fruitendomsvc2019</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -142,7 +142,7 @@
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
     <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
-    <ProjectName>RetroArch-msvc2022</ProjectName>
+    <ProjectName>Fruitendo-msvc2022</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
@@ -998,7 +998,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\..\media\rarch.rc" />
+    <ResourceCompile Include="..\..\..\media\Fruitendo.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\griffin\griffin.c">
@@ -1010,6 +1010,7 @@
     <ClCompile Include="..\..\..\griffin\griffin_glslang.cpp">
       <AdditionalOptions Condition="$(Configuration.Contains('Debug')) And '$(Platform)'=='x64'">/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\..\menu\menu_input.c" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\ui\drivers\qt\*.h" Condition="$(Configuration.Contains('QT'))">

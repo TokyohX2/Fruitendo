@@ -1,19 +1,19 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2014-2017 - Jean-André Santoni
  *  Copyright (C) 2015-2019 - Andrés Suárez (input remapping + other things)
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -44,7 +44,7 @@
 #include "defaults.h"
 #include "core.h"
 #include "paths.h"
-#include "retroarch.h"
+#include "Fruitendo.h"
 #include "verbosity.h"
 
 #include "audio/audio_driver.h"
@@ -3423,7 +3423,7 @@ static config_file_t *open_default_config_file(void)
       conf = config_file_new_from_path_to_string(conf_path);
    }
 
-   /* Fallback to $HOME/.retroarch.cfg. */
+   /* Fallback to $HOME/.Fruitendo.cfg. */
    if (!conf && getenv("HOME"))
    {
       fill_pathname_join_special(conf_path, getenv("HOME"),
@@ -3447,7 +3447,7 @@ static config_file_t *open_default_config_file(void)
       {
          char skeleton_conf[PATH_MAX_LENGTH];
          bool saved          = false;
-         /* Build a retroarch.cfg path from the
+         /* Build a Fruitendo.cfg path from the
           * global config directory (/etc). */
          fill_pathname_join_special(skeleton_conf, GLOBAL_CONFIG_DIR,
             FILE_PATH_MAIN_CONFIG, sizeof(skeleton_conf));
@@ -3764,7 +3764,7 @@ static bool config_load_file(global_t *global,
        * low values to what they were
        * intended to be based on the default value in config.def.h
        * If the value is less than 10000 then multiple by 1MB because if
-       * the retroarch.cfg
+       * the Fruitendo.cfg
        * file contains rewind_buffer_size = "100",
        * then that ultimately gets interpreted as
        * 100MB, so ensure the internal values represent that.*/
@@ -4249,7 +4249,7 @@ static bool config_load_file(global_t *global,
     * added, set the favourites limit according to the current
     * history playlist size limit. (Have to do this, otherwise
     * users with large custom history size limits may lose
-    * favourites entries when updating RetroArch...) */
+    * favourites entries when updating Fruitendo...) */
    if (    (bool)RHMAP_HAS_STR(conf->entries_map, "content_history_size")
        && !(bool)RHMAP_HAS_STR(conf->entries_map, "content_favorites_size"))
    {

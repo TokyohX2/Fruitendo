@@ -60,7 +60,7 @@ extern "C" {
 #include "../../../file_path_special.h"
 #include "../../../msg_hash.h"
 #include "../../../paths.h"
-#include "../../../retroarch.h"
+#include "../../../Fruitendo.h"
 
 #ifndef CXX_BUILD
 }

@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2015-2018 - Andre Leiradella
  *  Copyright (C) 2019-2023 - Brian Weiss
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -89,8 +89,8 @@ typedef struct rcheevos_locals_t
    bool game_placard_requested;       /* request to display game placard */
 #endif
 
-   char user_agent_prefix[128];       /* RetroArch/OS version information */
-   char user_agent_core[256];         /* RetroArch/OS/Core version information */
+   char user_agent_prefix[128];       /* Fruitendo/OS version information */
+   char user_agent_core[256];         /* Fruitendo/OS/Core version information */
 
 #ifdef HAVE_MENU
    rcheevos_menuitem_t* menuitems;    /* array of items for the achievements quick menu */

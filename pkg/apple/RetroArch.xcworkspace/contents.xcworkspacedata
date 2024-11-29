@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:RetroArch_Metal.xcodeproj">
+      location = "container:Fruitendo_Metal.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:RetroArch_iOS13.xcodeproj">
+      location = "group:Fruitendo_iOS13.xcodeproj">
    </FileRef>
 </Workspace>

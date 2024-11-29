@@ -1,5 +1,5 @@
-package com.retroarch.playcore;
+package com.Fruitendo.playcore;
 
 import android.app.Application;
 
-public class RetroArchApplication extends Application {}
+public class FruitendoApplication extends Application {}

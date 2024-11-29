@@ -62,7 +62,7 @@
 - WAYLAND: Use frontend signal handler to quit (fix quit by window close)
 - WAYLAND: Commit viewport resizes (window resize is more responsive)
 - UWP: Align MESA to alpha-2-resfix - Remove wrong resolution special handling for OPENGL
-- UWP: 4K fix: align MESA reading of ClientRect to retroarch procedure, this fixes max resolution being set to 1080p. As reading must be done inside an UI thread and is in fact an async operation which might delay frame generation, the reading itself is doen once and cached, give that changing resolution while the app is running is an unlikely corner-case use
+- UWP: 4K fix: align MESA reading of ClientRect to Fruitendo procedure, this fixes max resolution being set to 1080p. As reading must be done inside an UI thread and is in fact an async operation which might delay frame generation, the reading itself is doen once and cached, give that changing resolution while the app is running is an unlikely corner-case use
 - WINDOWS: Windows mouse ungrab must release the mouse instead of confine it to the current desktop (#16488)
 - WINDOWS: Fix numlock/pause key release events
 

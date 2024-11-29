@@ -1,9 +1,9 @@
 //
 //  JITSupport.m
-//  RetroArchiOS
+//  FruitendoiOS
 //
 //  Created by Yoshi Sugawara on 9/25/21.
-//  Copyright © 2021 RetroArch. All rights reserved.
+//  Copyright © 2021 Fruitendo. All rights reserved.
 //
 //  Copied from UTMApp, original author: osy
 //  

@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="RetroArch-msvc2005"
+	Name="Fruitendo-msvc2005"
 	ProjectGUID="{1FEFA874-F6A6-4CE6-9DB4-3B291A364CE5}"
-	RootNamespace="RetroArch-msvc2005"
+	RootNamespace="Fruitendo-msvc2005"
 	Keyword="Win32Proj"
 	>
 	<Platforms>
@@ -63,11 +63,11 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="msimg32.lib winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2005.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2005.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="$(INETSDK)\Lib;$(DXSDK_DIR)\Lib\x86"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/RetroArch-msvc2005.pdb"
+				ProgramDatabaseFile="$(OutDir)/Fruitendo-msvc2005.pdb"
 				SubSystem="1"
 				TargetMachine="1"
 			/>
@@ -141,7 +141,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="msimg32.lib winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2005.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2005.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="$(INETSDK)\Lib;$(DXSDK_DIR)\Lib\x86"
 				GenerateDebugInformation="true"
@@ -220,7 +220,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="msimg32.lib winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2005.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2005.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="$(INETSDK)\Lib;$(DXSDK_DIR)\Lib\x86"
 				GenerateDebugInformation="true"
@@ -302,11 +302,11 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="msimg32.lib winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2005.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2005.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="$(INETSDK)\Lib;$(DXSDK_DIR)\Lib\x86"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/RetroArch-msvc2005.pdb"
+				ProgramDatabaseFile="$(OutDir)/Fruitendo-msvc2005.pdb"
 				SubSystem="1"
 				TargetMachine="1"
 			/>

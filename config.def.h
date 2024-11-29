@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2016 - Daniel De Matteis
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -348,7 +348,7 @@
 #define DEFAULT_CORE_INFO_SAVESTATE_BYPASS false
 
 /* Specifies whether to 'reload' (fork and quit)
- * RetroArch when launching content with the
+ * Fruitendo when launching content with the
  * currently loaded core
  * > Only relevant on platforms without dynamic core
  *   loading support
@@ -1386,9 +1386,9 @@
  * > Setting value to zero disables recording checkpoints. */
 #define DEFAULT_REPLAY_CHECKPOINT_INTERVAL 0
 
-/* Automatically saves a savestate at the end of RetroArch's lifetime.
+/* Automatically saves a savestate at the end of Fruitendo's lifetime.
  * The path is $SRAM_PATH.auto.
- * RetroArch will automatically load any savestate with this path on
+ * Fruitendo will automatically load any savestate with this path on
  * startup if savestate_auto_load is set. */
 #define DEFAULT_SAVESTATE_AUTO_SAVE false
 #define DEFAULT_SAVESTATE_AUTO_LOAD false
@@ -1735,7 +1735,7 @@
 #if defined(HAKCHI)
 #define DEFAULT_BUILDBOT_SERVER_URL "http://hakchicloud.com/Libretro_Cores/"
 #elif defined(WEBOS)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://retroarch-cores.webosbrew.org/armv7a/"
+#define DEFAULT_BUILDBOT_SERVER_URL "http://Fruitendo-cores.webosbrew.org/armv7a/"
 #elif defined(ANDROID)
 #if defined(ANDROID_ARM_V7)
 #define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/armeabi-v7a/"

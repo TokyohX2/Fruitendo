@@ -16,7 +16,7 @@ allprojects {
     }
 
     Properties props = new Properties()
-    props.load(new FileInputStream(new File(project.rootDir, "retroarch.properties")))
+    props.load(new FileInputStream(new File(project.rootDir, "Fruitendo.properties")))
     props.each { prop ->
         project.ext.set(prop.key, prop.value)
     }
@@ -45,14 +45,14 @@ android {
 
   productFlavors {
     normal {
-      resValue "string", "app_name", "RetroArch"
+      resValue "string", "app_name", "Fruitendo"
       buildConfigField "boolean", "PLAY_STORE_BUILD", "false"
 
       dimension "variant"
     }
     aarch64 {
       applicationIdSuffix '.aarch64'
-      resValue "string", "app_name", "RetroArch (AArch64)"
+      resValue "string", "app_name", "Fruitendo (AArch64)"
       buildConfigField "boolean", "PLAY_STORE_BUILD", "false"
 
       dimension "variant"
@@ -62,7 +62,7 @@ android {
     }
     ra32 {
       applicationIdSuffix '.ra32'
-      resValue "string", "app_name", "RetroArch (32-bit)"
+      resValue "string", "app_name", "Fruitendo (32-bit)"
       buildConfigField "boolean", "PLAY_STORE_BUILD", "false"
 
       dimension "variant"
@@ -76,7 +76,7 @@ android {
       versionCode getPlayStoreVersionCode()
       versionName getPlayStoreVersionName()
 
-      resValue "string", "app_name", "RetroArch"
+      resValue "string", "app_name", "Fruitendo"
       buildConfigField "boolean", "PLAY_STORE_BUILD", "true"
 
       dimension "variant"
@@ -88,7 +88,7 @@ android {
       versionName getPlayStoreVersionName()
 
       applicationIdSuffix '.aarch64'
-      resValue "string", "app_name", "RetroArch Plus"
+      resValue "string", "app_name", "Fruitendo Plus"
       buildConfigField "boolean", "PLAY_STORE_BUILD", "true"
 
       dimension "variant"

@@ -59,7 +59,7 @@ ROM=$(zenity --file-selection --file-filter="${FILTER}" "${LASTROM}")
 echo "${ROM}" > "${BACKEND}-lastrom.txt"
 
 if [[ "${ROM}" =~ \.(zip|rar|7z)$ ]] && [[ ! "${FILTER}" =~ ^Arcade ]] ; then
-	source retroarch-zip "${ROM}" -L "${HOME}/lib/${BACKEND}" "${@}"
+	source Fruitendo-zip "${ROM}" -L "${HOME}/lib/${BACKEND}" "${@}"
 else
-	exec retroarch "${ROM}" -L "${HOME}/lib/${BACKEND}" "${@}"
+	exec Fruitendo "${ROM}" -L "${HOME}/lib/${BACKEND}" "${@}"
 fi

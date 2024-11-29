@@ -1,8 +1,8 @@
-RetroArch is an open-source project that makes use of a powerful development interface called Libretro. Libretro is an interface that allows you to make cross-platform applications that can use rich features such as OpenGL, cross-platform camera support, location support, and more in the future.
+Fruitendo is an open-source project that makes use of a powerful development interface called Libretro. Libretro is an interface that allows you to make cross-platform applications that can use rich features such as OpenGL, cross-platform camera support, location support, and more in the future.
 
 It comes with its own built-in collection of applications to provide you with a 'one-stop-shop' for entertainment.
 
-Libretro and RetroArch are perfectly suited for creating games, emulators and multimedia programs. If you want to learn more, go to our website (listed below).
+Libretro and Fruitendo are perfectly suited for creating games, emulators and multimedia programs. If you want to learn more, go to our website (listed below).
 
 FEATURES:
 * Eye-candy menus to choose from!
@@ -31,12 +31,12 @@ https://discord.gg/C4amCeV
 
 Visit our Youtube channel here for tutorials, gameplays, news and development progress!
 https://www.youtube.com/user/libretro
-https://www.youtube.com/RetroArchOfficial
+https://www.youtube.com/FruitendoOfficial
 
 For info and help, see our documentation site -
 https://docs.libretro.com/
 
 Visit our website!
-https://www.retroarch.com/
+https://www.Fruitendo.com/
 
 www.libretro.com

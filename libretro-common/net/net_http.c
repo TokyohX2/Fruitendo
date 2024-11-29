@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (net_http.c).
@@ -445,7 +445,7 @@ static int net_http_new_socket(struct http_connection_t *conn)
 
       /* TODO: Properly figure out what's going wrong when the newer 
          timeout/poll code interacts with mbed and winsock
-         https://github.com/libretro/RetroArch/issues/14742 */
+         https://github.com/libretro/Fruitendo/issues/14742 */
 
       /* Temp fix, don't use new timeout/poll code for cheevos http requests */
          bool timeout = true;

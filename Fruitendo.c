@@ -1,19 +1,19 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2021 - Daniel De Matteis
  *  Copyright (C) 2012-2015 - Michael Lelli
  *  Copyright (C) 2014-2017 - Jean-Andr� Santoni
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -205,7 +205,7 @@
 #include "version.h"
 #include "version_git.h"
 
-#include "retroarch.h"
+#include "Fruitendo.h"
 
 #include "accessibility.h"
 
@@ -4208,7 +4208,7 @@ bool command_event(enum event_command cmd, void *data)
              * case we have to 'manually' reset the runahead
              * runtime variables, otherwise runahead will
              * remain disabled until the user restarts
-             * RetroArch */
+             * Fruitendo */
             if (!(runloop_st->flags & RUNLOOP_FLAG_RUNAHEAD_AVAILABLE))
                runahead_clear_variables(runloop_st);
 
@@ -5737,7 +5737,7 @@ static void sdl_exit(void)
 /**
  * main_exit:
  *
- * Cleanly exit RetroArch.
+ * Cleanly exit Fruitendo.
  *
  **/
 void main_exit(void *args)
@@ -5764,7 +5764,7 @@ void main_exit(void *args)
 
    if (runloop_st->perfcnt_enable)
    {
-      RARCH_LOG("[PERF]: Performance counters (RetroArch):\n");
+      RARCH_LOG("[PERF]: Performance counters (Fruitendo):\n");
       runloop_log_counters(p_rarch->perf_counters_rarch, p_rarch->perf_ptr_rarch);
    }
 
@@ -5829,7 +5829,7 @@ void main_exit(void *args)
 /**
  * main_entry:
  *
- * Main function of RetroArch.
+ * Main function of Fruitendo.
  *
  * If HAVE_MAIN is not defined, will contain main loop and will not
  * be exited from until we exit the program. Otherwise, will
@@ -6222,7 +6222,7 @@ static void retroarch_print_help(const char *arg0)
          "Path for config file.\n", sizeof(buf) - _len);
 #ifdef _WIN32
    _len += strlcpy(buf + _len, "                                 "
-         "  Defaults to retroarch.cfg in same directory as retroarch.exe.\n"
+         "  Defaults to Fruitendo.cfg in same directory as Fruitendo.exe.\n"
          "                                 "
          "  If a default config is not found, the program will attempt to create one.\n"
          , sizeof(buf) - _len);
@@ -6231,15 +6231,15 @@ static void retroarch_print_help(const char *arg0)
          "                                 "
          "  By default looks for config in\n"
          "                                 "
-         "  $XDG_CONFIG_HOME/retroarch/retroarch.cfg,\n"
+         "  $XDG_CONFIG_HOME/Fruitendo/Fruitendo.cfg,\n"
          "                                 "
-         "  $HOME/.config/retroarch/retroarch.cfg, and\n"
+         "  $HOME/.config/Fruitendo/Fruitendo.cfg, and\n"
          "                                 "
-         "  $HOME/.retroarch.cfg.\n"
+         "  $HOME/.Fruitendo.cfg.\n"
          "                                 "
          "  If a default config is not found, the program will attempt to create one\n"
          "                                 "
-         "  based on the skeleton config (" GLOBAL_CONFIG_DIR "/retroarch.cfg).\n"
+         "  based on the skeleton config (" GLOBAL_CONFIG_DIR "/Fruitendo.cfg).\n"
          , sizeof(buf) - _len);
 #endif
    _len += strlcpy(buf + _len, "      --appendconfig=FILE        "
@@ -6723,7 +6723,7 @@ static bool retroarch_parse_input_and_config(
       /* Command line interface is only considered
        * to be 'active' (i.e. used by a third party)
        * if this is the first run (subsequent runs
-       * are triggered by RetroArch itself) */
+       * are triggered by Fruitendo itself) */
       cli_active = true;
    }
 
@@ -6732,14 +6732,14 @@ static bool retroarch_parse_input_and_config(
     * Some current cases which track desired behavior and how it is supposed to work:
     *
     * Dynamically linked RA:
-    * ./retroarch                            -> CORE_TYPE_DUMMY
-    * ./retroarch -v                         -> CORE_TYPE_DUMMY + verbose
-    * ./retroarch --menu                     -> CORE_TYPE_DUMMY
-    * ./retroarch --menu -v                  -> CORE_TYPE_DUMMY + verbose
-    * ./retroarch -L contentless-core        -> CORE_TYPE_PLAIN
-    * ./retroarch -L content-core            -> CORE_TYPE_PLAIN + FAIL (This currently crashes)
-    * ./retroarch [-L content-core] ROM      -> CORE_TYPE_PLAIN
-    * ./retroarch <-L or ROM> --menu         -> FAIL
+    * ./Fruitendo                            -> CORE_TYPE_DUMMY
+    * ./Fruitendo -v                         -> CORE_TYPE_DUMMY + verbose
+    * ./Fruitendo --menu                     -> CORE_TYPE_DUMMY
+    * ./Fruitendo --menu -v                  -> CORE_TYPE_DUMMY + verbose
+    * ./Fruitendo -L contentless-core        -> CORE_TYPE_PLAIN
+    * ./Fruitendo -L content-core            -> CORE_TYPE_PLAIN + FAIL (This currently crashes)
+    * ./Fruitendo [-L content-core] ROM      -> CORE_TYPE_PLAIN
+    * ./Fruitendo <-L or ROM> --menu         -> FAIL
     *
     * The heuristic here seems to be that if we use the -L CLI option or
     * optind < argc at the end we should set CORE_TYPE_PLAIN.
@@ -7322,7 +7322,7 @@ static bool retroarch_parse_input_and_config(
    }
 
 #ifdef HAVE_GIT_VERSION
-   RARCH_LOG("RetroArch %s (Git %s)\n",
+   RARCH_LOG("Fruitendo %s (Git %s)\n",
          PACKAGE_VERSION, retroarch_git_version);
 #endif
 
@@ -8217,7 +8217,7 @@ void retroarch_fail(int error_code, const char *error)
    longjmp(global->error_sjlj_context, error_code);
 }
 
-/* Called on close content, checks if we need to also exit retroarch */
+/* Called on close content, checks if we need to also exit Fruitendo */
 bool should_quit_on_close(void)
 {
 #ifdef HAVE_MENU

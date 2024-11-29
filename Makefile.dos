@@ -110,10 +110,10 @@ DATA := data
 INCLUDES :=	include
 EXEFS_SRC := exefs_src
 
-APP_TITLE := RetroArch
+APP_TITLE := Fruitendo
 APP_VERSION := $(RARCH_VERSION)
 APP_AUTHOR := libretro Team
-APP_ICON := pkg/libnx/retroarch.jpg
+APP_ICON := pkg/libnx/Fruitendo.jpg
 
 #---------------------------------------------------------------------------------
 # options for code generation

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>RetroArch</name>
+	<name>Fruitendo</name>
 	<comment></comment>
 	<projects>
-		<project>RetroArch_</project>
+		<project>Fruitendo_</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

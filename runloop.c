@@ -1,4 +1,4 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2021 - Daniel De Matteis
  *  Copyright (C) 2012-2015 - Michael Lelli
@@ -7,15 +7,15 @@
  *  Copyright (C) 2016-2019 - Andr�s Su�rez (input mapper code)
  *  Copyright (C) 2016-2017 - Gregor Richards (network code)
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -228,7 +228,7 @@
 #include "version.h"
 #include "version_git.h"
 
-#include "retroarch.h"
+#include "Fruitendo.h"
 
 #include "accessibility.h"
 
@@ -577,9 +577,9 @@ static dylib_t load_dynamic_core(const char *path, char *buf,
    {
       /* Try to verify that -lretro was not linked in from other modules
        * since loading it dynamically and with -l will fail hard. */
-      RARCH_ERR("Serious problem. RetroArch wants to load libretro cores"
+      RARCH_ERR("Serious problem. Fruitendo wants to load libretro cores"
             " dynamically, but it is already linked.\n");
-      RARCH_ERR("This could happen if other modules RetroArch depends on "
+      RARCH_ERR("This could happen if other modules Fruitendo depends on "
             "link against libretro directly.\n");
       RARCH_ERR("Proceeding could cause a crash. Aborting ...\n");
       retroarch_fail(1, "load_dynamic_core()");
@@ -783,7 +783,7 @@ static bool dynamic_request_hw_context(enum retro_hw_context_type type,
          RARCH_LOG("Requesting Vulkan context.\n");
          break;
 #else
-         RARCH_ERR("Requesting Vulkan context, but RetroArch is not compiled against Vulkan. Cannot use HW context.\n");
+         RARCH_ERR("Requesting Vulkan context, but Fruitendo is not compiled against Vulkan. Cannot use HW context.\n");
          return false;
 #endif
 
@@ -801,7 +801,7 @@ static bool dynamic_request_hw_context(enum retro_hw_context_type type,
 #ifndef HAVE_OPENGLES3_2
          if (major == 3 && minor == 2)
          {
-            RARCH_ERR("Requesting OpenGLES%u.%u context, but RetroArch is compiled against a lesser version. Cannot use HW context.\n",
+            RARCH_ERR("Requesting OpenGLES%u.%u context, but Fruitendo is compiled against a lesser version. Cannot use HW context.\n",
                   major, minor);
             return false;
          }
@@ -809,7 +809,7 @@ static bool dynamic_request_hw_context(enum retro_hw_context_type type,
 #if !defined(HAVE_OPENGLES3_2) && !defined(HAVE_OPENGLES3_1)
          if (major == 3 && minor == 1)
          {
-            RARCH_ERR("Requesting OpenGLES%u.%u context, but RetroArch is compiled against a lesser version. Cannot use HW context.\n",
+            RARCH_ERR("Requesting OpenGLES%u.%u context, but Fruitendo is compiled against a lesser version. Cannot use HW context.\n",
                   major, minor);
             return false;
          }
@@ -822,20 +822,20 @@ static bool dynamic_request_hw_context(enum retro_hw_context_type type,
 #endif
       case RETRO_HW_CONTEXT_OPENGL:
       case RETRO_HW_CONTEXT_OPENGL_CORE:
-         RARCH_ERR("Requesting OpenGL context, but RetroArch "
+         RARCH_ERR("Requesting OpenGL context, but Fruitendo "
                "is compiled against OpenGLES. Cannot use HW context.\n");
          return false;
 
 #elif defined(HAVE_OPENGL) || defined(HAVE_OPENGL_CORE)
       case RETRO_HW_CONTEXT_OPENGLES2:
       case RETRO_HW_CONTEXT_OPENGLES3:
-         RARCH_ERR("Requesting OpenGLES%u context, but RetroArch "
+         RARCH_ERR("Requesting OpenGLES%u context, but Fruitendo "
                "is compiled against OpenGL. Cannot use HW context.\n",
                type == RETRO_HW_CONTEXT_OPENGLES2 ? 2 : 3);
          return false;
 
       case RETRO_HW_CONTEXT_OPENGLES_VERSION:
-         RARCH_ERR("Requesting OpenGLES%u.%u context, but RetroArch "
+         RARCH_ERR("Requesting OpenGLES%u.%u context, but Fruitendo "
                "is compiled against OpenGL. Cannot use HW context.\n",
                major, minor);
          return false;
@@ -5783,7 +5783,7 @@ static enum runloop_state_enum runloop_check_state(
             runloop_st->flags   &= ~RUNLOOP_FLAG_CORE_SHUTDOWN_INITIATED;
 
             /* Check whether dummy core should be loaded
-             * instead of exiting RetroArch completely
+             * instead of exiting Fruitendo completely
              * (aborts shutdown if invoked) */
             if (settings->bools.load_dummy_on_core_shutdown)
             {
@@ -6833,11 +6833,11 @@ static enum runloop_state_enum runloop_check_state(
 /**
  * runloop_iterate:
  *
- * Run Libretro core in RetroArch for one frame.
+ * Run Libretro core in Fruitendo for one frame.
  *
  * Returns: 0 on success, 1 if we have to wait until
  * button input in order to wake up the loop,
- * -1 if we forcibly quit out of the RetroArch iteration loop.
+ * -1 if we forcibly quit out of the Fruitendo iteration loop.
  **/
 int runloop_iterate(void)
 {

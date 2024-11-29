@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2016 - Daniel De Matteis
  *  Copyright (C) 2021      - David G.F.
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -42,7 +42,7 @@ RETRO_BEGIN_DECLS
 enum event_command
 {
    CMD_EVENT_NONE = 0,
-   /* Resets RetroArch. */
+   /* Resets Fruitendo. */
    CMD_EVENT_RESET,
    CMD_EVENT_SET_PER_GAME_RESOLUTION,
    CMD_EVENT_SET_FRAME_LIMIT,
@@ -76,7 +76,7 @@ enum event_command
    CMD_EVENT_RAM_STATE_TO_FILE,
    /* Takes screenshot. */
    CMD_EVENT_TAKE_SCREENSHOT,
-   /* Quits RetroArch. */
+   /* Quits Fruitendo. */
    CMD_EVENT_QUIT,
    /* Reinitialize all drivers. */
    CMD_EVENT_REINIT_FROM_TOGGLE,
@@ -143,13 +143,13 @@ enum event_command
    CMD_EVENT_VIDEO_SET_BLOCKING_STATE,
    /* Sets current aspect ratio index. */
    CMD_EVENT_VIDEO_SET_ASPECT_RATIO,
-   /* Restarts RetroArch. */
+   /* Restarts Fruitendo. */
    CMD_EVENT_RESTART_RETROARCH,
    /* Shutdown the OS */
    CMD_EVENT_SHUTDOWN,
    /* Reboot the OS */
    CMD_EVENT_REBOOT,
-   /* Resume RetroArch when in menu. */
+   /* Resume Fruitendo when in menu. */
    CMD_EVENT_RESUME,
    /* Add a playlist entry to favorites. */
    CMD_EVENT_ADD_TO_FAVORITES,
@@ -157,10 +157,10 @@ enum event_command
    CMD_EVENT_RESET_CORE_ASSOCIATION,
    /* Toggles pause. */
    CMD_EVENT_PAUSE_TOGGLE,
-   /* Pauses RetroArch. */
+   /* Pauses Fruitendo. */
    CMD_EVENT_MENU_PAUSE_LIBRETRO,
    CMD_EVENT_PAUSE,
-   /* Unpauses RetroArch. */
+   /* Unpauses Fruitendo. */
    CMD_EVENT_UNPAUSE,
    /* Toggles menu on/off. */
    CMD_EVENT_MENU_TOGGLE,
@@ -321,7 +321,7 @@ struct rarch_state;
  * command_event:
  * @cmd                  : Command index.
  *
- * Performs RetroArch command with index @cmd.
+ * Performs Fruitendo command with index @cmd.
  *
  * Returns: true (1) on success, otherwise false (0).
  **/

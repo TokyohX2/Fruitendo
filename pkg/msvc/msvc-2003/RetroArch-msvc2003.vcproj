@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="7.10"
-	Name="RetroArch-msvc2003"
+	Name="Fruitendo-msvc2003"
 	ProjectGUID="{1FEFA874-F6A6-4CE6-9DB4-3B291A364CE5}"
-	RootNamespace="RetroArch-msvc2003"
+	RootNamespace="Fruitendo-msvc2003"
 	Keyword="Win32Proj">
 	<Platforms>
 		<Platform
@@ -34,10 +34,10 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="winmm.lib opengl32.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2003.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2003.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
-				ProgramDatabaseFile="$(OutDir)/RetroArch-msvc2003.pdb"
+				ProgramDatabaseFile="$(OutDir)/Fruitendo-msvc2003.pdb"
 				SubSystem="1"
 				TargetMachine="1"/>
 			<Tool
@@ -81,7 +81,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="winmm.lib opengl32.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2003.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2003.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="TRUE"
 				SubSystem="1"
@@ -129,7 +129,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2003.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2003.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="TRUE"
 				SubSystem="1"
@@ -180,10 +180,10 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="winmm.lib"
-				OutputFile="$(OutDir)/RetroArch-msvc2003.exe"
+				OutputFile="$(OutDir)/Fruitendo-msvc2003.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="TRUE"
-				ProgramDatabaseFile="$(OutDir)/RetroArch-msvc2003.pdb"
+				ProgramDatabaseFile="$(OutDir)/Fruitendo-msvc2003.pdb"
 				SubSystem="1"
 				TargetMachine="1"/>
 			<Tool

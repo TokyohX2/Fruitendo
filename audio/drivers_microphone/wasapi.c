@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2023 Jesse Talavera-Greenberg
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -342,7 +342,7 @@ static void *wasapi_microphone_open_mic(void *driver_context, const char *device
    microphone->frame_size         = float_format ? sizeof(float) : sizeof(int16_t);
    microphone->engine_buffer_size = frame_count * microphone->frame_size;
 
-   /* If this mic should be used *exclusively* by RetroArch... */
+   /* If this mic should be used *exclusively* by Fruitendo... */
    if (microphone->exclusive)
    {
       microphone->buffer = fifo_new(microphone->engine_buffer_size);

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   <title>RetroArch Web Player</title>
+   <title>Fruitendo Web Player</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Bootstrap core CSS -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -12,7 +12,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
 
    <link href="libretro.css" rel="stylesheet" type="text/css">
-   <link rel="shortcut icon" href="media/retroarch.ico" />
+   <link rel="shortcut icon" href="media/Fruitendo.ico" />
 
 </head>
 <body>
@@ -119,7 +119,7 @@
                            <a class="dropdown-item" href="." data-core="xrick">XRick</a>
                            <a class="dropdown-item" href="." data-core="yabause">Yabause</a>
                         </div>
-                        <button class="btn btn-primary disabled" id="btnRun" onclick="startRetroArch()" disabled>
+                        <button class="btn btn-primary disabled" id="btnRun" onclick="startFruitendo()" disabled>
                            <span class="fa fa-spinner fa-spin" id="icnRun"></span> Run
                         </button>
                         <button class="btn btn-primary disabled" id="btnAdd" onclick="document.getElementById('btnRom').click()" disabled>
@@ -163,7 +163,7 @@
       <p>etc.</p>
         <p></p>
       <h3><b>Load Content</b></h3>
-      <p>After selecting Core, click Run. After RetroArch opens, click Add Content and select your compatible ROM.</p>
+      <p>After selecting Core, click Run. After Fruitendo opens, click Add Content and select your compatible ROM.</p>
       <li>Nestopia > <i>YourGame.nes</i></li>
       <li>Gambatte > <i>YourGame.gbc</i></li>
     </ul>
@@ -173,7 +173,7 @@
       <p>The trashcan erases your existing configuration and presets. If the Web Player doesn't start, you should click the trashcan and refresh the cache in your browser (usually F5 or Shift+F5).</p>
                   <p></p>
       <h3><b><span class="fa fa-bars"></span> Quick Menu</b></h3>
-      <p>If you click on the three line icons, the Quick Menu will open here as in RetroArch.</p>
+      <p>If you click on the three line icons, the Quick Menu will open here as in Fruitendo.</p>
 
         </div>
         <div class="modal-footer">
@@ -194,7 +194,7 @@
              </button>
           </div>
           <canvas class="webplayer" id="canvas" tabindex="1" oncontextmenu="event.preventDefault()" style="display: none"></canvas>
-          <img class="webplayer-preview img-fluid" src="media/canvas.png" width="960px" height="720px" alt="RetroArch Logo">
+          <img class="webplayer-preview img-fluid" src="media/canvas.png" width="960px" height="720px" alt="Fruitendo Logo">
       </div>
    </div>
 

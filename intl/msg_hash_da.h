@@ -123,7 +123,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Hent tilføjelser, komponenter og indhold til RetroArch."
+   "Hent tilføjelser, komponenter og indhold til Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -1451,7 +1451,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Genstart RetroArch"
+   "Genstart Fruitendo"
    )
 #ifdef HAVE_LIBNX
 #endif

@@ -24,9 +24,9 @@
 *.log
 /.project
 /.externalToolBuilders/
-/retroarch
-/retroarch.cfg
-/retroarch.exe
+/Fruitendo
+/Fruitendo.cfg
+/Fruitendo.exe
 /retroarch_debug.exe
 /config.h
 /config.mk
@@ -41,8 +41,8 @@ ipch
 /bootstrap/gx/wii/app_booter/app_booter.bin
 /wii/app_booter/app_booter.bin
 *.zip
-RetroArch-w32/
-RetroArch-w64/
+Fruitendo-w32/
+Fruitendo-w64/
 .DS_Store
 */build/*
 *.pbxuser
@@ -61,7 +61,7 @@ DerivedData
 *.hmap
 apple/tmp
 apple/*.mobileprovision
-apple/RetroArch_iOS.xcodeproj/project.xcworkspace/*
+apple/Fruitendo_iOS.xcodeproj/project.xcworkspace/*
 /Cg/
 /GL/
 /SDL/
@@ -118,7 +118,7 @@ shaders/shaders_slang
 *.rpx
 *.last
 wiiu/wut/elf2rpl/elf2rpl
-/pkg/wiiu/retroarch
+/pkg/wiiu/Fruitendo
 /pkg/wiiu/wiiu
 /pkg/wiiu/rpx
 /wiiu-devel.properties
@@ -181,7 +181,7 @@ obj-unix/
 *.lastbuildstate
 *.FileListAbsolute.txt
 *.res
-retroarch.cfg
+Fruitendo.cfg
 Makefile.local
 pkg/msvc/**/ARM
 pkg/msvc/**/ARM64
@@ -192,8 +192,8 @@ pkg/msvc/**/x64
 
 # Emscripten artifacts
 
-retroarch.js
-retroarch.js.mem
+Fruitendo.js
+Fruitendo.js.mem
 *.bc
 *.wasm
 

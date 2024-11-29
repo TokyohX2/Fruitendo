@@ -11,7 +11,7 @@
 #include "../input/input_driver.h"
 #include "../menu/menu_driver.h"
 #include "../menu/menu_entries.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 #include "../runloop.h"
 #include "paths.h"
 #include "verbosity.h"
@@ -195,9 +195,9 @@ MistResult steam_generate_core_dlcs_list(steam_core_dlc_list_t **list)
       if (MIST_IS_ERROR(result))
          goto error;
 
-      /* Strip away the "RetroArch - " prefix if present */
-      if (strncmp(dlc_name, "RetroArch - ", sizeof("RetroArch - ") - 1) == 0)
-         core_dlc.name = strdup(dlc_name + sizeof("RetroArch - ") - 1);
+      /* Strip away the "Fruitendo - " prefix if present */
+      if (strncmp(dlc_name, "Fruitendo - ", sizeof("Fruitendo - ") - 1) == 0)
+         core_dlc.name = strdup(dlc_name + sizeof("Fruitendo - ") - 1);
       else
          core_dlc.name = strdup(dlc_name);
 

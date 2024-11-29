@@ -1,13 +1,13 @@
-package com.retroarch.browser.retroactivity;
+package com.Fruitendo.browser.retroactivity;
 
-import com.retroarch.browser.mainmenu.MainMenuActivity;
+import com.Fruitendo.browser.mainmenu.MainMenuActivity;
 
 import android.content.Intent;
 import android.util.Log;
 
 public class RetroActivityIntent extends RetroActivityCommon {
 	private Intent pendingIntent = null;
-	private static final String TAG = "RetroArch";
+	private static final String TAG = "Fruitendo";
 	
 	@Override
 	public void onBackPressed()
@@ -48,9 +48,9 @@ public class RetroActivityIntent extends RetroActivityCommon {
 	}
 
 	/**
-	 * Gets the path specified in the pending intent to the retroarch cfg file.
+	 * Gets the path specified in the pending intent to the Fruitendo cfg file.
 	 * 
-	 * @return the path specified in the pending intent to the retroarch cfg file.
+	 * @return the path specified in the pending intent to the Fruitendo cfg file.
 	 */
 	public String getPendingIntentConfigPath()
 	{

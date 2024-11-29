@@ -44,4 +44,4 @@ eq_gains = "0 -30 -30 -30 -30"
 # res = l{1};
 # freqz(res, 1, 4096, 48000);
 #
-# It will give the response in Hz; 48000 is the default Output Rate of RetroArch
+# It will give the response in Hz; 48000 is the default Output Rate of Fruitendo

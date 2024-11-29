@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2021      - David G.F.
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -61,7 +61,7 @@
 #include "dynamic.h"
 #include "list_special.h"
 #include "paths.h"
-#include "retroarch.h"
+#include "Fruitendo.h"
 #include "runloop.h"
 #include "verbosity.h"
 #include "version.h"
@@ -529,7 +529,7 @@ command_t* command_uds_new(void)
    command_t *cmd;
    command_uds_t *subcmd;
    struct sockaddr_un addr;
-   socklen_t addrsz = offsetof(struct sockaddr_un, sun_path) + STRLEN_CONST("retroarch/cmd") + 1;
+   socklen_t addrsz = offsetof(struct sockaddr_un, sun_path) + STRLEN_CONST("Fruitendo/cmd") + 1;
    int           fd = socket(AF_UNIX, SOCK_STREAM, 0);
    if (fd < 0)
       return NULL;
@@ -537,7 +537,7 @@ command_t* command_uds_new(void)
    /* use an abstract socket for simplicity */
    memset(&addr, 0, sizeof(addr));
    addr.sun_family = AF_UNIX;
-   strcpy(&addr.sun_path[1], "retroarch/cmd");
+   strcpy(&addr.sun_path[1], "Fruitendo/cmd");
 
    if (bind(fd, (struct sockaddr*)&addr, addrsz) < 0 ||
        listen(fd, MAX_USER_CONNECTIONS) < 0)
@@ -569,7 +569,7 @@ command_t* command_uds_new(void)
 #endif
 
 
-/* Routines used to invoke retroarch command ... */
+/* Routines used to invoke Fruitendo command ... */
 
 #ifdef HAVE_NETWORK_CMD
 static bool command_verify(const char *cmd)
@@ -1427,7 +1427,7 @@ void command_event_load_auto_state(void)
  * and which one can be deleted, using savestate wraparound if
  * enabled.
  *
- * @param settings The usual RetroArch settings ptr.
+ * @param settings The usual Fruitendo settings ptr.
  * @param last_index Return value for load slot.
  * @param file_to_delete Return value for file name that should be removed.
  */
@@ -1632,7 +1632,7 @@ static void scan_states(settings_t *settings,
  * Logic moved here so that all save state wraparound code is
  * in this file.
  *
- * @param settings The usual RetroArch settings ptr.
+ * @param settings The usual Fruitendo settings ptr.
  * @return \c The next savestate slot.
  */
 int command_event_get_next_savestate_auto_index(settings_t *settings)
@@ -1651,7 +1651,7 @@ int command_event_get_next_savestate_auto_index(settings_t *settings)
 /**
  * Determines most recent savestate slot in case of content load.
  *
- * @param settings The usual RetroArch settings ptr.
+ * @param settings The usual Fruitendo settings ptr.
  * @return \c The most recent savestate slot.
  */
 void command_event_set_savestate_auto_index(settings_t *settings)
@@ -1673,7 +1673,7 @@ void command_event_set_savestate_auto_index(settings_t *settings)
 /**
  * Deletes the oldest save state and its thumbnail, if needed.
  *
- * @param settings The usual RetroArch settings ptr.
+ * @param settings The usual Fruitendo settings ptr.
  */
 static void command_event_set_savestate_garbage_collect(settings_t *settings)
 {

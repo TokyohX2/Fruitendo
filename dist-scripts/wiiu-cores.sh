@@ -2,31 +2,31 @@
 
 # usage:
 # copy core libs (*_libretro_wiiu.a), info files (https://github.com/libretro/libretro-super/tree/master/dist/info)
-# and icons (https://github.com/libretro/retroarch-assets/tree/master/pkg/wiiu) to this directory then run
-# the script. the output will be in retroarch/pkg/wiiu
+# and icons (https://github.com/libretro/Fruitendo-assets/tree/master/pkg/wiiu) to this directory then run
+# the script. the output will be in Fruitendo/pkg/wiiu
 
 . ../version.all
 
 platform=wiiu
 EXT=a
 
-mkdir -p ../pkg/wiiu/retroarch/cores/info
-cp *.info ../pkg/wiiu/retroarch/cores/info/
-mkdir -p ../pkg/wiiu/rpx/retroarch/cores/info
-cp *.info ../pkg/wiiu/rpx/retroarch/cores/info/
+mkdir -p ../pkg/wiiu/Fruitendo/cores/info
+cp *.info ../pkg/wiiu/Fruitendo/cores/info/
+mkdir -p ../pkg/wiiu/rpx/Fruitendo/cores/info
+cp *.info ../pkg/wiiu/rpx/Fruitendo/cores/info/
 
 make -C ../ -f Makefile.${platform} SALAMANDER_BUILD=1 clean || exit 1
 make -C ../ -f Makefile.${platform} SALAMANDER_BUILD=1 BUILD_HBL_ELF=1 BUILD_RPX=1 -j3 || exit 1
 
-mkdir -p ../pkg/wiiu/wiiu/apps/retroarch
-mv -f ../retroarch_wiiu_salamander.elf ../pkg/wiiu/wiiu/apps/retroarch/retroarch.elf
-cp -f ../pkg/wiiu/meta.xml ../pkg/wiiu/wiiu/apps/retroarch/meta.xml
-cp -f ../pkg/wiiu/icon.png ../pkg/wiiu/wiiu/apps/retroarch/icon.png
-mkdir -p ../pkg/wiiu/rpx/wiiu/apps/retroarch
-mv -f ../retroarch_wiiu_salamander.rpx ../pkg/wiiu/rpx/wiiu/apps/retroarch/retroarch.rpx
+mkdir -p ../pkg/wiiu/wiiu/apps/Fruitendo
+mv -f ../retroarch_wiiu_salamander.elf ../pkg/wiiu/wiiu/apps/Fruitendo/Fruitendo.elf
+cp -f ../pkg/wiiu/meta.xml ../pkg/wiiu/wiiu/apps/Fruitendo/meta.xml
+cp -f ../pkg/wiiu/icon.png ../pkg/wiiu/wiiu/apps/Fruitendo/icon.png
+mkdir -p ../pkg/wiiu/rpx/wiiu/apps/Fruitendo
+mv -f ../retroarch_wiiu_salamander.rpx ../pkg/wiiu/rpx/wiiu/apps/Fruitendo/Fruitendo.rpx
 rm -f ../retroarch_wiiu_salamander.rpx.elf
-cp -f ../pkg/wiiu/meta.xml ../pkg/wiiu/rpx/wiiu/apps/retroarch/meta.xml
-cp -f ../pkg/wiiu/icon.png ../pkg/wiiu/rpx/wiiu/apps/retroarch/icon.png
+cp -f ../pkg/wiiu/meta.xml ../pkg/wiiu/rpx/wiiu/apps/Fruitendo/meta.xml
+cp -f ../pkg/wiiu/icon.png ../pkg/wiiu/rpx/wiiu/apps/Fruitendo/icon.png
 
 make -C ../ -f Makefile.${platform} clean || exit 1
 
@@ -52,7 +52,7 @@ gen_meta_xml()
       echo '  <coder>'$authors'</coder>' >> "$1"_meta.xml
       echo '  <version>'$PACKAGE_VERSION' r'$build_hash'</version>' >> "$1"_meta.xml
       echo '  <release_date>'$date'</release_date>' >> "$1"_meta.xml
-      echo '  <short_description>RetroArch</short_description>' >> "$1"_meta.xml
+      echo '  <short_description>Fruitendo</short_description>' >> "$1"_meta.xml
       echo -e '  <long_description>'$display_name'\n\nSystem: '$systemname'\nLicense: '$license'</long_description>' >> "$1"_meta.xml
       echo '  <category>emu</category>' >> "$1"_meta.xml
       echo '  <url>https://github.com/libretro</url>' >> "$1"_meta.xml
@@ -104,7 +104,7 @@ for f in `ls -v *_${platform}.${EXT}`; do
    gen_meta_xml $name
 
    if [  -e ../retroarch_wiiu.elf ] ; then
-      cp ../retroarch_wiiu.elf ../pkg/wiiu/retroarch/cores/${name}_libretro.elf
+      cp ../retroarch_wiiu.elf ../pkg/wiiu/Fruitendo/cores/${name}_libretro.elf
       mkdir -p ../pkg/wiiu/wiiu/apps/${name}_libretro
       mv -f ../retroarch_wiiu.elf ../pkg/wiiu/wiiu/apps/${name}_libretro/${name}_libretro.elf
       if [  -e ${name}_meta.xml ] ; then
@@ -119,7 +119,7 @@ for f in `ls -v *_${platform}.${EXT}`; do
       fi
    fi
    if [  -e ../retroarch_wiiu.rpx ] ; then
-      cp ../retroarch_wiiu.rpx ../pkg/wiiu/rpx/retroarch/cores/${name}_libretro.rpx
+      cp ../retroarch_wiiu.rpx ../pkg/wiiu/rpx/Fruitendo/cores/${name}_libretro.rpx
       mkdir -p ../pkg/wiiu/rpx/wiiu/apps/${name}_libretro
       mv -f ../retroarch_wiiu.rpx ../pkg/wiiu/rpx/wiiu/apps/${name}_libretro/${name}_libretro.rpx
       rm -f ../retroarch_wiiu.rpx.elf

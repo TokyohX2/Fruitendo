@@ -52,7 +52,7 @@ ifeq ($(TARGET_ARCH),mips)
    DEFINES += -DANDROID_MIPS -D__mips__ -D__MIPSEL__
 endif
 
-LOCAL_MODULE := retroarch-activity
+LOCAL_MODULE := Fruitendo-activity
 
 LOCAL_SRC_FILES  +=	$(RARCH_DIR)/griffin/griffin.c \
 							$(RARCH_DIR)/griffin/griffin_cpp.cpp
@@ -160,7 +160,7 @@ DEFINES += -DHAVE_CHEEVOS \
 	   -DRC_DISABLE_LUA
 endif
 
-DEFINES += -DFLAC_PACKAGE_VERSION="\"retroarch\"" \
+DEFINES += -DFLAC_PACKAGE_VERSION="\"Fruitendo\"" \
 	   -DHAVE_LROUND \
 	   -DFLAC__HAS_OGG=0
 

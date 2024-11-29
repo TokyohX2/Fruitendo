@@ -164,23 +164,23 @@ if [ $SALAMANDER = "yes" ]; then
    mv -f ../retrodos_salamander.exe ../pkg/${platform}/RETRODOS.EXE
    fi
    if [ $PLATFORM = "vita" ] ; then
-     mkdir -p ../pkg/${platform}/retroarch.vpk/vpk/sce_sys/livearea/contents
-     vita-make-fself -c -s ../retroarchvita_salamander.velf ../pkg/${platform}/retroarch.vpk/vpk/eboot.bin
-     vita-mksfoex -s TITLE_ID=RETROVITA "RetroArch" -d ATTRIBUTE2=12 ../pkg/${platform}/retroarch.vpk/vpk/sce_sys/param.sfo
-     cp ../pkg/${platform}/assets/ICON0.PNG ../pkg/${platform}/retroarch.vpk/vpk/sce_sys/icon0.png
-     cp -R ../pkg/${platform}/assets/livearea ../pkg/${platform}/retroarch.vpk/vpk/sce_sys/
+     mkdir -p ../pkg/${platform}/Fruitendo.vpk/vpk/sce_sys/livearea/contents
+     vita-make-fself -c -s ../retroarchvita_salamander.velf ../pkg/${platform}/Fruitendo.vpk/vpk/eboot.bin
+     vita-mksfoex -s TITLE_ID=RETROVITA "Fruitendo" -d ATTRIBUTE2=12 ../pkg/${platform}/Fruitendo.vpk/vpk/sce_sys/param.sfo
+     cp ../pkg/${platform}/assets/ICON0.PNG ../pkg/${platform}/Fruitendo.vpk/vpk/sce_sys/icon0.png
+     cp -R ../pkg/${platform}/assets/livearea ../pkg/${platform}/Fruitendo.vpk/vpk/sce_sys/
      make -C ../ -f Makefile.${platform}.salamander clean || exit 1
    fi
    if [ $PLATFORM = "ctr" ] ; then
    mv -f ../retroarch_3ds_salamander.cia ../pkg/${platform}/build/cia/retroarch_3ds.cia
-   mkdir -p ../pkg/${platform}/build/3dsx/3ds/RetroArch
-   mv -f ../retroarch_3ds_salamander.3dsx ../pkg/${platform}/build/3dsx/3ds/RetroArch/RetroArch.3dsx
-   mv -f ../retroarch_3ds_salamander.smdh ../pkg/${platform}/build/3dsx/3ds/RetroArch/RetroArch.smdh
+   mkdir -p ../pkg/${platform}/build/3dsx/3ds/Fruitendo
+   mv -f ../retroarch_3ds_salamander.3dsx ../pkg/${platform}/build/3dsx/3ds/Fruitendo/Fruitendo.3dsx
+   mv -f ../retroarch_3ds_salamander.smdh ../pkg/${platform}/build/3dsx/3ds/Fruitendo/Fruitendo.smdh
    # the .3ds port cant use salamander since you can only have one ROM on a cartridge at once
    make -C ../ -f Makefile.${platform}.salamander clean || exit 1
    fi
    if [ $PLATFORM = "wii" ] ; then
-   mv -f ../retroarch-salamander_wii.dol ../pkg/${platform}/boot.dol
+   mv -f ../Fruitendo-salamander_wii.dol ../pkg/${platform}/boot.dol
    fi
 fi
 
@@ -290,20 +290,20 @@ for f in `ls -v *_${platform}.${EXT}`; do
    elif [ $PLATFORM = "vita" ] ; then
       COUNTER=$((COUNTER + 1))
       COUNTER_ID=`printf  "%05d" ${COUNTER}`
-      cp ../retroarch_${platform}.self ../pkg/${platform}/retroarch.vpk/vpk/${name}_libretro.self
+      cp ../retroarch_${platform}.self ../pkg/${platform}/Fruitendo.vpk/vpk/${name}_libretro.self
          if [ -d ../../dist/info ]; then
-            mkdir -p ../pkg/${platform}/retroarch.vpk/vpk/info
-            cp -fv ../../dist/info/"${name}_libretro.info" ../pkg/${platform}/retroarch.vpk/vpk/info/"${name}_libretro.info"
+            mkdir -p ../pkg/${platform}/Fruitendo.vpk/vpk/info
+            cp -fv ../../dist/info/"${name}_libretro.info" ../pkg/${platform}/Fruitendo.vpk/vpk/info/"${name}_libretro.info"
          fi
    elif [ $PLATFORM = "ctr" ] ; then
       mv -f ../retroarch_3ds.cia ../pkg/${platform}/build/cia/${name}_libretro.cia
       mv -f ../retroarch_3ds.3dsx ../pkg/${platform}/build/3dsx/${name}_libretro.3dsx
       mv -f ../retroarch_3ds.3ds ../pkg/${platform}/build/rom/${name}_libretro.3ds
    elif [ $PLATFORM = "libnx" ] ; then
-      mkdir -p ../pkg/${platform}/retroarch/cores/
-      mv -f ../retroarch_switch.nro ../pkg/${platform}/retroarch/cores/${name}_libretro_${platform}.nro
+      mkdir -p ../pkg/${platform}/Fruitendo/cores/
+      mv -f ../retroarch_switch.nro ../pkg/${platform}/Fruitendo/cores/${name}_libretro_${platform}.nro
    elif [ $PLATFORM = "unix" ] ; then
-      mv -f ../retroarch ../pkg/${platform}/${name}_libretro.elf
+      mv -f ../Fruitendo ../pkg/${platform}/${name}_libretro.elf
    elif [ $PLATFORM = "ngc" ] ; then
       mv -f ../retroarch_${platform}.dol ../pkg/${platform}/${name}_libretro_${platform}.dol
    elif [ $PLATFORM = "wii" ] ; then
@@ -350,7 +350,7 @@ for f in `ls -v *_${platform}.${EXT}`; do
       rm -f ../retroarch_switch.nacp
       rm -f ../retroarch_switch.nso
    elif [ $PLATFORM = "unix" ] ; then
-      rm -f ../retroarch
+      rm -f ../Fruitendo
    elif [ $PLATFORM = "ngc" ] ; then
       rm -f ../retroarch_${platform}.dol ../retroarch_${platform}.elf ../retroarch_${platform}.elf.map
    elif [ $PLATFORM = "wii" ] ; then
@@ -435,23 +435,23 @@ fi
 # Packaging
 if [ $PLATFORM = "dex-ps3" ] ; then
    rsync -av ../pkg/${platform}/SSNE10000/USRDIR/cores/*.SELF ../pkg/${platform}/${PLATFORM}/
-   $MAKE_FSELF_NPDRM -c ../retroarch-salamander_${platform}.elf ../pkg/${platform}/SSNE10000/USRDIR/EBOOT.BIN
-   rm -rf ../retroarch-salamander_${platform}.elf
+   $MAKE_FSELF_NPDRM -c ../Fruitendo-salamander_${platform}.elf ../pkg/${platform}/SSNE10000/USRDIR/EBOOT.BIN
+   rm -rf ../Fruitendo-salamander_${platform}.elf
    $MAKE_PACKAGE_NPDRM ../pkg/${platform}_dex/package.conf ../pkg/${platform}/SSNE10000
-   mv UP0001-SSNE10000_00-0000000000000001.pkg ../pkg/${platform}/RetroArch.PS3.DEX.PS3.pkg
+   mv UP0001-SSNE10000_00-0000000000000001.pkg ../pkg/${platform}/Fruitendo.PS3.DEX.PS3.pkg
 elif [ $PLATFORM = "cex-ps3" ] ; then
    rsync -av ../pkg/${platform}/SSNE10000/USRDIR/cores/*.SELF ../pkg/${platform}/${PLATFORM}/
-   $SCETOOL_PATH $SCETOOL_FLAGS_EBOOT ../retroarch-salamander_${platform}.elf ../pkg/${platform}/SSNE10000/USRDIR/EBOOT.BIN
-   rm -rf ../retroarch-salamander_${platform}.elf
+   $SCETOOL_PATH $SCETOOL_FLAGS_EBOOT ../Fruitendo-salamander_${platform}.elf ../pkg/${platform}/SSNE10000/USRDIR/EBOOT.BIN
+   rm -rf ../Fruitendo-salamander_${platform}.elf
    (cd ../tools/ps3/ps3py && python2 setup.py build)
    find ../tools/ps3/ps3py/build -name '*.dll' -exec cp {} ../tools/ps3/ps3py \;
-   ../tools/ps3/ps3py/pkg.py --contentid UP0001-SSNE10000_00-0000000000000001 ../pkg/${platform}/SSNE10000/ ../pkg/${platform}/RetroArch.PS3.CEX.PS3.pkg
+   ../tools/ps3/ps3py/pkg.py --contentid UP0001-SSNE10000_00-0000000000000001 ../pkg/${platform}/SSNE10000/ ../pkg/${platform}/Fruitendo.PS3.CEX.PS3.pkg
 elif [ $PLATFORM = "psl1ght" ] ; then
-   ${PS3DEV}/bin/pkg.py --contentid UP0001-SSNE10001_00-0000000000000001 ../pkg/psl1ght/pkg/ ../pkg/psl1ght/RetroArch.PSL1GHT.pkg
+   ${PS3DEV}/bin/pkg.py --contentid UP0001-SSNE10001_00-0000000000000001 ../pkg/psl1ght/pkg/ ../pkg/psl1ght/Fruitendo.PSL1GHT.pkg
 elif [ $PLATFORM = "ode-ps3" ] ; then
    rsync -av ../pkg/${platform}_iso/PS3_GAME/USRDIR/cores/*.SELF ../pkg/${platform}/${PLATFORM}/
-   $SCETOOL_PATH $SCETOOL_FLAGS_ODE ../retroarch-salamander_${platform}.elf ../pkg/${platform}_iso/PS3_GAME/USRDIR/EBOOT.BIN
-   rm -rf ../retroarch-salamander_${platform}.elf
+   $SCETOOL_PATH $SCETOOL_FLAGS_ODE ../Fruitendo-salamander_${platform}.elf ../pkg/${platform}_iso/PS3_GAME/USRDIR/EBOOT.BIN
+   rm -rf ../Fruitendo-salamander_${platform}.elf
 
-   $GENPS3ISO_PATH ../pkg/${platform}_iso ../pkg/${platform}/RetroArch.PS3.ODE.PS3.iso
+   $GENPS3ISO_PATH ../pkg/${platform}_iso ../pkg/${platform}/Fruitendo.PS3.ODE.PS3.iso
 fi

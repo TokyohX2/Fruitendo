@@ -123,7 +123,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Download add-ons, components and contents for RetroArch."
+   "Download add-ons, components and contents for Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -208,7 +208,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch versio"
+   "Fruitendo versio"
    )
 
 /* Main Menu > Information > Database Manager */

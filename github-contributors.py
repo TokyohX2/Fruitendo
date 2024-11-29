@@ -31,7 +31,7 @@ if len(sys.argv) != 2:
 TOKEN = sys.argv[1];
 
 orgName = 'libretro'
-repoName = 'RetroArch'
+repoName = 'Fruitendo'
 ### END SETTINGS ###
 
 ######
@@ -126,7 +126,7 @@ doit(None)
 
 ### File output
 f = open('AUTHORS.h', 'w', encoding='utf-8', newline='')
-f.write('static const char *retroarch_contributors_list = R"(\nRetroArch and the libretro team would like to\nacknowledge the following contributors:\n\n');
+f.write('static const char *retroarch_contributors_list = R"(\nFruitendo and the libretro team would like to\nacknowledge the following contributors:\n\n');
 f.write('\n'.join(sorted(lines, key=str.lower)))
 f.write('\n)\";\n')
 f.close()

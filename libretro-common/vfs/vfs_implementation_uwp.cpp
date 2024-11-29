@@ -1,4 +1,4 @@
-/* Copyright  (C) 2018-2020 The RetroArch team
+/* Copyright  (C) 2018-2020 The Fruitendo team
 *
 * ---------------------------------------------------------------------------------------
 * The following license statement only applies to this file (vfs_implementation_uwp.cpp).
@@ -57,7 +57,7 @@ namespace
 {
    /* UWP deals with paths containing / instead of
     * \ way worse than normal Windows */
-   /* and RetroArch may sometimes mix them
+   /* and Fruitendo may sometimes mix them
     * (e.g. on archive extraction) */
    static void windowsize_path(wchar_t* path)
    {

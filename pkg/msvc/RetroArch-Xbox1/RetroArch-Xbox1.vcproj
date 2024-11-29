@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="7.10"
-	Name="RetroArch"
+	Name="Fruitendo"
 	ProjectGUID="{0E616FC4-0954-4FE3-935C-B7383B18D325}"
-	RootNamespace="RetroArch"
+	RootNamespace="Fruitendo"
 	Keyword="XboxProj">
 	<Platforms>
 		<Platform

@@ -43,9 +43,9 @@
 :end
 
 cd ../pkg/msvc/
-devenv /clean Release_LTCG_BigStack RetroArch-Xbox1.sln
-devenv /build Release_LTCG_BigStack RetroArch-Xbox1.sln
-copy RetroArch-Xbox1\Release_LTCG_BigStack\RetroArch.xbe RetroArch-Xbox1\%1.xbe
-del RetroArch-Xbox1\Release_LTCG_BigStack\RetroArch.xbe
-del RetroArch-Xbox1\Release_LTCG_BigStack\libretro_xdk1.lib
+devenv /clean Release_LTCG_BigStack Fruitendo-Xbox1.sln
+devenv /build Release_LTCG_BigStack Fruitendo-Xbox1.sln
+copy Fruitendo-Xbox1\Release_LTCG_BigStack\Fruitendo.xbe Fruitendo-Xbox1\%1.xbe
+del Fruitendo-Xbox1\Release_LTCG_BigStack\Fruitendo.xbe
+del Fruitendo-Xbox1\Release_LTCG_BigStack\libretro_xdk1.lib
 exit

@@ -1,17 +1,17 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2016 - Daniel De Matteis
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -90,13 +90,13 @@ RETRO_BEGIN_DECLS
 #define FILE_PATH_CONTENT_IMAGE_HISTORY "content_image_history.lpl"
 #define FILE_PATH_CONTENT_MUSIC_HISTORY "content_music_history.lpl"
 #define FILE_PATH_CONTENT_VIDEO_HISTORY "content_video_history.lpl"
-#define FILE_PATH_CORE_OPTIONS_CONFIG "retroarch-core-options.cfg"
-#define FILE_PATH_MAIN_CONFIG "retroarch.cfg"
-#define FILE_PATH_SALAMANDER_CONFIG "retroarch-salamander.cfg"
+#define FILE_PATH_CORE_OPTIONS_CONFIG "Fruitendo-core-options.cfg"
+#define FILE_PATH_MAIN_CONFIG "Fruitendo.cfg"
+#define FILE_PATH_SALAMANDER_CONFIG "Fruitendo-salamander.cfg"
 #define FILE_PATH_BACKGROUND_IMAGE "bg.png"
 #define FILE_PATH_TTF_FONT "font.ttf"
 #define FILE_PATH_RUNTIME_EXTENSION ".lrtl"
-#define FILE_PATH_DEFAULT_EVENT_LOG "retroarch.log"
+#define FILE_PATH_DEFAULT_EVENT_LOG "Fruitendo.log"
 #define FILE_PATH_EVENT_LOG_EXTENSION ".log"
 #define FILE_PATH_DISK_CONTROL_INDEX_EXTENSION ".ldci"
 #define FILE_PATH_CORE_BACKUP_EXTENSION ".lcbk"

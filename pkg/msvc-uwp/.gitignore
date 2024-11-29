@@ -1,11 +1,11 @@
 AppPackages/
 */BundleArtifacts/
 .vs/
-/RetroArch-msvcUWP/ARM64
-/RetroArch-msvcUWP/DebugANGLE
-/RetroArch-msvcUWP/ReleaseANGLE
-/RetroArch-msvcUWP/x64
-/RetroArch-msvcUWP/Generated Files
+/Fruitendo-msvcUWP/ARM64
+/Fruitendo-msvcUWP/DebugANGLE
+/Fruitendo-msvcUWP/ReleaseANGLE
+/Fruitendo-msvcUWP/x64
+/Fruitendo-msvcUWP/Generated Files
 /DebugANGLE
 /ReleaseANGLE
 /x64

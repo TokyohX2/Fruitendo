@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Higor Euripedes
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -42,7 +42,7 @@
 
 #define OSMESA_DEFAULT_FORMAT OSMESA_RGBA
 #define OSMESA_BPP            4
-#define OSMESA_FIFO_PATH      "/tmp/osmesa-retroarch.sock"
+#define OSMESA_FIFO_PATH      "/tmp/osmesa-Fruitendo.sock"
 
 /* TODO/FIXME - static globals */
 static bool           g_osmesa_profile = OSMESA_COMPAT_PROFILE;
@@ -199,7 +199,7 @@ static void osmesa_ctx_destroy(void *data)
    if (osmesa->socket)
       close(osmesa->socket);
 
-   unlink("/tmp/retroarch-osmesa.fifo");
+   unlink("/tmp/Fruitendo-osmesa.fifo");
 
    free(osmesa->screen);
    OSMesaDestroyContext(osmesa->ctx);

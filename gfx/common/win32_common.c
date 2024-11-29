@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -47,7 +47,7 @@
 #include "../../configuration.h"
 #include "../../verbosity.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../tasks/task_content.h"
 #include "../../tasks/tasks_internal.h"
 #include "../../core_info.h"
@@ -1798,10 +1798,10 @@ bool win32_window_create(void *data, unsigned style,
    }
 #ifdef LEGACY_WIN32
    main_window.hwnd              = CreateWindowEx(0,
-         "RetroArch", title_local,
+         "Fruitendo", title_local,
 #else
    main_window.hwnd              = CreateWindowExW(0,
-         L"RetroArch", title_local,
+         L"Fruitendo", title_local,
 #endif
          style,
          fullscreen ? mon_rect->left : g_win32->pos_x,
@@ -1972,7 +1972,7 @@ void win32_clip_window(bool state)
 #endif
 
 #ifdef HAVE_MENU
-/* Given a Win32 Resource ID, return a RetroArch menu ID (for renaming the menu item) */
+/* Given a Win32 Resource ID, return a Fruitendo menu ID (for renaming the menu item) */
 static enum msg_hash_enums menu_id_to_label_enum(unsigned int menuId)
 {
    switch (menuId)
@@ -2014,7 +2014,7 @@ static enum msg_hash_enums menu_id_to_label_enum(unsigned int menuId)
    return MSG_UNKNOWN;
 }
 
-/* Given a RetroArch menu ID, get its shortcut key (meta key) */
+/* Given a Fruitendo menu ID, get its shortcut key (meta key) */
 static unsigned int menu_id_to_meta_key(unsigned int menu_id)
 {
    switch (menu_id)
@@ -2299,7 +2299,7 @@ bool win32_suspend_screensaver(void *data, bool enable)
                RequestContext.Flags                     =
                   POWER_REQUEST_CONTEXT_SIMPLE_STRING;
                RequestContext.Reason.SimpleReasonString = (LPWSTR)
-                  L"RetroArch running";
+                  L"Fruitendo running";
 
                Request                                  =
                   powerCreateRequest(&RequestContext);
@@ -2569,7 +2569,7 @@ void win32_window_reset(void)
 void win32_destroy_window(void)
 {
 #ifndef _XBOX
-   UnregisterClass("RetroArch",
+   UnregisterClass("Fruitendo",
          GetModuleHandle(NULL));
 #if defined(_WIN32_WINNT) && _WIN32_WINNT >= 0x500 /* 2K */
    UnregisterDeviceNotification(notification_handler);
@@ -2775,7 +2775,7 @@ bool win32_window_init(WNDCLASSEX *wndclass,
    wndclass->style            = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
    wndclass->hInstance        = GetModuleHandle(NULL);
    wndclass->hCursor          = LoadCursor(NULL, IDC_ARROW);
-   wndclass->lpszClassName    = class_name ? class_name : "RetroArch";
+   wndclass->lpszClassName    = class_name ? class_name : "Fruitendo";
    wndclass->hIcon            = LoadIcon(GetModuleHandle(NULL),
          MAKEINTRESOURCE(IDI_ICON));
    wndclass->hIconSm          = (HICON)LoadImage(GetModuleHandle(NULL),

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>RetroArch</string>
+	<string>Fruitendo</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -19,7 +19,7 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>RetroArchiOS9</string>
+	<string>FruitendoiOS9</string>
 	<key>CFBundleIcons</key>
 	<dict/>
 	<key>CFBundleIcons~ipad</key>
@@ -29,7 +29,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>RetroArch</string>
+	<string>Fruitendo</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

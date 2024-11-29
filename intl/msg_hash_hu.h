@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Kiegészítők, komponensek és egyéb tartalom letöltése a RetroArch-hoz."
+   "Kiegészítők, komponensek és egyéb tartalom letöltése a Fruitendo-hoz."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -191,7 +191,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "A RetroArch alkalmazás újraindítása."
+   "A Fruitendo alkalmazás újraindítása."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -199,15 +199,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Kilépés a RetroArch alkalmazásból. Konfiguráció mentése kilépéskor: engedélyezve."
+   "Kilépés a Fruitendo alkalmazásból. Konfiguráció mentése kilépéskor: engedélyezve."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Kilépés a RetroArch alkalmazásból. Konfiguráció mentése kilépéskor: letiltva."
+   "Kilépés a Fruitendo alkalmazásból. Konfiguráció mentése kilépéskor: letiltva."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Kilépés a RetroArch-ból. A program kényszerített bezárása (SIGKILL, stb.) mindenképpen a konfiguráció mentése nélkül állítja le a RetroArch-ot. Unix-hoz hasonló környezetekben a SIGINT/SIGTERM is használható tiszta leállításra, beleértve a konfiguráció mentését, ha az engedélyezett."
+   "Kilépés a Fruitendo-ból. A program kényszerített bezárása (SIGKILL, stb.) mindenképpen a konfiguráció mentése nélkül állítja le a Fruitendo-ot. Unix-hoz hasonló környezetekben a SIGINT/SIGTERM is használható tiszta leállításra, beleértve a konfiguráció mentését, ha az engedélyezett."
    )
 
 /* Main Menu > Load Core */
@@ -600,7 +600,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch verzió"
+   "Fruitendo verzió"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1362,7 +1362,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Libretro mag. Kiválasztva a RetroArch betölti ezt a magot."
+   "Libretro mag. Kiválasztva a Fruitendo betölti ezt a magot."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -1801,19 +1801,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_XMB,
-   "Az XMB egy RetroArch grafikus felület, amely a 7. generációs konzolok menüjére hasonlít. Ugyanazokat a lehetőségeket biztosítja, mint az Ozone."
+   "Az XMB egy Fruitendo grafikus felület, amely a 7. generációs konzolok menüjére hasonlít. Ugyanazokat a lehetőségeket biztosítja, mint az Ozone."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_OZONE,
-   "Az Ozone a RetroArch alapértelmezett grafikus felülete a legtöbb platformon. Kontrolleres navigációra van optimalizálva."
+   "Az Ozone a Fruitendo alapértelmezett grafikus felülete a legtöbb platformon. Kontrolleres navigációra van optimalizálva."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_RGUI,
-   "Az RGUI egy egyszerű beépített grafikus felület a RetroArch-hoz. Ennek a legkisebb a teljesítményigénye a menüillesztők közül, és használható alacsony felbontású képernyőkön is."
+   "Az RGUI egy egyszerű beépített grafikus felület a Fruitendo-hoz. Ennek a legkisebb a teljesítményigénye a menüillesztők közül, és használható alacsony felbontású képernyőkön is."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_MATERIALUI,
-   "Mobil eszközökön a RetroArch alapértelmezésben a MaterialUI mobilos felületet használja. Ez a felület az érintőképernyőkhöz és az egérhez/hanyattegérhez hasonló mutatóeszközökhöz van tervezve."
+   "Mobil eszközökön a Fruitendo alapértelmezésben a MaterialUI mobilos felületet használja. Ez a felület az érintőképernyőkhöz és az egérhez/hanyattegérhez hasonló mutatóeszközökhöz van tervezve."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RECORD_DRIVER,
@@ -2230,7 +2230,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_MONITOR_INDEX,
-   "A kívánt monitor. 0 (alapértelmezett) esetben nincs kifejezetten kiválasztott monitor, 1 és nagyobb értékeknél (1 az első monitor), a RetroArch-ot azon a monitoron fogja használni."
+   "A kívánt monitor. 0 (alapértelmezett) esetben nincs kifejezetten kiválasztott monitor, 1 és nagyobb értékeknél (1 az első monitor), a Fruitendo-ot azon a monitoron fogja használni."
    )
 #if defined (WIIU)
 MSG_HASH(
@@ -2440,7 +2440,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Minden tartalom az \"Ablak szélessége\" és az \"Ablak magassága\" által meghatározott, rögzített méretű ablakban jelenik meg, a pozíciót és a méretet a RetroArch bezárásakor megjegyzi. Kikapcsolt állapotban az ablakméret az „Ablakméret szorzója” alapján dinamikusan változik."
+   "Minden tartalom az \"Ablak szélessége\" és az \"Ablak magassága\" által meghatározott, rögzített méretű ablakban jelenik meg, a pozíciót és a méretet a Fruitendo bezárásakor megjegyzi. Kikapcsolt állapotban az ablakméret az „Ablakméret szorzója” alapján dinamikusan változik."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -3275,7 +3275,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "A RetroArch által támogatott felhasználók maximális száma."
+   "A Fruitendo által támogatott felhasználók maximális száma."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_POLL_TYPE_BEHAVIOR,
@@ -3283,11 +3283,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_POLL_TYPE_BEHAVIOR,
-   "A RetroArch által használt módszer a bemenetek lekérdezésére. \"Korai\" vagy \"Késői\" beállítás konfigurációtól függően csökkentheti a késleltetést."
+   "A Fruitendo által használt módszer a bemenetek lekérdezésére. \"Korai\" vagy \"Késői\" beállítás konfigurációtól függően csökkentheti a késleltetést."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_POLL_TYPE_BEHAVIOR,
-   "A RetroArch bemenetek lekérdezésére használt módszer.\nKorai - a bemenetek lekérdezése a képkocka feldolgozása előtt történik.\nNormál - a bemenetek lekérdezése akkor történik, amikor azt kérik.\nKésői - a bemenetek lekérdezése a képkocka első bemeneti állapot igénylésénél történik.\nA \"Korai\" vagy \"Késői\" beállítás csökkentheti a késleltetést, a konfigurációtól függően. Netplay esetén nincs hatása."
+   "A Fruitendo bemenetek lekérdezésére használt módszer.\nKorai - a bemenetek lekérdezése a képkocka feldolgozása előtt történik.\nNormál - a bemenetek lekérdezése akkor történik, amikor azt kérik.\nKésői - a bemenetek lekérdezése a képkocka első bemeneti állapot igénylésénél történik.\nA \"Korai\" vagy \"Késői\" beállítás csökkentheti a késleltetést, a konfigurációtól függően. Netplay esetén nincs hatása."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3334,7 +3334,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_SELECT_PHYSICAL_KEYBOARD,
-   "Ha a RetroArch egy hardveres billentyűzetet valamiféle gamepadként érzékel, ezzel a beállítással átállítható, hogy a tévesen azonosított eszközt billentyűzetként használja. Ez számítógép emulálásakor lehet hasznos Android TV eszközön, ha tényleges billentyűzet is csatlakozik a dobozhoz."
+   "Ha a Fruitendo egy hardveres billentyűzetet valamiféle gamepadként érzékel, ezzel a beállítással átállítható, hogy a tévesen azonosított eszközt billentyűzetként használja. Ez számítógép emulálásakor lehet hasznos Android TV eszközön, ha tényleges billentyűzet is csatlakozik a dobozhoz."
    )
 #endif
 MSG_HASH(
@@ -3551,7 +3551,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_RETROPAD_BINDS,
-   "A Libretro rendszer egy RetroPad nevű virtuális gamepadet használ a frontend (RetroArch) és a magok közti kommunikációhoz. Ebben a menüben lehet meghatározni, hogy melyik virtuális RetroPad melyik fizikai bemeneti eszközhöz tartozik, és melyik bemeneti csatlakozóhoz van rendelve.\nHa a fizikai bemeneti eszköz felismerése és automatikus beállítása sikeres, itt vélhetően nincs szükség módosításra, magspecifikus beállításokhoz pedig e helyett a Gyorsmenü Irányítás [...]"
+   "A Libretro rendszer egy RetroPad nevű virtuális gamepadet használ a frontend (Fruitendo) és a magok közti kommunikációhoz. Ebben a menüben lehet meghatározni, hogy melyik virtuális RetroPad melyik fizikai bemeneti eszközhöz tartozik, és melyik bemeneti csatlakozóhoz van rendelve.\nHa a fizikai bemeneti eszköz felismerése és automatikus beállítása sikeres, itt vélhetően nincs szükség módosításra, magspecifikus beállításokhoz pedig e helyett a Gyorsmenü Irányítás [...]"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_USER_BINDS,
@@ -3579,7 +3579,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_PRESS_TWICE,
-   "A Kilépés gyorsgombot kétszer kell megnyomni a Retroarch-ból kilépéshez."
+   "A Kilépés gyorsgombot kétszer kell megnyomni a Fruitendo-ból kilépéshez."
    )
 
 /* Settings > Input > Haptic Feedback/Vibration */
@@ -3720,7 +3720,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "Kontroller gombkombináció a Retroarch-ból való kilépéshez."
+   "Kontroller gombkombináció a Fruitendo-ból való kilépéshez."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -3728,7 +3728,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_QUIT_KEY,
-   "A RetroArch bezárása, minden mentés és konfigurációs fájl lemezre írása után."
+   "A Fruitendo bezárása, minden mentés és konfigurációs fájl lemezre írása után."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_CLOSE_CONTENT_KEY,
@@ -4006,7 +4006,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_GRAB_MOUSE_TOGGLE,
-   "Megragadja vagy elengedi az egeret. Megragadott állapotban a rendszer egérmutatója eltűnik és a mozgás a RetroArch ablakon belülre korlátozódik, így jobb a relatív egérmozgások érzékelése."
+   "Megragadja vagy elengedi az egeret. Megragadott állapotban a rendszer egérmutatója eltűnik és a mozgás a Fruitendo ablakon belülre korlátozódik, így jobb a relatív egérmozgások érzékelése."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_GAME_FOCUS_TOGGLE,
@@ -4146,7 +4146,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Diagnosztikai információk küldése az eszközről és a RetroArch beállításairól a kiszolgálóinknak, elemzés céljából."
+   "Diagnosztikai információk küldése az eszközről és a Fruitendo beállításairól a kiszolgálóinknak, elemzés céljából."
    )
 
 /* Settings > Input > Port # Controls */
@@ -4177,7 +4177,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_DEVICE_INDEX,
-   "A RetroArch által felismert tényleges kontroller."
+   "A Fruitendo által felismert tényleges kontroller."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_DEVICE_RESERVED_DEVICE_NAME,
@@ -4245,7 +4245,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MOUSE_INDEX,
-   "A RetroArch által felismert tényleges egér."
+   "A Fruitendo által felismert tényleges egér."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_B,
@@ -4473,11 +4473,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Néhány mag le tudja magát állítani, ilyen esetben a dummy mag meggátolja, hogy a RetroArch is lekapcsoljon."
+   "Néhány mag le tudja magát állítani, ilyen esetben a dummy mag meggátolja, hogy a Fruitendo is lekapcsoljon."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_DUMMY_ON_CORE_SHUTDOWN,
-   "Néhány mag le tudja magát állítani. Ha ez a beállítás ki van kapcsolva, a leállítási folyamat a RetroArch-ot is leállítja.\n Bekapcsolva egy dummy mag töltődik be, így a RetroArch nem áll le és a menü nyitva marad."
+   "Néhány mag le tudja magát állítani. Ha ez a beállítás ki van kapcsolva, a leállítási folyamat a Fruitendo-ot is leállítja.\n Bekapcsolva egy dummy mag töltődik be, így a Fruitendo nem áll le és a menü nyitva marad."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -4493,7 +4493,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_CHECK_FOR_MISSING_FIRMWARE,
-   "Néhány magnak firmware vagy BIOS fájlokra lehet szüksége. Ha ez a beállítás be van kapcsolva, a RetroArch nem engedi a mag elindítását, ha bármelyik kötelező firmware tétel hiányzik."
+   "Néhány magnak firmware vagy BIOS fájlokra lehet szüksége. Ha ez a beállítás be van kapcsolva, a Fruitendo nem engedi a mag elindítását, ha bármelyik kötelező firmware tétel hiányzik."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTION_CATEGORY_ENABLE,
@@ -4526,7 +4526,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ALWAYS_RELOAD_CORE_ON_RUN_CONTENT,
-   "A RetroArch újraindítása tartalom elindításakor, akkor is, ha a kívánt mag már fut. Javíthatja a rendszer stabilitását, a megnövekedett betöltési idő kárára."
+   "A Fruitendo újraindítása tartalom elindításakor, akkor is, ha a kívánt mag már fut. Javíthatja a rendszer stabilitását, a megnövekedett betöltési idő kárára."
    )
 #endif
 MSG_HASH(
@@ -4582,7 +4582,7 @@ MSG_HASH(
 
 MSG_HASH(
    MSG_CORE_STEAM_UNINSTALLED,
-   "A mag eltávolítása a RetroArch-ból kilépésnél történik meg."
+   "A mag eltávolítása a Fruitendo-ból kilépésnél történik meg."
 )
 
 MSG_HASH(
@@ -4610,7 +4610,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMAP_SAVE_ON_EXIT,
-   "Változások mentése az aktív remap fájlokba tartalom bezárásakor vagy a RetroArch-ból kilépéskor."
+   "Változások mentése az aktív remap fájlokba tartalom bezárásakor vagy a Fruitendo-ból kilépéskor."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_GAME_SPECIFIC_OPTIONS,
@@ -4654,7 +4654,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_GLOBAL_CORE_OPTIONS,
-   "Minden magbeállítás mentése egy közös fájlba (retroarch-core-options.cfg). Kikapcsolt állapotban minden mag beállításai külön mappába/fájlba kerülnek a RetroArch \"Konfiguráció\" könyvtárában."
+   "Minden magbeállítás mentése egy közös fájlba (Fruitendo-core-options.cfg). Kikapcsolt állapotban minden mag beállításai külön mappába/fájlba kerülnek a Fruitendo \"Konfiguráció\" könyvtárában."
    )
 
 /* Settings > Saving */
@@ -4912,7 +4912,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LOG_TO_FILE_TIMESTAMP,
-   "Fájlba naplózáskor minden RetroArch indítás egy új, időbélyeggel ellátott fájlba ír. Kikapcsolva a naplófájl minden indításkor felülíródik."
+   "Fájlba naplózáskor minden Fruitendo indítás egy új, időbélyeggel ellátott fájlba ír. Kikapcsolva a naplófájl minden indításkor felülíródik."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PERFCNT_ENABLE,
@@ -4920,7 +4920,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PERFCNT_ENABLE,
-   "A RetroArch és a magok teljesítményének mérése. A mérési adatok segíthetnek azonosítani a rendszer szűk keresztmetszeteit és finomhangolni a teljesítményt."
+   "A Fruitendo és a magok teljesítményének mérése. A mérési adatok segíthetnek azonosítani a rendszer szűk keresztmetszeteit és finomhangolni a teljesítményt."
    )
 
 /* Settings > File Browser */
@@ -4955,7 +4955,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_USE_LAST_START_DIRECTORY,
-   "A Fájlböngésző az utoljára használt helyen nyílik meg a kezdő könyvtárból töltésnél. A RetroArch újraindításakor visszaáll az alapállapotra."
+   "A Fájlböngésző az utoljára használt helyen nyílik meg a kezdő könyvtárból töltésnél. A Fruitendo újraindításakor visszaáll az alapállapotra."
    )
 
 /* Settings > Frame Throttle */
@@ -4986,7 +4986,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FASTFORWARD_RATIO,
-   "A tartalom gyorsított módban futtatásakor a legnagyobb sebesség aránya. (Pl. 5.0 a 60 fps-es tartalomhoz => 300 fps-es korlát).\nA RetroArch alvó módba lép, hogy ne lépje túl a maximális arányt. Ez a korlátozás nem teljesen pontos."
+   "A tartalom gyorsított módban futtatásakor a legnagyobb sebesség aránya. (Pl. 5.0 a 60 fps-es tartalomhoz => 300 fps-es korlát).\nA Fruitendo alvó módba lép, hogy ne lépje túl a maximális arányt. Ez a korlátozás nem teljesen pontos."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_FASTFORWARD_FRAMESKIP,
@@ -5990,7 +5990,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "A RetroArch menü elemei láthatóságának beállítása."
+   "A Fruitendo menü elemei láthatóságának beállítása."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -6080,7 +6080,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_ON_CLOSE_CONTENT,
-   "A RetroArch automatikus bezárása a tartalomból kilépéskor. A parancssorból indított program csak akkor lép ki, ha a tartalom is ott volt megadva."
+   "A Fruitendo automatikus bezárása a tartalomból kilépéskor. A parancssorból indított program csak akkor lép ki, ha a tartalom is ott volt megadva."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCREENSAVER_TIMEOUT,
@@ -6148,7 +6148,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PAUSE_NONACTIVE,
-   "Megállítja az éppen futó tartalmat, amikor nem a RetroArch az aktív ablak."
+   "Megállítja az éppen futó tartalmat, amikor nem a Fruitendo az aktív ablak."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_DISABLE_COMPOSITION,
@@ -6305,19 +6305,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "\"Kilépés a RetroArch-ból\" látható"
+   "\"Kilépés a Fruitendo-ból\" látható"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_QUIT_RETROARCH,
-   "A \"Kilépés a RetroArch-ból\" lehetőség jelenjen meg a főmenüben."
+   "A \"Kilépés a Fruitendo-ból\" lehetőség jelenjen meg a főmenüben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "\"RetroArch újraindítása\" látható"
+   "\"Fruitendo újraindítása\" látható"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_RESTART_RETROARCH,
-   "A \"RetroArch újraindítása\" lehetőség jelenjen meg a főmenüben."
+   "A \"Fruitendo újraindítása\" lehetőség jelenjen meg a főmenüben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -8041,7 +8041,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_ACCOUNTS_RETRO_ACHIEVEMENTS,
-   "A RetroAchievements fiók belépési adatai. Ingyen fiók a retroachievements.org címre látogatva regisztrálható.\nRegisztráció után a felhasználónevet és a jelszót meg kell adni a RetroArch-ban."
+   "A RetroAchievements fiók belépési adatai. Ingyen fiók a retroachievements.org címre látogatva regisztrálható.\nRegisztráció után a felhasználónevet és a jelszót meg kell adni a Fruitendo-ban."
    )
 
 /* Settings > User > Accounts > RetroAchievements */
@@ -8108,7 +8108,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "A RetroArch menübe beépülő médiafájlok ebbe a könyvtárba kerülnek."
+   "A Fruitendo menübe beépülő médiafájlok ebbe a könyvtárba kerülnek."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -8364,7 +8364,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_STEAM_RICH_PRESENCE_ENABLE,
-   "Az aktuális RetroArch állapot megosztása Steam-en."
+   "Az aktuális Fruitendo állapot megosztása Steam-en."
    )
 
 MSG_HASH(
@@ -9823,7 +9823,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SHADER_APPLY_CHANGES,
-   "A változások alkalmazása olyan változtatások után, mint a shader menetek száma, szűrés, FBO méretezés.\nEzek a beállítások némileg teljesítményigényesek, így külön kell alkalmazni azokat.\nShaderek alkalmazásakor a shader beállítások egy átmeneti fájlba (retroarch.slangp/.cgp/.glslp) kerülnek és töltődnek be. A fájl megmarad a RetroArch-ból kilépés után is, és a Shader könyvtárban található."
+   "A változások alkalmazása olyan változtatások után, mint a shader menetek száma, szűrés, FBO méretezés.\nEzek a beállítások némileg teljesítményigényesek, így külön kell alkalmazni azokat.\nShaderek alkalmazásakor a shader beállítások egy átmeneti fájlba (Fruitendo.slangp/.cgp/.glslp) kerülnek és töltődnek be. A fájl megmarad a Fruitendo-ból kilépés után is, és a Shader könyvtárban található."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_SHADER_PARAMETERS,
@@ -9843,7 +9843,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_SHADER_NUM_PASSES,
-   "A RetroArch lehetőséget ad különféle shaderek keverésére tetszőleges shader menetekkel, egyedi hardveres szűrőkkel és méretezési lehetőségekkel.\nEz a beállítás a shader menetek számát határozza meg. 0-ra állítva és alkalmazva, \"üres\" shader lesz használatban."
+   "A Fruitendo lehetőséget ad különféle shaderek keverésére tetszőleges shader menetekkel, egyedi hardveres szűrőkkel és méretezési lehetőségekkel.\nEz a beállítás a shader menetek számát határozza meg. 0-ra állítva és alkalmazva, \"üres\" shader lesz használatban."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_SHADER_PASS,
@@ -11258,7 +11258,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_XMB_THEME,
-   "Más ikonösszeállítás választása a Retroarch-hoz."
+   "Más ikonösszeállítás választása a Fruitendo-hoz."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_XMB_SWITCH_ICONS,
@@ -11761,7 +11761,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "A RetroArch névjegye"
+   "A Fruitendo névjegye"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -12089,11 +12089,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "RetroArch frissítése (aznapi verzió)"
+   "Fruitendo frissítése (aznapi verzió)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "A RetroArch frissítése sikeres. A változások életbelépéséhez indítsa újra az alkalmazást."
+   "A Fruitendo frissítése sikeres. A változások életbelépéséhez indítsa újra az alkalmazást."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -12272,7 +12272,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_LOAD_CONTENT_HISTORY,
-   "Tartalom betöltésekor a tartalom és a libretro mag kombinációja bekerül az előzményekbe.\nAz előzmények a RetroArch konfigurációs fájl könyvtárába kerülnek. Ha indításkor nem volt konfigurációs fájl betöltve, az előzményeket nem lehet elmenteni vagy betölteni, és a főmenüben sem fog szerepelni."
+   "Tartalom betöltésekor a tartalom és a libretro mag kombinációja bekerül az előzményekbe.\nAz előzmények a Fruitendo konfigurációs fájl könyvtárába kerülnek. Ha indításkor nem volt konfigurációs fájl betöltve, az előzményeket nem lehet elmenteni vagy betölteni, és a főmenüben sem fog szerepelni."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MULTIMEDIA_SETTINGS,
@@ -12591,7 +12591,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HELP_SEND_DEBUG_INFO,
-   "Diagnosztikai információk küldése az eszközről és a RetroArch beállításairól a kiszolgálóinknak, elemzés céljából."
+   "Diagnosztikai információk küldése az eszközről és a Fruitendo beállításairól a kiszolgálóinknak, elemzés céljából."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGEMENT,
@@ -12782,7 +12782,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Rendszerint a libretro/RetroArch csomag összeállítói állítják be a beépített médiafájlok helyére."
+   "Rendszerint a libretro/Fruitendo csomag összeállítói állítják be a beépített médiafájlok helyére."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -12860,7 +12860,7 @@ MSG_HASH( /* FIXME Should be MSG_ */
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_VIDEO_DRIVER_FALLBACK,
-   "A grafikus illesztő nem kompatibilis a RetroArch jelenlegi videóilleszőjével, visszaállás a %s illesztőre. Indítsa újra a RetroArch-ot a változtatások életbeléptetéséhez."
+   "A grafikus illesztő nem kompatibilis a Fruitendo jelenlegi videóilleszőjével, visszaállás a %s illesztőre. Indítsa újra a Fruitendo-ot a változtatások életbeléptetéséhez."
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_SIDELOAD_CORE_SUCCESS,
@@ -12892,11 +12892,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_TWO_MORE_TIMES_TO_SEND_DEBUG_INFO,
-   "Nyomd meg még kétszer, hogy elküldd a diagnosztikai információt a RetroArch csapatnak."
+   "Nyomd meg még kétszer, hogy elküldd a diagnosztikai információt a Fruitendo csapatnak."
    )
 MSG_HASH(
    MSG_PRESS_ONE_MORE_TIME_TO_SEND_DEBUG_INFO,
-   "Nyomd meg még egyszer, hogy elküldd a diagnosztikai információt a RetroArch csapatnak."
+   "Nyomd meg még egyszer, hogy elküldd a diagnosztikai információt a Fruitendo csapatnak."
    )
 MSG_HASH(
    MSG_AUDIO_MIXER_VOLUME,
@@ -12984,15 +12984,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_NOT_RETROARCH,
-   "Netplay kapcsolat sikertelen, a partner vagy nem RetroArch-ot futtat, vagy régi verziót."
+   "Netplay kapcsolat sikertelen, a partner vagy nem Fruitendo-ot futtat, vagy régi verziót."
    )
 MSG_HASH(
    MSG_NETPLAY_OUT_OF_DATE,
-   "A netplay partner a RetroArch régebbi verzióját futtatja. Csatlakozás nem lehetséges."
+   "A netplay partner a Fruitendo régebbi verzióját futtatja. Csatlakozás nem lehetséges."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_VERSIONS,
-   "Figyelem: egy netplay partner a RetroArch eltérő verzióját futtatja. Problémák esetén használják ugyanazt a verziót."
+   "Figyelem: egy netplay partner a Fruitendo eltérő verzióját futtatja. Problémák esetén használják ugyanazt a verziót."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_CORES,
@@ -14241,7 +14241,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_BLUETOOTH_PAIRING_REMOVED,
-   "Párosítás megszüntetve. Indítsa újra a RetroArch-ot az újracsatlakozáshoz/párosításhoz."
+   "Párosítás megszüntetve. Indítsa újra a Fruitendo-ot az újracsatlakozáshoz/párosításhoz."
    )
 MSG_HASH(
    MSG_WIFI_SCAN_COMPLETE,
@@ -15075,11 +15075,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "RetroArch újraindítása"
+   "Fruitendo újraindítása"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_RESTART_KEY,
-   "Kilépés, majd visszalépés a RetroArch-ba. Bizonyos menübeállítások aktiválásához szükséges (például a menüillesztő átállításakor)."
+   "Kilépés, majd visszalépés a Fruitendo-ba. Bizonyos menübeállítások aktiválásához szükséges (például a menüillesztő átállításakor)."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,
@@ -15403,7 +15403,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_DEFAULT,
-   "Érintsd meg az érintőképernyőt\na RetroArch menübe lépéshez"
+   "Érintsd meg az érintőképernyőt\na Fruitendo menübe lépéshez"
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_ASSET_NOT_FOUND,
@@ -15489,7 +15489,7 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "Beolvasás kész.<br><br>\nA sikeres beolvasáshoz ezek szükségesek:\n<ul><li>már letöltött, kompatibilis mag</li>\n<li>mag információs fájlok frissítése az online frissítővel</li>\n<li>adatbázisok frissítése az online frissítővel</li>\n<li>a RetroArch újraindítása, ha ezek még csak most történtek meg</li></ul>\nVégül, a tartalom megtalálható kell legyen az <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">itteni</a> adatbázisokban. Ha ennek ellenére nem működik, javasolt <a href=\"https://www.github.com/libretro/RetroArch/issues\">a hiba bejelentése</a>."
+   "Beolvasás kész.<br><br>\nA sikeres beolvasáshoz ezek szükségesek:\n<ul><li>már letöltött, kompatibilis mag</li>\n<li>mag információs fájlok frissítése az online frissítővel</li>\n<li>adatbázisok frissítése az online frissítővel</li>\n<li>a Fruitendo újraindítása, ha ezek még csak most történtek meg</li></ul>\nVégül, a tartalom megtalálható kell legyen az <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">itteni</a> adatbázisokban. Ha ennek ellenére nem működik, javasolt <a href=\"https://www.github.com/libretro/Fruitendo/issues\">a hiba bejelentése</a>."
    )
 #endif
 MSG_HASH(
@@ -15506,7 +15506,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_ACCESSIBILITY_STARTUP,
-   "RetroArch kisegítő lehetőségek bekapcsolva. Főmenü, Mag betöltése."
+   "Fruitendo kisegítő lehetőségek bekapcsolva. Főmenü, Mag betöltése."
    )
 MSG_HASH(
    MSG_AI_SERVICE_STOPPED,

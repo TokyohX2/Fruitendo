@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  *  Copyright (C) 2014-2016 - Ali Bouhlel
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -45,7 +45,7 @@
 #include "../../file_path_special.h"
 #include "../../defaults.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 #include "../../tasks/tasks_internal.h"
 
@@ -74,7 +74,7 @@
 #ifndef IS_SALAMANDER
 static enum frontend_fork wiiu_fork_mode = FRONTEND_FORK_NONE;
 #endif
-static const char *elf_path_cst = WIIU_SD_PATH "retroarch/retroarch.elf";
+static const char *elf_path_cst = WIIU_SD_PATH "Fruitendo/Fruitendo.elf";
 
 static bool exists(char *path)
 {

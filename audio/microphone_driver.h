@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2023 Jesse Talavera-Greenberg
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -107,7 +107,7 @@ enum microphone_state_flags
     * Indicates that the microphone driver is not currently retrieving samples,
     * although it's valid and can be resumed.
     *
-    * Usually set when RetroArch needs to simulate audio input
+    * Usually set when Fruitendo needs to simulate audio input
     * without actually rendering samples (e.g. runahead),
     * or when reinitializing the driver.
     *
@@ -520,7 +520,7 @@ typedef struct microphone_driver_state
    /**
     * The handle to the created microphone, if any.
     * The libretro API is designed to expose multiple microphones,
-    * but RetroArch only supports one at a time for now.
+    * but Fruitendo only supports one at a time for now.
     * PRs welcome!
     */
    retro_microphone_t microphone;

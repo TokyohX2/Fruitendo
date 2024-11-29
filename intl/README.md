@@ -5,7 +5,7 @@
 ### Use Crowdin
 
 1. Register user account at https://crowdin.com/
-2. Join the project https://crowdin.com/project/retroarch/
+2. Join the project https://crowdin.com/project/Fruitendo/
 3. Select your language to translate
 4. Click the file name `msg_hash_us.json` and the editor should open
 5. Select an untranslated (red) string from the list
@@ -39,7 +39,7 @@ python3 crowin_sync.py
 ### Manage Crowdin Project
 
 1. You need to be project admin. Please contact @guoyunhe or @twinaphex
-2. Go to https://crowdin.com/project/retroarch/settings
+2. Go to https://crowdin.com/project/Fruitendo/settings
 3. You can manage languages, members etc. here
 
 Links:
@@ -82,5 +82,5 @@ Links:
 
 1. Go to Crowdin and add the language
 2. Run Crowdin script to download new translations
-3. Add new language into menu (see [#10787](https://github.com/libretro/RetroArch/pull/10787))
+3. Add new language into menu (see [#10787](https://github.com/libretro/Fruitendo/pull/10787))
 

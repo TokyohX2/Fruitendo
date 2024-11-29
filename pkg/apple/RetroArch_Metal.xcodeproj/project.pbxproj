@@ -168,7 +168,7 @@
 		053FC25521433F1700D98D46 /* QtConcurrent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtConcurrent.framework; path = /usr/local/opt/qt/lib/QtConcurrent.framework; sourceTree = "<group>"; };
 		053FC25621433F1800D98D46 /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = /usr/local/opt/qt/lib/QtNetwork.framework; sourceTree = "<group>"; };
 		053FC25721433F1800D98D46 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /usr/local/opt/qt/lib/QtWidgets.framework; sourceTree = "<group>"; };
-		05422E592140C8DB00F09961 /* RetroArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05422E592140C8DB00F09961 /* Fruitendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruitendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05422E5C2140CFC500F09961 /* Metal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Metal.xcconfig; sourceTree = "<group>"; };
 		0548E2B420F976E10094A083 /* dynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dynamic.h; path = ../../dynamic.h; sourceTree = "<group>"; };
 		0548E2B520F976E20094A083 /* driver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = driver.h; path = ../../driver.h; sourceTree = "<group>"; };
@@ -374,8 +374,8 @@
 		05A8E23B20A63CF50084ABDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		05B5F90D20ED6A03009C521F /* content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = content.h; path = ../../content.h; sourceTree = "<group>"; };
 		05B5F90F20ED6A03009C521F /* command.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = command.c; path = ../../command.c; sourceTree = "<group>"; };
-		05B5F91120ED6AAE009C521F /* retroarch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = retroarch.c; path = ../../retroarch.c; sourceTree = "<group>"; };
-		05B5F91220ED6AAF009C521F /* retroarch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = retroarch.h; path = ../../retroarch.h; sourceTree = "<group>"; };
+		05B5F91120ED6AAE009C521F /* Fruitendo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Fruitendo.c; path = ../../Fruitendo.c; sourceTree = "<group>"; };
+		05B5F91220ED6AAF009C521F /* Fruitendo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Fruitendo.h; path = ../../Fruitendo.h; sourceTree = "<group>"; };
 		05BF821420ED69D100D95B19 /* config.def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.def.h; path = ../../config.def.h; sourceTree = "<group>"; };
 		05BF821620ED69D100D95B19 /* config.features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.features.h; path = ../../config.features.h; sourceTree = "<group>"; };
 		05BF821720ED69D100D95B19 /* command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = command.h; path = ../../command.h; sourceTree = "<group>"; };
@@ -445,22 +445,22 @@
 		05F2874120F2BEEA00632D47 /* task_patch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = task_patch.c; sourceTree = "<group>"; };
 		070A883F2A4E7A1B003161C0 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		071051BE2BEFEFBA009C29D8 /* Info_AppStore.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info_AppStore.plist; path = OSX/Info_AppStore.plist; sourceTree = "<group>"; };
-		0720996029B1258C001642BB /* RetroArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0720996029B1258C001642BB /* Fruitendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruitendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		072976DC296284F600D6E00C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		074695362995C03900CCB7BD /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		075650242C488918004C5E7E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		075650262C48B417004C5E7E /* RetroArchCI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetroArchCI.entitlements; sourceTree = "<group>"; };
+		075650262C48B417004C5E7E /* FruitendoCI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FruitendoCI.entitlements; sourceTree = "<group>"; };
 		0776EF3829A005D600AF0237 /* Steam.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Steam.xcconfig; sourceTree = "<group>"; };
 		0790F6782BF282B400AA58C9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = OSX/Media.xcassets; sourceTree = "<group>"; };
 		0795A8C6299A095300D5035D /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		07F2BBC22BE83A4200FD1295 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		07F2BBE92BE83A4700FD1295 /* RetroArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07F8037C2BEFE4BD000FD557 /* RetroArchAppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetroArchAppStore.entitlements; sourceTree = "<group>"; };
+		07F2BBE92BE83A4700FD1295 /* Fruitendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruitendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F8037C2BEFE4BD000FD557 /* FruitendoAppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FruitendoAppStore.entitlements; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = OSX/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		5061C8A31AE47E510080AE14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		509F0C9C1AA23AFC00619ECC /* griffin_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = griffin_objc.m; path = ../../griffin/griffin_objc.m; sourceTree = "<group>"; };
-		686201AB24B823A800EBDD95 /* RetroArch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetroArch.entitlements; sourceTree = "<group>"; };
+		686201AB24B823A800EBDD95 /* Fruitendo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fruitendo.entitlements; sourceTree = "<group>"; };
 		840222FB1A889EE2009AB261 /* griffin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = griffin.c; path = ../../griffin/griffin.c; sourceTree = SOURCE_ROOT; };
 		84DD5E9E1A88E45B007336C1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		84DD5EA61A89E406007336C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = /System/Library/Frameworks/CoreLocation.framework; sourceTree = "<absolute>"; };
@@ -469,7 +469,7 @@
 		84DD5EB01A89E664007336C1 /* Cg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cg.framework; path = /Library/Frameworks/Cg.framework; sourceTree = "<absolute>"; };
 		84DD5EB21A89E6C0007336C1 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		84DD5EB41A89E737007336C1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* RetroArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Fruitendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruitendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9254B2E625F5516A00A1E0DA /* GitLabCI.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GitLabCI.xcconfig; sourceTree = "<group>"; };
 		9254B33025FA0BA300A1E0DA /* assets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = assets.zip; path = OSX/assets.zip; sourceTree = "<group>"; };
 		A90205FD4D5979BD8B7E4DD6 /* Info_Metal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; name = Info_Metal.plist; path = OSX/Info_Metal.plist; sourceTree = "<group>"; };
@@ -1037,8 +1037,8 @@
 				0548E2B720F977060094A083 /* performance_counters.h */,
 				0548E2B920F977060094A083 /* playlist.c */,
 				0548E2B620F977060094A083 /* playlist.h */,
-				05B5F91120ED6AAE009C521F /* retroarch.c */,
-				05B5F91220ED6AAF009C521F /* retroarch.h */,
+				05B5F91120ED6AAE009C521F /* Fruitendo.c */,
+				05B5F91220ED6AAF009C521F /* Fruitendo.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -1197,20 +1197,20 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* RetroArch.app */,
-				05422E592140C8DB00F09961 /* RetroArch.app */,
-				0720996029B1258C001642BB /* RetroArch.app */,
-				07F2BBE92BE83A4700FD1295 /* RetroArch.app */,
+				8D1107320486CEB800E47090 /* Fruitendo.app */,
+				05422E592140C8DB00F09961 /* Fruitendo.app */,
+				0720996029B1258C001642BB /* Fruitendo.app */,
+				07F2BBE92BE83A4700FD1295 /* Fruitendo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* RetroArch */ = {
+		29B97314FDCFA39411CA2CEA /* Fruitendo */ = {
 			isa = PBXGroup;
 			children = (
-				07F8037C2BEFE4BD000FD557 /* RetroArchAppStore.entitlements */,
-				075650262C48B417004C5E7E /* RetroArchCI.entitlements */,
-				686201AB24B823A800EBDD95 /* RetroArch.entitlements */,
+				07F8037C2BEFE4BD000FD557 /* FruitendoAppStore.entitlements */,
+				075650262C48B417004C5E7E /* FruitendoCI.entitlements */,
+				686201AB24B823A800EBDD95 /* Fruitendo.entitlements */,
 				05D7753120A55D2700646447 /* BaseConfig.xcconfig */,
 				05422E5C2140CFC500F09961 /* Metal.xcconfig */,
 				A90207489289602F593626D5 /* QTConfig.xcconfig */,
@@ -1225,7 +1225,7 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			indentWidth = 3;
-			name = RetroArch;
+			name = Fruitendo;
 			sourceTree = "<group>";
 			tabWidth = 3;
 			wrapsLines = 0;
@@ -1290,9 +1290,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05422E3C2140C8DB00F09961 /* RetroArchQt */ = {
+		05422E3C2140C8DB00F09961 /* FruitendoQt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05422E562140C8DB00F09961 /* Build configuration list for PBXNativeTarget "RetroArchQt" */;
+			buildConfigurationList = 05422E562140C8DB00F09961 /* Build configuration list for PBXNativeTarget "FruitendoQt" */;
 			buildPhases = (
 				053FC2782143764B00D98D46 /* ShellScript */,
 				05422E3D2140C8DB00F09961 /* Resources */,
@@ -1306,15 +1306,15 @@
 			);
 			dependencies = (
 			);
-			name = RetroArchQt;
+			name = FruitendoQt;
 			productInstallPath = "$(HOME)/Applications";
-			productName = RetroArch;
-			productReference = 05422E592140C8DB00F09961 /* RetroArch.app */;
+			productName = Fruitendo;
+			productReference = 05422E592140C8DB00F09961 /* Fruitendo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0720993B29B1258C001642BB /* RetroArchSteam */ = {
+		0720993B29B1258C001642BB /* FruitendoSteam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0720995D29B1258C001642BB /* Build configuration list for PBXNativeTarget "RetroArchSteam" */;
+			buildConfigurationList = 0720995D29B1258C001642BB /* Build configuration list for PBXNativeTarget "FruitendoSteam" */;
 			buildPhases = (
 				0720993C29B1258C001642BB /* ShellScript */,
 				0720993D29B1258C001642BB /* Resources */,
@@ -1327,15 +1327,15 @@
 			);
 			dependencies = (
 			);
-			name = RetroArchSteam;
+			name = FruitendoSteam;
 			productInstallPath = "$(HOME)/Applications";
-			productName = RetroArch;
-			productReference = 0720996029B1258C001642BB /* RetroArch.app */;
+			productName = Fruitendo;
+			productReference = 0720996029B1258C001642BB /* Fruitendo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07F2BBC32BE83A4700FD1295 /* RetroArch AppStore */ = {
+		07F2BBC32BE83A4700FD1295 /* Fruitendo AppStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07F2BBE62BE83A4700FD1295 /* Build configuration list for PBXNativeTarget "RetroArch AppStore" */;
+			buildConfigurationList = 07F2BBE62BE83A4700FD1295 /* Build configuration list for PBXNativeTarget "Fruitendo AppStore" */;
 			buildPhases = (
 				07F2BBC42BE83A4700FD1295 /* ShellScript */,
 				07F2BBCB2BE83A4700FD1295 /* Sources */,
@@ -1347,15 +1347,15 @@
 			);
 			dependencies = (
 			);
-			name = "RetroArch AppStore";
+			name = "Fruitendo AppStore";
 			productInstallPath = "$(HOME)/Applications";
-			productName = RetroArch;
-			productReference = 07F2BBE92BE83A4700FD1295 /* RetroArch.app */;
+			productName = Fruitendo;
+			productReference = 07F2BBE92BE83A4700FD1295 /* Fruitendo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8D1107260486CEB800E47090 /* RetroArch */ = {
+		8D1107260486CEB800E47090 /* Fruitendo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "RetroArch" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Fruitendo" */;
 			buildPhases = (
 				07340E8B2B4750520076B75D /* ShellScript */,
 				8D1107290486CEB800E47090 /* Resources */,
@@ -1367,10 +1367,10 @@
 			);
 			dependencies = (
 			);
-			name = RetroArch;
+			name = Fruitendo;
 			productInstallPath = "$(HOME)/Applications";
-			productName = RetroArch;
-			productReference = 8D1107320486CEB800E47090 /* RetroArch.app */;
+			productName = Fruitendo;
+			productReference = 8D1107320486CEB800E47090 /* Fruitendo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1381,7 +1381,7 @@
 			attributes = {
 				LastUpgradeCheck = 1110;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RetroArch_Metal" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fruitendo_Metal" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -1389,14 +1389,14 @@
 				English,
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* RetroArch */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Fruitendo */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* RetroArch */,
-				05422E3C2140C8DB00F09961 /* RetroArchQt */,
-				0720993B29B1258C001642BB /* RetroArchSteam */,
-				07F2BBC32BE83A4700FD1295 /* RetroArch AppStore */,
+				8D1107260486CEB800E47090 /* Fruitendo */,
+				05422E3C2140C8DB00F09961 /* FruitendoQt */,
+				0720993B29B1258C001642BB /* FruitendoSteam */,
+				07F2BBC32BE83A4700FD1295 /* Fruitendo AppStore */,
 			);
 		};
 /* End PBXProject section */
@@ -1673,7 +1673,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fruitendo.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1697,8 +1697,8 @@
 					"-UHAVE_OPENGL",
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArchM;
-				PRODUCT_NAME = RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.FruitendoM;
+				PRODUCT_NAME = Fruitendo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -1710,7 +1710,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fruitendo.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1733,8 +1733,8 @@
 					"-UHAVE_OPENGL",
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArchM;
-				PRODUCT_NAME = RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.FruitendoM;
+				PRODUCT_NAME = Fruitendo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
@@ -1765,7 +1765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArchAppStore.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FruitendoAppStore.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
@@ -1773,7 +1773,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = UK699V5ZS8;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.Fruitendo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS App Store";
 			};
@@ -1785,7 +1785,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArchAppStore.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FruitendoAppStore.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
@@ -1793,7 +1793,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = UK699V5ZS8;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.Fruitendo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS App Store";
 			};
@@ -1843,7 +1843,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fruitendo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1891,8 +1891,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.RetroArch;
-				PRODUCT_NAME = RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.Fruitendo;
+				PRODUCT_NAME = Fruitendo;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
@@ -1923,7 +1923,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = RetroArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fruitendo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1972,8 +1972,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				MTL_IGNORE_WARNINGS = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.RetroArch;
-				PRODUCT_NAME = RetroArch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.dist.Fruitendo;
+				PRODUCT_NAME = Fruitendo;
 				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
 			};
@@ -1982,7 +1982,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05422E562140C8DB00F09961 /* Build configuration list for PBXNativeTarget "RetroArchQt" */ = {
+		05422E562140C8DB00F09961 /* Build configuration list for PBXNativeTarget "FruitendoQt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05422E572140C8DB00F09961 /* Debug */,
@@ -1991,7 +1991,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0720995D29B1258C001642BB /* Build configuration list for PBXNativeTarget "RetroArchSteam" */ = {
+		0720995D29B1258C001642BB /* Build configuration list for PBXNativeTarget "FruitendoSteam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0720995E29B1258C001642BB /* Debug */,
@@ -2000,7 +2000,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07F2BBE62BE83A4700FD1295 /* Build configuration list for PBXNativeTarget "RetroArch AppStore" */ = {
+		07F2BBE62BE83A4700FD1295 /* Build configuration list for PBXNativeTarget "Fruitendo AppStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07F2BBE72BE83A4700FD1295 /* Debug */,
@@ -2009,7 +2009,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "RetroArch" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Fruitendo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -2018,7 +2018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RetroArch_Metal" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fruitendo_Metal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

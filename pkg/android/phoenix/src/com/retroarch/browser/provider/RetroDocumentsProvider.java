@@ -1,7 +1,7 @@
 // Contains GPLv3-licensed code from the Termux project.
 // https://github.com/termux/termux-app/blob/master/app/src/main/java/com/termux/filepicker/TermuxDocumentsProvider.java
 
-package com.retroarch.browser.provider;
+package com.Fruitendo.browser.provider;
 
 import android.annotation.TargetApi;
 import android.content.res.AssetFileDescriptor;
@@ -16,7 +16,7 @@ import android.provider.DocumentsContract.Root;
 import android.provider.DocumentsProvider;
 import android.webkit.MimeTypeMap;
 
-import com.retroarch.R;
+import com.Fruitendo.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

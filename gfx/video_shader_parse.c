@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http:www.gnu.org/licenses/>.
  */
 
@@ -44,7 +44,7 @@
 #include "../list_special.h"
 #include "../file_path_special.h"
 #include "../paths.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 
 #if defined(HAVE_GFX_WIDGETS)
 #include "gfx_widgets.h"
@@ -157,7 +157,7 @@ static void fill_pathname_expanded_and_absolute(
  * @param in_preset_path
  * Path of the preset that this path is being used in
  *
- * All the wildcards are replaced by the live values which come from retroarch
+ * All the wildcards are replaced by the live values which come from Fruitendo
  * or the preset context
  *
  * Possible wildcards/tokens to be replaced:
@@ -192,7 +192,7 @@ static void fill_pathname_expanded_and_absolute(
  *       CORE-REQ-ROT-180
  *       CORE-REQ-ROT-270
  *
- *   $VID-ALLOW-CORE-ROT$   -> Video Allow Core Rotation: Reflect's Retroarch's setting allowing the core requested rotation to affect the final rotation:
+ *   $VID-ALLOW-CORE-ROT$   -> Video Allow Core Rotation: Reflect's Fruitendo's setting allowing the core requested rotation to affect the final rotation:
  *       VID-ALLOW-CORE-ROT-OFF
  *       VID-ALLOW-CORE-ROT-ON
  *
@@ -208,13 +208,13 @@ static void fill_pathname_expanded_and_absolute(
  *       VID-FINAL-ROT-180
  *       VID-FINAL-ROT-270
  *
- *   $SCREEN-ORIENT$   -> Screen Orientation: User adjusted screen orientation, will change windows from landscape to portrait, including the Retroarch UI:
+ *   $SCREEN-ORIENT$   -> Screen Orientation: User adjusted screen orientation, will change windows from landscape to portrait, including the Fruitendo UI:
  *       SCREEN-ORIENT-0
  *       SCREEN-ORIENT-90
  *       SCREEN-ORIENT-180
  *       SCREEN-ORIENT-270
  *
- *   $VIEW-ASPECT-ORIENT$   -> Viewport Aspect Orientation: Orientation of the aspect ratio of the retroarch viewport
+ *   $VIEW-ASPECT-ORIENT$   -> Viewport Aspect Orientation: Orientation of the aspect ratio of the Fruitendo viewport
  *       VIEW-ASPECT-ORIENT-HORZ
  *       VIEW-ASPECT-ORIENT-VERT
  *
@@ -1473,7 +1473,7 @@ static bool video_shader_write_referenced_preset(
    config_dir[0]                          = '\0';
    path_to_ref[0]                         = '\0';
 
-   /* Get the retroarch config dir where the automatically
+   /* Get the Fruitendo config dir where the automatically
     * loaded presets are located
     * and where Save Game Preset, Save Core Preset,
     * Save Global Preset save to */
@@ -1489,16 +1489,16 @@ static bool video_shader_write_referenced_preset(
       goto end;
    }
 
-   /* If the initial preset loaded is the ever-changing retroarch
+   /* If the initial preset loaded is the ever-changing Fruitendo
     * preset don't save a reference
     * TODO/FIXME - remove once we don't write this preset anymore */
    if (!strncmp(path_basename_nocompression(shader->loaded_preset_path),
-            "retroarch",
-            STRLEN_CONST("retroarch")))
+            "Fruitendo",
+            STRLEN_CONST("Fruitendo")))
    {
       RARCH_WARN("[Shaders]: Saving full preset because "
             "a reference to the "
-            "ever-changing retroarch preset can't be saved.\n");
+            "ever-changing Fruitendo preset can't be saved.\n");
       goto end;
    }
 
@@ -1557,8 +1557,8 @@ static bool video_shader_write_referenced_preset(
     *    same as the initially loaded preset
     * or
     *    The initially loaded preset was located under the
-    *    retroarch config folder
-    *    this means that it was likely saved from inside the retroarch UI
+    *    Fruitendo config folder
+    *    this means that it was likely saved from inside the Fruitendo UI
     * Then
     *    We should not save a preset with a reference to the initially loaded
     *    preset file itself, instead we need to save a new preset with
@@ -2639,7 +2639,7 @@ static void video_shader_dir_init_shader(
       return;
 
    /* Try 'top level' directory containing main
-    * RetroArch config file */
+    * Fruitendo config file */
    if (!path_is_empty(RARCH_PATH_CONFIG))
    {
       char *rarch_config_directory = strdup(path_get(RARCH_PATH_CONFIG));
@@ -2857,7 +2857,7 @@ static bool video_shader_load_shader_preset_internal(
  * game-specific:   $CONFIG_DIR/$CORE_NAME/$GAME_NAME.$PRESET_EXT
  *
  * $CONFIG_DIR is expected to be Menu Config directory, or failing that, the
- * directory where retroarch.cfg is stored.
+ * directory where Fruitendo.cfg is stored.
  *
  * For compatibility purposes with versions 1.8.7 and older, the presets
  * subdirectory on the Video Shader path is used as a fallback directory.
@@ -2971,7 +2971,7 @@ bool video_shader_combine_preset_and_apply(
    const char *preset_ext                = video_shader_get_preset_extension(type);
    struct video_shader *shader_to_append = (struct video_shader*) calloc(1, sizeof(*shader_to_append));
    struct video_shader *combined_shader  = (struct video_shader*) calloc(1, sizeof(*combined_shader));
-   size_t _len = strlcpy(combined_preset_name, "retroarch", sizeof(combined_preset_name));
+   size_t _len = strlcpy(combined_preset_name, "Fruitendo", sizeof(combined_preset_name));
    strlcpy(combined_preset_name + _len, preset_ext, sizeof(combined_preset_name) - _len);
    fill_pathname_join(combined_preset_path, temp_dir, combined_preset_name, sizeof(combined_preset_path));
 
@@ -2982,7 +2982,7 @@ bool video_shader_combine_preset_and_apply(
    else
       video_shader_combine_shaders(combined_shader, menu_shader, shader_to_append);
 
-   /* We save to the always changing retroarch.slangp, retroarch.glsp...
+   /* We save to the always changing Fruitendo.slangp, Fruitendo.glsp...
       then load it so that it is similar to Apply Preset */
    video_shader_write_preset(combined_preset_path, combined_shader, false);
 

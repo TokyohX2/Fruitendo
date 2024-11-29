@@ -1,9 +1,9 @@
 //
 //  EmulatorTouchMouse.swift
-//  RetroArchiOS
+//  FruitendoiOS
 //
 //  Created by Yoshi Sugawara on 12/27/21.
-//  Copyright © 2021 RetroArch. All rights reserved.
+//  Copyright © 2021 Fruitendo. All rights reserved.
 //
 
 /**

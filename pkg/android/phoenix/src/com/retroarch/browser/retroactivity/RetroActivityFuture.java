@@ -1,4 +1,4 @@
-package com.retroarch.browser.retroactivity;
+package com.Fruitendo.browser.retroactivity;
 
 import android.util.Log;
 import android.view.PointerIcon;
@@ -12,14 +12,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import com.retroarch.browser.preferences.util.ConfigFile;
-import com.retroarch.browser.preferences.util.UserPreferences;
+import com.Fruitendo.browser.preferences.util.ConfigFile;
+import com.Fruitendo.browser.preferences.util.UserPreferences;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public final class RetroActivityFuture extends RetroActivityCamera {
 
-  // If set to true then RetroArch will completely exit when it loses focus
+  // If set to true then Fruitendo will completely exit when it loses focus
   private boolean quitfocus = false;
 
   // Top-level window decor view
@@ -58,7 +58,7 @@ public final class RetroActivityFuture extends RetroActivityCamera {
 
     mDecorView = getWindow().getDecorView();
 
-    // If QUITFOCUS parameter is provided then enable that Retroarch quits when focus is lost
+    // If QUITFOCUS parameter is provided then enable that Fruitendo quits when focus is lost
     quitfocus = getIntent().hasExtra("QUITFOCUS");
   }
 
@@ -97,7 +97,7 @@ public final class RetroActivityFuture extends RetroActivityCamera {
   public void onStop() {
     super.onStop();
 
-    // If QUITFOCUS parameter was set then completely exit RetroArch when focus is lost
+    // If QUITFOCUS parameter was set then completely exit Fruitendo when focus is lost
     if (quitfocus) System.exit(0);
   }
 

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (file_path.c).
@@ -534,11 +534,11 @@ void fill_pathname_parent_dir(char *out_dir,
  * @ext                : extension of output filename
  * @size               : buffer size of output filename
  *
- * Creates a 'dated' filename prefixed by 'RetroArch', and
+ * Creates a 'dated' filename prefixed by 'Fruitendo', and
  * concatenates extension (@ext) to it.
  *
  * E.g.:
- * out_filename = "RetroArch-{month}{day}-{Hours}{Minutes}.{@ext}"
+ * out_filename = "Fruitendo-{month}{day}-{Hours}{Minutes}.{@ext}"
  **/
 size_t fill_dated_filename(char *out_filename,
       const char *ext, size_t size)
@@ -548,7 +548,7 @@ size_t fill_dated_filename(char *out_filename,
    time_t cur_time = time(NULL);
    rtime_localtime(&cur_time, &tm_);
    _len  = strftime(out_filename, size,
-         "RetroArch-%m%d-%H%M%S", &tm_);
+         "Fruitendo-%m%d-%H%M%S", &tm_);
    _len += strlcpy(out_filename + _len, ext, size - _len);
    return _len;
 }
@@ -564,7 +564,7 @@ size_t fill_dated_filename(char *out_filename,
  * concatenates extension (@ext) to it.
  *
  * E.g.:
- * out_filename = "RetroArch-{year}{month}{day}-{Hour}{Minute}{Second}.{@ext}"
+ * out_filename = "Fruitendo-{year}{month}{day}-{Hour}{Minute}{Second}.{@ext}"
  *
  * @return Length of the string copied into @out_path
  **/

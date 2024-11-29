@@ -1,9 +1,9 @@
 //
-//  RetroArchWidgetExtension.swift
-//  RetroArchWidgetExtension
+//  FruitendoWidgetExtension.swift
+//  FruitendoWidgetExtension
 //
 //  Created by Yoshi Sugawara on 10/10/22.
-//  Copyright © 2022 RetroArch. All rights reserved.
+//  Copyright © 2022 Fruitendo. All rights reserved.
 //
 
 import WidgetKit
@@ -32,7 +32,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct RetroArchImageView : View {
+struct FruitendoImageView : View {
     var body: some View {
 #if swift(>=5.9)
        if #available(iOSApplicationExtension 17.0, *) {
@@ -57,16 +57,16 @@ struct RetroArchImageView : View {
 }
 
 @main
-struct RetroArchWidgetExtension: Widget {
-    let kind: String = "RetroArchWidgetExtension"
+struct FruitendoWidgetExtension: Widget {
+    let kind: String = "FruitendoWidgetExtension"
 
     var body: some WidgetConfiguration {
        if #available(iOSApplicationExtension 16.0, *) {
           return StaticConfiguration(kind: kind, provider: DummyProvider()) { _ in
-             RetroArchImageView()
+             FruitendoImageView()
           }
           .configurationDisplayName("Icon")
-          .description("Launch RetroArch.")
+          .description("Launch Fruitendo.")
           .supportedFamilies([.accessoryCircular])
        } else {
           return EmptyWidgetConfiguration()
@@ -74,8 +74,8 @@ struct RetroArchWidgetExtension: Widget {
     }
 }
 
-struct RetroArchWidgetExtension_Previews: PreviewProvider {
+struct FruitendoWidgetExtension_Previews: PreviewProvider {
     static var previews: some View {
-       RetroArchImageView()           .previewContext(WidgetPreviewContext(family: .accessoryCircular))
+       FruitendoImageView()           .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }

@@ -33,7 +33,7 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: retroarch-android-${{ steps.slug.outputs.sha8 }}
+        name: Fruitendo-android-${{ steps.slug.outputs.sha8 }}
         path: |
           pkg/android/phoenix/build/outputs/apk/normal/debug/phoenix-normal-debug.apk
           pkg/android/phoenix/build/outputs/apk/aarch64/debug/phoenix-aarch64-debug.apk

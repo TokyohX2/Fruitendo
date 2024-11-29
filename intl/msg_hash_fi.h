@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Lataa lisäosia, komponentteja ja sisältöä RetroArchiin."
+   "Lataa lisäosia, komponentteja ja sisältöä Fruitendoiin."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Käynnistä RetroArch uudelleen."
+   "Käynnistä Fruitendo uudelleen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,15 +207,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Sulje RetroArch. Kokoonpanon tallennus suljettaessa on käytössä."
+   "Sulje Fruitendo. Kokoonpanon tallennus suljettaessa on käytössä."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Sulje RetroArch. Kokoonpanon tallennus suljettaessa ei ole käytössä."
+   "Sulje Fruitendo. Kokoonpanon tallennus suljettaessa ei ole käytössä."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Sulje RetroArch. Ohjelman väkisin lopettaminen (SIGKILL, jne.) sulkee RetroArchin tallentamatta asetuksia. Unix-pohjaisissa käyttöjärjestelmissä SIGINT/SIGTERM sulkee hallitusti."
+   "Sulje Fruitendo. Ohjelman väkisin lopettaminen (SIGKILL, jne.) sulkee Fruitendoin tallentamatta asetuksia. Unix-pohjaisissa käyttöjärjestelmissä SIGINT/SIGTERM sulkee hallitusti."
    )
 
 /* Main Menu > Load Core */
@@ -604,7 +604,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArchin versio"
+   "Fruitendoin versio"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1350,7 +1350,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Libretro-ydin. Valitse tämä tiedosto, jotta RetroArch lataa tämän ytimen."
+   "Libretro-ydin. Valitse tämä tiedosto, jotta Fruitendo lataa tämän ytimen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -2102,7 +2102,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_MONITOR_INDEX,
-   "Käytetty monitori. 0 (oletus) ei valitse mitään tiettyä, 1 (ensimmäinen monitori) ja ylöspäin kehottaa RetroArchia käyttämään kyseistä monitoria."
+   "Käytetty monitori. 0 (oletus) ei valitse mitään tiettyä, 1 (ensimmäinen monitori) ja ylöspäin kehottaa Fruitendoia käyttämään kyseistä monitoria."
    )
 #if defined (WIIU)
 MSG_HASH(
@@ -2308,7 +2308,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Näytä kaikki sisältö kiinteässä ikkunan koossa, jonka mitat on määritelty 'Ikkunan leveys' ja 'Ikkunan korkeus' ja tallenna nykyinen ikkunan koko ja sijainti RetroArchin sulkemisen jälkeen. Kun tämä ei ole käytössä, ikkunan koko asetetaan dynaamisesti 'Ikkunoitu skaalaus'."
+   "Näytä kaikki sisältö kiinteässä ikkunan koossa, jonka mitat on määritelty 'Ikkunan leveys' ja 'Ikkunan korkeus' ja tallenna nykyinen ikkunan koko ja sijainti Fruitendoin sulkemisen jälkeen. Kun tämä ei ole käytössä, ikkunan koko asetetaan dynaamisesti 'Ikkunoitu skaalaus'."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -2967,7 +2967,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Käyttäjien enimmäismäärä, mitä RetroArch tukee."
+   "Käyttäjien enimmäismäärä, mitä Fruitendo tukee."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3199,7 +3199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_PRESS_TWICE,
-   "Vaadi Lopeta-pikanäppäintä painettavan kahdesti lopettaaksesi RetroArchin."
+   "Vaadi Lopeta-pikanäppäintä painettavan kahdesti lopettaaksesi Fruitendoin."
    )
 
 /* Settings > Input > Haptic Feedback/Vibration */
@@ -3312,7 +3312,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "Ohjaimen nappiyhdistelmä RetroArchin lopettamiseksi."
+   "Ohjaimen nappiyhdistelmä Fruitendoin lopettamiseksi."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -3320,7 +3320,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_QUIT_KEY,
-   "Sulkee RetroArchin varmistaen, että kaikki tallennetut tiedot ja kokoonpanotiedostot tallennetaan levylle."
+   "Sulkee Fruitendoin varmistaen, että kaikki tallennetut tiedot ja kokoonpanotiedostot tallennetaan levylle."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_CLOSE_CONTENT_KEY,
@@ -3582,7 +3582,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_GRAB_MOUSE_TOGGLE,
-   "Kaappaa tai vapauta hiiri. Kun kaapattu, järjestelmän kohdistin on piilotettu ja rajoitettu RetroArchin näyttöikkunaan, mikä parantaa suhteellista hiiren syötettä."
+   "Kaappaa tai vapauta hiiri. Kun kaapattu, järjestelmän kohdistin on piilotettu ja rajoitettu Fruitendoin näyttöikkunaan, mikä parantaa suhteellista hiiren syötettä."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_GAME_FOCUS_TOGGLE,
@@ -3694,7 +3694,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Lähettää laitteestasi ja RetroArch-kokoonpanostasi diagnostiikkatietoja palvelimillemme analysoitavaksi."
+   "Lähettää laitteestasi ja Fruitendo-kokoonpanostasi diagnostiikkatietoja palvelimillemme analysoitavaksi."
    )
 
 /* Settings > Input > Port # Controls */
@@ -3917,7 +3917,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Joissakin ytimissä on sammutustoiminto, tyhjän ytimen lataus estää RetroArchin sammutuksen."
+   "Joissakin ytimissä on sammutustoiminto, tyhjän ytimen lataus estää Fruitendoin sammutuksen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -3933,7 +3933,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_CHECK_FOR_MISSING_FIRMWARE,
-   "Jotkin ytimet saattavat tarvita järjestelmä- tai BIOS-tiedostoja. Jos tämä asetus on käytössä, RetroArch ei salli ytimen käynnistystä, jos pakollisia laiteohjelmistoja puuttuu."
+   "Jotkin ytimet saattavat tarvita järjestelmä- tai BIOS-tiedostoja. Jos tämä asetus on käytössä, Fruitendo ei salli ytimen käynnistystä, jos pakollisia laiteohjelmistoja puuttuu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTION_CATEGORY_ENABLE,
@@ -3958,7 +3958,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ALWAYS_RELOAD_CORE_ON_RUN_CONTENT,
-   "Käynnistä RetroArch uudelleen käynnistettäessä sisältöä, vaikka haluttu ydin on jo ladattu. Tämä voi parantaa järjestelmän vakautta pidentämällä latausaikoja."
+   "Käynnistä Fruitendo uudelleen käynnistettäessä sisältöä, vaikka haluttu ydin on jo ladattu. Tämä voi parantaa järjestelmän vakautta pidentämällä latausaikoja."
    )
 #endif
 MSG_HASH(
@@ -4014,7 +4014,7 @@ MSG_HASH(
 
 MSG_HASH(
    MSG_CORE_STEAM_UNINSTALLED,
-   "Ydin poistaa kun RetroArch lopetetaan."
+   "Ydin poistaa kun Fruitendo lopetetaan."
 )
 
 MSG_HASH(
@@ -4078,7 +4078,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_GLOBAL_CORE_OPTIONS,
-   "Tallenna kaikki ydinasetukset yhteiseen asetustiedostoon (retroarch-core-options.cfg). Kun tämä ei ole käytössä, tallennetaa kunkin ytimen asetukset RetroArchin \"Configs\"-kansioon erillisiin ydinkohtaisiin kansioihin/tiedostoihin."
+   "Tallenna kaikki ydinasetukset yhteiseen asetustiedostoon (Fruitendo-core-options.cfg). Kun tämä ei ole käytössä, tallennetaa kunkin ytimen asetukset Fruitendoin \"Configs\"-kansioon erillisiin ydinkohtaisiin kansioihin/tiedostoihin."
    )
 
 /* Settings > Saving */
@@ -4165,7 +4165,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_AUTO_SAVE,
-   "Luo tilatallennus automaattisesti kun suljet sisällön. RetroArch lataa automaattisesti tämän tilatallennuksen, jos \"Lataa tilatallennus automaattisesti\" on käytössä."
+   "Luo tilatallennus automaattisesti kun suljet sisällön. Fruitendo lataa automaattisesti tämän tilatallennuksen, jos \"Lataa tilatallennus automaattisesti\" on käytössä."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVESTATE_AUTO_LOAD,
@@ -4312,7 +4312,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LOG_TO_FILE_TIMESTAMP,
-   "Kun kirjataan lokia tiedostoon, ohjaa ulostulo jokaisesta RetroArch-istunnosta uuteen aikaleimattuun tiedostoon. Jos poistettu käytöstä, loki ylikirjoitetaan joka kerta, kun RetroArch käynnistetään uudelleen."
+   "Kun kirjataan lokia tiedostoon, ohjaa ulostulo jokaisesta Fruitendo-istunnosta uuteen aikaleimattuun tiedostoon. Jos poistettu käytöstä, loki ylikirjoitetaan joka kerta, kun Fruitendo käynnistetään uudelleen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PERFCNT_ENABLE,
@@ -4320,7 +4320,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PERFCNT_ENABLE,
-   "Suorituskykylaskurit RetroArchille ja ytimille. Laskuritiedot voivat auttaa hahmottamaan järjestelmän pullonkaulat ja siten auttaa kohdistamaan toimenpiteitä suorituskyvyn parantamiseksi."
+   "Suorituskykylaskurit Fruitendoille ja ytimille. Laskuritiedot voivat auttaa hahmottamaan järjestelmän pullonkaulat ja siten auttaa kohdistamaan toimenpiteitä suorituskyvyn parantamiseksi."
    )
 
 /* Settings > File Browser */
@@ -4355,7 +4355,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_USE_LAST_START_DIRECTORY,
-   "Avaa tiedostoselain viimeksi käytetyssä sijainnissa, kun lataat sisältöä aloitushakemistosta. Huom: sijainti palautetaan oletusarvoon RetroArchin uudelleenkäynnistyessä."
+   "Avaa tiedostoselain viimeksi käytetyssä sijainnissa, kun lataat sisältöä aloitushakemistosta. Huom: sijainti palautetaan oletusarvoon Fruitendoin uudelleenkäynnistyessä."
    )
 
 /* Settings > Frame Throttle */
@@ -5174,7 +5174,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Vaihda valikon kohteiden näkyvyyttä RetroArchissa."
+   "Vaihda valikon kohteiden näkyvyyttä Fruitendoissa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -5260,7 +5260,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_ON_CLOSE_CONTENT,
-   "Lopeta RetroArch automaattisesti suljettaessa sisältöä. 'CLI' sulkeutuu vain kun sisältö käynnistetään komentoriviltä."
+   "Lopeta Fruitendo automaattisesti suljettaessa sisältöä. 'CLI' sulkeutuu vain kun sisältö käynnistetään komentoriviltä."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCREENSAVER_TIMEOUT,
@@ -5328,7 +5328,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PAUSE_NONACTIVE,
-   "Keskeytä sisältö, kun RetroArch ei ole aktiivinen ikkuna."
+   "Keskeytä sisältö, kun Fruitendo ei ole aktiivinen ikkuna."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_DISABLE_COMPOSITION,
@@ -5481,19 +5481,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "Näytä \"Sulje RetroArch\""
+   "Näytä \"Sulje Fruitendo\""
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_QUIT_RETROARCH,
-   "Näytä \"Sulje RetroArch\"-valinta päävalikossa."
+   "Näytä \"Sulje Fruitendo\"-valinta päävalikossa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "Näytä \"Käynnistä RetroArch uudelleen\""
+   "Näytä \"Käynnistä Fruitendo uudelleen\""
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_RESTART_RETROARCH,
-   "Näytä \"Käynnistä RetroArch uudelleen\"-valinta päävalikossa."
+   "Näytä \"Käynnistä Fruitendo uudelleen\"-valinta päävalikossa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -7076,7 +7076,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "RetroArchin käyttämät valikon resurssit on tallennettu tähän kansioon."
+   "Fruitendoin käyttämät valikon resurssit on tallennettu tähän kansioon."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -7324,7 +7324,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_SUBLABEL_STEAM_RICH_PRESENCE_ENABLE,
-   "Jaa nykyinen RetroArchin tilatietosi Steamissa."
+   "Jaa nykyinen Fruitendoin tilatietosi Steamissa."
    )
 
 
@@ -10190,7 +10190,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_XMB_THEME,
-   "Valitse eri kuvaketeema RetroArchille."
+   "Valitse eri kuvaketeema Fruitendoille."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_XMB_SWITCH_ICONS,
@@ -10837,7 +10837,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "Tietoja RetroArchista"
+   "Tietoja Fruitendoista"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -11169,11 +11169,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Päivitä RetroArch (nightly)"
+   "Päivitä Fruitendo (nightly)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "RetroArch päivitetty onnistuneesti. Käynnistä sovellus uudelleen, jotta muutokset tulevat voimaan."
+   "Fruitendo päivitetty onnistuneesti. Käynnistä sovellus uudelleen, jotta muutokset tulevat voimaan."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -11834,7 +11834,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Yleensä kehittäjien asettama, jotka niputtavat libretro/RetroArch sovelluksia osoittamaan resursseihin."
+   "Yleensä kehittäjien asettama, jotka niputtavat libretro/Fruitendo sovelluksia osoittamaan resursseihin."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -11908,7 +11908,7 @@ MSG_HASH( /* FIXME Should be MSG_ */
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_VIDEO_DRIVER_FALLBACK,
-   "Grafiikka ohjaimesi ei ole yhteensopiva nykyisen RetroArchin video ajurin kanssa, palataan %s ajuriin. Käynnistä RetroArch uudelleen, jotta muutokset tulevat voimaan."
+   "Grafiikka ohjaimesi ei ole yhteensopiva nykyisen Fruitendoin video ajurin kanssa, palataan %s ajuriin. Käynnistä Fruitendo uudelleen, jotta muutokset tulevat voimaan."
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_SIDELOAD_CORE_SUCCESS,
@@ -11940,11 +11940,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_TWO_MORE_TIMES_TO_SEND_DEBUG_INFO,
-   "Paina vielä kaksi kertaa lähettääksesi diagnostiikkatiedot RetroArchin tiimille."
+   "Paina vielä kaksi kertaa lähettääksesi diagnostiikkatiedot Fruitendoin tiimille."
    )
 MSG_HASH(
    MSG_PRESS_ONE_MORE_TIME_TO_SEND_DEBUG_INFO,
-   "Paina vielä kerran lähettääksesi diagnostiikkatiedot RetroArchin tiimille."
+   "Paina vielä kerran lähettääksesi diagnostiikkatiedot Fruitendoin tiimille."
    )
 MSG_HASH(
    MSG_AUDIO_MIXER_VOLUME,
@@ -12028,15 +12028,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_NOT_RETROARCH,
-   "Verkkopelin yhteysyritys epäonnistui, koska toinen osapuoli ei käytä RetroArchia tai käyttää vanhaa versiota RetroArchista."
+   "Verkkopelin yhteysyritys epäonnistui, koska toinen osapuoli ei käytä Fruitendoia tai käyttää vanhaa versiota Fruitendoista."
    )
 MSG_HASH(
    MSG_NETPLAY_OUT_OF_DATE,
-   "Verkkopelin toinen osapuoli käyttää vanhaa versiota RetroArchista. Ei voida yhdistää."
+   "Verkkopelin toinen osapuoli käyttää vanhaa versiota Fruitendoista. Ei voida yhdistää."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_VERSIONS,
-   "VAROITUS: Verkkopelin toinen osapuoli käyttää eri RetroArch-versiota. Jos ongelmia ilmenee, käytä samaa versiota."
+   "VAROITUS: Verkkopelin toinen osapuoli käyttää eri Fruitendo-versiota. Jos ongelmia ilmenee, käytä samaa versiota."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_CORES,
@@ -13245,7 +13245,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_BLUETOOTH_PAIRING_REMOVED,
-   "Paritus poistettu. Käynnistä RetroArch uudelleen yhdistääksesi/parittaaksesi uudelleen."
+   "Paritus poistettu. Käynnistä Fruitendo uudelleen yhdistääksesi/parittaaksesi uudelleen."
    )
 MSG_HASH(
    MSG_WIFI_SCAN_COMPLETE,
@@ -13947,11 +13947,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Käynnistä RetroArch uudelleen"
+   "Käynnistä Fruitendo uudelleen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_RESTART_KEY,
-   "Poistu ja käynnistä sitten RetroArch uudelleen. Tarvitaan tiettyjen valikkoasetusten aktivoimiseksi (esim. valikkoohjaimen vaihtaminen)."
+   "Poistu ja käynnistä sitten Fruitendo uudelleen. Tarvitaan tiettyjen valikkoasetusten aktivoimiseksi (esim. valikkoohjaimen vaihtaminen)."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,
@@ -14211,7 +14211,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_DEFAULT,
-   "Napauta kosketusnäyttöä\nsiirtyäksesi RetroArch-\nvalikkoon"
+   "Napauta kosketusnäyttöä\nsiirtyäksesi Fruitendo-\nvalikkoon"
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_ASSET_NOT_FOUND,
@@ -14293,7 +14293,7 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "Skannaus valmis.<br><br>\nJotta sisältöä voidaan skannata oikein, sinulla täytyy:\n<ul><li>yhteensopiva ydin olla ladattuna</li>\n<li>\"Ytimen tietotiedostot\" päivitettynä verkkopäivittäjästä</li>\n<li>\"Tietokanta\" päivitettynä verkkopäivittäjästä</li>\n<li>uudelleenkäynnistä RetroArch, jos jokin edellä mainituista on juuri tehty</li></ul>\nsisällön on vastattava olemassa olevia tietokantoja <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">täältä</a>. Jos se ei vieläkään toimi, harkitse <a href=\"https://www.github.com/libretro/RetroArch/issues\">vikailmoituksen lähettämistä</a>."
+   "Skannaus valmis.<br><br>\nJotta sisältöä voidaan skannata oikein, sinulla täytyy:\n<ul><li>yhteensopiva ydin olla ladattuna</li>\n<li>\"Ytimen tietotiedostot\" päivitettynä verkkopäivittäjästä</li>\n<li>\"Tietokanta\" päivitettynä verkkopäivittäjästä</li>\n<li>uudelleenkäynnistä Fruitendo, jos jokin edellä mainituista on juuri tehty</li></ul>\nsisällön on vastattava olemassa olevia tietokantoja <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">täältä</a>. Jos se ei vieläkään toimi, harkitse <a href=\"https://www.github.com/libretro/Fruitendo/issues\">vikailmoituksen lähettämistä</a>."
    )
 #endif
 MSG_HASH(

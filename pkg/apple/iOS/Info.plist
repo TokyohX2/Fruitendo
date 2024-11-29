@@ -11,7 +11,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>RetroArch</string>
+	<string>Fruitendo</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -47,7 +47,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>RetroArch</string>
+	<string>Fruitendo</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -82,16 +82,16 @@
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>RetroArch uses direct Bluetooth communication for some types of controllers</string>
+	<string>Fruitendo uses direct Bluetooth communication for some types of controllers</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>RetroArch uses direct Bluetooth communication for some types of controllers</string>
+	<string>Fruitendo uses direct Bluetooth communication for some types of controllers</string>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_altserver._tcp</string>
 		<string>_ra_netplay._tcp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>RetroArch uses the local network to find local Netplay participants.</string>
+	<string>Fruitendo uses the local network to find local Netplay participants.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Some cores are able to provide microphone input to games.</string>
 	<key>NSUserActivityTypes</key>
@@ -134,9 +134,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.mtl</string>
+			<string>com.Fruitendo.mtl</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -151,9 +151,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.obj</string>
+			<string>com.Fruitendo.obj</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -168,9 +168,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.iso</string>
+			<string>com.Fruitendo.iso</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -185,9 +185,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bin</string>
+			<string>com.Fruitendo.bin</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -202,9 +202,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.chd</string>
+			<string>com.Fruitendo.chd</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -219,9 +219,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cue</string>
+			<string>com.Fruitendo.cue</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -236,9 +236,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.p</string>
+			<string>com.Fruitendo.p</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -253,9 +253,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.tzx</string>
+			<string>com.Fruitendo.tzx</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -270,9 +270,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.t81</string>
+			<string>com.Fruitendo.t81</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -287,9 +287,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.a52</string>
+			<string>com.Fruitendo.a52</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -304,9 +304,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.hex</string>
+			<string>com.Fruitendo.hex</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -321,9 +321,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.arduboy</string>
+			<string>com.Fruitendo.arduboy</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -338,9 +338,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.xfd</string>
+			<string>com.Fruitendo.xfd</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -355,9 +355,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.atr</string>
+			<string>com.Fruitendo.atr</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -372,9 +372,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dcm</string>
+			<string>com.Fruitendo.dcm</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -389,9 +389,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cas</string>
+			<string>com.Fruitendo.cas</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -406,9 +406,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.atx</string>
+			<string>com.Fruitendo.atx</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -423,9 +423,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.car</string>
+			<string>com.Fruitendo.car</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -440,9 +440,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.rom</string>
+			<string>com.Fruitendo.rom</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -457,9 +457,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.com</string>
+			<string>com.Fruitendo.com</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -474,9 +474,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.xex</string>
+			<string>com.Fruitendo.xex</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -491,9 +491,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.m3u</string>
+			<string>com.Fruitendo.m3u</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -508,9 +508,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.md</string>
+			<string>com.Fruitendo.md</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -525,9 +525,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.smd</string>
+			<string>com.Fruitendo.smd</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -542,9 +542,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gen</string>
+			<string>com.Fruitendo.gen</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -559,9 +559,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.68k</string>
+			<string>com.Fruitendo.68k</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -576,9 +576,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sgd</string>
+			<string>com.Fruitendo.sgd</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -593,9 +593,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ri</string>
+			<string>com.Fruitendo.ri</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -610,9 +610,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.mx1</string>
+			<string>com.Fruitendo.mx1</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -627,9 +627,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.mx2</string>
+			<string>com.Fruitendo.mx2</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -644,9 +644,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.col</string>
+			<string>com.Fruitendo.col</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -661,9 +661,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dsk</string>
+			<string>com.Fruitendo.dsk</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -678,9 +678,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sg</string>
+			<string>com.Fruitendo.sg</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -695,9 +695,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sc</string>
+			<string>com.Fruitendo.sc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -712,9 +712,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sf</string>
+			<string>com.Fruitendo.sf</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -729,9 +729,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.nes</string>
+			<string>com.Fruitendo.nes</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -746,9 +746,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.pk4</string>
+			<string>com.Fruitendo.pk4</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -763,9 +763,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sfc</string>
+			<string>com.Fruitendo.sfc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -780,9 +780,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.smc</string>
+			<string>com.Fruitendo.smc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -797,9 +797,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bml</string>
+			<string>com.Fruitendo.bml</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -814,9 +814,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gb</string>
+			<string>com.Fruitendo.gb</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -831,9 +831,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gbc</string>
+			<string>com.Fruitendo.gbc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -848,9 +848,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.st</string>
+			<string>com.Fruitendo.st</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -865,9 +865,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bs</string>
+			<string>com.Fruitendo.bs</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -882,9 +882,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.swc</string>
+			<string>com.Fruitendo.swc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -899,9 +899,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.fig</string>
+			<string>com.Fruitendo.fig</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -916,9 +916,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.game</string>
+			<string>com.Fruitendo.game</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -933,9 +933,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.88</string>
+			<string>com.Fruitendo.88</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -950,9 +950,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sna</string>
+			<string>com.Fruitendo.sna</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -967,9 +967,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.tap</string>
+			<string>com.Fruitendo.tap</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -984,9 +984,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cdt</string>
+			<string>com.Fruitendo.cdt</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1001,9 +1001,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.voc</string>
+			<string>com.Fruitendo.voc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1018,9 +1018,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cpr</string>
+			<string>com.Fruitendo.cpr</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1035,9 +1035,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.chai</string>
+			<string>com.Fruitendo.chai</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1052,9 +1052,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.chailove</string>
+			<string>com.Fruitendo.chailove</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1069,9 +1069,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gd3</string>
+			<string>com.Fruitendo.gd3</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1086,9 +1086,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gd7</string>
+			<string>com.Fruitendo.gd7</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1103,9 +1103,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dx2</string>
+			<string>com.Fruitendo.dx2</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1120,9 +1120,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bsx</string>
+			<string>com.Fruitendo.bsx</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1137,9 +1137,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.3ds</string>
+			<string>com.Fruitendo.3ds</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1154,9 +1154,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.3dsx</string>
+			<string>com.Fruitendo.3dsx</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1171,9 +1171,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.elf</string>
+			<string>com.Fruitendo.elf</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1188,9 +1188,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.axf</string>
+			<string>com.Fruitendo.axf</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1205,9 +1205,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cci</string>
+			<string>com.Fruitendo.cci</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1222,9 +1222,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cxi</string>
+			<string>com.Fruitendo.cxi</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1239,9 +1239,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.app</string>
+			<string>com.Fruitendo.app</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1256,9 +1256,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.kcr</string>
+			<string>com.Fruitendo.kcr</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1273,9 +1273,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.nds</string>
+			<string>com.Fruitendo.nds</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1290,9 +1290,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ids</string>
+			<string>com.Fruitendo.ids</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1307,9 +1307,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ogv</string>
+			<string>com.Fruitendo.ogv</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1324,9 +1324,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dirksimple</string>
+			<string>com.Fruitendo.dirksimple</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1341,9 +1341,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dol</string>
+			<string>com.Fruitendo.dol</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1358,9 +1358,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gcm</string>
+			<string>com.Fruitendo.gcm</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1375,9 +1375,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.wbfs</string>
+			<string>com.Fruitendo.wbfs</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1392,9 +1392,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ciso</string>
+			<string>com.Fruitendo.ciso</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1409,9 +1409,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.gcz</string>
+			<string>com.Fruitendo.gcz</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1426,9 +1426,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.wad</string>
+			<string>com.Fruitendo.wad</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1443,9 +1443,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dff</string>
+			<string>com.Fruitendo.dff</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1460,9 +1460,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.tgc</string>
+			<string>com.Fruitendo.tgc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1477,9 +1477,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.rvz</string>
+			<string>com.Fruitendo.rvz</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1494,9 +1494,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.wia</string>
+			<string>com.Fruitendo.wia</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1511,9 +1511,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.exe</string>
+			<string>com.Fruitendo.exe</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1528,9 +1528,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bat</string>
+			<string>com.Fruitendo.bat</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1545,9 +1545,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.conf</string>
+			<string>com.Fruitendo.conf</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1562,9 +1562,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.dosz</string>
+			<string>com.Fruitendo.dosz</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1579,9 +1579,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ins</string>
+			<string>com.Fruitendo.ins</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1596,9 +1596,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.img</string>
+			<string>com.Fruitendo.img</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1613,9 +1613,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ima</string>
+			<string>com.Fruitendo.ima</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1630,9 +1630,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.vhd</string>
+			<string>com.Fruitendo.vhd</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1647,9 +1647,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.jrc</string>
+			<string>com.Fruitendo.jrc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1664,9 +1664,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.tc</string>
+			<string>com.Fruitendo.tc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1681,9 +1681,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.m3u8</string>
+			<string>com.Fruitendo.m3u8</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1698,9 +1698,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cgb</string>
+			<string>com.Fruitendo.cgb</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1715,9 +1715,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sgb</string>
+			<string>com.Fruitendo.sgb</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1732,9 +1732,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.psexe</string>
+			<string>com.Fruitendo.psexe</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1749,9 +1749,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.pbp</string>
+			<string>com.Fruitendo.pbp</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1766,9 +1766,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ecm</string>
+			<string>com.Fruitendo.ecm</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1783,9 +1783,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.mds</string>
+			<string>com.Fruitendo.mds</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1800,9 +1800,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.psf</string>
+			<string>com.Fruitendo.psf</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1817,9 +1817,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ldb</string>
+			<string>com.Fruitendo.ldb</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1834,9 +1834,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.easyrpg</string>
+			<string>com.Fruitendo.easyrpg</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1851,9 +1851,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.wl6</string>
+			<string>com.Fruitendo.wl6</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1868,9 +1868,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.n3d</string>
+			<string>com.Fruitendo.n3d</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1885,9 +1885,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sod</string>
+			<string>com.Fruitendo.sod</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1902,9 +1902,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sdm</string>
+			<string>com.Fruitendo.sdm</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1919,9 +1919,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.wl1</string>
+			<string>com.Fruitendo.wl1</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1936,9 +1936,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.pk3</string>
+			<string>com.Fruitendo.pk3</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1953,9 +1953,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.cart</string>
+			<string>com.Fruitendo.cart</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1970,9 +1970,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.0</string>
+			<string>com.Fruitendo.0</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -1987,9 +1987,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.ch8</string>
+			<string>com.Fruitendo.ch8</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -2004,9 +2004,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.sms</string>
+			<string>com.Fruitendo.sms</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -2021,9 +2021,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>RetroArch Content File</string>
+			<string>Fruitendo Content File</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.retroarch.bms</string>
+			<string>com.Fruitendo.bms</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

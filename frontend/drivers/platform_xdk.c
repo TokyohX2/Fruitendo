@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -39,7 +39,7 @@
 #include "../../file_path_special.h"
 #include "../../paths.h"
 #ifndef IS_SALAMANDER
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #ifdef HAVE_MENU
 #include "../../menu/menu_driver.h"
 #endif
@@ -77,7 +77,7 @@ static void frontend_xdk_get_environment_settings(int *argc, char *argv[],
 #if defined(HAVE_LOGGER)
    logger_init();
 #elif defined(HAVE_FILE_LOGGER)
-   retro_main_log_file_init("/retroarch-log.txt");
+   retro_main_log_file_init("/Fruitendo-log.txt");
 #endif
 #endif
 
@@ -142,7 +142,7 @@ static void frontend_xdk_get_environment_settings(int *argc, char *argv[],
    strlcpy(g_defaults.dirs[DEFAULT_DIR_CORE],
          "game:", sizeof(g_defaults.dirs[DEFAULT_DIR_CORE]));
    strlcpy(g_defaults.path_config,
-         "game:\\retroarch.cfg", sizeof(g_defaults.path_config));
+         "game:\\Fruitendo.cfg", sizeof(g_defaults.path_config));
    strlcpy(g_defaults.dirs[DEFAULT_DIR_SCREENSHOT],
          "game:", sizeof(g_defaults.dirs[DEFAULT_DIR_SCREENSHOT]));
    strlcpy(g_defaults.dirs[DEFAULT_DIR_SAVESTATE],

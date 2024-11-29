@@ -58,7 +58,7 @@ HAVE_STB_VORBIS = 1
 HAVE_IBXM = 1
 HAVE_CORE_INFO_CACHE = 1
 
-# RetroArch libnx useful flags
+# Fruitendo libnx useful flags
 HAVE_THREADS = 1
 HAVE_PTHREADS = 1
 HAVE_FREETYPE = 0
@@ -117,10 +117,10 @@ INCLUDES :=	include
 EXEFS_SRC := exefs_src
 #ROMFS := switch/romfs
 
-APP_TITLE := RetroArch
+APP_TITLE := Fruitendo
 APP_VERSION := $(RARCH_VERSION)
 APP_AUTHOR := libretro Team
-APP_ICON := pkg/libnx/retroarch.jpg
+APP_ICON := pkg/libnx/Fruitendo.jpg
 
 #---------------------------------------------------------------------------------
 # options for code generation

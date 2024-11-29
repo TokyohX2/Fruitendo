@@ -1,6 +1,6 @@
 <!-- <!DOCTYPE manifest [ <!ENTITY % versionDTD SYSTEM "../../../version.dtd"> %versionDTD; ]> !-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.retroarch.legacy"
+    package="com.Fruitendo.legacy"
     android:versionCode="1556806381"
     android:versionName="1.19.1"
     android:installLocation="internalOnly">
@@ -20,11 +20,11 @@
         android:allowAudioPlaybackCapture="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="RetroArch"
+        android:label="Fruitendo"
         android:hasCode="true"
         android:isGame="true"
         android:banner="@drawable/banner">
-        <activity android:name="com.retroarch.browser.mainmenu.MainMenuActivity" android:exported="true" android:launchMode="singleInstance">
+        <activity android:name="com.Fruitendo.browser.mainmenu.MainMenuActivity" android:exported="true" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -32,10 +32,10 @@
                 <category android:name="tv.ouya.intent.category.GAME" />
             </intent-filter>
         </activity>
-        <activity android:name="com.retroarch.browser.retroactivity.RetroActivityPast" android:exported="true" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:launchMode="singleInstance">
-            <meta-data android:name="android.app.lib_name" android:value="retroarch-activity" />
+        <activity android:name="com.Fruitendo.browser.retroactivity.RetroActivityPast" android:exported="true" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:launchMode="singleInstance">
+            <meta-data android:name="android.app.lib_name" android:value="Fruitendo-activity" />
             <meta-data android:name="android.app.func_name" android:value="ANativeActivity_onCreate" />
         </activity>
-        <activity android:name="com.retroarch.browser.debug.CoreSideloadActivity" android:exported="true"/>
+        <activity android:name="com.Fruitendo.browser.debug.CoreSideloadActivity" android:exported="true"/>
     </application>
 </manifest>

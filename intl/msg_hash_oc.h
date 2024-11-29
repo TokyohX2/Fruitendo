@@ -83,7 +83,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESTART_RETROARCH,
-   "Reaviar RetroArch"
+   "Reaviar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
@@ -91,7 +91,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
-   "Quitar RetroArch"
+   "Quitar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
@@ -695,7 +695,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reaviar RetroArch"
+   "Reaviar Fruitendo"
    )
 #ifdef HAVE_LIBNX
 #endif

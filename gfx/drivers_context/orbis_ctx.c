@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2018      - M4xw
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -123,7 +123,7 @@ static void *orbis_ctx_init(void *video_driver)
 
 #if defined(HAVE_OOSDK)
    memset(&ctx_orbis->shdr_cache_config, 0, sizeof(ctx_orbis->shdr_cache_config));
-   shdr_cache_dir                   = "/data/retroarch/temp/";
+   shdr_cache_dir                   = "/data/Fruitendo/temp/";
    ctx_orbis->shdr_cache_config.ver = 0x00010064;
    snprintf(ctx_orbis->shdr_cache_config.cache_dir,
          strlen(shdr_cache_dir) + 1, "%s",

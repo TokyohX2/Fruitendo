@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (rzip_stream.h).
@@ -38,7 +38,7 @@ RETRO_BEGIN_DECLS
  * This is somewhat less efficient than using regular
  * gzip code, but this is by design - the intention here
  * is to create an interface that integrates seamlessly
- * with normal RetroArch functionality, using only
+ * with normal Fruitendo functionality, using only
  * standard/existing libretro-common routines.
  * (Actual efficiency is pretty good, regardless:
  * archived file size is almost identical to a solid

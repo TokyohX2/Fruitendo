@@ -2,7 +2,7 @@
  * These functions will be called by a libretro frontend to validate certain expected behaviors
  * and simplify mapping core data to the RAIntegration DLL.
  * 
- * Originally designed to be shared between RALibretro and RetroArch, but will simplify
+ * Originally designed to be shared between RALibretro and Fruitendo, but will simplify
  * integrating with any other frontends.
  */
 
@@ -501,7 +501,7 @@ static const struct retro_memory_descriptor* rc_libretro_memory_get_descriptor(c
 
         /* remove any bits from the reduced_address that correspond to the bits in the disconnect
          * mask and collapse the remaining bits. this code was copied from the mmap_reduce function
-         * in RetroArch. i'm not exactly sure how it works, but it does. */
+         * in Fruitendo. i'm not exactly sure how it works, but it does. */
         uint32_t disconnect_mask = (unsigned)desc->disconnect;
         while (disconnect_mask) {
           const uint32_t tmp = (disconnect_mask - 1) & ~disconnect_mask;

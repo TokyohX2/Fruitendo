@@ -21,7 +21,7 @@ read_link()
 
 SCRIPT=$(read_link "$0")
 echo "Script: $SCRIPT"
-APP_BUNDLE_NAME=RetroArch.app
+APP_BUNDLE_NAME=Fruitendo.app
 BASE_DIR=$(dirname "$SCRIPT")
 RETROARCH_DIR=${BASE_DIR}/../../..
 IOSDIR=${BASE_DIR}/iOS

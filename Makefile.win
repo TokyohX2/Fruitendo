@@ -1,4 +1,4 @@
-TARGET = retroarch.exe
+TARGET = Fruitendo.exe
 
 HAVE_SCREENSHOTS = 1
 HAVE_AUDIOMIXER = 1

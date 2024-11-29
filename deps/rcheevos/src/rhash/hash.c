@@ -3591,7 +3591,7 @@ static void rc_hash_initialize_dsk_iterator(struct rc_hash_iterator* iterator, c
 
   /* once a best guess has been identified, make sure the others are added as fallbacks */
 
-  /* check MSX first, as Apple II isn't supported by RetroArch, and RAppleWin won't use the iterator */
+  /* check MSX first, as Apple II isn't supported by Fruitendo, and RAppleWin won't use the iterator */
   rc_hash_iterator_append_console(iterator, RC_CONSOLE_MSX);
   rc_hash_iterator_append_console(iterator, RC_CONSOLE_AMSTRAD_PC);
   rc_hash_iterator_append_console(iterator, RC_CONSOLE_ZX_SPECTRUM);

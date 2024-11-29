@@ -1,18 +1,18 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2014-2017 - Jean-André Santoni
  *  Copyright (C) 2016-2019 - Andrés Suárez
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -104,7 +104,7 @@
 #endif
 #include "../core_option_manager.h"
 #include "../paths.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 #include "../runloop.h"
 #include "../core.h"
 #include "../frontend/frontend_driver.h"
@@ -1735,7 +1735,7 @@ static unsigned menu_displaylist_parse_supported_cores(menu_displaylist_info_t *
    if (!core_available)
    {
       /* We have to handle an annoying special case here.
-       * Some RetroArch ports (e.g. emscripten) are 'broken'
+       * Some Fruitendo ports (e.g. emscripten) are 'broken'
        * by design - they do not handle cores correctly,
        * resulting in empty core_info lists and thus no
        * concept of supported content. These builds are
@@ -1751,7 +1751,7 @@ static unsigned menu_displaylist_parse_supported_cores(menu_displaylist_info_t *
       char exts[16];
       /* Attempt to identify 'broken' platforms by fetching
        * the core file extension - if there is none, then
-       * it is impossible for RetroArch to populate a
+       * it is impossible for Fruitendo to populate a
        * core_info list */
 #if !defined(LOAD_WITHOUT_CORE_INFO)
       if (  !frontend_driver_get_core_extension(exts, sizeof(exts))
@@ -1779,7 +1779,7 @@ static unsigned menu_displaylist_parse_supported_cores(menu_displaylist_info_t *
          else if (!string_is_empty(core_name))
          {
             /* If we have a valid core name, but no core
-             * path, then RetroArch on this platform is
+             * path, then Fruitendo on this platform is
              * likely to be unusable. But this legacy code
              * path has existed for many years, and since
              * we do not know who added it, or why, we
@@ -1817,7 +1817,7 @@ static unsigned menu_displaylist_parse_system_info(file_list_t *list)
    char entry[NAME_MAX_LENGTH];
    unsigned count = 0;
 
-   /* RetroArch Version */
+   /* Fruitendo Version */
    size_t _len    = strlcpy(entry,
          msg_hash_to_str(MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION),
          sizeof(entry));
@@ -6756,7 +6756,7 @@ static unsigned menu_displaylist_netplay_refresh_rooms(file_list_t *list)
       size_t _len;
       struct netplay_room *room = &net_st->room_list[i];
 
-      /* Get rid of any room that is not running RetroArch. */
+      /* Get rid of any room that is not running Fruitendo. */
       if (!room->is_retroarch)
          continue;
 

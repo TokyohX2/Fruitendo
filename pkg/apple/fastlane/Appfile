@@ -1,4 +1,4 @@
-app_identifier("com.libretro.dist.RetroArch") # The bundle identifier of your app
+app_identifier("com.libretro.dist.Fruitendo") # The bundle identifier of your app
 apple_id("libretro@gmail.com") # Your Apple Developer Portal username
 
 itc_team_id("118576492") # App Store Connect Team ID

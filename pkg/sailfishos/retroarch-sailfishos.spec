@@ -1,4 +1,4 @@
-Name:           retroarch
+Name:           Fruitendo
 Version:        1.19.1
 Release:        v1.19.1
 Summary:        Official reference frontend for libretro
@@ -20,7 +20,7 @@ BuildRequires:  SDL2_image-devel
 #BuildRequires:  libusb-devel
 
 %description
-RetroArch is the official reference frontend for the libretro API.
+Fruitendo is the official reference frontend for the libretro API.
 Libretro is a simple but powerful development interface that allows for the
 easy creation of emulators, games and multimedia applications that can plug
 straight into any libretro-compatible frontend. This development interface
@@ -41,42 +41,42 @@ make %{?_smp_mflags}
 make install DESTDIR=%{buildroot}
 # Configuration changes
 sed -i \
-  's|^# libretro_directory =.*|libretro_directory = "~/.config/retroarch/cores/"|;
-   s|^# libretro_info_path =.*|libretro_info_path = "~/.config/retroarch/cores/"|;
-   s|^# joypad_autoconfig_dir =.*|joypad_autoconfig_dir = "/etc/retroarch/joypad"|;
+  's|^# libretro_directory =.*|libretro_directory = "~/.config/Fruitendo/cores/"|;
+   s|^# libretro_info_path =.*|libretro_info_path = "~/.config/Fruitendo/cores/"|;
+   s|^# joypad_autoconfig_dir =.*|joypad_autoconfig_dir = "/etc/Fruitendo/joypad"|;
    s|^# video_fullscreen =.*|video_fullscreen = "true"|;
    s|^# menu_driver =.*|menu_driver = "glui"|;
    s|^# menu_pointer_enable =.*|menu_pointer_enable = "true"|;
    s|^# input_driver =.*|input_driver = "wayland"|' \
-  %{buildroot}/etc/retroarch.cfg
+  %{buildroot}/etc/Fruitendo.cfg
 
 %ifarch armv7hl
 sed -i \
   's|^# core_updater_buildbot_url =.*|core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/linux/armhf/latest/"|;' \
-  %{buildroot}/etc/retroarch.cfg
+  %{buildroot}/etc/Fruitendo.cfg
 %endif
 
 #Disabling audio till it's fixed
 sed -i \
    's|^# audio_enable.*|audio_enable = "false"|' \
-  %{buildroot}/etc/retroarch.cfg
+  %{buildroot}/etc/Fruitendo.cfg
 
 sed -i \
-  's|^Exec=retroarch|Exec=retroarch --menu|' \
-  %{buildroot}/usr/share/applications/com.libretro.RetroArch.desktop
+  's|^Exec=Fruitendo|Exec=Fruitendo --menu|' \
+  %{buildroot}/usr/share/applications/com.libretro.Fruitendo.desktop
 
   # Install icon file in the correct place
   mkdir -p %{buildroot}/usr/share/icons/hicolor/86x86/apps
-  install -m 644 "./media/retroarch-96x96.png" "%{buildroot}/usr/share/icons/hicolor/86x86/apps/retroarch.png"
-  rm "%{buildroot}/usr/share/pixmaps/com.libretro.RetroArch.svg"
+  install -m 644 "./media/Fruitendo-96x96.png" "%{buildroot}/usr/share/icons/hicolor/86x86/apps/Fruitendo.png"
+  rm "%{buildroot}/usr/share/pixmaps/com.libretro.Fruitendo.svg"
   rmdir "%{buildroot}/usr/share/pixmaps"
 
 %files
 %doc README.md
-%config /etc/retroarch.cfg
-%{_prefix}/bin/retroarch
-%{_prefix}/share/applications/com.libretro.RetroArch.desktop
+%config /etc/Fruitendo.cfg
+%{_prefix}/bin/Fruitendo
+%{_prefix}/share/applications/com.libretro.Fruitendo.desktop
 %{_prefix}/share/man/man6/*.6*
-%{_prefix}/share/icons/hicolor/86x86/apps/retroarch.*
-%{_prefix}/share/doc/retroarch/*
+%{_prefix}/share/icons/hicolor/86x86/apps/Fruitendo.*
+%{_prefix}/share/doc/Fruitendo/*
 %changelog

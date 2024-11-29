@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "重新启动RetroArch。"
+   "重新启动Fruitendo。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,15 +207,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "退出RetroArch应用。[退出时配置保存] 已启用。"
+   "退出Fruitendo应用。[退出时配置保存] 已启用。"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "退出RetroArch应用。[退出时配置保存] 已禁用。"
+   "退出Fruitendo应用。[退出时配置保存] 已禁用。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "退出RetroArch。在任何情况下以硬性方式终止程序 (SIGKILL等) 将不会在任何情况下保存配置而终止RetroArch。 在 Unix-likes, SIGINT/SIGTERM 允许清理去除, 如果启用, 包括配置保存."
+   "退出Fruitendo。在任何情况下以硬性方式终止程序 (SIGKILL等) 将不会在任何情况下保存配置而终止Fruitendo。 在 Unix-likes, SIGINT/SIGTERM 允许清理去除, 如果启用, 包括配置保存."
    )
 
 /* Main Menu > Load Core */
@@ -620,7 +620,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch 版本"
+   "Fruitendo 版本"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1390,7 +1390,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Libretro 核心。选择后 RetroArch 将加载此核心。"
+   "Libretro 核心。选择后 Fruitendo 将加载此核心。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -1833,19 +1833,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_XMB,
-   "XMB 是 RetroArch 的一个 GUI，看起来像第 7 世代主机菜单。它可以支持与 Ozone 相同的功能。"
+   "XMB 是 Fruitendo 的一个 GUI，看起来像第 7 世代主机菜单。它可以支持与 Ozone 相同的功能。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_OZONE,
-   "Ozone 是大多数平台上 RetroArch 的默认 GUI。它针对游戏控制器的导航进行了优化。"
+   "Ozone 是大多数平台上 Fruitendo 的默认 GUI。它针对游戏控制器的导航进行了优化。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_RGUI,
-   "RGUI 是 RetroArch 的内置简单 GUI。它在菜单驱动程序中的性能要求最低，并且可以在低分辨率屏幕上使用。"
+   "RGUI 是 Fruitendo 的内置简单 GUI。它在菜单驱动程序中的性能要求最低，并且可以在低分辨率屏幕上使用。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_MATERIALUI,
-   "在移动设备上，RetroArch 默认使用移动端 UI，MaterialUI。该界面是围绕触摸屏和指针设备（例如鼠标/轨迹球）设计的。"
+   "在移动设备上，Fruitendo 默认使用移动端 UI，MaterialUI。该界面是围绕触摸屏和指针设备（例如鼠标/轨迹球）设计的。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RECORD_DRIVER,
@@ -2262,7 +2262,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_MONITOR_INDEX,
-   "倾向于哪个显示器。0（默认）意味着不偏好任何特定的显示器，1及以上（1是第一个显示器），建议RetroArch使用该特定显示器。"
+   "倾向于哪个显示器。0（默认）意味着不偏好任何特定的显示器，1及以上（1是第一个显示器），建议Fruitendo使用该特定显示器。"
    )
 #if defined (WIIU)
 MSG_HASH(
@@ -2472,7 +2472,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "在“窗口宽度”和“窗口高度”指定的固定尺寸窗口中显示所有内容， 并在关闭RetroArch时保存当前窗口大小和位置。 禁用后窗口大小将根据“窗口缩放”动态设置。"
+   "在“窗口宽度”和“窗口高度”指定的固定尺寸窗口中显示所有内容， 并在关闭Fruitendo时保存当前窗口大小和位置。 禁用后窗口大小将根据“窗口缩放”动态设置。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -3012,7 +3012,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MICROPHONE_WASAPI_EXCLUSIVE_MODE,
-   "当使用WASAPI麦克风驱动时，允许RetroArch对麦克风设备进行独占控制。如果禁用，RetroArch将使用共享模式代替。"
+   "当使用WASAPI麦克风驱动时，允许Fruitendo对麦克风设备进行独占控制。如果禁用，Fruitendo将使用共享模式代替。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MICROPHONE_WASAPI_FLOAT_FORMAT,
@@ -3247,7 +3247,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_POLL_TYPE_BEHAVIOR,
-   "影响在RetroArch中输入轮询的方式。\n较早——在帧处理之前执行。\n正常-在请求轮询时进行执行。\n稍晚 - 对每帧的第一次输入状态请求时执行。\n设置为“较早”或“稍晚”可降低延迟，取决于您的配置。当进行连线游戏时，此设定将被忽略。"
+   "影响在Fruitendo中输入轮询的方式。\n较早——在帧处理之前执行。\n正常-在请求轮询时进行执行。\n稍晚 - 对每帧的第一次输入状态请求时执行。\n设置为“较早”或“稍晚”可降低延迟，取决于您的配置。当进行连线游戏时，此设定将被忽略。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3294,7 +3294,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_SELECT_PHYSICAL_KEYBOARD,
-   "如果RetroArch将硬件键盘识别为某种类型的游戏手柄， 此设置可以用来强制将错误识别的设备作为键盘处理。\n如果您试图在某些安卓电视设备中模拟计算机，同时也拥有一个可附加到方框的物理键盘，这将是很有用的。"
+   "如果Fruitendo将硬件键盘识别为某种类型的游戏手柄， 此设置可以用来强制将错误识别的设备作为键盘处理。\n如果您试图在某些安卓电视设备中模拟计算机，同时也拥有一个可附加到方框的物理键盘，这将是很有用的。"
    )
 #endif
 MSG_HASH(
@@ -3511,7 +3511,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_RETROPAD_BINDS,
-   "Libretro 使用一个名叫“全能手柄 (RetroPad)”的虚拟抽像手柄，在前端 (例如 RetroArch) 和核心之间通讯。 此菜单决定虚拟的全能手柄 (RetroPad) 如何映射到物理输入设备以及这些设备使用的虚拟输入端口。\n如果物理输入设备被正确地识别并自动配置，用户可能根本不需要使用此菜单。对于核心特定的输入配置更改，请使用快速菜单的“控制”子菜单。"
+   "Libretro 使用一个名叫“全能手柄 (RetroPad)”的虚拟抽像手柄，在前端 (例如 Fruitendo) 和核心之间通讯。 此菜单决定虚拟的全能手柄 (RetroPad) 如何映射到物理输入设备以及这些设备使用的虚拟输入端口。\n如果物理输入设备被正确地识别并自动配置，用户可能根本不需要使用此菜单。对于核心特定的输入配置更改，请使用快速菜单的“控制”子菜单。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_USER_BINDS,
@@ -3664,7 +3664,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "退出RetroArch的控制器組合鍵"
+   "退出Fruitendo的控制器組合鍵"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -4117,7 +4117,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_DEVICE_INDEX,
-   "RetroArch识别的物理控制器。"
+   "Fruitendo识别的物理控制器。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_DEVICE_RESERVED_DEVICE_NAME,
@@ -4185,7 +4185,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MOUSE_INDEX,
-   "RetroArch识别的物理鼠标。"
+   "Fruitendo识别的物理鼠标。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_B,
@@ -4397,7 +4397,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_DUMMY_ON_CORE_SHUTDOWN,
-   "某些核心可能具有关闭程序功能。如果此选项被禁用，选择关闭进程时会触发RetroArch关闭。\n启用此选项将会加载替代核心，从而使我们继续使用应用程序，免去重启操作。"
+   "某些核心可能具有关闭程序功能。如果此选项被禁用，选择关闭进程时会触发Fruitendo关闭。\n启用此选项将会加载替代核心，从而使我们继续使用应用程序，免去重启操作。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -4413,7 +4413,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_CHECK_FOR_MISSING_FIRMWARE,
-   "某些核心可能需要固件或 bios 文件。 如果启用此选项，RetroArch将不允许在缺少必须固件情况下启动核心。"
+   "某些核心可能需要固件或 bios 文件。 如果启用此选项，Fruitendo将不允许在缺少必须固件情况下启动核心。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTION_CATEGORY_ENABLE,
@@ -4502,7 +4502,7 @@ MSG_HASH(
 
 MSG_HASH(
    MSG_CORE_STEAM_UNINSTALLED,
-   "当退出RetroArch时，核心将被卸载."
+   "当退出Fruitendo时，核心将被卸载."
 )
 
 MSG_HASH(
@@ -4530,7 +4530,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMAP_SAVE_ON_EXIT,
-   "关闭内容或退出RetroArch时，将更改保存到任何活动的输入重新映射文件。"
+   "关闭内容或退出Fruitendo时，将更改保存到任何活动的输入重新映射文件。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_GAME_SPECIFIC_OPTIONS,
@@ -4574,7 +4574,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_GLOBAL_CORE_OPTIONS,
-   "将所有核心选项保存到一个通用设置文件 (retroarch-core-options.cfg)。当禁用时，每个核心的选项将被保存到全能模拟器的配置文件夹中一个独立的核心文件夹/文件。"
+   "将所有核心选项保存到一个通用设置文件 (Fruitendo-core-options.cfg)。当禁用时，每个核心的选项将被保存到全能模拟器的配置文件夹中一个独立的核心文件夹/文件。"
    )
 
 /* Settings > Saving */
@@ -6012,7 +6012,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_ON_CLOSE_CONTENT,
-   "于关闭游戏时自动退出 RetroArch。设置为「CLI」表示随由命令行启动的游戏退出而退出。"
+   "于关闭游戏时自动退出 Fruitendo。设置为「CLI」表示随由命令行启动的游戏退出而退出。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCREENSAVER_TIMEOUT,
@@ -7837,7 +7837,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ALLOW_NON_PNG,
-   "如果启用，本地缩略图可以添加到RetroArch支持的所有图像类型(例如jpeg)。可能会产生较小的性能影响。"
+   "如果启用，本地缩略图可以添加到Fruitendo支持的所有图像类型(例如jpeg)。可能会产生较小的性能影响。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGE,
@@ -7977,7 +7977,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_ACCOUNTS_RETRO_ACHIEVEMENTS,
-   "您的 RetroAchievements 帐户的登录详细信息。请访问 retrievements.org 并注册免费帐户。\n在您完成注册后，您需要在RetroArch中输入用户名和密码。"
+   "您的 RetroAchievements 帐户的登录详细信息。请访问 retrievements.org 并注册免费帐户。\n在您完成注册后，您需要在Fruitendo中输入用户名和密码。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ACCOUNTS_FACEBOOK,
@@ -8304,7 +8304,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_STEAM_RICH_PRESENCE_ENABLE,
-   "在Steam上的RetroArch中分享您当前的状态。"
+   "在Steam上的Fruitendo中分享您当前的状态。"
    )
 
 MSG_HASH(
@@ -9771,7 +9771,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SHADER_APPLY_CHANGES,
-   "在更改着色器设置后，如着色器通道数量，过滤，FBO 比例尺，使用它来应用更改。\n更改这些着色器设置是一个比较繁琐的操作，因此必须明确完成。\n当你应用着色器时，着色器设置被保存到一个临时文件(referarch.slangp/)。 gp/.glslp) 并加载。RetroArch退出后文件仍然存在，并保存到着色器目录。"
+   "在更改着色器设置后，如着色器通道数量，过滤，FBO 比例尺，使用它来应用更改。\n更改这些着色器设置是一个比较繁琐的操作，因此必须明确完成。\n当你应用着色器时，着色器设置被保存到一个临时文件(referarch.slangp/)。 gp/.glslp) 并加载。Fruitendo退出后文件仍然存在，并保存到着色器目录。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_SHADER_PARAMETERS,
@@ -9791,7 +9791,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_SHADER_NUM_PASSES,
-   "RetroArch允许使用自定义硬件过滤器和缩放系数混合和匹配不同的着色器通道。\n此选项指定要使用的着色器通道数量。 如果您将此设置为 0，并使用应用着色器变更，您可以使用\"空白\"着色器。"
+   "Fruitendo允许使用自定义硬件过滤器和缩放系数混合和匹配不同的着色器通道。\n此选项指定要使用的着色器通道数量。 如果您将此设置为 0，并使用应用着色器变更，您可以使用\"空白\"着色器。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHADER,
@@ -12444,7 +12444,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_LOAD_CONTENT_HISTORY,
-   "当内容加载时，内容和libtro 核心组合将保存到历史记录。\n历史记录保存在与RetroArch配置文件相同的目录中。 如果启动时没有加载配置文件，历史记录将不会被保存或加载，并且在主菜单中不存在。"
+   "当内容加载时，内容和libtro 核心组合将保存到历史记录。\n历史记录保存在与Fruitendo配置文件相同的目录中。 如果启动时没有加载配置文件，历史记录将不会被保存或加载，并且在主菜单中不存在。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MULTIMEDIA_SETTINGS,
@@ -12958,7 +12958,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "通常由 Libretro/RetroArch 的打包开发者设置，指向素材文件夹。"
+   "通常由 Libretro/Fruitendo 的打包开发者设置，指向素材文件夹。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -13164,7 +13164,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_OUT_OF_DATE,
-   "网络播放节点正在运行旧版本的RetroArch。无法连接。"
+   "网络播放节点正在运行旧版本的Fruitendo。无法连接。"
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_VERSIONS,
@@ -15649,7 +15649,7 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "扫描完成。<br><br>\n为了是游戏被正确扫描，您必须：\n<ul><li>已下载了兼容的核心</li>\n<li>已更新了「核心信息文件」</li>\n<li>已更新了「Databases」</li>\n<li>更新后重启全能模拟器</li></ul>\n最后，游戏 ROM 必须匹配<a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">数据库</a>。如果仍然不行，<a href=\"https://www.github.com/libretro/RetroArch/issues\">请报告 BUG</a>。"
+   "扫描完成。<br><br>\n为了是游戏被正确扫描，您必须：\n<ul><li>已下载了兼容的核心</li>\n<li>已更新了「核心信息文件」</li>\n<li>已更新了「Databases」</li>\n<li>更新后重启全能模拟器</li></ul>\n最后，游戏 ROM 必须匹配<a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">数据库</a>。如果仍然不行，<a href=\"https://www.github.com/libretro/Fruitendo/issues\">请报告 BUG</a>。"
    )
 #endif
 MSG_HASH(
@@ -15662,7 +15662,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_ACCESSIBILITY_STARTUP,
-   "RetroArch检查开启。主菜单加载核心。"
+   "Fruitendo检查开启。主菜单加载核心。"
    )
 MSG_HASH(
    MSG_AI_SERVICE_STOPPED,

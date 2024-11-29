@@ -1,17 +1,17 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  * Copyright (C) 2012-2014 - Jason Fetters
  * Copyright (C) 2014-2015 - Jay McCarthy
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
- * * You should have received a copy of the GNU General Public License along with RetroArch.
+ * * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -65,7 +65,7 @@
 #include "../../file_path_special.h"
 #include "../../configuration.h"
 #include "../../defaults.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 #include "../../msg_hash.h"
 #include "../../ui/ui_companion_driver.h"
@@ -379,20 +379,20 @@ static void frontend_darwin_get_env(int *argc, char *argv[],
    {
       CFSearchPathForDirectoriesInDomains(documents_dir_buf, sizeof(documents_dir_buf));
       path_resolve_realpath(documents_dir_buf, sizeof(documents_dir_buf), true);
-      strlcat(documents_dir_buf, "/RetroArch", sizeof(documents_dir_buf));
+      strlcat(documents_dir_buf, "/Fruitendo", sizeof(documents_dir_buf));
    }
 #else
    CFSearchPathForDirectoriesInDomains(documents_dir_buf, sizeof(documents_dir_buf));
    path_resolve_realpath(documents_dir_buf, sizeof(documents_dir_buf), true);
-   strlcat(documents_dir_buf, "/RetroArch", sizeof(documents_dir_buf));
+   strlcat(documents_dir_buf, "/Fruitendo", sizeof(documents_dir_buf));
    /* iOS and tvOS are going to put everything in the documents dir */
    strncpy(application_data, documents_dir_buf, sizeof(application_data));
 #endif
 
    /* By the time we are here:
     * bundle_path_buf is the full path of the .app
-    * documents_dir_buf is where user documents go (macos: ~/Documents/RetroArch)
-    * application_data is where "hidden" app data goes (macos: ~/Library/Application Support/RetroArch, ios: documents dir)
+    * documents_dir_buf is where user documents go (macos: ~/Documents/Fruitendo)
+    * application_data is where "hidden" app data goes (macos: ~/Library/Application Support/Fruitendo, ios: documents dir)
 
     * this stuff we expect the user to find easily, possibly sync across iCloud */
    fill_pathname_join(g_defaults.dirs[DEFAULT_DIR_LOGS], documents_dir_buf, "logs", sizeof(g_defaults.dirs[DEFAULT_DIR_LOGS]));
@@ -725,9 +725,9 @@ static int frontend_darwin_parse_drive_list(void *data, bool load_content)
    if (list->size == 0)
       menu_entries_append(list,
 #if TARGET_OS_TV
-            "~/Library/Caches/RetroArch",
+            "~/Library/Caches/Fruitendo",
 #else
-            "~/Documents/RetroArch",
+            "~/Documents/Fruitendo",
 #endif
             msg_hash_to_str(MENU_ENUM_LABEL_FILE_DETECT_CORE_LIST_PUSH_DIR),
             enum_idx,

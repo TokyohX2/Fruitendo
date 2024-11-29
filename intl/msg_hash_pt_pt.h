@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Transferir add-ons, componentes e conteúdos para o RetroArch."
+   "Transferir add-ons, componentes e conteúdos para o Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -191,7 +191,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Reiniciar a aplicação RetroArch."
+   "Reiniciar a aplicação Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -199,15 +199,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Sair da aplicação RetroArch. A configuração é guardada ao sair."
+   "Sair da aplicação Fruitendo. A configuração é guardada ao sair."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Sair da aplicação RetroArch. A gravação da configuração ao sair está desativada."
+   "Sair da aplicação Fruitendo. A gravação da configuração ao sair está desativada."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Sair do RetroArch. Se encerrar o programa de forma forçada (SIGKILL, etc.) irá encerrar o RetroArch sem guardar a configuração em qualquer cenário. Em sistemas Unix, SIGINT/SIGTERM permite uma desinicialização limpa que inclui a gravação da configuração se estiver ativa."
+   "Sair do Fruitendo. Se encerrar o programa de forma forçada (SIGKILL, etc.) irá encerrar o Fruitendo sem guardar a configuração em qualquer cenário. Em sistemas Unix, SIGINT/SIGTERM permite uma desinicialização limpa que inclui a gravação da configuração se estiver ativa."
    )
 
 /* Main Menu > Load Core */
@@ -584,7 +584,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Versão do RetroArch"
+   "Versão do Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1868,7 +1868,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Mostra todo o conteúdo numa janela de tamanho fixo com as dimensões especificadas por 'Largura da Janela' e 'Altura da Janela', e guarda o tamanho e a posição atual da janela ao fechar o RetroArch. Quando desativado, o tamanho da janela será definido dinamicamente com base na 'Escala em modo janela'."
+   "Mostra todo o conteúdo numa janela de tamanho fixo com as dimensões especificadas por 'Largura da Janela' e 'Altura da Janela', e guarda o tamanho e a posição atual da janela ao fechar o Fruitendo. Quando desativado, o tamanho da janela será definido dinamicamente com base na 'Escala em modo janela'."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -2231,7 +2231,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Número máximo de utilizadores suportados pelo RetroArch."
+   "Número máximo de utilizadores suportados pelo Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_SORT_BY_CONTROLLER_ENABLE,
@@ -2625,7 +2625,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_AUTO_LOAD,
-   "Carregar automaticamente o último estado automático guardado no arranque do RetroArch."
+   "Carregar automaticamente o último estado automático guardado no arranque do Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVESTATE_THUMBNAIL_ENABLE,
@@ -3013,7 +3013,7 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_SHOW_START_SCREEN,
-   "Mostrar o ecrã inicial no menu. Esta opção é desativada automaticamente após o primeiro arranque do RetroArch."
+   "Mostrar o ecrã inicial no menu. Esta opção é desativada automaticamente após o primeiro arranque do Fruitendo."
    )
 
 /* Settings > User Interface > Menu Item Visibility > Quick Menu */
@@ -4722,7 +4722,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Habitualmente, definido pelos estúdios de desenvolvimento que agrupam aplicações libretro/RetroArch, tendo como destino os recursos."
+   "Habitualmente, definido pelos estúdios de desenvolvimento que agrupam aplicações libretro/Fruitendo, tendo como destino os recursos."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -5783,7 +5783,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reiniciar RetroArch"
+   "Reiniciar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,
@@ -5865,12 +5865,12 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "Verificação concluída.<br><br>\nPara que o conteúdo seja corretamente verificado, é necessário:\n<ul><li>ter um núcleo compatível já transferido</li>\n<li>ter os \"Ficheiros de Informação de Núcleos\" atualizados através da Atualização Online</li>\n<li>ter \"Bases de dados\" atualizadas através do Atualizador Online</li>\n<li>reiniciar o RetroArch se alguma das ações acima tiver sido realizada</li></ul>\nPor último, o conteúdo deve corresponder às bases de dados existentes de <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">here</a>. Se ainda não estiver a funcionar, considere a possibilidade de <a href=\"https://www.github.com/libretro/RetroArch/issues\">enviar um relatório de erro</a>."
+   "Verificação concluída.<br><br>\nPara que o conteúdo seja corretamente verificado, é necessário:\n<ul><li>ter um núcleo compatível já transferido</li>\n<li>ter os \"Ficheiros de Informação de Núcleos\" atualizados através da Atualização Online</li>\n<li>ter \"Bases de dados\" atualizadas através do Atualizador Online</li>\n<li>reiniciar o Fruitendo se alguma das ações acima tiver sido realizada</li></ul>\nPor último, o conteúdo deve corresponder às bases de dados existentes de <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">here</a>. Se ainda não estiver a funcionar, considere a possibilidade de <a href=\"https://www.github.com/libretro/Fruitendo/issues\">enviar um relatório de erro</a>."
    )
 #endif
 MSG_HASH(
    MSG_ACCESSIBILITY_STARTUP,
-   "Acessibilidade RetroArch ativa.  Menu principal, Carregar núcleo."
+   "Acessibilidade Fruitendo ativa.  Menu principal, Carregar núcleo."
    )
 MSG_HASH(
    MSG_AI_SERVICE_STOPPED,

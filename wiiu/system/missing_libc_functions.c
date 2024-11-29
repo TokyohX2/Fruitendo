@@ -52,11 +52,11 @@ uid_t getuid(void)
 struct passwd out;
 struct passwd* getpwuid(uid_t uid)
 {
-   out.pw_name = "retroarch";
+   out.pw_name = "Fruitendo";
    out.pw_passwd = "Wait, what?";
    out.pw_uid = uid;
    out.pw_gid = 1000;
-   out.pw_gecos = "retroarch";
+   out.pw_gecos = "Fruitendo";
    out.pw_dir = "sd:/";
    out.pw_shell = "/vol/system_slc/fw.img";
 

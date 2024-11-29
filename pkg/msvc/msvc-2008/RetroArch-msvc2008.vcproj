@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="RetroArch-msvc2008"
+	Name="Fruitendo-msvc2008"
 	ProjectGUID="{C50A37E2-041D-480E-B62A-2B7113DF054F}"
-	RootNamespace="RetroArchmsvc2008"
+	RootNamespace="Fruitendomsvc2008"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>

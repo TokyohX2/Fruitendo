@@ -1,15 +1,15 @@
 //
 //  CocoaView+Utilities.swift
-//  RetroArchiOS
+//  FruitendoiOS
 //
 //  Created by Yoshi Sugawara on 3/2/22.
-//  Copyright © 2022 RetroArch. All rights reserved.
+//  Copyright © 2022 Fruitendo. All rights reserved.
 //
 
 extension CocoaView {
    
    // A native swift wrapper around displaying notifications
-   @objc func showRetroArchNotification(
+   @objc func showFruitendoNotification(
       title: String? = nil,
       message: String,
       icon: message_queue_icon = MESSAGE_QUEUE_ICON_DEFAULT,

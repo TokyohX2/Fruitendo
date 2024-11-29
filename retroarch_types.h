@@ -49,7 +49,7 @@ enum rarch_ctl_state
 {
    RARCH_CTL_NONE = 0,
 
-   /* Deinitializes RetroArch. */
+   /* Deinitializes Fruitendo. */
    RARCH_CTL_MAIN_DEINIT,
 
    RARCH_CTL_IS_DUMMY_CORE,
@@ -155,7 +155,7 @@ enum content_state_flags
 typedef struct rarch_memory_descriptor
 {
    struct retro_memory_descriptor core;        /* uint64_t alignment */
-   /* Retroarch can have additional context here */
+   /* Fruitendo can have additional context here */
 } rarch_memory_descriptor_t;
 
 typedef struct rarch_memory_map

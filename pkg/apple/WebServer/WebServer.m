@@ -30,7 +30,7 @@
 #elif TARGET_OS_TV
         NSString* docsPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
 #endif
-        docsPath = [docsPath stringByAppendingPathComponent:@"RetroArch"];
+        docsPath = [docsPath stringByAppendingPathComponent:@"Fruitendo"];
         _webUploader = [[GCDWebUploader alloc] initWithUploadDirectory:docsPath];
         _webUploader.allowHiddenItems = YES;
         _webDAVServer = [[GCDWebDAVServer alloc] initWithUploadDirectory:docsPath];
@@ -44,8 +44,8 @@
         [_webDAVServer stop];
     }
     NSDictionary *webDAVSeverOptions = @{
-        GCDWebServerOption_ServerName : @"RetroArch",
-        GCDWebServerOption_BonjourName : @"RetroArch",
+        GCDWebServerOption_ServerName : @"Fruitendo",
+        GCDWebServerOption_BonjourName : @"Fruitendo",
         GCDWebServerOption_BonjourType : @"_webdav._tcp",
         GCDWebServerOption_Port : @(8080)
     };
@@ -55,8 +55,8 @@
         [_webUploader stop];
     }
     NSDictionary *webSeverOptions = @{
-        GCDWebServerOption_ServerName : @"RetroArch",
-        GCDWebServerOption_BonjourName : @"RetroArch",
+        GCDWebServerOption_ServerName : @"Fruitendo",
+        GCDWebServerOption_BonjourName : @"Fruitendo",
         GCDWebServerOption_BonjourType : @"_http._tcp",
         GCDWebServerOption_Port : @(80)
     };

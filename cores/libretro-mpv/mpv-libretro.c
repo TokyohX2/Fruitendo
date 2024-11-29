@@ -332,7 +332,7 @@ static void context_reset(void)
 		{}
 	}
 
-	/* The following works best when vsync is switched off in Retroarch. */
+	/* The following works best when vsync is switched off in Fruitendo. */
 	//mpv_set_option_string(mpv, "video-sync", "display-resample");
 	//mpv_set_option_string(mpv, "display-fps", "60");
 

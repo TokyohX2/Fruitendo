@@ -1,17 +1,17 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  * Copyright (C) 2012-2015 - Michael Lelli
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -43,7 +43,7 @@
 #include "../../defaults.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 #include "../../tasks/tasks_internal.h"
 
@@ -80,14 +80,14 @@ static void frontend_emscripten_get_env(int *argc, char *argv[],
    if (home)
    {
       size_t _len = strlcpy(base_path, home, sizeof(base_path));
-      strlcpy(base_path + _len, "/retroarch", sizeof(base_path) - _len);
+      strlcpy(base_path + _len, "/Fruitendo", sizeof(base_path) - _len);
       _len = strlcpy(user_path, home, sizeof(user_path));
-      strlcpy(user_path + _len, "/retroarch/userdata", sizeof(user_path) - _len);
+      strlcpy(user_path + _len, "/Fruitendo/userdata", sizeof(user_path) - _len);
    }
    else
    {
-      strlcpy(base_path, "retroarch", sizeof(base_path));
-      strlcpy(user_path, "retroarch/userdata", sizeof(user_path));
+      strlcpy(base_path, "Fruitendo", sizeof(base_path));
+      strlcpy(user_path, "Fruitendo/userdata", sizeof(user_path));
    }
 
    fill_pathname_join(g_defaults.dirs[DEFAULT_DIR_CORE], base_path,
@@ -141,7 +141,7 @@ static void frontend_emscripten_get_env(int *argc, char *argv[],
 
    /* cache dir */
    fill_pathname_join(g_defaults.dirs[DEFAULT_DIR_CACHE], "/tmp/",
-         "retroarch", sizeof(g_defaults.dirs[DEFAULT_DIR_CACHE]));
+         "Fruitendo", sizeof(g_defaults.dirs[DEFAULT_DIR_CACHE]));
 
    /* history and main config */
    strlcpy(g_defaults.dirs[DEFAULT_DIR_CONTENT_HISTORY],

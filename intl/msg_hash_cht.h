@@ -85,7 +85,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_LOAD_CONTENT_LIST,
-   "瀏覽儲存空間載入支援的檔案。\n首次執行請先安裝遊戲支援的核心, 安裝後使用此選項開啟遊戲檔案, 即可開始體驗復古電玩遊戲。\n無法開啟遊戲時:\n設定選項中開啟管理核心, 查看核心是否缺少必需檔案。\n可嘗試使用其他支援的核心開啟, 或替換遊戲原始檔案。\n如果仍然無法開啟, 請使用英語上傳錯誤回報聯繫官方。\n錯誤回報網址: www.github.com /libretro/RetroArch/issues 。"
+   "瀏覽儲存空間載入支援的檔案。\n首次執行請先安裝遊戲支援的核心, 安裝後使用此選項開啟遊戲檔案, 即可開始體驗復古電玩遊戲。\n無法開啟遊戲時:\n設定選項中開啟管理核心, 查看核心是否缺少必需檔案。\n可嘗試使用其他支援的核心開啟, 或替換遊戲原始檔案。\n如果仍然無法開啟, 請使用英語上傳錯誤回報聯繫官方。\n錯誤回報網址: www.github.com /libretro/Fruitendo/issues 。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LOAD_DISC,
@@ -608,7 +608,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch 版本"
+   "Fruitendo 版本"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -4586,7 +4586,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_GLOBAL_CORE_OPTIONS,
-   "開啟時使用「 retroarch-core-options .cfg」共用設定檔儲存全部核心選項, 關閉時各別儲存在設定檔資料夾。"
+   "開啟時使用「 Fruitendo-core-options .cfg」共用設定檔儲存全部核心選項, 關閉時各別儲存在設定檔資料夾。"
    )
 
 /* Settings > Saving */
@@ -9695,11 +9695,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SHADER_APPLY_CHANGES,
-   "儲存目前設置至「著色器」根目錄, 檔名「retroarch .slangp/.cgp/.glslp」, 可使用快捷鍵載入。\n儲存為應用變化配置檔時, 可變更著色器通道數量, 加入單通道著色器, 每次變更都需應用變化一次。"
+   "儲存目前設置至「著色器」根目錄, 檔名「Fruitendo .slangp/.cgp/.glslp」, 可使用快捷鍵載入。\n儲存為應用變化配置檔時, 可變更著色器通道數量, 加入單通道著色器, 每次變更都需應用變化一次。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SHADER_APPLY_CHANGES,
-   "變更著色器通道、參數、過濾器和縮放後, 都需應用變化套用變更。\n應用變化時會儲存配置檔, 儲存至「著色器」根目錄, 檔名「retroarch .slangp/.cgp/.glslp」, 此配置檔不會自動刪除, 每次應用變化都會取代此配置檔。"
+   "變更著色器通道、參數、過濾器和縮放後, 都需應用變化套用變更。\n應用變化時會儲存配置檔, 儲存至「著色器」根目錄, 檔名「Fruitendo .slangp/.cgp/.glslp」, 此配置檔不會自動刪除, 每次應用變化都會取代此配置檔。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_SHADER_PARAMETERS,
@@ -13070,7 +13070,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Libretro和RetroArch應用程式的主題資源路徑, 通常由開發人員設定。"
+   "Libretro和Fruitendo應用程式的主題資源路徑, 通常由開發人員設定。"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -13180,11 +13180,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_TWO_MORE_TIMES_TO_SEND_DEBUG_INFO,
-   "再按兩次, 將診斷訊息提交給RetroArch團隊。"
+   "再按兩次, 將診斷訊息提交給Fruitendo團隊。"
    )
 MSG_HASH(
    MSG_PRESS_ONE_MORE_TIME_TO_SEND_DEBUG_INFO,
-   "再按一次, 將診斷訊息提交給RetroArch團隊。"
+   "再按一次, 將診斷訊息提交給Fruitendo團隊。"
    )
 MSG_HASH(
    MSG_AUDIO_MIXER_VOLUME,
@@ -15593,7 +15593,7 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "掃描完成。<br><br>\n為了正確的掃描遊戲檔案。<br><br>\n您必須:\n<ul><li>下載對應的核心。</li>\n<li>更新核心資料庫。</li>\n<li>更新遊戲資料庫。</li>\n<li>上述任一項剛完成，請先重新啟動復古電玩。</li></ul>\n最後，掃描的檔案必須符合資料庫數據，想了解更多信息，請使用<a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">線上說明</a>。<br>\n如果仍然無法掃描，請使用<a href=\"https://www.github.com/libretro/RetroArch/issues\">錯誤回報</a>。"
+   "掃描完成。<br><br>\n為了正確的掃描遊戲檔案。<br><br>\n您必須:\n<ul><li>下載對應的核心。</li>\n<li>更新核心資料庫。</li>\n<li>更新遊戲資料庫。</li>\n<li>上述任一項剛完成，請先重新啟動復古電玩。</li></ul>\n最後，掃描的檔案必須符合資料庫數據，想了解更多信息，請使用<a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">線上說明</a>。<br>\n如果仍然無法掃描，請使用<a href=\"https://www.github.com/libretro/Fruitendo/issues\">錯誤回報</a>。"
    )
 #endif
 MSG_HASH(

@@ -131,7 +131,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Preuzmi dodatke, komponente i sadržaj za RetroArch."
+   "Preuzmi dodatke, komponente i sadržaj za Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -396,7 +396,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch verzija"
+   "Fruitendo verzija"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1627,7 +1627,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Ponovno pokreni RetroArch"
+   "Ponovno pokreni Fruitendo"
    )
 #ifdef HAVE_LIBNX
 #endif

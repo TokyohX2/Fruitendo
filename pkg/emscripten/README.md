@@ -1,10 +1,10 @@
-# RetroArch Web Player
+# Fruitendo Web Player
 
-The RetroArch Web Player is RetroArch compiled through [Emscripten](http://kripken.github.io/emscripten-site/). The following outlines how to compile RetroArch using Emscripten, and running it in your browser.
+The Fruitendo Web Player is Fruitendo compiled through [Emscripten](http://kripken.github.io/emscripten-site/). The following outlines how to compile Fruitendo using Emscripten, and running it in your browser.
 
 ## Compiling
 
-To compile RetroArch with Emscripten, you'll first have to [download and install the Emscripten SDK](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html) at 3.1.46:
+To compile Fruitendo with Emscripten, you'll first have to [download and install the Emscripten SDK](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html) at 3.1.46:
 
 ```
 git clone https://github.com/emscripten-core/emsdk.git
@@ -16,24 +16,24 @@ source emsdk_env.sh
 
 Other later versions of emsdk will function and may be needed, but in general emscripten is in a constant state of development and you may run into other problems by not pinning to 3.1.46. This is currently the version [https://web.libretro.com/](https://web.libretro.com/) is built against.
 
-After emsdk is installed you will need to build an emulator core, move that output into Retroarch, and use helper scripts to produce web ready assets, in this example we will be building [https://github.com/libretro/libretro-fceumm](https://github.com/libretro/libretro-fceumm):
+After emsdk is installed you will need to build an emulator core, move that output into Fruitendo, and use helper scripts to produce web ready assets, in this example we will be building [https://github.com/libretro/libretro-fceumm](https://github.com/libretro/libretro-fceumm):
 
 ```
-mkdir ~/retroarch
-cd ~/retroarch
+mkdir ~/Fruitendo
+cd ~/Fruitendo
 git clone https://github.com/libretro/libretro-fceumm.git
 cd libretro-fceumm
 emmake make -f Makefile.libretro platform=emscripten
-git clone https://github.com/libretro/RetroArch.git ~/retroarch/RetroArch
-cp ~/retroarch/libretro-fceumm/fceumm_libretro_emscripten.bc ~/retroarch/RetroArch/libretro_emscripten.bc
-cd ~/retroarch
+git clone https://github.com/libretro/Fruitendo.git ~/Fruitendo/Fruitendo
+cp ~/Fruitendo/libretro-fceumm/fceumm_libretro_emscripten.bc ~/Fruitendo/Fruitendo/libretro_emscripten.bc
+cd ~/Fruitendo
 emmake make -f Makefile.emscripten LIBRETRO=fceumm -j all
 cp fceumm_libretro.{js,wasm} pkg/emscripten/libretro
 ```
 
 ## Dependencies
 
-The emscripten build in the retroarch tree does not contain the necessary web assets for a complete RetroArch installation.  You'll need the asset package from the latest emscripten nightly build ( https://buildbot.libretro.com/nightly/emscripten/ ); take its `assets/` folder and put it into `pkg/emscripten/libretro`.  This `assets/` folder should contain a `frontend/` directory and a `cores/` directory.
+The emscripten build in the Fruitendo tree does not contain the necessary web assets for a complete Fruitendo installation.  You'll need the asset package from the latest emscripten nightly build ( https://buildbot.libretro.com/nightly/emscripten/ ); take its `assets/` folder and put it into `pkg/emscripten/libretro`.  This `assets/` folder should contain a `frontend/` directory and a `cores/` directory.
 
 If you're building your own frontend asset bundle (i.e. modifying `frontend/bundle/`), you'll need to turn the bundle into zipped partfiles.  Open a terminal in `assets/frontend` and `zip -r9 bundle.zip bundle && split -b 30M bundle.zip bundle.zip.` (this should work on Mac and Linux, please file a PR with instructions for Windows).
 
@@ -80,22 +80,22 @@ Build and move output to the frontend:
 
 ```
 emmake make -f Makefile platform=emscripten
-cp melonds_libretro_emscripten.bc ~/retroarch/RetroArch/libretro_emscripten.bc
+cp melonds_libretro_emscripten.bc ~/Fruitendo/Fruitendo/libretro_emscripten.bc
 ```
 
 Now build the frontend with the pthreads env variable: (2 is the number of workers this can be any integer)
 
 ```
-cd ~/retroarch/RetroArch
+cd ~/Fruitendo/Fruitendo
 pthread=2 emmake make -f Makefile.emscripten LIBRETRO=melonds && cp melonds_libretro.* pkg/emscripten/libretro
 ```
 
 Your resulting output will be located in:
 
 ```
-~/retroarch/RetroArch/pkg/emscripten/libretro/melonds_libretro.js
-~/retroarch/RetroArch/pkg/emscripten/libretro/melonds_libretro.wasm
-~/retroarch/RetroArch/pkg/emscripten/libretro/melonds_libretro.worker.js
+~/Fruitendo/Fruitendo/pkg/emscripten/libretro/melonds_libretro.js
+~/Fruitendo/Fruitendo/pkg/emscripten/libretro/melonds_libretro.wasm
+~/Fruitendo/Fruitendo/pkg/emscripten/libretro/melonds_libretro.worker.js
 ```
 
 ## Setting up your webserver (Threaded)

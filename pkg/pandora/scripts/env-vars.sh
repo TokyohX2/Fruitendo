@@ -5,7 +5,7 @@ export XDG_CONFIG_HOME="${HOME}"
 export PATH="${HOME}/bin:${PATH:-"/usr/bin:/bin:/usr/local/bin"}"
 export LD_LIBRARY_PATH="${HOME}/lib:${LD_LIBRARY_PATH:-"/usr/lib:/lib"}"
 
-if [ -d /mnt/utmp/retroarch/share ] ; then
+if [ -d /mnt/utmp/Fruitendo/share ] ; then
 	export XDG_DATA_DIRS=${HOME}/share:$XDG_DATA_DIRS:/usr/share
 fi
 

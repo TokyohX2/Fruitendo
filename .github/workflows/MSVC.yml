@@ -39,7 +39,7 @@ jobs:
       - name: Compile RA
         working-directory: "${{github.workspace}}/pkg/msvc${{ matrix.version == 'UWP' && '-uwp' || ''}}"
         run: |
-          msbuild -p:"Configuration=${{matrix.configuration}}" -p:"Platform=${{matrix.platform}}" .\RetroArch-msvc${{matrix.version}}.sln
+          msbuild -p:"Configuration=${{matrix.configuration}}" -p:"Platform=${{matrix.platform}}" .\Fruitendo-msvc${{matrix.version}}.sln
 
       - name: Get short SHA
         id: slug
@@ -49,10 +49,10 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: retroarch-${{matrix.version}}-${{matrix.configuration}}-${{matrix.platform}}-${{ steps.slug.outputs.sha8 }}
+          name: Fruitendo-${{matrix.version}}-${{matrix.configuration}}-${{matrix.platform}}-${{ steps.slug.outputs.sha8 }}
           path: |
             ${{ matrix.version != 'UWP' }}:
-              pkg/msvc/${{matrix.platform}}/${{matrix.configuration}}/RetroArch-msvc${{matrix.version}}.exe
+              pkg/msvc/${{matrix.platform}}/${{matrix.configuration}}/Fruitendo-msvc${{matrix.version}}.exe
             ${{ matrix.version == 'UWP' }}:
-              pkg/msvc-uwp/AppPackages/RetroArch-msvcUWP
+              pkg/msvc-uwp/AppPackages/Fruitendo-msvcUWP
 

@@ -1,9 +1,9 @@
 //
 //  CocoaView+KeyboardSupport.swift
-//  RetroArchiOS11
+//  FruitendoiOS11
 //
 //  Created by Yoshi Sugawara on 2/25/21.
-//  Copyright © 2021 RetroArch. All rights reserved.
+//  Copyright © 2021 Fruitendo. All rights reserved.
 //
 
 import Foundation

@@ -1,6 +1,6 @@
-# RetroArch Exynos-G2D video driver
+# Fruitendo Exynos-G2D video driver
 
-The Exynos-G2D video driver for RetroArch uses the Exynos DRM layer for presentation and the Exynos G2D block to scale and blit the emulator framebuffer to the screen. The G2D subsystem is a separate functional block on modern Samsung Exynos SoCs (in particular Exynos4412 and Exynos5250) that accelerates various kind of 2D blit operations. It can fill, copy, scale and blend pixel buffers and therefore provides adequate functionality for RetroArch purposes.
+The Exynos-G2D video driver for Fruitendo uses the Exynos DRM layer for presentation and the Exynos G2D block to scale and blit the emulator framebuffer to the screen. The G2D subsystem is a separate functional block on modern Samsung Exynos SoCs (in particular Exynos4412 and Exynos5250) that accelerates various kind of 2D blit operations. It can fill, copy, scale and blend pixel buffers and therefore provides adequate functionality for Fruitendo purposes.
 
 ## Reasons to use the driver
 

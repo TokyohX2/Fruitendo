@@ -24,7 +24,7 @@ LIBS = -lstdc++ -lpsppower
 CFLAGS += $(RARCH_DEFINES)
 
 EXTRA_TARGETS   = EBOOT.PBP
-PSP_EBOOT_TITLE = RetroArch
+PSP_EBOOT_TITLE = Fruitendo
 PSP_EBOOT_ICON  = pkg/psp1/ICON0.PNG
 PSP_EBOOT_PIC1  = pkg/psp1/PIC1.PNG
 

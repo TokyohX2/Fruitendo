@@ -1,4 +1,4 @@
-/* Copyright  (C) 2021 The RetroArch team
+/* Copyright  (C) 2021 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (test_stdstring.c).
@@ -57,7 +57,7 @@ END_TEST
 
 START_TEST (test_djb2)
 {
-   ck_assert_uint_eq(djb2_calculate("retroarch"), 0xFADF3BCF);
+   ck_assert_uint_eq(djb2_calculate("Fruitendo"), 0xFADF3BCF);
 }
 END_TEST
 

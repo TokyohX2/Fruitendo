@@ -1,4 +1,4 @@
-title=retroarch
-description=retroarch
-exec=/mnt/emus/retroarch/retroarch
+title=Fruitendo
+description=Fruitendo
+exec=/mnt/emus/Fruitendo/Fruitendo
 clock=702

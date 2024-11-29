@@ -16,7 +16,7 @@
 #ifndef XDELTA3_INTERNAL_H__
 #define XDELTA3_INTERNAL_H__
 
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 #include "xdelta3.h"
 

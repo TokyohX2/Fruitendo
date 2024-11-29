@@ -1,6 +1,6 @@
-package com.retroarch.playcore;
+package com.Fruitendo.playcore;
 
-import com.retroarch.browser.retroactivity.RetroActivityCommon;
+import com.Fruitendo.browser.retroactivity.RetroActivityCommon;
 
 public class PlayCoreManager {
 

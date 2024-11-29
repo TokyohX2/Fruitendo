@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Baixa i instal·la diferents complements, components i continguts de RetroArch."
+   "Baixa i instal·la diferents complements, components i continguts de Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -191,7 +191,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
-   "Tancar RetroArch"
+   "Tancar Fruitendo"
    )
 
 /* Main Menu > Load Core */
@@ -576,7 +576,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Versió de RetroArch"
+   "Versió de Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1055,7 +1055,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_CONTROLS_QUIT,
-   "Tancar RetroArch"
+   "Tancar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_CONTROLS_TOGGLE_KEYBOARD,
@@ -1641,7 +1641,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_FULLSCREEN,
-   "Iniciar en pantalla completa. Pot ser canviat durant el funcionament de RetroArch i també anulat mijtançant la terminal d'ordres."
+   "Iniciar en pantalla completa. Pot ser canviat durant el funcionament de Fruitendo i també anulat mijtançant la terminal d'ordres."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOWED_FULLSCREEN,
@@ -1716,7 +1716,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Mostra tots els continguts a una finestra de mida fixa, amb unes dimensions establides pels valors d'«Ample de la finestra» i «Alçada de la finestra», guardant la mida i posició de la finestra actual al tancar RetroArch. Si es desactiva esta opció, la mida de la finestra canviarà de manera dinàmica segons l'ajust «Escala en la finestra»."
+   "Mostra tots els continguts a una finestra de mida fixa, amb unes dimensions establides pels valors d'«Ample de la finestra» i «Alçada de la finestra», guardant la mida i posició de la finestra actual al tancar Fruitendo. Si es desactiva esta opció, la mida de la finestra canviarà de manera dinàmica segons l'ajust «Escala en la finestra»."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -2288,7 +2288,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
-   "Tancar RetroArch"
+   "Tancar Fruitendo"
    )
 
 
@@ -2473,7 +2473,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Existeixen nuclis amb opció de tancat. Activant esta opció, RetroArch carregarà un nucli buit evitant que es tanque soles."
+   "Existeixen nuclis amb opció de tancat. Activant esta opció, Fruitendo carregarà un nucli buit evitant que es tanque soles."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -3234,7 +3234,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_ENUM_CONTROLS_QUIT,
-   "Tancar RetroArch"
+   "Tancar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_ENUM_CONTROLS_SCROLL_UP,
@@ -3323,7 +3323,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reinicia RetroArch"
+   "Reinicia Fruitendo"
    )
 #ifdef HAVE_LIBNX
 #endif

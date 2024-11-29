@@ -1,14 +1,14 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -35,7 +35,7 @@ static bool apple_display_server_set_window_opacity(void *data, unsigned opacity
 {
    settings_t *settings      = config_get_ptr();
    bool windowed_full        = settings->bools.video_windowed_fullscreen;
-   NSWindow *window          = ((RetroArch_OSX*)[[NSApplication sharedApplication] delegate]).window;
+   NSWindow *window          = ((Fruitendo_OSX*)[[NSApplication sharedApplication] delegate]).window;
    if (windowed_full || !window.keyWindow)
       return false;
    window.alphaValue = (CGFloat)opacity / (CGFloat)100.0f;
@@ -74,7 +74,7 @@ static bool apple_display_server_set_window_decorations(void *data, bool on)
 {
    settings_t *settings      = config_get_ptr();
    bool windowed_full        = settings->bools.video_windowed_fullscreen;
-   NSWindow *window          = ((RetroArch_OSX*)[[NSApplication sharedApplication] delegate]).window;
+   NSWindow *window          = ((Fruitendo_OSX*)[[NSApplication sharedApplication] delegate]).window;
    if (windowed_full)
       return false;
    if (on)

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (retro_common_api.h).
@@ -88,7 +88,7 @@ typedef int ssize_t;
 #else
 /* C++11 says this one isn't needed, but apparently (some versions of) mingw require it anyways */
 /* https://stackoverflow.com/questions/8132399/how-to-printf-uint64-t-fails-with-spurious-trailing-in-format */
-/* https://github.com/libretro/RetroArch/issues/6009 */
+/* https://github.com/libretro/Fruitendo/issues/6009 */
 #ifndef __STDC_FORMAT_MACROS
 #define __STDC_FORMAT_MACROS 1
 #endif

@@ -1,5 +1,5 @@
-Package: com.libretro.retroarch
-Name: retroarch
+Package: com.libretro.Fruitendo
+Name: Fruitendo
 Depends: 
 Version: 0.0.1
 Architecture: iphoneos-arm

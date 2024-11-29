@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2019 Rob Loach <robloach@gmail.com> -->
 <component type="desktop-application">
-  <id>com.libretro.RetroArch</id>
-  <launchable type="desktop-id">com.libretro.RetroArch.desktop</launchable>
-  <name>RetroArch</name>
+  <id>com.libretro.Fruitendo</id>
+  <launchable type="desktop-id">com.libretro.Fruitendo.desktop</launchable>
+  <name>Fruitendo</name>
   <summary>Frontend for emulators, game engines and media players</summary>
   <developer_name>libretro</developer_name>
-  <url type="homepage">https://www.retroarch.com</url>
-  <url type="bugtracker">https://github.com/libretro/RetroArch/issues</url>
+  <url type="homepage">https://www.Fruitendo.com</url>
+  <url type="bugtracker">https://github.com/libretro/Fruitendo/issues</url>
   <url type="help">https://docs.libretro.com</url>
-  <url type="faq">https://retroarch.com/?page=faq</url>
-  <url type="donation">https://retroarch.com/index.php?page=donate</url>
+  <url type="faq">https://Fruitendo.com/?page=faq</url>
+  <url type="donation">https://Fruitendo.com/index.php?page=donate</url>
   <content_rating type="oars-1.0" />
   <screenshots>
     <screenshot type="default">
-      <caption>RetroArch main menu</caption>
+      <caption>Fruitendo main menu</caption>
       <image type="source" width="768" height="414">https://www.libretro.com/wp-content/uploads/2020/03/ozone-768x414.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running the NES</caption>
+      <caption>Fruitendo running the NES</caption>
       <image type="source" width="768" height="672">https://www.libretro.com/wp-content/uploads/2020/03/micromachines-200313-175514-768x672.png</image>
     </screenshot>
     <screenshot>
@@ -32,17 +32,17 @@
   </screenshots>
   <description>
     <p>
-      RetroArch enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
+      Fruitendo enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
     </p>
     <p>
-      It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
+      It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. Fruitendo has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
     </p>
   </description>
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
     <release version="1.9.11" date="2021-10-09">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.11</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.11</url>
       <description>
         <ul>
           <li>INPUT: Refactor menu toggle combo button logic to allow quit combo button</li>
@@ -54,7 +54,7 @@
       </description>
     </release>
     <release version="1.9.10" date="2021-09-18">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.10</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.10</url>
       <description>
         <ul>
           <li>AUDIO/MIXER: Pad sample buffers to prevent potential heap-buffer-overflows when resampling (fixes crash when using 30 kHz menu audio files)</li>
@@ -78,7 +78,7 @@
       </description>
     </release>
     <release version="1.9.9" date="2021-09-05">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.9</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.9</url>
       <description>
         <ul>
           <li>AUDIO/MIXER: Ensure than menu sounds are re-enabled when calling CMD_EVENT_AUDIO_REINIT</li>
@@ -89,7 +89,7 @@
           <li>CHEATS: Add enhanced search functionality to the 'Cheats' menu</li>
           <li>CHEATS/RUNAHEAD: Fix cheats when using second instance runahead</li>
           <li>CONFIG: Add option to (force-)write current core options to disk (Quick Menu)</li>
-          <li>CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move RetroArch to a separate dir and they would still work).</li>
+          <li>CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move Fruitendo to a separate dir and they would still work).</li>
           <li>INPUT/OVERLAY: Fix overlay input when analog to digital mapping is enabled</li>
           <li>INPUT/UDEV: Look for "ID_INPUT_KEY", not "ID_INPUT_KEYBOARD"</li>
           <li>MENU: Allow 'Custom Aspect Ratio (X Position)/(Y Position)/(Width)/(Height)' to be entered manually via keyboard</li>
@@ -104,7 +104,7 @@
       </description>
     </release>
     <release version="1.9.8" date="2021-08-25">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.8</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.8</url>
       <description>
         <ul>
           <li>CHEEVOS: Hide challenge indicators when resetting</li>
@@ -140,7 +140,7 @@
       </description>
     </release>
     <release version="1.9.7" date="2021-07-25">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.7</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.7</url>
       <description>
         <ul>
           <li>CORE INFO: Automatically disable core info cache when core info directory is read-only</li>
@@ -162,7 +162,7 @@
       </description>
     </release>
     <release version="1.9.6" date="2021-07-04">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.6</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.6</url>
       <description>
         <ul>
           <li>ARCHIVE: Fix archive delimiter detection when file path contains no slashes</li>
@@ -191,7 +191,7 @@
       </description>
     </release>
     <release version="1.9.5" date="2021-06-12">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.5</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.5</url>
       <description>
         <ul>
           <li>ALSATHREAD: Make alsathread default for all ALSA devices with threads</li>
@@ -212,7 +212,7 @@
       </description>
     </release>
     <release version="1.9.4" date="2021-05-28">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.4</url>
+      <url>https://github.com/libretro/Fruitendo/releases/tag/v1.9.4</url>
       <description>
         <ul>
           <li>CHEEVOS: update rcheevos to v10.0.0</li>
@@ -231,7 +231,7 @@
       </description>
     </release>
     <release version="1.9.3" date="2021-05-17">
-      <url>https://www.libretro.com/index.php/retroarch-1-9-3-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-9-3-released/</url>
       <description>
         <ul>
           <li>COMMAND: Initialize netcmd-&gt;cmd_source_len before recvfrom()</li>
@@ -248,7 +248,7 @@
       </description>
     </release>
     <release version="1.9.2" date="2021-04-30">
-      <url>https://www.libretro.com/index.php/retroarch-1-9-2-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-9-2-released/</url>
       <description>
         <ul>
           <li>CHEEVOS: Allow rcheevos_patch_address to be called on game without achievements</li>
@@ -283,7 +283,7 @@
       </description>
     </release>
     <release version="1.9.1" date="2021-03-30">
-      <url>https://www.libretro.com/index.php/retroarch-1-9-1-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-9-1-released/</url>
       <description>
         <ul>
           <li>AUDIO: Memalign audio buffers to 64 bytes. This is the most common cache line size, helps with performance. Also fixes issues with platforms like PSP that wrongly assume that malloc returns aligned buffers (to 16bytes). This recently broke the PSP builds</li>
@@ -334,7 +334,7 @@
           <li>INPUT/GAME FOCUS: Add option to automatically enable 'game focus' mode when running/resuming content</li>
           <li>INPUT/HOTKEYS: Hotkey for Close Content / Unload Core</li>
           <li>INPUT/LIBCEC: Map libcec-daemon keys to RETROK</li>
-          <li>INPUT/X11: Enable keyboard input when mouse cursor is not inside the RetroArch window but window still has focus</li>
+          <li>INPUT/X11: Enable keyboard input when mouse cursor is not inside the Fruitendo window but window still has focus</li>
           <li>INPUT/X11: Fix mouse input when mouse is grabbed</li>
           <li>INPUT/UDEV/RUMBLE: Fix rumble.</li>
           <li>INPUT/WINDOWS/DINPUT: Simultaneous shift sticky fix</li>
@@ -386,7 +386,7 @@
           <li>MENU: Customizable menu scroll hold delay.</li>
           <li>MENU/DESKTOP: Fix mouse cursor limited by window range on F5 press</li>
           <li>MENU/DESKTOP: Add simple shader option</li>
-          <li>MENU/DESKTOP/WINDOWS: Remove broken 'Update RetroArch' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface</li>
+          <li>MENU/DESKTOP/WINDOWS: Remove broken 'Update Fruitendo' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface</li>
           <li>MENU/OZONE: New Theme – Twilight Zone</li>
           <li>MENU/RGUI: Add 3:2, 5:3 and 3:2/5:3 (centered) aspects</li>
           <li>MENU/RGUI/TEXT RENDERING: Add Russian language text support</li>
@@ -399,7 +399,7 @@
           <li>OGA/VIDEO: support for OGS</li>
           <li>OGA: This keeps the tradition DRM driver along with the OGA one. The probe function skips the driver if the screen is non rotated to fall back to the regular DRM driver.</li>
           <li>OGA: Fix messages from not disappearing</li>
-          <li>OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in RetroArch have to explicitly implement this for this codepath to work at runtime.</li>
+          <li>OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in Fruitendo have to explicitly implement this for this codepath to work at runtime.</li>
           <li>OPENDINGUX: Add/Optimise rumble interface</li>
           <li>OPENDINGUX: Fix frozen video when enabling fast forward</li>
           <li>OPENDINGUX/SDL: OSD font clean-up</li>
@@ -430,7 +430,7 @@
           <li>SHADERS: Shaders fix for duplicate parameters loading bug</li>
           <li>SHADERS: Fix Crash change num shader passes in UI</li>
           <li>SHADERS/SLANG: Fix slang shaders with rotation</li>
-          <li>STREAMING/FFMPEG: Add Facebook Game Stream option (for embedded ffmpeg core-enabled RetroArch builds)</li>
+          <li>STREAMING/FFMPEG: Add Facebook Game Stream option (for embedded ffmpeg core-enabled Fruitendo builds)</li>
           <li>TLS/SSL: Add BearSSL support, as alternative to mbedTLS</li>
           <li>VIDEO: AddVariable BFI (Black Frame Insertion)</li>
           <li>VIDEO/DRM GO2: Dynamic resolution support</li>
@@ -445,7 +445,7 @@
       </description>
     </release>
     <release version="1.9.0" date="2020-08-09">
-      <url>https://www.libretro.com/index.php/retroarch-1-9-0-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-9-0-released/</url>
       <description>
         <ul>
           <li>AUTOCONFIG: Ensure correct directory is used when saving autoconfig profiles</li>
@@ -455,10 +455,10 @@
           <li>CHEEVOS: Upgrade to rcheevos 9.1</li>
           <li>CHEEVOS: Restore display of unlocked achievements across hardcore modes</li>
           <li>CHEEVOS: Hash buffered data when available</li>
-          <li>CHEEVOS: Fix Auto Save State freezes RetroArch while Cheevos is enabled</li>
+          <li>CHEEVOS: Fix Auto Save State freezes Fruitendo while Cheevos is enabled</li>
           <li>CORE OPTIONS: Pressing OK (or clicking/tapping) on a boolean toggle core option no longer opens a drop-down list. The value now toggles directly, just like boolean options everywhere else in the menu</li>
           <li>CORE OPTIONS: Toggling an option that changes the number of core options being displayed (i.e. things like `Show Advanced Audio/Video Settings) no longer resets the navigation pointer to the start of the list</li>
-          <li>CORE OPTIONS: Before, RetroArch would identify core option values as being boolean if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings.</li>
+          <li>CORE OPTIONS: Before, Fruitendo would identify core option values as being boolean if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings.</li>
           <li>CLI: A new command line option --load-menu-on-error has been added</li>
           <li>CRT: On the fly CRT porch adjuments - these changes allow a user to adjust how the porch algorithm generates the 15khz/31khz output. Giving the ability to change over/under scan.</li>
           <li>CONFIG FILE: Optimise parsing of configuration files</li>
@@ -489,10 +489,10 @@
       </description>
     </release>
     <release version="1.8.9" date="2020-06-20">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-9-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-9-released/</url>
       <description>
         <ul>
-          <li>AUTO SAVESTATES: Ensure save states are correctly flushed to disk when quitting RetroArch (fixes broken save states when exiting RetroArch - without first closing content - with 'Auto Save State' enabled)</li>
+          <li>AUTO SAVESTATES: Ensure save states are correctly flushed to disk when quitting Fruitendo (fixes broken save states when exiting Fruitendo - without first closing content - with 'Auto Save State' enabled)</li>
           <li>BUILTIN CORES: Builtin cores like ffmpeg and imageviewer would previously try  to erroneously load a dynamic core named 'builtin' - this would fail and would just be a wasteful operation - this now skips dylib loading in libretro_get_system_info for builtin cores</li>
           <li>CHEEVOS: Report API errors when unlocking achievements or submitting leaderboards</li>
           <li>CHEEVOS: Support less common file extensions</li>
@@ -538,10 +538,10 @@
       </description>
     </release>
     <release version="1.8.7" date="2020-05-18">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-7-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-7-released/</url>
       <description>
         <ul>
-          <li>CHEEVOS/BUGFIX: Opening achievements list would crash RetroArch with badges enabled (on new games)</li>
+          <li>CHEEVOS/BUGFIX: Opening achievements list would crash Fruitendo with badges enabled (on new games)</li>
           <li>CHEEVOS: Option to start a session with all achievements active</li>
           <li>CHEEVOS: Don't perform unnecessary cheevos initialisation when cheevos are disabled. Should reduce startup times when loading content</li>
           <li>CORE OPTIONS: Disable 'Use Global Core Options File' by default</li>
@@ -561,7 +561,7 @@
       </description>
     </release>
     <release version="1.8.6" date="2020-05-06">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-6-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-6-released/</url>
       <description>
         <ul>
           <li>ARCHIVE/ZIP: Expand functionality of rzip_stream interface</li>
@@ -574,8 +574,8 @@
           <li>CHEEVOS/BUGFIX: Report non-memorymap GBA cores as unsupported</li>
           <li>COMMANDLINE: Advise against using -s and -S variables on the command line</li>
           <li>CONFIG FILE: Only write config files to disk when parameters change</li>
-          <li>CONFIG FILE/BUGFIX: RetroArch no longer crashes when attempting to save a config file after unsetting a parameter (currently, this can be triggered quite easily by manipulating input remaps)</li>
-          <li>CONFIG FILE/BUGFIX: When using Material UI, RetroArch no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu &gt; Controls input remapping submenu</li>
+          <li>CONFIG FILE/BUGFIX: Fruitendo no longer crashes when attempting to save a config file after unsetting a parameter (currently, this can be triggered quite easily by manipulating input remaps)</li>
+          <li>CONFIG FILE/BUGFIX: When using Material UI, Fruitendo no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu &gt; Controls input remapping submenu</li>
           <li>CONFIG FILE/BUGFIX: Quite a few real and potential memory leaks have been fixed.</li>
           <li>CHD: Fixes a crash caused by ignoring the return value from one of the CHD library functions</li>
           <li>FASTFORWARDING: A new Mute When Fast-Forwarding option has been added under Settings &gt; Audio</li>
@@ -602,7 +602,7 @@
           <li>PSL1GHT: Initial port</li>
           <li>PSL1GHT/KEYBOARD: Implement PSL1GHT keyboard</li>
           <li>PLAYLIST/BUGFIX: Improve handling of broken playlists</li>
-          <li>PLAYLIST/BUGFIX: RetroArch will no longer segfault when attempting to fetch content runtime information when core path is NULL</li>
+          <li>PLAYLIST/BUGFIX: Fruitendo will no longer segfault when attempting to fetch content runtime information when core path is NULL</li>
           <li>PLAYLIST/BUGFIX: Core name + runtime info will only be displayed on playlists and in the Information submenu if both the core path and core name fields are valid</li>
           <li>PLAYLIST/BUGFIX: When handling entries with missing path fields, the menu sorting order now matches that of the playlist sorting order</li>
           <li>PLAYLIST: Add optional per-playlist alphabetical sorting</li>
@@ -624,14 +624,14 @@
       </description>
     </release>
     <release version="1.8.5" date="2020-03-21">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-5-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-5-released/</url>
       <description>
         <ul>
           <li>BUGFIX: Prevent double input when using return key (hardware) to close on-screen keyboard</li>
           <li>BUGFIX: Fix mouse capture hotkey not working</li>
           <li>BUGFIX: Avoid overflow when calculating multiplying performance counter</li>
-          <li>BUGFIX: Retroarch overlay displaying &quot;Game remap file loaded.&quot; on the overlay instead of &quot;Core remap file loaded.&quot; when only a core remap file is present</li>
-          <li>CHEEVOS/BUGFIX: Achievement triggers could cause Retroarch to Crash</li>
+          <li>BUGFIX: Fruitendo overlay displaying &quot;Game remap file loaded.&quot; on the overlay instead of &quot;Core remap file loaded.&quot; when only a core remap file is present</li>
+          <li>CHEEVOS/BUGFIX: Achievement triggers could cause Fruitendo to Crash</li>
           <li>CHEEVOS: Dont block Sameboy core because it only exposes some memory</li>
           <li>CHEEVOS: Support for extended Sega CD memory</li>
           <li>CHEEVOS: Show RetroAchievements Hash in content information list</li>
@@ -646,7 +646,7 @@
           <li>DISK CONTROL: Add disk labels to disk inserted notifications</li>
           <li>FFMPEG CORE: Fix crash on seeking when using HW decoding in some cases</li>
           <li>LIBRETRO: Add disk control interface API extension</li>
-          <li>LINUX: Avoid possible crash when running retroarch at startup</li>
+          <li>LINUX: Avoid possible crash when running Fruitendo at startup</li>
           <li>LINUX/GLX: Fix threaded video crashes/instability because of GLX OML sync callbacks</li>
           <li>LOCALIZATION: Update French translation</li>
           <li>LOCALIZATION: Update Korean translation</li>
@@ -692,7 +692,7 @@
       </description>
     </release>
     <release version="1.8.4" date="2020-01-15">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-4-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-4-released/</url>
       <description>
         <ul>
           <li>CAMERA/BUGFIX: Fix crash when a core requires the camera driver and the platform only has a null driver. This would crash mgba on Wii for example</li>
@@ -712,13 +712,13 @@
       </description>
     </release>
     <release version="1.8.2" date="2019-12-28">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-2-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-2-released/</url>
       <description>
         <ul>
           <li>BUG/CRASH/GLSLANG: Fix glslang crashing error - managed to reproduce an issue which has been plaguing
           users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal.</li>
           <li>CHEEVOS: Display Unofficial and Unsupported achievement states.</li>
-          <li>CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header.</li>
+          <li>CHEEVOS: Pass Fruitendo and core versions through User-Agent HTTP header.</li>
           <li>CHEEVOS: Use PSX.EXE if SYSTEM.CNF cannot be found</li>
           <li>CHEEVOS: Prevent loading state while achievements are still being fetched from server.</li>
           <li>CHEEVOS: Pause hardcore if core doesn't support achievements.</li>
@@ -816,7 +816,7 @@
       </description>
     </release>
     <release version="1.8.1" date="2019-11-03">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-1-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-1-released/</url>
       <description>
         <ul>
           <li>BUGFIX/MENU: Fix menu rendering with Mali GPUs after changing video dimensions</li>
@@ -834,7 +834,7 @@
       </description>
     </release>
     <release version="1.8.0" date="2019-10-26">
-      <url>https://www.libretro.com/index.php/retroarch-1-8-0-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-8-0-released/</url>
       <description>
         <ul>
           <li>AI SERVICE: Added in fix for BMP returns to AI service</li>
@@ -869,12 +869,12 @@
       </description>
     </release>
     <release version="1.7.9" date="2019-10-07">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-9-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-7-9-released/</url>
       <description>
         <ul>
           <li>AI SERVICE: Image mode is now much faster</li>
           <li>BUGFIX: Touch input - When using an overlay to toggle the quick menu on touchscreen devices</li>
-          <li>BUGFIX: Networking - RetroArch crashed when pressing left while Relay Server Location entry was selected</li>
+          <li>BUGFIX: Networking - Fruitendo crashed when pressing left while Relay Server Location entry was selected</li>
           <li>BUGFIX: Networking - fix memory leak that could happen at exit after a network
           operation had run</li>
           <li>CHEEVOS: Improve handling of line endings when calculating CD hashes for retroachievements</li>
@@ -905,7 +905,7 @@
       </description>
     </release>
     <release version="1.7.8" date="2019-08-30">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-8-v2-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-7-8-v2-released/</url>
       <description>
         <ul>
           <li>AI: Add AI Service functionality</li>
@@ -935,7 +935,7 @@
           <li>CORE OPTIONS: When saving core option overrides, only include settings for the current core</li>
           <li>CORE OPTIONS: Add option to save core options per-core</li>
           <li>CPU FILTERS: Add Scanline2x filter</li>
-          <li>GL/MALI400: Fix menu issues on Mali 400 series GPUs, should also fix 'RetroArch flickers black on ARM Mali GPUs (Android/ARM Linux)</li>
+          <li>GL/MALI400: Fix menu issues on Mali 400 series GPUs, should also fix 'Fruitendo flickers black on ARM Mali GPUs (Android/ARM Linux)</li>
           <li>GL/GLCORE: Use highest supported OpenGL Core version on Windows and X11</li>
           <li>GL1: Ignore alpha in core video, fixes XRGB8888 rendering in some cores</li>
           <li>GLCORE: Don't hardcode shader cross compilation target version but poll it</li>
@@ -1027,7 +1027,7 @@
       </description>
     </release>
     <release version="1.7.7" date="2019-05-07">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-7-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-7-7-released/</url>
       <description>
         <ul>
           <li>AUDIO: Avoid deadlocks in certain audio drivers when toggling menu sounds on</li>
@@ -1049,7 +1049,7 @@
           <li>COMMON: Fix buffer overflows in system information</li>
           <li>COMMON: Add option to change screen orientation via the windowing system (Android, Windows, X11)</li>
           <li>COMMON: Show CPU model name in log</li>
-          <li>COMMON: Add "Help -> Send Debug Info" option (and F10 hotkey) to send diagnostic info to the RetroArch team for help with problems</li>
+          <li>COMMON: Add "Help -> Send Debug Info" option (and F10 hotkey) to send diagnostic info to the Fruitendo team for help with problems</li>
           <li>COMMON: Show GPU device name/version in log</li>
           <li>COMMON: Add menu option to write log info to a file</li>
           <li>COMMON: Add subsystem support for playlists. Subsystem info is automatically saved to the history playlist for easy relaunching</li>
@@ -1087,7 +1087,7 @@
           <li>MENU: Fix core video rendering when using ozone with GL cores that implement the scissor test</li>
           <li>MENU: Add optional playlist sublabels (associated core + play time, where available)</li>
           <li>MENU: Dropdown list settings now apply immediately</li>
-          <li>MENU: Add setting to require pressing the "Exit RetroArch" hotkey twice to confirm</li>
+          <li>MENU: Add setting to require pressing the "Exit Fruitendo" hotkey twice to confirm</li>
           <li>MENU: Now able to run at higher refresh rates than 60Hz</li>
           <li>MENU: Enable "Add to Favorites" without loading a core</li>
           <li>MENU: Allow core name to be hidden on history/favorites playlists</li>
@@ -1103,7 +1103,7 @@
           <li>MENU/OZONE: Add wifi icon for network entries</li>
           <li>MENU/QT/WIMP: Add git version and build date to Help->About window</li>
           <li>MENU/QT/WIMP: Fix content loading via the file browser</li>
-          <li>MENU/QT/WIMP: Add new settings window to control all RetroArch settings</li>
+          <li>MENU/QT/WIMP: Add new settings window to control all Fruitendo settings</li>
           <li>MENU/RGUI: Improve playlist titles</li>
           <li>MENU/RGUI: Add option to hide associated cores in playlists</li>
           <li>MENU/RGUI: Add internal upscaling option</li>
@@ -1137,7 +1137,7 @@
       </description>
     </release>
     <release version="1.7.6" date="2019-02-03">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-6-released/</url>
+      <url>https://www.libretro.com/index.php/Fruitendo-1-7-6-released/</url>
       <description>
         <ul>
           <li>CHEEVOS: Reset when hardcore mode is toggled</li>
@@ -1249,7 +1249,7 @@
           <li>MENU/QT/WIMP: Remove button ghostly inside highlighting</li>
           <li>MENU/QT/WIMP: Initial grid view</li>
           <li>MENU/QT/WIMP: Drag and drop to add new playlist items, add option to add/edit/delete playlists</li>
-          <li>MENU/QT/WIMP: Add menu option to update RetroArch (Windows only for now)</li>
+          <li>MENU/QT/WIMP: Add menu option to update Fruitendo (Windows only for now)</li>
           <li>MENU/QT/WIMP: Add menu option to manage shaders</li>
           <li>MENU/QT/WIMP: Add menu option to manage core options</li>
           <li>MENU/XMB: Add new icons for the settings</li>
@@ -1382,7 +1382,7 @@
           <li>COMMON: Map Delete key to Y button for non-unified menu keyboard controls</li>
           <li>COMMON: Fix for relative paths being normalised and generating a duplicate history entry</li>
           <li>INPUT: Map clear button to DEL key</li>
-          <li>LINUX/X11: Add RetroArch logo to window title bar</li>
+          <li>LINUX/X11: Add Fruitendo logo to window title bar</li>
           <li>LINUX/X11: Input driver now supports new lightgun code</li>
           <li>LINUX/X11: Support window transparency (requires a compositing window manager)</li>
           <li>LOBBIES: Fix for crash on join netplay rooms via touch / glui</li>

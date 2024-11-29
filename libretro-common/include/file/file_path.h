@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (file_path.h).
@@ -292,11 +292,11 @@ size_t fill_pathname(char *out_path, const char *in_path,
  * @ext                : extension of output filename
  * @size               : buffer size of output filename
  *
- * Creates a 'dated' filename prefixed by 'RetroArch', and
+ * Creates a 'dated' filename prefixed by 'Fruitendo', and
  * concatenates extension (@ext) to it.
  *
  * E.g.:
- * out_filename = "RetroArch-{month}{day}-{Hours}{Minutes}.{@ext}"
+ * out_filename = "Fruitendo-{month}{day}-{Hours}{Minutes}.{@ext}"
  *
  * Hidden non-leaf function cost:
  * - Calls rtime_localtime()
@@ -318,7 +318,7 @@ size_t fill_dated_filename(char *out_filename,
  * concatenates extension (@ext) to it.
  *
  * E.g.:
- * out_filename = "RetroArch-{year}{month}{day}-{Hour}{Minute}{Second}.{@ext}"
+ * out_filename = "Fruitendo-{year}{month}{day}-{Hour}{Minute}{Second}.{@ext}"
  *
  * Hidden non-leaf function cost:
  * - Calls time

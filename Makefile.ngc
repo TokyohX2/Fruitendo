@@ -30,7 +30,7 @@ else ifneq ($(findstring MINGW,$(shell uname -s)),)
    system_platform = win
 endif
 
-TARGET_NAME        := retroarch
+TARGET_NAME        := Fruitendo
 
 INCLUDE            :=
 LDFLAGS            :=

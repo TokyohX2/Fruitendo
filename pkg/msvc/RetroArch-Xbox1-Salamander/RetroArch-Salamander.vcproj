@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="7.10"
-	Name="RetroArch-Salamander"
+	Name="Fruitendo-Salamander"
 	ProjectGUID="{EA17F7A7-7E66-4E32-9BA3-DEC11E4BBA8E}"
-	RootNamespace="RetroArch-Salamander"
+	RootNamespace="Fruitendo-Salamander"
 	Keyword="XboxProj">
 	<Platforms>
 		<Platform
@@ -216,7 +216,7 @@
 			<Tool
 				Name="XboxImageTool"
 				StackSize="65536"
-				TitleName="RetroArch Salamander"/>
+				TitleName="Fruitendo Salamander"/>
 		</Configuration>
 		<Configuration
 			Name="Release_LTCG|Xbox"

@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2013-2014 - Jason Fetters
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -176,7 +176,7 @@ static void update_analog_state(gca_pad_data_t *pad)
 
    /* GameCube analog axis are 8-bit unsigned, where 128/128 is center.
     * So, we subtract 128 to get a signed, 0-based value and then multiply
-    * by 256 to get the 16-bit range RetroArch expects. */
+    * by 256 to get the 16-bit range Fruitendo expects. */
    for (pad_axis = 0; pad_axis < 4; pad_axis++)
    {
       unsigned axis            = (pad_axis % 2) ? 0 : 1;

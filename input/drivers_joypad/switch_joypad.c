@@ -14,7 +14,7 @@
 
 #include "../../tasks/tasks_internal.h"
 
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../command.h"
 /* TODO/FIXME - weird header include */
 #include "string.h"

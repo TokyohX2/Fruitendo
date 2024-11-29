@@ -19,7 +19,7 @@
 #ifndef _XDELTA3_FGK_h_
 #define _XDELTA3_FGK_h_
 
-/* To include RetroArch's INLINE macro */
+/* To include Fruitendo's INLINE macro */
 #include "retro_inline.h"
 
 /* An implementation of the FGK algorithm described by D.E. Knuth in

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (disk_control_interface.c).
@@ -24,7 +24,7 @@
 #include <file/file_path.h>
 
 #include "paths.h"
-#include "retroarch.h"
+#include "Fruitendo.h"
 #include "verbosity.h"
 #include "msg_hash.h"
 

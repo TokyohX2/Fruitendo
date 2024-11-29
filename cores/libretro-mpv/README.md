@@ -4,9 +4,9 @@ mpv media player as a libretro core. A proof of concept release is now
 available.
 
 Aims to use features already established in mpv that are not currently
-available in Retroarch movieplayer.
+available in Fruitendo movieplayer.
 
-I want to be able to use Retroarch as my movie player on my embedded devices
+I want to be able to use Fruitendo as my movie player on my embedded devices
 (Raspberry Pi) and desktop using hardware acceleration without having to use
 Kodi or mpv directly. Thus allowing for a more integrated experience, and
 smaller root filesystem.
@@ -15,7 +15,7 @@ smaller root filesystem.
 
 ### Overview
 
-Retroarch must be compiled with `--disable-ffmpeg` to stop the integrated
+Fruitendo must be compiled with `--disable-ffmpeg` to stop the integrated
 movieplayer from playing the input file.
 
 FFmpeg (preferably master branch) must be compiled with `--enable-shared`.
@@ -26,8 +26,8 @@ Then run `make` in the mpv-libretro folder.
 
 ### Compiling with Mingw-w64 on Windows
 
-RetroArch must be compiled with `--disable-ffmpeg` and have OpenGL or
-OpenGLES enabled. Compiling RetroArch is not described here.
+Fruitendo must be compiled with `--disable-ffmpeg` and have OpenGL or
+OpenGLES enabled. Compiling Fruitendo is not described here.
 
 1. Open `Minwg-w64 64 bit` (not MSYS2 shell).
 2. Install ffmpeg using `pacman -S mingw64/mingw-w64-x86_64-ffmpeg`.

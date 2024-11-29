@@ -115,7 +115,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Baxa complementos, componentes y conteníu pa RetroArch."
+   "Baxa complementos, componentes y conteníu pa Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -428,7 +428,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "Versión de RetroArch"
+   "Versión de Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1311,7 +1311,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "El númberu máximu d'usuarios sofitaos por RetroArch."
+   "El númberu máximu d'usuarios sofitaos por Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_SORT_BY_CONTROLLER_ENABLE,
@@ -1469,7 +1469,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Dalgunos nucleos tienen una función d'apagáu, la carga d'un nucleu maniquín impide que RetroArch cole."
+   "Dalgunos nucleos tienen una función d'apagáu, la carga d'un nucleu maniquín impide que Fruitendo cole."
    )
 #ifndef HAVE_DYNAMIC
 #endif
@@ -1678,7 +1678,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Alterna la visibilidá de los elementos del menú de RetroArch."
+   "Alterna la visibilidá de los elementos del menú de Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -1736,7 +1736,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PAUSE_NONACTIVE,
-   "Posa'l conteníu cuando RetroArch nun ye la ventana activa."
+   "Posa'l conteníu cuando Fruitendo nun ye la ventana activa."
    )
 
 /* Settings > User Interface > Menu Item Visibility */
@@ -1789,11 +1789,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "Amosar la opción «Colar de RetroArch»"
+   "Amosar la opción «Colar de Fruitendo»"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "Amosar la opción «Reaniciar RetroArch»"
+   "Amosar la opción «Reaniciar Fruitendo»"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -2260,7 +2260,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "Los gráficos del menú qu'usa Retroarch atróxense nesti direutoriu."
+   "Los gráficos del menú qu'usa Fruitendo atróxense nesti direutoriu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -3361,7 +3361,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "Tocante a RetroArch"
+   "Tocante a Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -3585,11 +3585,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Anovar RetroArch (nightly)"
+   "Anovar Fruitendo (nightly)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "RetroArch anovóse correutamente. Reanicia l'aplicación pa que los cambeos faigan efeutu."
+   "Fruitendo anovóse correutamente. Reanicia l'aplicación pa que los cambeos faigan efeutu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT_CONTRIBUTORS,
@@ -4091,7 +4091,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Reaniciar Retroarch"
+   "Reaniciar Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_REBOOT,
@@ -4179,7 +4179,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_DEFAULT,
-   "Toca la pantalla táctil pa\ndir al menú de Retroarch"
+   "Toca la pantalla táctil pa\ndir al menú de Fruitendo"
    )
 #endif
 #ifdef HAVE_QT

@@ -1,9 +1,9 @@
 //
 //  ContentProvider.m
-//  RetroArchTopShelfExtension
+//  FruitendoTopShelfExtension
 //
 //  Created by Eric Warmenhoven on 2/17/24.
-//  Copyright © 2024 RetroArch. All rights reserved.
+//  Copyright © 2024 Fruitendo. All rights reserved.
 //
 
 #import "ContentProvider.h"
@@ -12,7 +12,7 @@
 
 - (void)loadTopShelfContentWithCompletionHandler:(void (^) (id<TVTopShelfContent> content))completionHandler
 {
-   NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:kRetroArchAppGroup];
+   NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:kFruitendoAppGroup];
 
    NSDictionary *contentDict = [ud objectForKey:@"topshelf"];
 

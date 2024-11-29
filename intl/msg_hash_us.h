@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Download add-ons, components, and content for RetroArch."
+   "Download add-ons, components, and content for Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
-   "Restart RetroArch application."
+   "Restart Fruitendo application."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -207,15 +207,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
-   "Quit RetroArch application. Configuration save on exit is enabled."
+   "Quit Fruitendo application. Configuration save on exit is enabled."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE,
-   "Quit RetroArch application. Configuration save on exit is disabled."
+   "Quit Fruitendo application. Configuration save on exit is disabled."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "Quit RetroArch. Killing the program in any hard way (SIGKILL, etc.) will terminate RetroArch without saving the configuration in any case. On Unix-likes, SIGINT/SIGTERM allows a clean deinitialization which includes configuration save if enabled."
+   "Quit Fruitendo. Killing the program in any hard way (SIGKILL, etc.) will terminate Fruitendo without saving the configuration in any case. On Unix-likes, SIGINT/SIGTERM allows a clean deinitialization which includes configuration save if enabled."
    )
 
 /* Main Menu > Load Core */
@@ -620,7 +620,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch Version"
+   "Fruitendo Version"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1402,7 +1402,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_CORE,
-   "Libretro core. Select this file to have RetroArch load this core."
+   "Libretro core. Select this file to have Fruitendo load this core."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FILE_BROWSER_DIRECTORY,
@@ -1853,19 +1853,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_XMB,
-   "XMB is a RetroArch GUI that looks like a 7th generation console menu. It can support the same features as Ozone."
+   "XMB is a Fruitendo GUI that looks like a 7th generation console menu. It can support the same features as Ozone."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_OZONE,
-   "Ozone is the default GUI of RetroArch on most platforms. It is optimized for navigation with a game controller."
+   "Ozone is the default GUI of Fruitendo on most platforms. It is optimized for navigation with a game controller."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_RGUI,
-   "RGUI is a simple built-in GUI for RetroArch. It has the lowest performance requirements among the menu drivers, and can be used on low resolution screens."
+   "RGUI is a simple built-in GUI for Fruitendo. It has the lowest performance requirements among the menu drivers, and can be used on low resolution screens."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_MENU_DRIVER_MATERIALUI,
-   "On mobile devices, RetroArch uses the mobile UI, MaterialUI, by default. This interface is designed around touchscreen and pointer devices, like a mouse/trackball."
+   "On mobile devices, Fruitendo uses the mobile UI, MaterialUI, by default. This interface is designed around touchscreen and pointer devices, like a mouse/trackball."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RECORD_DRIVER,
@@ -2290,7 +2290,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_MONITOR_INDEX,
-   "Which monitor to prefer. 0 (default) means no particular monitor is preferred, 1 and up (1 being first monitor), suggests RetroArch to use that particular monitor."
+   "Which monitor to prefer. 0 (default) means no particular monitor is preferred, 1 and up (1 being first monitor), suggests Fruitendo to use that particular monitor."
    )
 #if defined (WIIU)
 MSG_HASH(
@@ -2508,7 +2508,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Show all content in a fixed size window of dimensions specified by 'Window Width' and 'Window Height', and save current window size and position upon closing RetroArch. When disabled, window size will be set dynamically based on 'Windowed Scale'."
+   "Show all content in a fixed size window of dimensions specified by 'Window Width' and 'Window Height', and save current window size and position upon closing Fruitendo. When disabled, window size will be set dynamically based on 'Windowed Scale'."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -3124,7 +3124,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MICROPHONE_WASAPI_EXCLUSIVE_MODE,
-   "Allow RetroArch to take exclusive control of the microphone device when using the WASAPI microphone driver. If disabled, RetroArch will use shared mode instead."
+   "Allow Fruitendo to take exclusive control of the microphone device when using the WASAPI microphone driver. If disabled, Fruitendo will use shared mode instead."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MICROPHONE_WASAPI_FLOAT_FORMAT,
@@ -3347,7 +3347,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MAX_USERS,
-   "Maximum amount of users supported by RetroArch."
+   "Maximum amount of users supported by Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_POLL_TYPE_BEHAVIOR,
@@ -3355,11 +3355,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influences how input polling is done in RetroArch. Setting it to 'Early' or 'Late' can result in less latency, depending on your configuration."
+   "Influences how input polling is done in Fruitendo. Setting it to 'Early' or 'Late' can result in less latency, depending on your configuration."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influences how input polling is done inside RetroArch.\nEarly - Input polling is performed before the frame is processed.\nNormal - Input polling is performed when polling is requested.\nLate - Input polling is performed on first input state request per frame.\nSetting it to 'Early' or 'Late' can result in less latency, depending on your configuration. Will be ignored when using netplay."
+   "Influences how input polling is done inside Fruitendo.\nEarly - Input polling is performed before the frame is processed.\nNormal - Input polling is performed when polling is requested.\nLate - Input polling is performed on first input state request per frame.\nSetting it to 'Early' or 'Late' can result in less latency, depending on your configuration. Will be ignored when using netplay."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3406,7 +3406,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_SELECT_PHYSICAL_KEYBOARD,
-   "If RetroArch identifies a hardware keyboard as some kind of gamepad, this setting can be used to force RetroArch to treat the misidentified device as a keyboard.\nThis can be useful if you are trying to emulate a computer in some Android TV device and also own a physical keyboard that can be attached to the box."
+   "If Fruitendo identifies a hardware keyboard as some kind of gamepad, this setting can be used to force Fruitendo to treat the misidentified device as a keyboard.\nThis can be useful if you are trying to emulate a computer in some Android TV device and also own a physical keyboard that can be attached to the box."
    )
 #endif
 MSG_HASH(
@@ -3623,7 +3623,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_RETROPAD_BINDS,
-   "Libretro uses a virtual gamepad abstraction known as the 'RetroPad' to communicate from frontends (like RetroArch) to cores and vice versa. This menu determines how the virtual RetroPad is mapped to the physical input devices and which virtual input ports these devices occupy.\nIf a physical input device is recognized and autoconfigured correctly, users probably do not need to use this menu at all, and for core-specific input changes, should use the Quick Menu's 'Controls' submenu instead."
+   "Libretro uses a virtual gamepad abstraction known as the 'RetroPad' to communicate from frontends (like Fruitendo) to cores and vice versa. This menu determines how the virtual RetroPad is mapped to the physical input devices and which virtual input ports these devices occupy.\nIf a physical input device is recognized and autoconfigured correctly, users probably do not need to use this menu at all, and for core-specific input changes, should use the Quick Menu's 'Controls' submenu instead."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_USER_BINDS,
@@ -3651,7 +3651,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_PRESS_TWICE,
-   "Require the Quit hotkey to be pressed twice to quit RetroArch."
+   "Require the Quit hotkey to be pressed twice to quit Fruitendo."
    )
 
 /* Settings > Input > Haptic Feedback/Vibration */
@@ -3792,7 +3792,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_QUIT_GAMEPAD_COMBO,
-   "Controller button combination to quit RetroArch."
+   "Controller button combination to quit Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_QUIT_KEY,
@@ -3800,7 +3800,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_QUIT_KEY,
-   "Closes RetroArch, ensuring all save data and configuration files are flushed to disk."
+   "Closes Fruitendo, ensuring all save data and configuration files are flushed to disk."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_CLOSE_CONTENT_KEY,
@@ -4078,7 +4078,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_GRAB_MOUSE_TOGGLE,
-   "Grabs or releases the mouse. When grabbed, the system cursor is hidden and confined to the RetroArch display window, improving relative mouse input."
+   "Grabs or releases the mouse. When grabbed, the system cursor is hidden and confined to the Fruitendo display window, improving relative mouse input."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_GAME_FOCUS_TOGGLE,
@@ -4218,7 +4218,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_SEND_DEBUG_INFO,
-   "Sends diagnostic info about your device and RetroArch configuration to our servers for analysis."
+   "Sends diagnostic info about your device and Fruitendo configuration to our servers for analysis."
    )
 
 /* Settings > Input > Port # Controls */
@@ -4249,7 +4249,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_DEVICE_INDEX,
-   "The physical controller as recognized by RetroArch."
+   "The physical controller as recognized by Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_DEVICE_RESERVED_DEVICE_NAME,
@@ -4317,7 +4317,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_MOUSE_INDEX,
-   "The physical mouse as recognized by RetroArch."
+   "The physical mouse as recognized by Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_B,
@@ -4549,11 +4549,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DUMMY_ON_CORE_SHUTDOWN,
-   "Some cores have a shutdown feature, loading a dummy core will prevent RetroArch from shutting down."
+   "Some cores have a shutdown feature, loading a dummy core will prevent Fruitendo from shutting down."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_DUMMY_ON_CORE_SHUTDOWN,
-   "Some cores might have a shutdown feature. If this option is left disabled, selecting the shutdown procedure would trigger RetroArch being shut down.\nEnabling this option will load a dummy core instead so that we remain inside the menu and RetroArch won't shutdown."
+   "Some cores might have a shutdown feature. If this option is left disabled, selecting the shutdown procedure would trigger Fruitendo being shut down.\nEnabling this option will load a dummy core instead so that we remain inside the menu and Fruitendo won't shutdown."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_SET_SUPPORTS_NO_CONTENT_ENABLE,
@@ -4569,7 +4569,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_CHECK_FOR_MISSING_FIRMWARE,
-   "Some cores might need firmware or bios files. If this option is enabled, RetroArch will not allow to start the core if any mandatory firmware items are missing."
+   "Some cores might need firmware or bios files. If this option is enabled, Fruitendo will not allow to start the core if any mandatory firmware items are missing."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTION_CATEGORY_ENABLE,
@@ -4602,7 +4602,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ALWAYS_RELOAD_CORE_ON_RUN_CONTENT,
-   "Restart RetroArch when launching content, even when the requested core is already loaded. This may improve system stability, at the expense of increased loading times."
+   "Restart Fruitendo when launching content, even when the requested core is already loaded. This may improve system stability, at the expense of increased loading times."
    )
 #endif
 MSG_HASH(
@@ -4658,7 +4658,7 @@ MSG_HASH(
 
 MSG_HASH(
    MSG_CORE_STEAM_UNINSTALLED,
-   "The core will uninstall when quitting RetroArch."
+   "The core will uninstall when quitting Fruitendo."
 )
 
 MSG_HASH(
@@ -4686,7 +4686,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMAP_SAVE_ON_EXIT,
-   "Save changes to any active input remap file when closing content or quitting RetroArch."
+   "Save changes to any active input remap file when closing content or quitting Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_GAME_SPECIFIC_OPTIONS,
@@ -4730,7 +4730,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_GLOBAL_CORE_OPTIONS,
-   "Save all core options to a common settings file (retroarch-core-options.cfg). When disabled, options for each core will be saved to a separate core-specific folder/file in RetroArch's 'Configs' directory."
+   "Save all core options to a common settings file (Fruitendo-core-options.cfg). When disabled, options for each core will be saved to a separate core-specific folder/file in Fruitendo's 'Configs' directory."
    )
 
 /* Settings > Saving */
@@ -4837,7 +4837,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_AUTO_SAVE,
-   "Automatically make a save state when content is closed. RetroArch will automatically load this save state if 'Load State Automatically' is enabled."
+   "Automatically make a save state when content is closed. Fruitendo will automatically load this save state if 'Load State Automatically' is enabled."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVESTATE_AUTO_LOAD,
@@ -4988,7 +4988,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LOG_TO_FILE_TIMESTAMP,
-   "When logging to file, redirect the output from each RetroArch session to a new timestamped file. If disabled, log is overwritten each time RetroArch is restarted."
+   "When logging to file, redirect the output from each Fruitendo session to a new timestamped file. If disabled, log is overwritten each time Fruitendo is restarted."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PERFCNT_ENABLE,
@@ -4996,7 +4996,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PERFCNT_ENABLE,
-   "Performance counters for RetroArch and cores. Counter data can help determine system bottlenecks and fine-tune performance."
+   "Performance counters for Fruitendo and cores. Counter data can help determine system bottlenecks and fine-tune performance."
    )
 
 /* Settings > File Browser */
@@ -5031,7 +5031,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_USE_LAST_START_DIRECTORY,
-   "Open File Browser at the last used location when loading content from the Start Directory. Note: Location will be reset to default upon restarting RetroArch."
+   "Open File Browser at the last used location when loading content from the Start Directory. Note: Location will be reset to default upon restarting Fruitendo."
    )
 
 /* Settings > Frame Throttle */
@@ -5062,7 +5062,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_FASTFORWARD_RATIO,
-   "The maximum rate at which content will be run when using fast forward. (E.g. 5.0 for 60 fps content => 300 fps cap).\nRetroArch will go to sleep to ensure that the maximum rate will not be exceeded. Do not rely on this cap to be perfectly accurate."
+   "The maximum rate at which content will be run when using fast forward. (E.g. 5.0 for 60 fps content => 300 fps cap).\nFruitendo will go to sleep to ensure that the maximum rate will not be exceeded. Do not rely on this cap to be perfectly accurate."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_FASTFORWARD_FRAMESKIP,
@@ -6094,7 +6094,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Toggle the visibility of menu items in RetroArch."
+   "Toggle the visibility of menu items in Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -6184,7 +6184,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_ON_CLOSE_CONTENT,
-   "Automatically quit RetroArch when closing content. 'CLI' quits only when content is launched via command line."
+   "Automatically quit Fruitendo when closing content. 'CLI' quits only when content is launched via command line."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCREENSAVER_TIMEOUT,
@@ -6252,7 +6252,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PAUSE_NONACTIVE,
-   "Pause content when RetroArch is not the active window."
+   "Pause content when Fruitendo is not the active window."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_DISABLE_COMPOSITION,
@@ -6413,19 +6413,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_QUIT_RETROARCH,
-   "Show 'Quit RetroArch'"
+   "Show 'Quit Fruitendo'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_QUIT_RETROARCH,
-   "Show the 'Quit RetroArch' option in the Main Menu."
+   "Show the 'Quit Fruitendo' option in the Main Menu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SHOW_RESTART_RETROARCH,
-   "Show 'Restart RetroArch'"
+   "Show 'Restart Fruitendo'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SHOW_RESTART_RETROARCH,
-   "Show the 'Restart RetroArch' option in the Main Menu."
+   "Show the 'Restart Fruitendo' option in the Main Menu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_SETTINGS,
@@ -8009,7 +8009,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ALLOW_NON_PNG,
-   "When enabled, local thumbnails can be added in all image types supported by RetroArch (such as jpeg). May have a minor performance impact."
+   "When enabled, local thumbnails can be added in all image types supported by Fruitendo (such as jpeg). May have a minor performance impact."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGE,
@@ -8153,7 +8153,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_ACCOUNTS_RETRO_ACHIEVEMENTS,
-   "Login details for your RetroAchievements account. Visit retroachievements.org and sign up for a free account.\nAfter you are done registering, you need to input the username and password into RetroArch."
+   "Login details for your RetroAchievements account. Visit retroachievements.org and sign up for a free account.\nAfter you are done registering, you need to input the username and password into Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ACCOUNTS_YOUTUBE,
@@ -8232,7 +8232,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "Menu assets used by RetroArch are stored in this directory."
+   "Menu assets used by Fruitendo are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -8488,7 +8488,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_STEAM_RICH_PRESENCE_ENABLE,
-   "Share your current status within RetroArch on Steam."
+   "Share your current status within Fruitendo on Steam."
    )
 
 MSG_HASH(
@@ -10003,7 +10003,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SHADER_APPLY_CHANGES,
-   "After changing shader settings such as amount of shader passes, filtering, FBO scale, use this to apply changes.\nChanging these shader settings is a somewhat expensive operation so it has to be done explicitly.\nWhen you apply shaders, the shader settings are saved to a temporary file (retroarch.slangp/.cgp/.glslp) and loaded. The file persists after RetroArch exits and is saved to the Shader Directory."
+   "After changing shader settings such as amount of shader passes, filtering, FBO scale, use this to apply changes.\nChanging these shader settings is a somewhat expensive operation so it has to be done explicitly.\nWhen you apply shaders, the shader settings are saved to a temporary file (Fruitendo.slangp/.cgp/.glslp) and loaded. The file persists after Fruitendo exits and is saved to the Shader Directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_SHADER_PARAMETERS,
@@ -10023,7 +10023,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_VIDEO_SHADER_NUM_PASSES,
-   "RetroArch allows to mix and match various shaders with arbitrary shader passes, with custom hardware filters and scale factors.\nThis option specifies the number of shader passes to use. If you set this to 0, and use Apply Shader Changes, you use a 'blank' shader."
+   "Fruitendo allows to mix and match various shaders with arbitrary shader passes, with custom hardware filters and scale factors.\nThis option specifies the number of shader passes to use. If you set this to 0, and use Apply Shader Changes, you use a 'blank' shader."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHADER,
@@ -11097,7 +11097,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_CHEAT_HANDLER_TYPE_RETRO,
-   "RetroArch"
+   "Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_CHEAT_MEMORY_SIZE_1,
@@ -12042,7 +12042,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_XMB_THEME,
-   "Select a different icon theme for RetroArch."
+   "Select a different icon theme for Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_XMB_SWITCH_ICONS,
@@ -12308,11 +12308,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_COLOR_THEME_BASIC_WHITE,
-   "Basic White"
+   "Tokyoh's Default"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_COLOR_THEME_BASIC_BLACK,
-   "Basic Black"
+   "Tokyoh's Dark"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_COLOR_THEME_NORD,
@@ -12753,7 +12753,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_ABOUT,
-   "About RetroArch"
+   "About Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_HELP_DOCUMENTATION,
@@ -13085,11 +13085,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_NIGHTLY,
-   "Update RetroArch (nightly)"
+   "Update Fruitendo (nightly)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FINISHED,
-   "RetroArch updated successfully. Please restart the application for the changes to take effect."
+   "Fruitendo updated successfully. Please restart the application for the changes to take effect."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_UPDATE_RETROARCH_FAILED,
@@ -13272,7 +13272,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_LOAD_CONTENT_HISTORY,
-   "When content is loaded, content and libretro core combinations are saved to history.\nThe history is saved to a file in the same directory as the RetroArch config file. If no config file was loaded in startup, history will not be saved or loaded, and will not exist in the main menu."
+   "When content is loaded, content and libretro core combinations are saved to history.\nThe history is saved to a file in the same directory as the Fruitendo config file. If no config file was loaded in startup, history will not be saved or loaded, and will not exist in the main menu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MULTIMEDIA_SETTINGS,
@@ -13607,7 +13607,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HELP_SEND_DEBUG_INFO,
-   "Sends diagnostic info about your device and RetroArch configuration to our servers for analysis."
+   "Sends diagnostic info about your device and Fruitendo configuration to our servers for analysis."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGEMENT,
@@ -13798,7 +13798,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_DIR,
-   "Usually set by developers who bundle libretro/RetroArch apps to point to assets."
+   "Usually set by developers who bundle libretro/Fruitendo apps to point to assets."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASK_ARCHIVE,
@@ -13876,7 +13876,7 @@ MSG_HASH( /* FIXME Should be MSG_ */
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_VIDEO_DRIVER_FALLBACK,
-   "Your graphics driver is not compatible with the current video driver in RetroArch, falling back to the %s driver. Please restart RetroArch for the changes to take effect."
+   "Your graphics driver is not compatible with the current video driver in Fruitendo, falling back to the %s driver. Please restart Fruitendo for the changes to take effect."
    )
 MSG_HASH( /* FIXME Should be MSG_ */
    MENU_ENUM_LABEL_VALUE_SIDELOAD_CORE_SUCCESS,
@@ -13908,11 +13908,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_TWO_MORE_TIMES_TO_SEND_DEBUG_INFO,
-   "Press two more times to submit diagnostic info to the RetroArch team."
+   "Press two more times to submit diagnostic info to the Fruitendo team."
    )
 MSG_HASH(
    MSG_PRESS_ONE_MORE_TIME_TO_SEND_DEBUG_INFO,
-   "Press one more time to submit diagnostic info to the RetroArch team."
+   "Press one more time to submit diagnostic info to the Fruitendo team."
    )
 MSG_HASH(
    MSG_AUDIO_MIXER_VOLUME,
@@ -14000,15 +14000,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_NETPLAY_NOT_RETROARCH,
-   "A netplay connection attempt failed because the peer is not running RetroArch, or is running an old version of RetroArch."
+   "A netplay connection attempt failed because the peer is not running Fruitendo, or is running an old version of Fruitendo."
    )
 MSG_HASH(
    MSG_NETPLAY_OUT_OF_DATE,
-   "A netplay peer is running an old version of RetroArch. Cannot connect."
+   "A netplay peer is running an old version of Fruitendo. Cannot connect."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_VERSIONS,
-   "WARNING: A netplay peer is running a different version of RetroArch. If problems occur, use the same version."
+   "WARNING: A netplay peer is running a different version of Fruitendo. If problems occur, use the same version."
    )
 MSG_HASH(
    MSG_NETPLAY_DIFFERENT_CORES,
@@ -14913,7 +14913,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PROGRAM,
-   "RetroArch"
+   "Fruitendo"
    )
 MSG_HASH(
    MSG_READING_FIRST_DATA_TRACK,
@@ -15269,7 +15269,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_BLUETOOTH_PAIRING_REMOVED,
-   "Pairing removed. Restart RetroArch to connect/pair again."
+   "Pairing removed. Restart Fruitendo to connect/pair again."
    )
 MSG_HASH(
    MSG_WIFI_SCAN_COMPLETE,
@@ -16119,11 +16119,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Restart RetroArch"
+   "Restart Fruitendo"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_META_RESTART_KEY,
-   "Exit then restart RetroArch. Required for the activation of certain menu settings (for example, when changing menu driver)."
+   "Exit then restart Fruitendo. Required for the activation of certain menu settings (for example, when changing menu driver)."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_AUDIO_BLOCK_FRAMES,
@@ -16471,7 +16471,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_DEFAULT,
-   "Tap the Touch Screen to go\nto the Retroarch menu"
+   "Tap the Touch Screen to go\nto the Fruitendo menu"
    )
 MSG_HASH(
    MSG_3DS_BOTTOM_MENU_ASSET_NOT_FOUND,
@@ -16557,7 +16557,7 @@ MSG_HASH(
 #ifdef HAVE_QT
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_SCAN_FINISHED,
-   "Scan Finished.<br><br>\nIn order for content to be correctly scanned, you must:\n<ul><li>have a compatible core already downloaded</li>\n<li>have \"Core Info Files\" updated via Online Updater</li>\n<li>have \"Databases\" updated via Online Updater</li>\n<li>restart RetroArch if any of the above was just done</li></ul>\nFinally, the content must match existing databases from <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">here</a>. If it is still not working, consider <a href=\"https://www.github.com/libretro/RetroArch/issues\">submitting a bug report</a>."
+   "Scan Finished.<br><br>\nIn order for content to be correctly scanned, you must:\n<ul><li>have a compatible core already downloaded</li>\n<li>have \"Core Info Files\" updated via Online Updater</li>\n<li>have \"Databases\" updated via Online Updater</li>\n<li>restart Fruitendo if any of the above was just done</li></ul>\nFinally, the content must match existing databases from <a href=\"https://docs.libretro.com/guides/roms-playlists-thumbnails/#sources\">here</a>. If it is still not working, consider <a href=\"https://www.github.com/libretro/Fruitendo/issues\">submitting a bug report</a>."
    )
 #endif
 MSG_HASH(
@@ -16574,7 +16574,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_ACCESSIBILITY_STARTUP,
-   "RetroArch accessibility on.  Main Menu Load Core."
+   "Fruitendo accessibility on.  Main Menu Load Core."
    )
 MSG_HASH(
    MSG_AI_SERVICE_STOPPED,

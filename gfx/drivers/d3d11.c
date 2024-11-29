@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2014-2018 - Ali Bouhlel
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -51,7 +51,7 @@
 #include "../drivers_shader/slang_process.h"
 #include "../../verbosity.h"
 #include "../../configuration.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../performance_counters.h"
 #include "../../menu/menu_driver.h"
 #ifdef HAVE_REWIND
@@ -2001,7 +2001,7 @@ static bool d3d11_init_swapchain(d3d11_video_t* d3d11,
    /* Don't let DXGI mess with the full screen state,
     * because otherwise we end up with a mismatch
     * between the window size and the buffers.
-    * RetroArch only uses windowed mode (see above). */
+    * Fruitendo only uses windowed mode (see above). */
    if (FAILED(dxgiFactory->lpVtbl->MakeWindowAssociation(dxgiFactory, desc.OutputWindow, DXGI_MWA_NO_ALT_ENTER)))
    {
       RARCH_ERR("[D3D11]: Failed to make disable DXGI ALT+ENTER handling.\n");

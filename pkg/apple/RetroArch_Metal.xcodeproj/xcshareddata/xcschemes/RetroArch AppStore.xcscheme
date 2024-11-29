@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07F2BBC32BE83A4700FD1295"
-               BuildableName = "RetroArch.app"
-               BlueprintName = "RetroArch AppStore"
-               ReferencedContainer = "container:RetroArch_Metal.xcodeproj">
+               BuildableName = "Fruitendo.app"
+               BlueprintName = "Fruitendo AppStore"
+               ReferencedContainer = "container:Fruitendo_Metal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07F2BBC32BE83A4700FD1295"
-            BuildableName = "RetroArch.app"
-            BlueprintName = "RetroArch AppStore"
-            ReferencedContainer = "container:RetroArch_Metal.xcodeproj">
+            BuildableName = "Fruitendo.app"
+            BlueprintName = "Fruitendo AppStore"
+            ReferencedContainer = "container:Fruitendo_Metal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07F2BBC32BE83A4700FD1295"
-            BuildableName = "RetroArch.app"
-            BlueprintName = "RetroArch AppStore"
-            ReferencedContainer = "container:RetroArch_Metal.xcodeproj">
+            BuildableName = "Fruitendo.app"
+            BlueprintName = "Fruitendo AppStore"
+            ReferencedContainer = "container:Fruitendo_Metal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

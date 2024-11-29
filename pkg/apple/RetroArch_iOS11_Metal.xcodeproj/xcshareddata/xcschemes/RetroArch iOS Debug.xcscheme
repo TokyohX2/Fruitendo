@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9204BE091D319EF300BD49DB"
-               BuildableName = "RetroArch.app"
-               BlueprintName = "RetroArchiOS11"
-               ReferencedContainer = "container:RetroArch_iOS11_Metal.xcodeproj">
+               BuildableName = "Fruitendo.app"
+               BlueprintName = "FruitendoiOS11"
+               ReferencedContainer = "container:Fruitendo_iOS11_Metal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9204BE091D319EF300BD49DB"
-            BuildableName = "RetroArch.app"
-            BlueprintName = "RetroArchiOS11"
-            ReferencedContainer = "container:RetroArch_iOS11_Metal.xcodeproj">
+            BuildableName = "Fruitendo.app"
+            BlueprintName = "FruitendoiOS11"
+            ReferencedContainer = "container:Fruitendo_iOS11_Metal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9204BE091D319EF300BD49DB"
-            BuildableName = "RetroArch.app"
-            BlueprintName = "RetroArchiOS11"
-            ReferencedContainer = "container:RetroArch_iOS11_Metal.xcodeproj">
+            BuildableName = "Fruitendo.app"
+            BlueprintName = "FruitendoiOS11"
+            ReferencedContainer = "container:Fruitendo_iOS11_Metal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9204BE091D319EF300BD49DB"
-            BuildableName = "RetroArch.app"
-            BlueprintName = "RetroArchiOS11"
-            ReferencedContainer = "container:RetroArch_iOS11_Metal.xcodeproj">
+            BuildableName = "Fruitendo.app"
+            BlueprintName = "FruitendoiOS11"
+            ReferencedContainer = "container:Fruitendo_iOS11_Metal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

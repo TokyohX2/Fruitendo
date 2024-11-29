@@ -1,24 +1,24 @@
-# Microsoft Developer Studio Project File - Name="RetroArch" - Package Owner=<4>
+# Microsoft Developer Studio Project File - Name="Fruitendo" - Package Owner=<4>
 # Microsoft Developer Studio Generated Build File, Format Version 6.00
 # ** DO NOT EDIT **
 
 # TARGTYPE "Win32 (x86) Console Application" 0x0103
 
-CFG=RetroArch - Win32 Debug
+CFG=Fruitendo - Win32 Debug
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "RetroArch.mak".
+!MESSAGE NMAKE /f "Fruitendo.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "RetroArch.mak" CFG="RetroArch - Win32 Debug"
+!MESSAGE NMAKE /f "Fruitendo.mak" CFG="Fruitendo - Win32 Debug"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
-!MESSAGE "RetroArch - Win32 Release" (based on "Win32 (x86) Console Application")
-!MESSAGE "RetroArch - Win32 Debug" (based on "Win32 (x86) Console Application")
+!MESSAGE "Fruitendo - Win32 Release" (based on "Win32 (x86) Console Application")
+!MESSAGE "Fruitendo - Win32 Debug" (based on "Win32 (x86) Console Application")
 !MESSAGE 
 
 # Begin Project
@@ -28,7 +28,7 @@ CFG=RetroArch - Win32 Debug
 CPP=cl.exe
 RSC=rc.exe
 
-!IF  "$(CFG)" == "RetroArch - Win32 Release"
+!IF  "$(CFG)" == "Fruitendo - Win32 Release"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -54,7 +54,7 @@ LINK32=link.exe
 # ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib winmm.lib /subsystem:console /verbose /machine:I386
 # SUBTRACT LINK32 /nologo
 
-!ELSEIF  "$(CFG)" == "RetroArch - Win32 Debug"
+!ELSEIF  "$(CFG)" == "Fruitendo - Win32 Debug"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 1
@@ -83,8 +83,8 @@ LINK32=link.exe
 
 # Begin Target
 
-# Name "RetroArch - Win32 Release"
-# Name "RetroArch - Win32 Debug"
+# Name "Fruitendo - Win32 Release"
+# Name "Fruitendo - Win32 Debug"
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
@@ -96,11 +96,11 @@ SOURCE=..\..\..\..\griffin\griffin.c
 
 SOURCE=..\..\..\..\griffin\griffin_cpp.cpp
 
-!IF  "$(CFG)" == "RetroArch - Win32 Release"
+!IF  "$(CFG)" == "Fruitendo - Win32 Release"
 
 # ADD CPP /D WINVER=0x0400 /D _WIN32_WINNT=0x0400
 
-!ELSEIF  "$(CFG)" == "RetroArch - Win32 Debug"
+!ELSEIF  "$(CFG)" == "Fruitendo - Win32 Debug"
 
 !ENDIF 
 

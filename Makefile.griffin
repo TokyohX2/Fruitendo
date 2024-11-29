@@ -56,7 +56,7 @@ else ifneq ($(findstring MINGW,$(shell uname -s)),)
    system_platform = win
 endif
 
-TARGET_NAME        := retroarch
+TARGET_NAME        := Fruitendo
 
 INCLUDE            :=
 LDFLAGS            :=
@@ -1313,9 +1313,9 @@ $(APP_BOOTER_DIR)/app_booter.bin:
 pkg: all
 ifeq ($(platform), qnx)
 	mkdir -p pkg/qnx/pkg
-	cp -r $(EXT_TARGET) pkg/qnx/pkg/RetroArch
+	cp -r $(EXT_TARGET) pkg/qnx/pkg/Fruitendo
 	cp -r media/canvas.png pkg/qnx/pkg/canvas.png
-	cp -r media/retroarch-96x96.png pkg/qnx/pkg/retroarch-96x96.png
+	cp -r media/Fruitendo-96x96.png pkg/qnx/pkg/Fruitendo-96x96.png
 else ifeq ($(platform), wii)
 	cp -r $(EXT_TARGET) pkg/wii/CORE.dol
 else ifeq ($(platform), ngc)
@@ -1325,14 +1325,14 @@ else ifeq ($(platform), psp1)
 endif
 
 ifeq ($(platform), qnx)
-retroarch-dev.bar: pkg
+Fruitendo-dev.bar: pkg
 ifeq ($(QNX_DEBUGTOKEN),)
 	blackberry-nativepackager -package $@ -devMode pkg/qnx/bar-descriptor.xml -C  pkg/qnx/pkg pkg/qnx/pkg/*
 else
 	blackberry-nativepackager -package $@ -devMode -debugToken $(QNX_DEBUGTOKEN) pkg/qnx/bar-descriptor.xml -C  pkg/qnx/pkg pkg/qnx/pkg/*
 endif
 
-retroarch-release.bar: pkg
+Fruitendo-release.bar: pkg
 	blackberry-nativepackager -package $@ pkg/qnx/bar-descriptor.xml -C  pkg/qnx/pkg pkg/qnx/pkg/*
 endif
 

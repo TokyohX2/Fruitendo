@@ -44,21 +44,21 @@ override_dh_auto_build:
 	dh_auto_build -- -C libretro-common/audio/dsp_filters/
 
 override_dh_auto_install:
-	# Add here commands to install the package into debian/retroarch.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/retroarch PREFIX=/usr install
-	cp $(CURDIR)/retroarch.cfg $(CURDIR)/debian/retroarch/etc/
+	# Add here commands to install the package into debian/Fruitendo.
+	$(MAKE) DESTDIR=$(CURDIR)/debian/Fruitendo PREFIX=/usr install
+	cp $(CURDIR)/Fruitendo.cfg $(CURDIR)/debian/Fruitendo/etc/
 ifeq ($(ARCH),armhf)
-	rm -f $(CURDIR)/debian/retroarch/usr/bin/retroarch-cg2glsl
+	rm -f $(CURDIR)/debian/Fruitendo/usr/bin/Fruitendo-cg2glsl
 endif
 
 	# SoftFilters
 	cd $(CURDIR)/gfx/video_filters/ && \
-		cp *.so $(CURDIR)/debian/retroarch/usr/lib/retroarch/filters/video/ && \
-		cp *.filt $(CURDIR)/debian/retroarch/usr/lib/retroarch/filters/video/
+		cp *.so $(CURDIR)/debian/Fruitendo/usr/lib/Fruitendo/filters/video/ && \
+		cp *.filt $(CURDIR)/debian/Fruitendo/usr/lib/Fruitendo/filters/video/
 	# Audio DSP plugins
 	cd $(CURDIR)/dsp_filters/ && \
-		cp *.so $(CURDIR)/debian/retroarch/usr/lib/retroarch/filters/audio/ && \
-		cp *.dsp $(CURDIR)/debian/retroarch/usr/lib/retroarch/filters/audio/
+		cp *.so $(CURDIR)/debian/Fruitendo/usr/lib/Fruitendo/filters/audio/ && \
+		cp *.dsp $(CURDIR)/debian/Fruitendo/usr/lib/Fruitendo/filters/audio/
 
 override_dh_auto_clean:
 	touch config.mk

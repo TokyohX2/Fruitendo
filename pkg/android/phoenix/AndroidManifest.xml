@@ -1,7 +1,7 @@
 <!-- <!DOCTYPE manifest [ <!ENTITY % versionDTD SYSTEM "../../../version.dtd"> %versionDTD; ]> !-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-    package="com.retroarch"
+    package="com.Fruitendo"
     android:versionCode="1597175262"
     android:versionName="1.19.1"
     android:installLocation="internalOnly">
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name="com.retroarch.playcore.RetroArchApplication"
+        android:name="com.Fruitendo.playcore.FruitendoApplication"
         android:allowAudioPlaybackCapture="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,7 +27,7 @@
         android:extractNativeLibs="true"
         android:requestLegacyExternalStorage="true"
         tools:ignore="UnusedAttribute">
-        <activity android:name="com.retroarch.browser.mainmenu.MainMenuActivity" android:exported="true" android:launchMode="singleInstance">
+        <activity android:name="com.Fruitendo.browser.mainmenu.MainMenuActivity" android:exported="true" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -35,13 +35,13 @@
                 <category android:name="tv.ouya.intent.category.GAME" />
             </intent-filter>
         </activity>
-        <activity android:name="com.retroarch.browser.retroactivity.RetroActivityFuture" android:exported="true" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:launchMode="singleInstance">
-            <meta-data android:name="android.app.lib_name" android:value="retroarch-activity" />
+        <activity android:name="com.Fruitendo.browser.retroactivity.RetroActivityFuture" android:exported="true" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:launchMode="singleInstance">
+            <meta-data android:name="android.app.lib_name" android:value="Fruitendo-activity" />
             <meta-data android:name="android.app.func_name" android:value="ANativeActivity_onCreate" />
         </activity>
-        <activity android:name="com.retroarch.browser.debug.CoreSideloadActivity" android:exported="true"/>
+        <activity android:name="com.Fruitendo.browser.debug.CoreSideloadActivity" android:exported="true"/>
       <provider
-        android:name="com.retroarch.browser.provider.RetroDocumentsProvider"
+        android:name="com.Fruitendo.browser.provider.RetroDocumentsProvider"
         android:authorities="${applicationId}.documents"
         android:grantUriPermissions="true"
         android:enabled="@bool/document_provider_enabled"

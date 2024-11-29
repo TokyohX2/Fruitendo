@@ -1,18 +1,18 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2012-2015 - Michael Lelli
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -7659,7 +7659,7 @@ static void rgui_frame(void *data, video_frame_info_t *video_info)
    /* Note: both rgui_set_aspect_ratio() and rgui_set_video_config()
     * normally call command_event(CMD_EVENT_VIDEO_SET_ASPECT_RATIO, NULL)
     * ## THIS CANNOT BE DONE INSIDE rgui_frame() IF THREADED VIDEO IS ENABLED ##
-    * Attempting to do so creates a deadlock, and causes RetroArch to hang.
+    * Attempting to do so creates a deadlock, and causes Fruitendo to hang.
     * We therefore have to set the 'delay_update' argument, which causes
     * command_event(CMD_EVENT_VIDEO_SET_ASPECT_RATIO, NULL) to be called at
     * the next instance of rgui_render() */
@@ -7803,9 +7803,9 @@ static void rgui_toggle(void *userdata, bool menu_on)
    unsigned aspect_ratio_lock = settings ? settings->uints.menu_rgui_aspect_ratio_lock : 0;
 #endif
 
-   /* TODO/FIXME - when we close RetroArch, this function
+   /* TODO/FIXME - when we close Fruitendo, this function
     * gets called and settings is NULL at this point.
-    * Maybe fundamentally change control flow so that on RetroArch
+    * Maybe fundamentally change control flow so that on Fruitendo
     * exit, this doesn't get called. */
    if (!rgui || !settings)
       return;

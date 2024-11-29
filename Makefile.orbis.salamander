@@ -3,8 +3,8 @@ TARGET		    := retroarch_orbis_salamander
 DEBUG               ?= 0
 
 
-PS4_TITLE_ID	:= RETROARCH
-PS4_TITLE_NAME	:= RetroArch
+PS4_TITLE_ID	:= Fruitendo
+PS4_TITLE_NAME	:= Fruitendo
 
 PC_DEVELOPMENT_IP_ADDRESS  = 192.168.1.137
 PC_DEVELOPMENT_UDP_PORT	   = 18194

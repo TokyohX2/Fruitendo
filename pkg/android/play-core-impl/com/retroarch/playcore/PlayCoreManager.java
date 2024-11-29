@@ -1,4 +1,4 @@
-package com.retroarch.playcore;
+package com.Fruitendo.playcore;
 
 import com.google.android.play.core.splitinstall.SplitInstallManager;
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory;
@@ -8,7 +8,7 @@ import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListene
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus;
 import com.google.android.play.core.tasks.OnFailureListener;
 import com.google.android.play.core.tasks.OnSuccessListener;
-import com.retroarch.browser.retroactivity.RetroActivityCommon;
+import com.Fruitendo.browser.retroactivity.RetroActivityCommon;
 
 import java.util.Collections;
 import java.util.List;

@@ -78,7 +78,7 @@ void rarch_stop_draw_observer(void);
 
 #import <UIKit/UIKit.h>
 
-@interface RetroArch_iOS : UINavigationController<ApplePlatform, UIApplicationDelegate,
+@interface Fruitendo_iOS : UINavigationController<ApplePlatform, UIApplicationDelegate,
 UINavigationControllerDelegate> {
     UIView *_renderView;
     apple_view_type_t _vt;
@@ -89,7 +89,7 @@ UINavigationControllerDelegate> {
 @property (nonatomic) int menu_count;
 @property (nonatomic) NSDate *bgDate;
 
-+ (RetroArch_iOS*)get;
++ (Fruitendo_iOS*)get;
 
 - (void)showGameView;
 - (void)supportOtherAudioSessions;
@@ -102,11 +102,11 @@ UINavigationControllerDelegate> {
 #import <AppKit/AppKit.h>
 
 #if defined(HAVE_COCOA_METAL)
-@interface RetroArch_OSX : NSObject<ApplePlatform, NSApplicationDelegate> {
+@interface Fruitendo_OSX : NSObject<ApplePlatform, NSApplicationDelegate> {
 #elif (defined(__MACH__)  && defined(MAC_OS_X_VERSION_MAX_ALLOWED) && (MAC_OS_X_VERSION_MAX_ALLOWED < 101200))
-@interface RetroArch_OSX : NSObject {
+@interface Fruitendo_OSX : NSObject {
 #else
-@interface RetroArch_OSX : NSObject<NSApplicationDelegate> {
+@interface Fruitendo_OSX : NSObject<NSApplicationDelegate> {
 #endif
 	NSWindow *_window;
 	apple_view_type_t _vt;

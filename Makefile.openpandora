@@ -5,7 +5,7 @@ DEBUG    = 0
 CC       = $(PNDSDK)/bin/arm-none-linux-gnueabi-gcc
 LD       = $(PNDSDK)/bin/arm-none-linux-gnueabi-gcc -o
 
-TARGET  := retroarch-pandora
+TARGET  := Fruitendo-pandora
 
 LDDIRS   = -L. -L$(PNDSDK)/usr/lib
 INCDIRS  = -I. -I$(PNDSDK)/usr/include

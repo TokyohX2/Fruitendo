@@ -1,17 +1,17 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  * Copyright (C) 2012-2015 - Michael Lelli
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -28,7 +28,7 @@ RETRO_BEGIN_DECLS
 /**
  * main_exit:
  *
- * Cleanly exit RetroArch.
+ * Cleanly exit Fruitendo.
  *
  * Also saves configuration files to disk,
  * and (optionally) autosave state.
@@ -38,7 +38,7 @@ void main_exit(void *args);
 /**
  * main_entry:
  *
- * Main function of RetroArch.
+ * Main function of Fruitendo.
  *
  * If HAVE_MAIN is not defined, will contain main loop and will not
  * be exited from until we exit the program. Otherwise, will

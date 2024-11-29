@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (getopt.h).
@@ -32,7 +32,7 @@
  *
  * Portable reimplementation of a subset of libc's \c getopt_long.
  * Not designed to be fully compatible,
- * but it's enough for RetroArch's purposes.
+ * but it's enough for Fruitendo's purposes.
  *
  * If \c getopt_long is available (as determined by \c HAVE_GETOPT_LONG), it will be used instead.
  *

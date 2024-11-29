@@ -66,11 +66,11 @@ fetch_revision() {
 
 ### END OF FETCH-RULES.SH
 
-echo "Fetching RetroArch's submodules..."
+echo "Fetching Fruitendo's submodules..."
 fetch_git "https://github.com/libretro/common-shaders.git" "media/shaders_cg"
 fetch_git "https://github.com/libretro/common-overlays.git" "media/overlays"
-fetch_git "https://github.com/libretro/retroarch-assets.git" "media/assets"
-fetch_git "https://github.com/libretro/retroarch-joypad-autoconfig.git" "media/autoconfig"
+fetch_git "https://github.com/libretro/Fruitendo-assets.git" "media/assets"
+fetch_git "https://github.com/libretro/Fruitendo-joypad-autoconfig.git" "media/autoconfig"
 fetch_git "https://github.com/libretro/libretro-database.git" "media/libretrodb"
 
 git submodule update --init --recursive

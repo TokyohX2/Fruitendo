@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (archive_file_sevenzip.c).
@@ -271,7 +271,7 @@ static int64_t sevenzip_file_read(
             {
                /*We could either use the 7Zip allocated buffer,
                 * or create our own and use it.
-                * We would however need to realloc anyways, because RetroArch
+                * We would however need to realloc anyways, because Fruitendo
                 * expects a \0 at the end, therefore we allocate new,
                 * copy and free the old one. */
                *buf = malloc((size_t)(outsize + 1));

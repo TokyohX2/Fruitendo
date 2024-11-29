@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <RootNamespace>retroarch-activity</RootNamespace>
+    <RootNamespace>Fruitendo-activity</RootNamespace>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <ProjectVersion>1.0</ProjectVersion>
     <ProjectGuid>{94b52983-76de-4545-a708-433c377727c7}</ProjectGuid>
@@ -128,15 +128,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <JavaCompile Include="src\com\retroarch\browser\mainmenu\MainMenuActivity.java" />
-    <JavaCompile Include="src\com\retroarch\browser\preferences\util\ConfigFile.java" />
-    <JavaCompile Include="src\com\retroarch\browser\preferences\util\UserPreferences.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityCamera.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityCommon.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityFuture.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityIntent.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityLocation.java" />
-    <JavaCompile Include="src\com\retroarch\browser\retroactivity\RetroActivityPast.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\mainmenu\MainMenuActivity.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\preferences\util\ConfigFile.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\preferences\util\UserPreferences.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityCamera.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityCommon.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityFuture.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityIntent.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityLocation.java" />
+    <JavaCompile Include="src\com\Fruitendo\browser\retroactivity\RetroActivityPast.java" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="res\drawable-hdpi\ic_launcher.png" />

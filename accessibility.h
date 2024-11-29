@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2016 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -57,12 +57,12 @@ bool is_narrator_running(bool accessibility_enable);
 
    To use a client, download the relevant code/release, configure
    them, and run them on your local machine, or network.  Set the
-   retroarch configuration to point to your local client (usually
+   Fruitendo configuration to point to your local client (usually
    listening on localhost:4404 ) and enable translation service.
 
    If you don't want to run a client, you can also use a service,
    which is basically like someone running a client for you.  The
-   downside here is that your retroarch device will have to have
+   downside here is that your Fruitendo device will have to have
    an internet connection, and you may have to sign up for it.
 
    To make your own server, it must listen for a POST request, which

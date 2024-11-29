@@ -1,18 +1,18 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2019-2020 - James Leaver
  *  Copyright (C) 2022-2022 - Jahed Ahmed
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -36,8 +36,8 @@
 
 /* Base path defines */
 #define DINGUX_HOME_ENVAR                 "HOME"
-#define DINGUX_BASE_DIR                   "retroarch"
-#define DINGUX_BASE_DIR_HIDDEN            ".retroarch"
+#define DINGUX_BASE_DIR                   "Fruitendo"
+#define DINGUX_BASE_DIR_HIDDEN            ".Fruitendo"
 #define DINGUX_RS90_MEDIA_PATH            "/media"
 #define DINGUX_RS90_DEFAULT_SD_PATH       "/media/mmcblk0p1"
 #define DINGUX_RS90_DATA_PATH             "/media/data"
@@ -399,7 +399,7 @@ int dingux_get_battery_level(void)
 }
 #endif
 
-/* Fetches the path of the base 'retroarch'
+/* Fetches the path of the base 'Fruitendo'
  * directory */
 void dingux_get_base_path(char *path, size_t len)
 {
@@ -437,7 +437,7 @@ void dingux_get_base_path(char *path, size_t len)
              || string_is_equal(dir_path, DINGUX_RS90_DATA_PATH))
             continue;
 
-         /* Build 'retroarch' subdirectory path */
+         /* Build 'Fruitendo' subdirectory path */
          snprintf(path, len, "%s%c%s", dir_path,
                PATH_DEFAULT_SLASH_C(), DINGUX_BASE_DIR);
 
@@ -462,9 +462,9 @@ void dingux_get_base_path(char *path, size_t len)
    /* Get home directory
     *
     * If a home directory is found (which should
-    * always be the case), base path is "$HOME/.retroarch"
+    * always be the case), base path is "$HOME/.Fruitendo"
     * > If home path is unset, use existing UNIX frontend
-    *   driver default of "retroarch" (this will ultimately
+    *   driver default of "Fruitendo" (this will ultimately
     *   fail, but there is nothing else we can do...) */
    if ((home = getenv(DINGUX_HOME_ENVAR)))
       snprintf(path, len, "%s%c%s", home,

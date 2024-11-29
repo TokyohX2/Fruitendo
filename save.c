@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *  Copyright (C) 2016-2019 - Brad Parker
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 #include <stdint.h>
@@ -427,7 +427,7 @@ static bool dump_to_file_desperate(const void *data,
       strftime(timebuf, 256 * sizeof(char),
             "%Y-%m-%d-%H-%M-%S", &tm_);
 
-      _len  = strlcat(path, "/RetroArch-recovery-", sizeof(path));
+      _len  = strlcat(path, "/Fruitendo-recovery-", sizeof(path));
       _len += snprintf(path + _len, sizeof(path) - _len, "%u", type);
       strlcpy(path + _len, timebuf, sizeof(path) - _len);
 

@@ -86,7 +86,7 @@
 		501232C9192E5FC40063A359 /* griffin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = griffin.c; path = ../../griffin/griffin.c; sourceTree = SOURCE_ROOT; };
 		501881EB184BAD6D006F665D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		501881ED184BB54C006F665D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		503700AD1ACA18E400A51A37 /* RetroArch iOS6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RetroArch iOS6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		503700AD1ACA18E400A51A37 /* Fruitendo iOS6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fruitendo iOS6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		503700AE1ACA18E400A51A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		50521A431AA23BF500185CC9 /* griffin_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = griffin_objc.m; path = ../../griffin/griffin_objc.m; sourceTree = SOURCE_ROOT; };
 		50C3B1AD1AB1107100F478D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -260,7 +260,7 @@
 		96AFAE2616C1D4EA009DE44C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				503700AD1ACA18E400A51A37 /* RetroArch iOS6.app */,
+				503700AD1ACA18E400A51A37 /* Fruitendo iOS6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 				9678945F1788EBD000D6CA69 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			path = RetroArch;
+			path = Fruitendo;
 			sourceTree = "<group>";
 		};
 		96AFAE9C16C1D976009DE44C /* core */ = {
@@ -339,9 +339,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		503700861ACA18E400A51A37 /* RetroArch iOS6 */ = {
+		503700861ACA18E400A51A37 /* Fruitendo iOS6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 503700AA1ACA18E400A51A37 /* Build configuration list for PBXNativeTarget "RetroArch iOS6" */;
+			buildConfigurationList = 503700AA1ACA18E400A51A37 /* Build configuration list for PBXNativeTarget "Fruitendo iOS6" */;
 			buildPhases = (
 				503700871ACA18E400A51A37 /* Sources */,
 				5037008D1ACA18E400A51A37 /* Frameworks */,
@@ -351,9 +351,9 @@
 			);
 			dependencies = (
 			);
-			name = "RetroArch iOS6";
-			productName = RetroArch;
-			productReference = 503700AD1ACA18E400A51A37 /* RetroArch iOS6.app */;
+			name = "Fruitendo iOS6";
+			productName = Fruitendo;
+			productReference = 503700AD1ACA18E400A51A37 /* Fruitendo iOS6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +363,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = RetroArch;
+				ORGANIZATIONNAME = Fruitendo;
 				TargetAttributes = {
 					503700861ACA18E400A51A37 = {
 						DevelopmentTeam = UK699V5ZS8;
@@ -371,7 +371,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96AFAE1F16C1D4EA009DE44C /* Build configuration list for PBXProject "RetroArch_iOS6" */;
+			buildConfigurationList = 96AFAE1F16C1D4EA009DE44C /* Build configuration list for PBXProject "Fruitendo_iOS6" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -384,7 +384,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				503700861ACA18E400A51A37 /* RetroArch iOS6 */,
+				503700861ACA18E400A51A37 /* Fruitendo iOS6 */,
 			);
 		};
 /* End PBXProject section */
@@ -536,8 +536,8 @@
 					"-DHAVE_SHADERPIPELINE",
 					"-D_LZMA_UINT32_IS_ULONG",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArch6;
-				PRODUCT_NAME = "RetroArch iOS6";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.Fruitendo6;
+				PRODUCT_NAME = "Fruitendo iOS6";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = armv7;
@@ -705,8 +705,8 @@
 					"-DHAVE_SHADERPIPELINE",
 					"-D_LZMA_UINT32_IS_ULONG",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.RetroArch6;
-				PRODUCT_NAME = "RetroArch iOS6";
+				PRODUCT_BUNDLE_IDENTIFIER = com.libretro.Fruitendo6;
+				PRODUCT_NAME = "Fruitendo iOS6";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = armv7;
@@ -891,7 +891,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		503700AA1ACA18E400A51A37 /* Build configuration list for PBXNativeTarget "RetroArch iOS6" */ = {
+		503700AA1ACA18E400A51A37 /* Build configuration list for PBXNativeTarget "Fruitendo iOS6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				503700AB1ACA18E400A51A37 /* Debug */,
@@ -900,7 +900,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96AFAE1F16C1D4EA009DE44C /* Build configuration list for PBXProject "RetroArch_iOS6" */ = {
+		96AFAE1F16C1D4EA009DE44C /* Build configuration list for PBXProject "Fruitendo_iOS6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96AFAE5216C1D4EA009DE44C /* Debug */,

@@ -1,15 +1,15 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2019-2023 - Brian Weiss
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -20,7 +20,7 @@
 #include "../configuration.h"
 #include "../file_path_special.h"
 #include "../paths.h"
-#include "../retroarch.h"
+#include "../Fruitendo.h"
 #include "../version.h"
 
 #include <features/features_cpu.h>
@@ -93,7 +93,7 @@ void rcheevos_get_user_agent(rcheevos_locals_t *locals,
    struct retro_system_info *sysinfo = &runloop_state_get_ptr()->system.info;
 
    /* if we haven't calculated the non-changing portion yet, do so now
-    * [retroarch version + os version] */
+    * [Fruitendo version + os version] */
    if (!locals->user_agent_prefix[0])
    {
       const frontend_ctx_driver_t *frontend = frontend_get_ptr();
@@ -104,11 +104,11 @@ void rcheevos_get_user_agent(rcheevos_locals_t *locals,
          int major, minor;
          frontend->get_os(tmp, sizeof(tmp), &major, &minor);
          snprintf(locals->user_agent_prefix, sizeof(locals->user_agent_prefix),
-            "RetroArch/%s (%s %d.%d)", PACKAGE_VERSION, tmp, major, minor);
+            "Fruitendo/%s (%s %d.%d)", PACKAGE_VERSION, tmp, major, minor);
       }
       else
          snprintf(locals->user_agent_prefix, sizeof(locals->user_agent_prefix),
-            "RetroArch/%s", PACKAGE_VERSION);
+            "Fruitendo/%s", PACKAGE_VERSION);
    }
 
    /* append the non-changing portion */

@@ -31,13 +31,13 @@
          "label": "linux build and run",
          "type": "shell",
          "group": "build",
-         "command": "make -j12 && ./retroarch -v"
+         "command": "make -j12 && ./Fruitendo -v"
       },
       {
          "label": "linux build and run with debug symbols",
          "type": "shell",
          "group": "build",
-         "command": "DEBUG=1 make -j12 && ./retroarch -v"
+         "command": "DEBUG=1 make -j12 && ./Fruitendo -v"
       },
       {
          "label": "msys2-mingw64 build",
@@ -114,7 +114,7 @@
             "kind": "test",
             "isDefault": true },
 
-         "command": "./retroarch -v",
+         "command": "./Fruitendo -v",
          "options": {
             "shell": {
                "executable": "C:\\msys64\\usr\\bin\\bash.exe",

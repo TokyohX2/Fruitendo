@@ -1,8 +1,8 @@
-package com.retroarch.browser.retroactivity;
+package com.Fruitendo.browser.retroactivity;
 
 import java.io.IOException;
 
-import com.retroarch.browser.preferences.util.UserPreferences;
+import com.Fruitendo.browser.preferences.util.UserPreferences;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;

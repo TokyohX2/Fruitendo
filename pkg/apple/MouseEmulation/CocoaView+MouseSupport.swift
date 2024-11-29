@@ -1,9 +1,9 @@
 //
 //  CocoaView+MouseSupport.swift
-//  RetroArchiOS
+//  FruitendoiOS
 //
 //  Created by Yoshi Sugawara on 3/2/22.
-//  Copyright © 2022 RetroArch. All rights reserved.
+//  Copyright © 2022 Fruitendo. All rights reserved.
 //
 
 extension CocoaView {

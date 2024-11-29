@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2020 The RetroArch team
+/* Copyright  (C) 2010-2020 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (retro_environment.h).
@@ -26,7 +26,7 @@
 /*
 This file is designed to create a normalized environment for compiling
 libretro-common's private implementations, or any other sources which might
-enjoy use of it's environment (RetroArch for instance).
+enjoy use of it's environment (Fruitendo for instance).
 This should be an elaborately crafted environment so that sources don't
 need to be full of platform-specific workarounds.
 */

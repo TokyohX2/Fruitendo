@@ -37,7 +37,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{27FF7CE1-4059-4AA1-8062-FD529560FA54}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>RetroArchmsvc2015</RootNamespace>
+    <RootNamespace>Fruitendomsvc2015</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

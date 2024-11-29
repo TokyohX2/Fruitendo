@@ -237,7 +237,7 @@ ifeq ($(HAVE_DR_MP3), 1)
 endif
 
 OBJ += frontend/frontend_driver.o \
-       retroarch.o \
+       Fruitendo.o \
        runloop.o \
        ui/ui_companion_driver.o \
        camera/camera_driver.o \
@@ -1941,7 +1941,7 @@ endif
 ifeq ($(HAVE_BUILTINFLAC),1)
    HAVE_FLAC = 1
    DEFINES += -DHAVE_FLAC -DHAVE_DR_FLAC  -DHAVE_STDINT_H -DHAVE_LROUND -DFLAC__HAS_OGG=0 \
-              -DFLAC_PACKAGE_VERSION="\"retroarch\""
+              -DFLAC_PACKAGE_VERSION="\"Fruitendo\""
    INCLUDE_DIRS += -I$(DEPS_DIR) -I$(DEPS_DIR)/libFLAC/include
    FLACOBJ = $(DEPS_DIR)/libFLAC/bitmath.o \
              $(DEPS_DIR)/libFLAC/bitreader.o \

@@ -1,16 +1,16 @@
-/*  RetroArch - A frontend for libretro.
+/*  Fruitendo - A frontend for libretro.
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2017 - Daniel De Matteis
  *
- *  RetroArch is free software: you can redistribute it and/or modify it under the terms
+ *  Fruitendo is free software: you can redistribute it and/or modify it under the terms
  *  of the GNU General Public License as published by the Free Software Found-
  *  ation, either version 3 of the License, or (at your option) any later version.
  *
- *  RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ *  Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  *  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *  PURPOSE.  See the GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License along with RetroArch.
+ *  You should have received a copy of the GNU General Public License along with Fruitendo.
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -272,7 +272,7 @@ typedef struct
    char joypad_driver[32];
    char name[128];
    char display_name[128];
-   char config_name[NAME_MAX_LENGTH]; /* Base name of the RetroArch config file */
+   char config_name[NAME_MAX_LENGTH]; /* Base name of the Fruitendo config file */
    bool autoconfigured;
 } input_device_info_t;
 
@@ -320,7 +320,7 @@ typedef struct input_list_element_t
 /**
  * Organizes the functions and data structures of each driver that are accessed
  * by other parts of the input code. The input_driver structs are the "interface"
- * between RetroArch and the input driver.
+ * between Fruitendo and the input driver.
  *
  * Every driver must establish an input_driver struct with pointers to its own
  * implementations of these functions, and each of those input_driver structs is
@@ -362,7 +362,7 @@ struct input_driver
     *                         input device abstractions
     * @param keyboard_mapping_blocked
     *                         If true, disregard custom keyboard mapping
-    * @param port             Which RetroArch port is being polled
+    * @param port             Which Fruitendo port is being polled
     * @param device           Which libretro abstraction is being polled
     *                         (RETRO_DEVICE_ID_RETROPAD, RETRO_DEVICE_ID_MOUSE)
     * @param index            For controls with more than one axis or multiple
@@ -425,7 +425,7 @@ struct input_driver
    float (*get_sensor_input)(void *data, unsigned port, unsigned id);
 
    /**
-    * The means for an input driver to indicate to RetroArch which libretro
+    * The means for an input driver to indicate to Fruitendo which libretro
     * input abstractions the driver supports.
     *
     * @param data  The input state struct.
@@ -685,7 +685,7 @@ const input_device_driver_t *input_joypad_init_driver(
       const char *ident, void *data);
 
 /**
- * Registers a newly connected pad with RetroArch.
+ * Registers a newly connected pad with Fruitendo.
  *
  * @param port
  * Joystick number

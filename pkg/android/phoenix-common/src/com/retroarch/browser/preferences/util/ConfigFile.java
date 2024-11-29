@@ -1,4 +1,4 @@
-package com.retroarch.browser.preferences.util;
+package com.Fruitendo.browser.preferences.util;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

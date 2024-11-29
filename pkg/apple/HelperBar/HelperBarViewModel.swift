@@ -1,9 +1,9 @@
 //
 //  HelperBarViewModel.swift
-//  RetroArchiOS
+//  FruitendoiOS
 //
 //  Created by Yoshi Sugawara on 3/1/22.
-//  Copyright © 2022 RetroArch. All rights reserved.
+//  Copyright © 2022 Fruitendo. All rights reserved.
 //
 
 import Combine

@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -52,7 +52,7 @@
 #include "../../defaults.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 
 #ifndef IS_SALAMANDER
@@ -163,7 +163,7 @@ static void get_first_valid_core(char *path_return, size_t len)
 
    path_return[0] = '\0';
 
-   if ((dir = opendir(SD_PREFIX "/retroarch/cores")))
+   if ((dir = opendir(SD_PREFIX "/Fruitendo/cores")))
    {
       while ((ent = readdir(dir)))
       {
@@ -171,7 +171,7 @@ static void get_first_valid_core(char *path_return, size_t len)
             break;
          if (strlen(ent->d_name) > strlen(extension) && !strcmp(ent->d_name + strlen(ent->d_name) - strlen(extension), extension))
          {
-            size_t _len = strlcpy(path_return, SD_PREFIX "/retroarch/cores", len);
+            size_t _len = strlcpy(path_return, SD_PREFIX "/Fruitendo/cores", len);
             _len += strlcpy(path_return + _len,
                   "/",
                   len           - _len);
@@ -192,11 +192,11 @@ static void frontend_switch_get_env(
 #if defined(HAVE_LOGGER)
    logger_init();
 #elif defined(HAVE_FILE_LOGGER)
-   retro_main_log_file_init(SD_PREFIX "/retroarch-log.txt");
+   retro_main_log_file_init(SD_PREFIX "/Fruitendo-log.txt");
 #endif
 #endif
 
-   fill_pathname_basedir(g_defaults.dirs[DEFAULT_DIR_PORT], SD_PREFIX "/retroarch/retroarch_switch.nro", sizeof(g_defaults.dirs[DEFAULT_DIR_PORT]));
+   fill_pathname_basedir(g_defaults.dirs[DEFAULT_DIR_PORT], SD_PREFIX "/Fruitendo/retroarch_switch.nro", sizeof(g_defaults.dirs[DEFAULT_DIR_PORT]));
 
    fill_pathname_join(g_defaults.dirs[DEFAULT_DIR_CORE], g_defaults.dirs[DEFAULT_DIR_PORT],
                       "cores", sizeof(g_defaults.dirs[DEFAULT_DIR_CORE]));

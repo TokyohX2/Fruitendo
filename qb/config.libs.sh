@@ -154,11 +154,11 @@ fi
    add_define MAKEFILE libretro "$LIBRETRO"
 }
 
-add_define MAKEFILE ASSETS_DIR "${ASSETS_DIR:-$SHARE_DIR}/retroarch"
-add_define MAKEFILE FILTERS_DIR "${FILTERS_DIR:-$SHARE_DIR}/retroarch"
-add_define MAKEFILE CORE_INFO_DIR "${CORE_INFO_DIR:-$SHARE_DIR}/retroarch"
+add_define MAKEFILE ASSETS_DIR "${ASSETS_DIR:-$SHARE_DIR}/Fruitendo"
+add_define MAKEFILE FILTERS_DIR "${FILTERS_DIR:-$SHARE_DIR}/Fruitendo"
+add_define MAKEFILE CORE_INFO_DIR "${CORE_INFO_DIR:-$SHARE_DIR}/Fruitendo"
 add_define MAKEFILE BIN_DIR "${BIN_DIR:-${PREFIX}/bin}"
-add_define MAKEFILE DOC_DIR "${DOC_DIR:-${SHARE_DIR}/doc/retroarch}"
+add_define MAKEFILE DOC_DIR "${DOC_DIR:-${SHARE_DIR}/doc/Fruitendo}"
 add_define MAKEFILE MAN_DIR "${MAN_DIR:-${SHARE_DIR}/man}"
 
 check_platform DOS SHADERPIPELINE 'Shader-based pipelines are' false
@@ -195,7 +195,7 @@ if [ "$HAVE_NETWORKING" != 'no' ]; then
       check_lib '' GETADDRINFO "$SOCKETLIB" getaddrinfo
       if [ "$HAVE_GETADDRINFO" != 'yes' ]; then
          HAVE_SOCKET_LEGACY=yes
-         die : 'Notice: RetroArch will use legacy socket support'
+         die : 'Notice: Fruitendo will use legacy socket support'
       fi
    fi
 

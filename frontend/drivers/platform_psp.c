@@ -1,16 +1,16 @@
-/* RetroArch - A frontend for libretro.
+/* Fruitendo - A frontend for libretro.
  * Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  * Copyright (C) 2011-2017 - Daniel De Matteis
  *
- * RetroArch is free software: you can redistribute it and/or modify it under the terms
+ * Fruitendo is free software: you can redistribute it and/or modify it under the terms
  * of the GNU General Public License as published by the Free Software Found-
  * ation, either version 3 of the License, or (at your option) any later version.
  *
- * RetroArch is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * Fruitendo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  * PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with RetroArch.
+ * You should have received a copy of the GNU General Public License along with Fruitendo.
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
@@ -57,7 +57,7 @@
 #include "../../defaults.h"
 #include "../../file_path_special.h"
 #include "../../paths.h"
-#include "../../retroarch.h"
+#include "../../Fruitendo.h"
 #include "../../verbosity.h"
 
 #if !defined(IS_SALAMANDER) && defined(HAVE_NETWORKING)
@@ -73,7 +73,7 @@
 #endif
 
 #ifndef VITA
-PSP_MODULE_INFO("RetroArch", 0, 1, 1);
+PSP_MODULE_INFO("Fruitendo", 0, 1, 1);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER|THREAD_ATTR_VFPU);
 #endif
 
@@ -94,7 +94,7 @@ static void frontend_psp_get_env_settings(int *argc, char *argv[],
 
 #ifdef VITA
    strlcpy(eboot_path, "app0:/", sizeof(eboot_path));
-   strlcpy(user_path, "ux0:/data/retroarch/", sizeof(user_path));
+   strlcpy(user_path, "ux0:/data/Fruitendo/", sizeof(user_path));
 
    strlcpy(g_defaults.dirs[DEFAULT_DIR_PORT], eboot_path,
       sizeof(g_defaults.dirs[DEFAULT_DIR_PORT]));
@@ -142,7 +142,7 @@ static void frontend_psp_get_env_settings(int *argc, char *argv[],
    strlcpy(eboot_path, argv[0], sizeof(eboot_path));
    /* for PSP, use uppercase directories, and no trailing slashes
       otherwise mkdir fails */
-   strlcpy(user_path, "ms0:/PSP/RETROARCH", sizeof(user_path));
+   strlcpy(user_path, "ms0:/PSP/Fruitendo", sizeof(user_path));
 
    fill_pathname_basedir(g_defaults.dirs[DEFAULT_DIR_PORT], argv[0],
       sizeof(g_defaults.dirs[DEFAULT_DIR_PORT]));

@@ -20,7 +20,7 @@ PC_DEVELOPMENT_UDP_PORT		= 3490
 
 CONTENTID		= UP0001-SSNE10001_00-0000000000000001
 APPID                   = SSNE10001
-TITLE                   = Retroarch PSL1GHT
+TITLE                   = Fruitendo PSL1GHT
 PACKAGE_BASENAME := retroarch_psl1ght
 
 ELF_TARGET  := retroarch_psl1ght.elf

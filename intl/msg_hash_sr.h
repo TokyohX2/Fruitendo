@@ -143,7 +143,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Preuzmi dodatke, komponente i sadržaj za RetroArch."
+   "Preuzmi dodatke, komponente i sadržaj za Fruitendo."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -1696,7 +1696,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_VIDEO_WINDOW_SAVE_POSITION,
-   "Prikazuj sav sadržaj u prozoru fiksne veličine dimenzija podešenim opcijama 'Širina prozora' i 'Visina prozora' i sačuvaj trenutnu veličinu prozora i poziciju pri zatvaranju RetroArcha. Ako je isključeno, veličina prozara će biti dinamički određena na osnovu opcije 'Razmera prozora'."
+   "Prikazuj sav sadržaj u prozoru fiksne veličine dimenzija podešenim opcijama 'Širina prozora' i 'Visina prozora' i sačuvaj trenutnu veličinu prozora i poziciju pri zatvaranju Fruitendoa. Ako je isključeno, veličina prozara će biti dinamički određena na osnovu opcije 'Razmera prozora'."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_VIDEO_WINDOW_CUSTOM_SIZE_ENABLE,
@@ -2403,7 +2403,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_META_RESTART_KEY,
-   "Restartuj RetroArch"
+   "Restartuj Fruitendo"
    )
 #ifdef HAVE_LIBNX
 #endif

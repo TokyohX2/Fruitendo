@@ -1,6 +1,6 @@
 //
 //  GitLabCI.xcconfig
-//  RetroArch_Metal
+//  Fruitendo_Metal
 //
 //
 
@@ -10,4 +10,4 @@
 #include "Metal.xcconfig"
 DEVELOPMENT_TEAM=UK699V5ZS8
 OTHER_CFLAGS = $(inherited) -DHAVE_ICLOUD
-CODE_SIGN_ENTITLEMENTS = RetroArchCI.entitlements
+CODE_SIGN_ENTITLEMENTS = FruitendoCI.entitlements

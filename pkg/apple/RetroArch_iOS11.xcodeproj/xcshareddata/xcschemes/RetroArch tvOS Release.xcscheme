@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "926C77D621FD1E6500103EDE"
-               BuildableName = "RetroArchTV.app"
-               BlueprintName = "RetroArchTV"
-               ReferencedContainer = "container:RetroArch_iOS11.xcodeproj">
+               BuildableName = "FruitendoTV.app"
+               BlueprintName = "FruitendoTV"
+               ReferencedContainer = "container:Fruitendo_iOS11.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "926C77D621FD1E6500103EDE"
-            BuildableName = "RetroArchTV.app"
-            BlueprintName = "RetroArchTV"
-            ReferencedContainer = "container:RetroArch_iOS11.xcodeproj">
+            BuildableName = "FruitendoTV.app"
+            BlueprintName = "FruitendoTV"
+            ReferencedContainer = "container:Fruitendo_iOS11.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "926C77D621FD1E6500103EDE"
-            BuildableName = "RetroArchTV.app"
-            BlueprintName = "RetroArchTV"
-            ReferencedContainer = "container:RetroArch_iOS11.xcodeproj">
+            BuildableName = "FruitendoTV.app"
+            BlueprintName = "FruitendoTV"
+            ReferencedContainer = "container:Fruitendo_iOS11.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "926C77D621FD1E6500103EDE"
-            BuildableName = "RetroArchTV.app"
-            BlueprintName = "RetroArchTV"
-            ReferencedContainer = "container:RetroArch_iOS11.xcodeproj">
+            BuildableName = "FruitendoTV.app"
+            BlueprintName = "FruitendoTV"
+            ReferencedContainer = "container:Fruitendo_iOS11.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

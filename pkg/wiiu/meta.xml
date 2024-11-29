@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <app version="1">
-  <name>Retroarch</name>
+  <name>Fruitendo</name>
   <coder>Libretro</coder>
   <version>&version;</version>
   <release_date>2024</release_date>

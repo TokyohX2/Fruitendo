@@ -1,6 +1,6 @@
 //
 //  Steam.xcconfig
-//  RetroArch_Metal
+//  Fruitendo_Metal
 //
 
 OTHER_CFLAGS = $(inherited) -DHAVE_MAIN -DHAVE_STEAM -DHAVE_MIST -DHAVE_PRESENCE

@@ -9,7 +9,7 @@
 include version.all
 
 # General Shared Variables ############
-TARGET := retroarch
+TARGET := Fruitendo
 
 # Libretro Defines ####################
 #HAVE_CLASSIC = Classic Hook, disable some features
@@ -18,14 +18,14 @@ TARGET := retroarch
 
 all: $(TARGET)
 
-retroarch:
-	#Build the RetroArch Binary for cross platform classics (ARMv7 Cortex A7)
+Fruitendo:
+	#Build the Fruitendo Binary for cross platform classics (ARMv7 Cortex A7)
 	patchelf --version #Check if you have patchelf installed... (sudo apt-get install patchelf)
 	CFLAGS="-marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard" ./configure --host=arm-linux-gnueabihf --disable-wayland --disable-x11 --disable-opengl --disable-opengl1 --disable-opengl_core --enable-mali_fbdev --disable-freetype --enable-opengles --enable-udev --enable-alsa --enable-neon --enable-floathard --disable-discord
 	make HAVE_CLASSIC=1 HAVE_C_A7A7=1 HAVE_SEGAM=1 -j #Cook it
-	arm-linux-gnueabihf-strip -v retroarch
+	arm-linux-gnueabihf-strip -v Fruitendo
 	@echo "*********************************************************************"
-	@echo "***   SEGA Mega Drive Mini RetroArch binary built successfully!   ***"
+	@echo "***   SEGA Mega Drive Mini Fruitendo binary built successfully!   ***"
 	@echo "*********************************************************************"
 clean:
 	rm -rf obj-unix
@@ -42,7 +42,7 @@ clean:
 	rm -f record/*.o
 	rm -f input/*.o
 	rm -f tools/*.o
-	rm -f $(BINDIR)/retroarch
+	rm -f $(BINDIR)/Fruitendo
 	rm -f $(PNDDIR)/readme.html
-	rm -f retroarch
+	rm -f Fruitendo
 

@@ -58,7 +58,7 @@ clean()
   make -f Makefile.wiiu clean || exit 1
 
   for trash in libretro_wiiu.a libretro_wiiu.elf libretro_wiiu.rpx \
-               objs/wiiu pkg/wiiu/wiiu pkg/wiiu/retroarch pkg/wiiu/rpx
+               objs/wiiu pkg/wiiu/wiiu pkg/wiiu/Fruitendo pkg/wiiu/rpx
   do
     rm -rf $trash
   done
@@ -104,7 +104,7 @@ generateMetaXml()
   echo '  <coder>'$authors'</coder>' >> $outFile
   echo '  <version>'$RARCH_VERSION' r'$build_hash'</version>' >> $outFile
   echo '  <release_date>'$build_date'</release_date>' >> $outFile
-  echo '  <short_description>RetroArch</short_description>' >> $outFile
+  echo '  <short_description>Fruitendo</short_description>' >> $outFile
   echo -e '  <long_description>'$display_name'\n\nSystem: '$systemname'\nLicense: '$license'</long_description>' >> $outFile
   echo '  <category>emu</category>' >> $outFile
   echo '  <url>https://github.com/libretro</url>' >> $outFile
@@ -141,7 +141,7 @@ buildCore()
       -j3 || exit 1
 
     if [ ! -z "$infoDir" ]; then
-      for i in 'pkg/wiiu/retroarch/cores' 'pkg/wiiu/rpx/retroarch/cores'; do
+      for i in 'pkg/wiiu/Fruitendo/cores' 'pkg/wiiu/rpx/Fruitendo/cores'; do
         mkdir -p $i/info
         cp $infoDir/$packageName.info $i/info
         generateMetaXml $i/info/$packageName.info $i/../../wiiu/apps/$packageName
@@ -154,11 +154,11 @@ buildCore()
       done
     fi
 
-    for i in "pkg/wiiu/wiiu/apps/$packageName" 'pkg/wiiu/retroarch/cores'; do
+    for i in "pkg/wiiu/wiiu/apps/$packageName" 'pkg/wiiu/Fruitendo/cores'; do
       mkdir -p $i
       cp retroarch_wiiu.elf $i/$elfResult
     done
-    for i in "pkg/wiiu/rpx/wiiu/apps/$packageName" 'pkg/wiiu/rpx/retroarch/cores'; do
+    for i in "pkg/wiiu/rpx/wiiu/apps/$packageName" 'pkg/wiiu/rpx/Fruitendo/cores'; do
       mkdir -p $i
       cp retroarch_wiiu.rpx $i/$rpxResult
     done

@@ -1,4 +1,4 @@
-/* Copyright  (C) 2010-2019 The RetroArch team
+/* Copyright  (C) 2010-2019 The Fruitendo team
  *
  * ---------------------------------------------------------------------------------------
  * The following license statement only applies to this file (manual_content_scan.c).
@@ -65,7 +65,7 @@ typedef struct
  *   when creating associated menu entries
  * > We are handling this in almost exactly the same
  *   way as the regular global 'static settings_t *configuration_settings;'
- *   object in retroarch.c. This means it is not inherently thread safe,
+ *   object in Fruitendo.c. This means it is not inherently thread safe,
  *   but this should not be an issue (i.e. regular configuration_settings
  *   are not thread safe, but we only access them when pushing a
  *   task, not in the task thread itself, so all is well) */

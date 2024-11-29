@@ -1,6 +1,6 @@
-# RetroArch OMAP video driver
+# Fruitendo OMAP video driver
 
-The OMAP video driver for RetroArch uses the omapfb (OMAP framebuffer) driver from the Linux kernel. omapfb is not to be confused with omapdrm, which is the corresponding DRM driver.
+The OMAP video driver for Fruitendo uses the omapfb (OMAP framebuffer) driver from the Linux kernel. omapfb is not to be confused with omapdrm, which is the corresponding DRM driver.
 OMAP framebuffer support is available on platforms like the Pandora (OMAP3) handheld console, the Beagleboard (OMAP3) single-board computer or the Pandaboard (OMAP4), which is also a single-board computer.
 The OMAP display hardware provides free scaling to native screen dimensions, using a high-quality polyphase filter.
 

@@ -17,7 +17,7 @@ include config.mk
 ifeq ($(HAVE_ANGLE), 1)
 TARGET = retroarch_angle
 else
-TARGET = retroarch
+TARGET = Fruitendo
 endif
 
 OBJ :=
@@ -237,23 +237,23 @@ install: $(TARGET)
 	mkdir -p $(DESTDIR)$(MAN_DIR)/man6 2>/dev/null || /bin/true
 	mkdir -p $(DESTDIR)$(DATA_DIR)/pixmaps 2>/dev/null || /bin/true
 	cp $(TARGET) $(DESTDIR)$(BIN_DIR)
-	cp tools/cg2glsl.py $(DESTDIR)$(BIN_DIR)/retroarch-cg2glsl
-	cp retroarch.cfg $(DESTDIR)$(GLOBAL_CONFIG_DIR)
-	cp com.libretro.RetroArch.metainfo.xml $(DESTDIR)$(DATA_DIR)/metainfo
-	cp com.libretro.RetroArch.desktop $(DESTDIR)$(DATA_DIR)/applications
-	cp docs/retroarch.6 $(DESTDIR)$(MAN_DIR)/man6
-	cp docs/retroarch-cg2glsl.6 $(DESTDIR)$(MAN_DIR)/man6
-	cp media/com.libretro.RetroArch.svg $(DESTDIR)$(DATA_DIR)/pixmaps
+	cp tools/cg2glsl.py $(DESTDIR)$(BIN_DIR)/Fruitendo-cg2glsl
+	cp Fruitendo.cfg $(DESTDIR)$(GLOBAL_CONFIG_DIR)
+	cp com.libretro.Fruitendo.metainfo.xml $(DESTDIR)$(DATA_DIR)/metainfo
+	cp com.libretro.Fruitendo.desktop $(DESTDIR)$(DATA_DIR)/applications
+	cp docs/Fruitendo.6 $(DESTDIR)$(MAN_DIR)/man6
+	cp docs/Fruitendo-cg2glsl.6 $(DESTDIR)$(MAN_DIR)/man6
+	cp media/com.libretro.Fruitendo.svg $(DESTDIR)$(DATA_DIR)/pixmaps
 	cp COPYING $(DESTDIR)$(DOC_DIR)
 	cp README.md $(DESTDIR)$(DOC_DIR)
 	chmod 755 $(DESTDIR)$(BIN_DIR)/$(TARGET)
-	chmod 755 $(DESTDIR)$(BIN_DIR)/retroarch-cg2glsl
-	chmod 644 $(DESTDIR)$(GLOBAL_CONFIG_DIR)/retroarch.cfg
-	chmod 644 $(DESTDIR)$(DATA_DIR)/applications/com.libretro.RetroArch.desktop
-	chmod 644 $(DESTDIR)$(DATA_DIR)/metainfo/com.libretro.RetroArch.metainfo.xml
-	chmod 644 $(DESTDIR)$(MAN_DIR)/man6/retroarch.6
-	chmod 644 $(DESTDIR)$(MAN_DIR)/man6/retroarch-cg2glsl.6
-	chmod 644 $(DESTDIR)$(DATA_DIR)/pixmaps/com.libretro.RetroArch.svg
+	chmod 755 $(DESTDIR)$(BIN_DIR)/Fruitendo-cg2glsl
+	chmod 644 $(DESTDIR)$(GLOBAL_CONFIG_DIR)/Fruitendo.cfg
+	chmod 644 $(DESTDIR)$(DATA_DIR)/applications/com.libretro.Fruitendo.desktop
+	chmod 644 $(DESTDIR)$(DATA_DIR)/metainfo/com.libretro.Fruitendo.metainfo.xml
+	chmod 644 $(DESTDIR)$(MAN_DIR)/man6/Fruitendo.6
+	chmod 644 $(DESTDIR)$(MAN_DIR)/man6/Fruitendo-cg2glsl.6
+	chmod 644 $(DESTDIR)$(DATA_DIR)/pixmaps/com.libretro.Fruitendo.svg
 	@if test -d media/assets && test $(HAVE_ASSETS); then \
 		echo "Installing media assets..."; \
 		mkdir -p $(DESTDIR)$(ASSETS_DIR)/assets; \
@@ -272,16 +272,16 @@ install: $(TARGET)
 
 uninstall:
 	rm -f $(DESTDIR)$(BIN_DIR)/$(TARGET)
-	rm -f $(DESTDIR)$(BIN_DIR)/retroarch-cg2glsl
-	rm -f $(DESTDIR)$(GLOBAL_CONFIG_DIR)/retroarch.cfg
-	rm -f $(DESTDIR)$(DATA_DIR)/applications/com.libretro.RetroArch.desktop
-	rm -f $(DESTDIR)$(DATA_DIR)/metainfo/com.libretro.RetroArch.metainfo.xml
-	rm -f $(DESTDIR)$(DATA_DIR)/pixmaps/com.libretro.RetroArch.svg
+	rm -f $(DESTDIR)$(BIN_DIR)/Fruitendo-cg2glsl
+	rm -f $(DESTDIR)$(GLOBAL_CONFIG_DIR)/Fruitendo.cfg
+	rm -f $(DESTDIR)$(DATA_DIR)/applications/com.libretro.Fruitendo.desktop
+	rm -f $(DESTDIR)$(DATA_DIR)/metainfo/com.libretro.Fruitendo.metainfo.xml
+	rm -f $(DESTDIR)$(DATA_DIR)/pixmaps/com.libretro.Fruitendo.svg
 	rm -f $(DESTDIR)$(DOC_DIR)/COPYING
 	rm -f $(DESTDIR)$(DOC_DIR)/COPYING.assets
 	rm -f $(DESTDIR)$(DOC_DIR)/README.md
-	rm -f $(DESTDIR)$(MAN_DIR)/man6/retroarch.6
-	rm -f $(DESTDIR)$(MAN_DIR)/man6/retroarch-cg2glsl.6
+	rm -f $(DESTDIR)$(MAN_DIR)/man6/Fruitendo.6
+	rm -f $(DESTDIR)$(MAN_DIR)/man6/Fruitendo-cg2glsl.6
 	rm -rf $(DESTDIR)$(ASSETS_DIR)
 
 clean:
