@@ -1683,11 +1683,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RGUI_MENU_COLOR_THEME_GRAY_DARK,
-   "Grey Dark"
+   "Cotton Candy"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RGUI_MENU_COLOR_THEME_GRAY_LIGHT,
-   "Grey Light"
+   "Tokyoh's Sunset"
    )
 
 /* XMB: Settings > User Interface > Appearance */
@@ -1744,11 +1744,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_COLOR_THEME_GRAY_DARK,
-   "Grey Dark"
+   "Cotton Candy"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_COLOR_THEME_GRAY_LIGHT,
-   "Grey Light"
+   "Tokyoh's Sunset"
    )
 
 /* MaterialUI: Settings > User Interface > Appearance */
@@ -1778,11 +1778,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_MENU_COLOR_THEME_GRAY_DARK,
-   "Grey Dark"
+   "Cotton Candy"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_MENU_COLOR_THEME_GRAY_LIGHT,
-   "Grey Light"
+   "Tokyoh's Sunset"
    )
 
 /* Qt (Desktop Menu) */

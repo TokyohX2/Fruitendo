@@ -1089,27 +1089,27 @@ static ozone_theme_t ozone_theme_dark = {
 
 static ozone_theme_t ozone_theme_nord = {
    /* Background color */
-   COLOR_HEX_TO_FLOAT(0x2E3440, 1.0f),                   /* background */
+   COLOR_HEX_TO_FLOAT(0x98FF98, 1.0f),                   /* background (soft mint green) */
    ozone_background_libretro_running_nord,               /* background_libretro_running */
 
    /* Float colors for quads and icons */
-   COLOR_HEX_TO_FLOAT(0xD8DEE9, 1.0f),                   /* header_footer_separator */
-   COLOR_HEX_TO_FLOAT(0xECEFF4, 1.0f),                   /* text */
-   COLOR_HEX_TO_FLOAT(0x232730, 1.0f),                   /* selection */
-   COLOR_HEX_TO_FLOAT(0x73A1BE, 1.0f),                   /* selection_border */
-   COLOR_HEX_TO_FLOAT(0x4C566A, 1.0f),                   /* entries_border */
-   COLOR_HEX_TO_FLOAT(0xE5E9F0, 1.0f),                   /* entries_icon */
-   COLOR_HEX_TO_FLOAT(0xA9C791, 1.0f),                   /* text_selected */
-   COLOR_HEX_TO_FLOAT(0x434C5E, 1.0f),                   /* message_background */
+   COLOR_HEX_TO_FLOAT(0x32CD32, 1.0f),                   /* header_footer_separator (lime green) */
+   COLOR_HEX_TO_FLOAT(0x32CD32, 1.0f),                   /* text (lime green) */
+   COLOR_HEX_TO_FLOAT(0x228B22, 1.0f),                   /* selection (forest green) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.0f),                   /* selection_border (dark green) */
+   COLOR_HEX_TO_FLOAT(0x006400, 1.0f),                   /* entries_border (dark green) */
+   COLOR_HEX_TO_FLOAT(0x32CD32, 1.0f),                   /* entries_icon (lime green) */
+   COLOR_HEX_TO_FLOAT(0x32CD32, 1.0f),                   /* text_selected (lime green) */
+   COLOR_HEX_TO_FLOAT(0x2E8B57, 1.0f),                   /* message_background (sea green) */
 
    /* RGBA colors for text */
-   0xECEFF4FF,                                           /* text_rgba */
-   0xECEFF4FF,                                           /* text_sidebar_rgba */
-   0xA9C791FF,                                           /* text_selected_rgba */
-   0x8FBCBBFF,                                           /* text_sublabel_rgba */
+   0x32CD32FF,                                           /* text_rgba (lime green) */
+   0x32CD32FF,                                           /* text_sidebar_rgba (lime green) */
+   0x32CD32FF,                                           /* text_selected_rgba (lime green) */
+   0x228B22FF,                                           /* text_sublabel_rgba (forest green) */
 
    /* Screensaver 'tint' (RGB24) */
-   0xECEFF4,                                             /* screensaver_tint */
+   0x98FF98,                                             /* screensaver_tint (soft mint green) */
 
    /* Sidebar color */
    ozone_sidebar_background_nord,                        /* sidebar_background */
@@ -1122,7 +1122,7 @@ static ozone_theme_t ozone_theme_nord = {
 
    {0},                                                  /* textures */
 
-   "nord"                                                /* name */
+   "Anime Green"                                         /* name */
 };
 
 static ozone_theme_t ozone_theme_gruvbox_dark = {
@@ -1431,27 +1431,27 @@ static ozone_theme_t ozone_theme_solarized_light = {
 
 static ozone_theme_t ozone_theme_gray_dark = {
    /* Background color */
-   COLOR_HEX_TO_FLOAT(0x101010, 1.0f),                   /* background */
+   COLOR_HEX_TO_FLOAT(0x007FFF, 1.0f),                   /* background (vibrant blue) */
    ozone_background_libretro_running_gray_dark,          /* background_libretro_running */
 
    /* Float colors for quads and icons */
-   COLOR_HEX_TO_FLOAT(0x000000, 0.0f),                   /* header_footer_separator */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text */
-   COLOR_HEX_TO_FLOAT(0x303030, 1.0f),                   /* selection */
-   COLOR_HEX_TO_FLOAT(0x303030, 1.0f),                   /* selection_border */
-   COLOR_HEX_TO_FLOAT(0x181818, 1.0f),                   /* entries_border */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* entries_icon */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text_selected */
-   COLOR_HEX_TO_FLOAT(0x202020, 1.0f),                   /* message_background */
+   COLOR_HEX_TO_FLOAT(0x87CEEB, 1.0f),                   /* header_footer_separator (sky blue) */
+   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text (white) */
+   COLOR_HEX_TO_FLOAT(0xFF1493, 1.0f),                   /* selection (deep pink) */
+   COLOR_HEX_TO_FLOAT(0xFF1493, 1.0f),                   /* selection_border (deep pink) */
+   COLOR_HEX_TO_FLOAT(0x8A2BE2, 1.0f),                   /* entries_border (blue violet) */
+   COLOR_HEX_TO_FLOAT(0x87CEEB, 1.0f),                   /* entries_icon (sky blue) */
+   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text_selected (white) */
+   COLOR_HEX_TO_FLOAT(0xFF69B4, 1.0f),                   /* message_background (deep pink) */
 
    /* RGBA colors for text */
-   0xC0C0C0FF,                                           /* text_rgba */
-   0x808080FF,                                           /* text_sidebar_rgba */
-   0xFFFFFFFF,                                           /* text_selected_rgba */
-   0x707070FF,                                           /* text_sublabel_rgba */
+   0xFFFFFFC0,                                           /* text_rgba (white) */
+   0x87CEEBFF,                                           /* text_sidebar_rgba (sky blue) */
+   0xFFFFFFFF,                                           /* text_selected_rgba (white) */
+   0xFF1493FF,                                           /* text_sublabel_rgba (deep pink) */
 
    /* Screensaver 'tint' (RGB24) */
-   0xFFFFFF,                                             /* screensaver_tint */
+   0xFF69B4,                                             /* screensaver_tint (deep pink) */
 
    /* Sidebar color */
    ozone_sidebar_background_gray_dark,                   /* sidebar_background */
@@ -1470,27 +1470,27 @@ static ozone_theme_t ozone_theme_gray_dark = {
 
 static ozone_theme_t ozone_theme_gray_light = {
    /* Background color */
-   COLOR_HEX_TO_FLOAT(0x303030, 1.0f),                   /* background */
+   COLOR_HEX_TO_FLOAT(0xFF4500, 1.0f),                   /* background (orange-red) */
    ozone_background_libretro_running_gray_light,         /* background_libretro_running */
 
    /* Float colors for quads and icons */
-   COLOR_HEX_TO_FLOAT(0x000000, 0.0f),                   /* header_footer_separator */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text */
-   COLOR_HEX_TO_FLOAT(0x101010, 1.0f),                   /* selection */
-   COLOR_HEX_TO_FLOAT(0x101010, 1.0f),                   /* selection_border */
-   COLOR_HEX_TO_FLOAT(0x282828, 1.0f),                   /* entries_border */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* entries_icon */
-   COLOR_HEX_TO_FLOAT(0xFFFFFF, 1.0f),                   /* text_selected */
-   COLOR_HEX_TO_FLOAT(0x202020, 1.0f),                   /* message_background */
+   COLOR_HEX_TO_FLOAT(0xFF6347, 1.0f),                   /* header_footer_separator (tomato) */
+   COLOR_HEX_TO_FLOAT(0xFFFFE0, 1.0f),                   /* text (light yellow) */
+   COLOR_HEX_TO_FLOAT(0xFFD700, 1.0f),                   /* selection (gold) */
+   COLOR_HEX_TO_FLOAT(0xFFA500, 1.0f),                   /* selection_border (orange) */
+   COLOR_HEX_TO_FLOAT(0xFF8C00, 1.0f),                   /* entries_border (dark orange) */
+   COLOR_HEX_TO_FLOAT(0xFFFF00, 1.0f),                   /* entries_icon (yellow) */
+   COLOR_HEX_TO_FLOAT(0xFFFFE0, 1.0f),                   /* text_selected (light yellow) */
+   COLOR_HEX_TO_FLOAT(0xFF4500, 1.0f),                   /* message_background (orange-red) */
 
    /* RGBA colors for text */
-   0xC0C0C0FF,                                           /* text_rgba */
-   0x808080FF,                                           /* text_sidebar_rgba */
-   0xFFFFFFFF,                                           /* text_selected_rgba */
-   0x707070FF,                                           /* text_sublabel_rgba */
+   0xFFFFE0FF,                                           /* text_rgba (light yellow) */
+   0xFFA500FF,                                           /* text_sidebar_rgba (orange) */
+   0xFFFF00FF,                                           /* text_selected_rgba (yellow) */
+   0xFFD700FF,                                           /* text_sublabel_rgba (gold) */
 
    /* Screensaver 'tint' (RGB24) */
-   0xFFFFFF,                                             /* screensaver_tint */
+   0xFF4500,                                             /* screensaver_tint (orange-red) */
 
    /* Sidebar color */
    ozone_sidebar_background_gray_light,                  /* sidebar_background */
